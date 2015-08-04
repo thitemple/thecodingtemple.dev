@@ -1,0 +1,50 @@
+# Site settings
+url: http://templecoding.com # the base hostname & protocol for your site
+title: Temple Coding
+email: vintem@gmail.com
+subtitle: código, tecnologia e outras nerdices
+description: Thiago Temple, desenvolvedor, nerd e esse é o meu site.
+baseurl: "" # the subpath of your site, e.g. /blog/
+twitter_username: vintem12
+github_username:  vintem
+root: /vintem.github.io
+
+# Build settings
+markdown: kramdown
+
+subscribe_rss: /feed.xml
+root: /
+permalink: /blog/:year/:month/:day/:title/
+paginate: 5
+
+#paginate_path: /blog/page:num
+
+pagination_dir: /blog
+recent_posts: 5
+
+category_dir: blog/categorias
+category_title_prefix: 'Categoria: '
+
+titlecase: false
+
+simple_search: http://www.google.com.br/cse
+simple_search_id: 001293680430809257884:fpqsxf5isbu
+
+default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html]
+
+# Disqus Comments
+disqus_short_name: templecoding
+disqus_show_comment_count: true
+
+# Statcounter
+statcounter_project_id: 5357260
+statcounter_security_code: 14d7610a
+
+twitter_tweet_button: true
+
+# Facebook Like
+facebook_like: true
+
+gems:
+  - jekyll-smartify
+  - jekyll-compass

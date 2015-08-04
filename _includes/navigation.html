@@ -1,0 +1,16 @@
+<ul class="subscription" data-subscription="rss{% if site.subscribe_email %} email{% endif %}">
+  <li><a href="{{ site.subscribe_rss }}" title="subscribe via RSS">RSS</a></li>
+  {% if site.subscribe_email %}
+    <li><a href="{{ site.subscribe_email }}" rel="subscribe-email" title="subscribe via email">Email</a></li>
+  {% endif %}
+</ul>
+  {% if site.simple_search %}
+    <form action="{{ site.simple_search }}" id="cse-search-box" method="get">
+      <fieldset role="search">
+        <input name="cx" type="hidden" value="{{ site.simple_search_id }}" />
+        <input name="ie" type="hidden" value="UTF-8" />
+        <input name="q" type="text" class="search" placeholder="Procurar" />
+      </fieldset>
+    </form>
+  {% endif %}
+{% include custom/navigation.html %}

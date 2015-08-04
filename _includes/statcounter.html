@@ -1,0 +1,15 @@
+{% if site.statcounter_security_code and site.statcounter_project_id %}
+<script type="text/javascript">
+var sc_project={{ site.statcounter_project_id }};
+var sc_invisible=1;
+var sc_security="{{ site.statcounter_security_code }}";
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web stats"
+href="http://statcounter.com/free-web-stats/" target="_blank"><img
+class="statcounter" src="http://c.statcounter.com/{{ site.statcounter_project_id }}/0/{{ site.statcounter_security_code }}/1/"
+alt="web stats"></a></div></noscript>
+{% endif %}

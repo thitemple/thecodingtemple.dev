@@ -1,0 +1,97 @@
+// Here you can easily change your sites's layout.
+// To give it a try, uncomment some of the lines below, make changes, rebuild your blog, and see how it works.
+
+//$header-font-size: 1em;
+//$header-padding-top: 1.5em;
+//$header-padding-bottom: 1.5em;
+
+//$max-width: 1350px;
+//$indented-lists: true;
+
+// Padding used for layout margins
+//$pad-min: 18px;
+//$pad-narrow: 25px;
+//$pad-medium: 35px;
+//$pad-wide: 55px;
+
+// Sidebar widths used in media queries
+//$sidebar-width-medium: 240px;
+//$sidebar-pad-medium: 15px;
+//$sidebar-pad-wide: 20px;
+//$sidebar-width-wide: 300px;
+
+img.alignleft, img.alignright, img.aligncenter {
+    margin-bottom: 2em;
+}
+
+img[class*="align"], img[class*="wp-image-"], #content .gallery .gallery-icon img, img.wp-post-image, img.attachment-thumbnail {
+    border: 1px solid #ccc;
+    padding: 6px;
+}
+
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 2em;
+}
+
+p img, .wp-caption {
+    margin-top: 0.4em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 2em;
+}
+
+.row-fluid {
+	width: 100%;
+}
+user agent stylesheetdiv {
+	display: block;
+}
+
+.row-fluid:before, .row-fluid:after {
+	display: table;
+line-height: 0;
+content: "";
+}
+
+.row-fluid:before, .row-fluid:after {
+display: table;
+content: "";
+line-height: 0;
+}
+
+
+.row-fluid:after {
+clear: both;
+}
+
+.row-fluid:before, .row-fluid:after {
+display: table;
+line-height: 0;
+content: "";
+}
+
+.row-fluid:after {
+clear: both;
+}
+
+.row-fluid:before, .row-fluid:after {
+display: table;
+content: "";
+line-height: 0;
+}
+
+article {
+	clear: both;
+}
