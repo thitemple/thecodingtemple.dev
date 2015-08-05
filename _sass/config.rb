@@ -7,12 +7,13 @@ http_path = "/"
 http_images_path = "/images"
 http_generated_images_path = "/images"
 http_fonts_path = "/fonts"
-css_dir = "_site/css"
+css_dir = "/_site/css"
 
 # Local development paths
-sass_dir = "_sass"
-images_dir = "images"
-fonts_dir = "assets/fonts"
+sass_dir = "./"
+images_dir = "../images"
+fonts_dir = "../assets/fonts"
+relative_assets = true
 
 line_comments = false
 output_style = :compressed

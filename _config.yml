@@ -47,4 +47,3 @@ facebook_like: true
 
 gems:
   - jekyll-smartify
-  - jekyll-compass
