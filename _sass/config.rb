@@ -7,7 +7,7 @@ http_path = "/"
 http_images_path = "/images"
 http_generated_images_path = "/images"
 http_fonts_path = "/fonts"
-css_dir = "/css"
+css_dir = "./../css"
 
 # Local development paths
 sass_dir = "./"
