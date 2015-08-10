@@ -15,8 +15,8 @@ Although I did a lot of integrations between applications, my passion is really 
 
 I love to read, to watch movies and tv-shows and spent almost all the time listening to music, preferably Hip-Hop, Jazz and Rock, in that order.
 
-<a href="https://twitter.com/vintem12"><i title="twitter" class="fa fa-twitter fa-2x"></i></a>
-<a href="https://github.com/vintem"><i title="github" class="fa fa-github fa-2x"></i></a>
-<a href="https://stackoverflow.com/users/186836/vintem"><i title="stackoverflow" class="fa fa-stack-overflow fa-2x"></i></a>
-<a href="https://ca.linkedin.com/in/vintem"><i title="linkedin" class="fa fa-linkedin-square fa-2x"></i></a>
+<a href="https://twitter.com/vintem12" target="_blank"><i title="twitter" class="fa fa-twitter fa-2x"></i></a>
+<a href="https://github.com/vintem" target="_blank"><i title="github" class="fa fa-github fa-2x"></i></a>
+<a href="https://stackoverflow.com/users/186836/vintem" target="_blank"><i title="stackoverflow" class="fa fa-stack-overflow fa-2x"></i></a>
+<a href="https://ca.linkedin.com/in/vintem" target="_blank"><i title="linkedin" class="fa fa-linkedin-square fa-2x"></i></a>
 <a href="mailto:vintem@gmail.com"><i tittle="e-mail" class="fa fa-envelope fa-2x"></i></a>
