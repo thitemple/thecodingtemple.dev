@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'github-pages'
-gem 'jekyll'
+gem 'jekyll', '2.4.0'
 gem 'jekyll-smartify'
 
-#gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-#
+gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
 gem 'pygments.rb'
 gem 'kramdown'
 
