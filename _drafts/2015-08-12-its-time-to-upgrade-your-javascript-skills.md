@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "It's time to upgrade your JavaScript skills"
-date:
+date: 2015-08-12
 comments: true
 categories: development
 tags: javascript, es6, es2015, ecmascript
@@ -101,4 +101,42 @@ And in the console we run:
 gulp
 {% endhighlight %}
 
-In the directory
+Now, inside the directory dist we shouldsee an app.js file as such:
+
+{% highlight javascript %}
+"use strict";
+
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Person = (function () {
+    function Person(name) {
+        _classCallCheck(this, Person);
+
+        this.name = name;
+    }
+
+    _createClass(Person, [{
+        key: "sayHello",
+        value: function sayHello() {
+        return "Hello, " + this.name;
+        }
+    }, {
+        key: "name",
+        set: function set(name) {
+            this._name = name;
+        },
+        get: function get() {
+            return this._name;
+        }
+    }]);
+
+    return Person;
+})();
+//# sourceMappingURL=app.js.map
+{% endhighlight %}
+
+A perfect and valid ES5 file! All we have to do is reference the ES5 transpiled file inside the html files.
+
+What this means is we can start using ES2015 and even some features of ES2016 today to help us build better JavaScript code and that won't have an impact on our users.
