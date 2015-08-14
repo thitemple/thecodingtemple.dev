@@ -4,8 +4,9 @@ layout: default
 
 <div class="blog-index">
   {% assign index = true %}
+  {% assign excerpted = true %}
   {% for post in paginator.posts %}
-  {% assign content = post.content %}
+  {% assign content = post.excerpt %}
     <article>
       {% include article.html %}
     </article>
