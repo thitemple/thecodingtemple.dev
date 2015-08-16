@@ -138,7 +138,7 @@ What this means is we can start using ES2015 and even some features of ES2016 to
 
 ## What if I don't want to use ES2015 in production now?
 
-Honestely, I don't see why not, but if you just want to play with it and get comfortable, you can do that using the transpiler. But an easier way would be to use [Babel's repl](https://babeljs.io/repl/){:target="_blank"}. Just type in some ES2015 code and see the immediate result of the transpilation.
+Honestly, I don't see why not, but if you just want to play with it and get comfortable, you can do that using the transpiler. But an easier way would be to use [Babel's repl](https://babeljs.io/repl/){:target="_blank"}. Just type in some ES2015 code and see the immediate result of the transpilation.
 
 Next, we're going to start seeing the new features in ES2015.
 
