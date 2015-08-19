@@ -4,18 +4,17 @@ title: "Automatic builds using MSBuild, NUnit and Cover"
 categories: [build, automatic build, ncover, nunit, msbuild]
 comments: true
 date: 2010-06-14
-alias: /builds-automticos-com-msbuild-nunit-e-ncover/index.html
 redirect_from: "/blog/2010/06/14/builds-automticos-com-msbuild-nunit-e-ncover"
 ---
-O MSBuild é a ferramenta da Microsoft usada em conjunto com o Visual Studio para compilar os projetos. Toda vez que compilamos um projeto no Visual Studio (a partir da versão 2005 pelo menos), o que acontece é que o VS chama o MSBuild para executar a tarefa de compilar os projetos da solução.
+MSBuild is the tool used inside Visual Studio to compile projects. Every time one build a project inside Visual Studio (at least since version 2005), what happens is that VS calls MSBuild to execute the tasks for compiling all the solution projects.
 
-O bom disso é que podemos customizar a compilação/deploy para executar diversas tarefas nesse momento, entre essas atividades existem algumas como zipar o projeto compilado, enviar por email, publicar no IIS, etc. Mas eu queria falar sobre duas que tenho usado que são: executar os testes unitários e executar uma ferramenta de cobertura de código para ver qual a porcentagem de código coberto pelos testes unitários.
+It is a good thing that we can customize the process of compilation and execute some other tasks at time of building, among those tasks one could do things such as compressing the project into a zip file, send it by e-mail, publish on IIS, etc. But what I'd like to talk about are two things I've being using: run unit tests and run a tool for code coverage.
 
-<strong>O projeto demo</strong>
+## The demo project
 
-Para começar, criei um solução usando o ASP.NET MVC, com um componente para acesso a dados separado do projeto de Web. Apenas como forma de mostrar o MSBuild compilando projetos diferentes.
+Before we begin, I've created a solution using ASP.NET MVC with a component for data access separated from the web porject. Just to show how MSBuild build different projects.
 
-![Diagrama Componentes ](/images/2010/06/Diagrama%20Componentes_2.png){: .aligncenter}
+![Components diagram](/images/2010/06/Diagrama%20Componentes_2.png){: .aligncenter}
 
 O projeto é bem simples, a idéia mesmo é conectar no intergalaxialmente famoso banco de dados Northwind e exibir os dados da tabela de categorias. Uau!!! Uma tarefa que consumirá horas, mas, como eu disse o foco é mostrar um pouco do funcionamento do MSBuild. <a href="https://github.com/vintem/MSBuildDemo" target="_blank">O código da aplicação está disponível aqui.</a>
 
