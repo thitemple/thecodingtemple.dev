@@ -3,9 +3,8 @@ layout: post
 title: "Publishing a website using Octopress and GitHub Pages from a new computer"
 date: 2013-09-03 10:50
 comments: true
-categories: development
+categories: [octopress github pages]
 description: Publishing a website using Octopress GitHub pages from a new computer
-keywords: octopress, github pages
 ---
 OK, I admit, this post is very specific and it serves more so that I will **never again** forget how to do this.
 

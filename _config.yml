@@ -1,30 +1,29 @@
 # Site settings
 url: http://templecoding.com # the base hostname & protocol for your site
 title: Temple Coding
-email: vintem@gmail.com
 subtitle: code, technology and other geek stuff
 description: Thiago Temple, developer, geek and this is my site.
 keywords: Thiago Temple, vintem, temple coding
 baseurl: "" # the subpath of your site, e.g. /blog/
 twitter_username: vintem12
-github_username:  vintem
+author: Thiago Temple
 root: /vintem.github.io
+
+github_username: vintem
+github_repo_url: https://github.com/vintem/vintem.github.io
 
 # Build settings
 markdown: kramdown
 
 subscribe_rss: /feed.xml
 root: /
-paginate: 5
+paginate: 10
 
-paginate_path: "/blog/page:num/"
+paginate_path: "/blog/page/:num"
 
 permalink: /blog/:year/:month/:day/:title/
 
-recent_posts: 5
-
-category_dir: blog/categories
-category_title_prefix: 'Category: '
+category_dir: categories
 
 titlecase: false
 
@@ -33,7 +32,7 @@ simple_search_id: 001293680430809257884:fpqsxf5isbu
 
 # Disqus Comments
 disqus_short_name: templecodingenglish
-disqus_show_comment_count: false
+disqus_show_comment_count: true
 
 # Statcounter
 statcounter_project_id: 9135601
@@ -47,7 +46,6 @@ twitter_tweet_button: true
 facebook_like: true
 
 gems:
-  - jekyll-smartify
   - jekyll-sitemap
 
 exclude: ['bower.json', 'Gemfile', 'Gemfile.lock', 'README.md', 'CNAME']
