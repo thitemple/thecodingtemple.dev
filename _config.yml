@@ -48,5 +48,6 @@ facebook_like: true
 
 gems:
   - jekyll-smartify
+  - jekyll-sitemap
 
 exclude: ['bower.json', 'Gemfile', 'Gemfile.lock', 'README.md', 'CNAME']
