@@ -5,7 +5,7 @@ date: 2013-06-03 23:06
 comments: true
 description: "A breaf review of the book Pragmatic Thinking and Learning"
 keywords: "book, review, Pragmatic Thinking and Learning"
-categories: [reading, reviews]
+categories: [reading reviews]
 ---
 Some books are just so great that we want to spread the word about it even before we finish reading it. This book is one of those.
 
