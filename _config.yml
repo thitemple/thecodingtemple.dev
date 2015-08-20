@@ -32,7 +32,7 @@ simple_search_id: 001293680430809257884:fpqsxf5isbu
 
 # Disqus Comments
 disqus_short_name: templecodingenglish
-disqus_show_comment_count: true
+disqus_show_comment_count: false
 
 # Statcounter
 statcounter_project_id: 9135601
