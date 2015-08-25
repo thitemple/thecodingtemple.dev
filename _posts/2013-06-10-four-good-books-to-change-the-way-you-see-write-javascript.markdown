@@ -3,9 +3,9 @@ layout: post
 title: "Four good books to change the way you see / write JavaScript"
 date: 2013-06-10 15:39
 comments: true
-keywords: "Javascript, books"
+keywords: ""
 description: ""
-categories: reading
+categories: [javascript books reading]
 ---
 Most programmers I know say they do not like JavaScript. I understand the language has many things that are odd. But I'm sure that not liking JavaScript, may also come from the fact that people don't know the language beyond the basic syntax and from copying / pasting scripts found on the internet.
 

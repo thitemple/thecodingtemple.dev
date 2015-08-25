@@ -3,7 +3,7 @@ layout: post
 title: "Talking about ES2015: the let and const keywords"
 date: 2015-08-16
 comments: true
-categories: [javascript, es2015]
+categories: [javascript es2015]
 ---
 In ES2015 there's a new way to declare variables, it's the **let** keyword which declares a block scope variable. Block scope variable? What does that mean exactly?
 

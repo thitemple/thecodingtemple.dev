@@ -8,4 +8,6 @@
     {{ page.categories | category_links }}
   {% endif %}
 </span>-->
+<i class="fa fa-tag"></i>
+    {{ page.categories | join: ', ' }}{{ post.categories | join: ', ' }}
 {% endunless %}

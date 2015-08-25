@@ -4,7 +4,7 @@ title: "It's just a mess if you let it. Single responsibility with JavaScript"
 date: 2013-07-30 21:08
 comments: true
 description: A demonstration of the application of the Single Responsibility Principle with JavaScript.
-categories: development
+categories: [javascript]
 ---
 Many people who complain about JavaScript does not take the minimum effort to understand the language and for most of the time, the code developed is not treated as a real code, after all, "it's just JavaScript".
 
