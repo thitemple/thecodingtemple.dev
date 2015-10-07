@@ -7,7 +7,7 @@ categories: [podcasts]
 ---
 I have to admit it, I have a serious condition called CPA, AKA Chronicle Podcasts Addiction, at least I diagnostic myself with that condition. 
 
-Yeap, I definitely subscribe to a lot of podcasts. I've just counted my subscription list, 21. Yes, I subscribe to 21 and think it's a lot. 
+Yeap, I definitely subscribe to a lot of podcasts. I've just counted my subscription list, 21. Yes, I subscribe to 21 and I think it's a lot. 
 
 I listen to different podcasts on different subjects and so, here I am sharing what I listen to with you.
 
