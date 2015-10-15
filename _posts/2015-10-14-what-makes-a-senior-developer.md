@@ -26,15 +26,16 @@ Prepare a sample code that your team does not consider a good code and let the c
 ## Can the candidate recognize code smells? 
 That's a consequence of the previews questions, does the candidate "smells" bad code? Like bad naming, code repetition, bad patterns, etc.
 
-## Can the candidate name that things? 
-Naming classes, functions, methods, variables is a hard thing to do, and is also one of the most important things.
+## Can the candidate name things? 
+Naming classes, functions, methods, variables is a hard thing to do, and is also one of the most important ones.
 
 ## Does the candidate have experience with automated testing?
-Testing is important, I don't care if you write them first or after, if you want to be a professional developer you have to write tests. 
-That's another good moment to show, some code and ask for feedback of the candidate. Show her some bad written tests, ask if the candidate can tell you why is it bad? Does she think it's bad? Tests should be considered as important as production code and bad tests are generally a consequence of bad production code.
+Testing is important, I don't care if you write them first or after. If you want to be a professional developer you have to write tests. 
+That's another good moment to show some code and ask for feedback of the candidate. Show her some bad written tests, ask if the candidate can tell you why is it bad? Does she think it's bad? Tests should be considered as important as production code and bad tests are generally a consequence of bad production code.
 
 ## What do you do to keep yourself up to date with new technologies?
-Do you read? What do read? Do listen to podcasts? Watch videos on youtube? Which channels? Some other site of online learning? Do you have a personal github account? Do you write code at home? Really, I want to know that the professional I'm hiring is not only learning during the time she should be producing. It's OK to learn at work, it's not OK to ONLY learn at work.
+Do you read? What do read? Do you listen to podcasts? Watch videos on youtube? Which channels? Some other site of on-line learning? Do you have a personal github account? Do you write code at home? 
+Really, I want to know that the professional I'm hiring is not only learning during the time she should be producing. It's OK to learn at work, it's not OK to ONLY learn at work.
 
 ## Given the technologies x, y, z we use in our team, would that be something that interests the candidate?
 This is for the case where the candidate does not have any experience with some important stack of technologies the team uses. This might not be a problem for your team, but is it something that interests the person being interviewed? I don't want someone complaining all the time because she has to write JavaScript code when all she wants to do is to write C#.
@@ -42,9 +43,11 @@ This is for the case where the candidate does not have any experience with some 
 ## Can the candidate express herself? 
 Communication is key, be that in person or remotely, the candidate has to be able to express her ideas.
 
+### Conclusion
+
 Well, this is by any means an extensive list, but I do think that this a great starting point for some conversation, and I'm sure that while asking these questions you will find out some other you'd like to ask.
 
-With the answers of these questions, you and your team have to decide which answers were not satisfied, but you're willing to compromise? Or, are you willing to compromise to any of those?
+With the answers of these questions, you and your team have to decide which answers were not satisfied but you're willing to compromise? Or, are you willing to compromise to any of those?
 
 Me, I'm pretty sure that if I am satisfied with the answers for those questions, there's a great chance that this is someone I want to work with.
 
