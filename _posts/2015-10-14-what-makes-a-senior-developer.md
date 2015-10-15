@@ -44,4 +44,8 @@ Communication is key, be that in person or remotely, the candidate has to be abl
 
 Well, this is by any means an extensive list, but I do think that this a great starting point for some conversation, and I'm sure that while asking these questions you will find out some other you'd like to ask.
 
-Maybe you'd like to share some of yours with me? ;)
+With the answers of these questions, you and your team have to decide which answers were not satisfied, but you're willing to compromise? Or, are you willing to compromise to any of those?
+
+Me, I'm pretty sure that if I am satisfied with the answers for those questions, there's a great chance that this is someone I want to work with.
+
+What about you? Do you have some questions you like to ask when interviewing? Maybe you'd like to share some of yours with me? ;)
