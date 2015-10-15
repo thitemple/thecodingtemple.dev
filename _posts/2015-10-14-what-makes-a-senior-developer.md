@@ -11,17 +11,17 @@ Lately I was faced with the task of interviewing someone for our team of develop
 
 I'm not sure if I have all those answers. Let's take for instance the knowledge of a framework. Does it really matter how deep do you know a web framework like ASP.NET MVC if you're someone who knows a lot of  Ruby on Rails. Isn't it more important that you really understand how the life cycle of a web MVC framework works? How does the pattern work? What the MVC really stands for? Can't you replicate these kinds of knowledge and experience to other frameworks?
 
-Honestly, I think so, I think that, despite the differences between those two technologies, for instance, the experience with one can be replicate when using the other. But, and this is an important, but I cannot argue with the fact that someone with experience in a given technology would be producing faster than someone without the same experience.
+Honestly, I think so, I think that, despite the differences between those two technologies, for instance, the experience with one can be replicate when using the other. But, (and this is an important but) I cannot argue with the fact that someone with experience in a given technology would be producing faster than someone without the same experience.
 
-Some of those questions are not so easy to answer and for some companies instant results are more important than waiting for someone to catch up with a technology in one or maybe two months and just then been fully productive.
+Some of those questions are not so easy to answer and for some companies, instant results are more important than waiting for someone to catch up with a technology in one or maybe two months and just then be fully productive.
 
-So thinking about that I decided to elaborate a few questions I'd like to have a candidate answered. Some of those questions don't a straight answer, rather if those questions are interesting to you, you have to align the answers with what your team thinks is right.
+So thinking about that, I decided to elaborate a few questions I'd like to ask a candidate. Some of those questions don't have a straight answer, rather, if those questions are interesting to you, you have to align the answers with what your team thinks is right.
 
 ## What makes a good code?
-What I want to know is, what the candidate thinks is a good code? Is it having separation of concerns? Is it having code generation? Is it having the simplest possible code? Is it having comments? Let the candidate speak freely, a more experienced developer will most certainly knows what she thinks is a better code.
+What I want to know is, what the candidate thinks is a good code? Is it having separation of concerns? Is it having code generation? Is it having the simplest possible code? Is it having comments? Let the candidate speak freely, a more experienced developer will most certainly knows what she thinks is a good code.
 
 ## Given this code, what would you do to make it better?
-Prepare a sample code that your team does not consider a good code and let the candidate point out what she would do differently to make the code better. That's always a good way to see the experience with the code, inexperienced developers tend to pinpoint the more simple and evident errors. If you're using an object-oriented language is also a good way to test the knowledge of good design patterns.
+Prepare a sample code that your team does not consider a good code and let the candidate point out what she would do differently to make the code better. That's always a good way to assess the experience of an interviewee, inexperienced developers tend to pinpoint the more simple and evident errors. If you're using an object-oriented language is also a good way to test the knowledge of good design patterns.
 
 ## Can the candidate recognize code smells? 
 That's a consequence of the previews questions, does the candidate "smells" bad code? Like bad naming, code repetition, bad patterns, etc.
