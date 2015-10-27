@@ -4,6 +4,7 @@ date: 2015-10-06
 description: 
 layout: post
 categories: [podcasts]
+comments: true
 ---
 I have to admit it, I have a serious condition called CPA, AKA Chronicle Podcasts Addiction, at least I diagnostic myself with that condition. 
 
