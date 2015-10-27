@@ -1,4 +1,4 @@
 # vintem.github.io
-My blog!
+*My blog!*
 
 templecoding.com
