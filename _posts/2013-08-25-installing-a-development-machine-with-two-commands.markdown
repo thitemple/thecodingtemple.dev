@@ -75,6 +75,4 @@ And that's it, you will have all the applications installed. Sometime during the
 
 PS: I tried to make Visual Studio 2012 to be installed automatically as well, but honestly, there is not much documentation about it and I thought it was not worth the work. After all, in this case the only thing needed is to mount an ISO and follow the installation steps. For just one application I think it's OK.
 
-If you were too lazy to go look at it, here's the complete script:
-
-{%  gist 6334646 dev_setup.ps1 %}
+If you were too lazy to go look at it, here's [the complete script](https://gist.github.com/vintem/6334646#file-dev_setup-ps1).
