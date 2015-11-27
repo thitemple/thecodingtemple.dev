@@ -6,6 +6,8 @@ comments: true
 layout: post
 categories: [es15 es6 javascript classes]
 ---
+**Update:** I have also [recorded a video about classes](https://youtu.be/p1jCfPIBh0M), if you want to watch it in adition to reading this post.
+
 JavaScript has always been an object-oriented language. It never had a class definition, but the same behavior could be achieved using constructor functions and the prototype object.
 
 Although many people like that, there are a lot of people who don't. So, [JavaScript libraries](http://jsclass.jcoglan.com/){:target="_blank"} were created to "solve this problem".

@@ -5,6 +5,8 @@ date: 2015-08-16
 comments: true
 categories: [javascript es2015]
 ---
+**Update:** I have also [recorded a video about let and const](https://youtu.be/4q-awpEJQJU), if you want to watch it in adition to reading this post.
+
 In ES2015 there's a new way to declare variables, it's the **let** keyword which declares a block scope variable. Block scope variable? What does that mean exactly?
 
 Well, let's get some context using ES5. In ES5 and earlier versions, all variables are function scoped. Meaning that no matter where inside a function a variable is declared, that variable is accessible inside the whole function.
