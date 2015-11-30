@@ -4,8 +4,12 @@ title: About
 permalink: /about/
 description: "Thiago Temple, brazilian, developer. And this is my web site."
 keywords: "thiago temple, vintem, temple coding"
+imagefeature: background/wall.jpg
 ---
-![Thiago Temple](/images/vintem.jpg){: .alignleft}**Thiago Temple**, brazilian, developer since I was 16.
+<figure>
+	<img src="{{ site.url }}/images/vintem.jpg">
+</figure>
+**Thiago Temple**, brazilian, developer since I was 16.
 
 I have always loved technology, my fascination by technology has begun when I used Lotus 123 and Wordstar, still in DOS, from them I started learning programing and I developed my first application using Basic.
 

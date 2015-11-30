@@ -1,51 +1,72 @@
 # Site settings
-url: http://templecoding.com # the base hostname & protocol for your site
+url: http://localhost:4000 # the base hostname & protocol for your site
 title: Temple Coding
 subtitle: code, technology and other geek stuff
-description: Thiago Temple, developer, geek and this is my site.
+default_bg: background/shoes.jpg
+description: Hello, I'm Thiago Temple, a developer, geek and this is my site.
 keywords: Thiago Temple, vintem, temple coding
 baseurl: "" # the subpath of your site, e.g. /blog/
 twitter_username: vintem12
 author: Thiago Temple
 root: /vintem.github.io
-
+search: true
+share: true
+readtime: true
+triangleheader:	true
+animated_fins: true
+fin_color: "255,255,255"
+disqus_short_name: templecodingenglish
 github_username: vintem
 github_repo_url: https://github.com/vintem/vintem.github.io
 
-# Build settings
+owner:
+  name: Thiago Temple
+  avatar: vintem.jpg 
+  email: vintem@gmail.com
+  description: Thiago Temple, developer, geek and this is my site.
+  twitter: vintem12
+  github: vintem
+  linkedin: https://ca.linkedin.com/in/vintem
+  instamgram: https://www.instagram.com/vintem/
+  
+goog_analytics: UA-41090209-2
+
+links:
+  - title: Home
+    url: /
+    external: false
+    icon: home
+  - title: About
+    url: /about
+    external: false
+  - title: Categories
+    url: /categories
+    
+timezone: Canada/Eastern
+future: true
+highlighter: pygments
 markdown: kramdown
-
-subscribe_rss: /feed.xml
-root: /
-paginate: 10
-
-paginate_path: "/blog/page/:num"
+paginate: 6
+paginate_path: "page:num"
 
 permalink: /blog/:year/:month/:day/:title/
 
-category_dir: categories
-
-titlecase: false
-
-simple_search: http://www.google.com/cse
-simple_search_id: 001293680430809257884:fpqsxf5isbu
-
-# Disqus Comments
-disqus_short_name: templecodingenglish
-disqus_show_comment_count: false
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+  
+  coderay:
+    coderay_line_numbers:
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
 
 # Statcounter
 statcounter_project_id: 9135601
 statcounter_security_code: 1fd2b255
-
-google_analytics_tracking_id: UA-41090209-2
-
-twitter_tweet_button: true
-
-# Facebook Like
-facebook_like: true
-
-gems:
-  - jekyll-sitemap
 
 exclude: ['bower.json', 'Gemfile', 'Gemfile.lock', 'README.md', 'CNAME']

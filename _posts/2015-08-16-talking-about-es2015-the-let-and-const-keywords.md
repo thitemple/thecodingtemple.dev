@@ -3,7 +3,7 @@ layout: post
 title: "Talking about ES2015: the let and const keywords"
 date: 2015-08-16
 comments: true
-categories: [javascript es2015]
+categories: [javascript,es2015]
 ---
 **Update:** I have also [recorded a video about let and const](https://youtu.be/4q-awpEJQJU), if you want to watch it in adition to reading this post.
 

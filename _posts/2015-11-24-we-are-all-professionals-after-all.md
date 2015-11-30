@@ -1,7 +1,8 @@
 ---
-title: We are all professionals after all
-date: 2015-11-24
 layout: post
+title: "We are all professionals after all"
+date: 2015-11-24
+imagefeature: background/tunel.jpg
 comments: true
 ---
 
@@ -21,7 +22,7 @@ If, by any chance you're a fan of some sort of sport, be that basketball, soccer
 
 Now take a look at the first 2 minutes and 20 seconds from this video from a few days ago, were coach Scott Skiles talks about his team.
 
-<iframe width="640" height="360" src="http://player.foxfdm.com/sports/embed-iframe.html?videourl=http://link.theplatform.com/s/BKQ29B/LUSjGeSWDaA4?mbr=true&assetTypes=Video&feed=Fox%20Sports%20All&iu=/fscom/florida/video" frameborder="0" scrolling="no" allowfullscreen></iframe>
+<iframe width="640" height="360" src="http://player.foxfdm.com/sports/embed-iframe.html?videourl=http://link.theplatform.com/s/BKQ29B/LUSjGeSWDaA4?mbr=true&assetTypes=Video&feed=Fox%20Sports%20All&iu=/fscom/florida/video" frameborder="0" scrolling="no"> </iframe>
 
 Imagine you as fan of this team, don't you love this guy, pushing his players to get better and also holding them accountable for their interest, or lack of interest? Yeah, I want to see my team playing their best players, the ones that are really trying to bring a win back home.
 

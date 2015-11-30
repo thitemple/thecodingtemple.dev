@@ -4,7 +4,7 @@ layout: post
 description: A brief description about some of the new features in strings on ES2015
 date: 2015-08-25
 comments: true
-categories: [javascript es2105 es6]
+categories: [javascript,es2105,es6]
 ---
 In ES15 some new methods were added to the String object. For instance, now there's a repeat method.
 

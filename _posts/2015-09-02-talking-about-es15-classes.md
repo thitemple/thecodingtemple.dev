@@ -4,7 +4,7 @@ date: 2015-09-02
 description: An overview of how classes work in ES15
 comments: true
 layout: post
-categories: [es15 es6 javascript classes]
+categories: [es15,es6,javascript]
 ---
 **Update:** I have also [recorded a video about classes](https://youtu.be/p1jCfPIBh0M), if you want to watch it in adition to reading this post.
 

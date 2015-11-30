@@ -3,7 +3,7 @@ layout: post
 title: "It's time to upgrade your JavaScript skills"
 date: 2015-08-12
 comments: true
-categories: [javascript es6 es2015 ecmascript]
+categories: [javascript,es6,es2015]
 ---
 So, last June, the [TC39 Committee](http://www.ecma-international.org/memento/TC39.htm){:target="_blank"} made EcmaScript 6 a standard. EcmaScript is the official name of the JavaScript language and the new standard is also known as ES6.
 

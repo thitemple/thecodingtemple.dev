@@ -3,7 +3,7 @@ layout: post
 title: "Talking about ES2015: destructuring"
 date: 2015-08-19
 comments: true
-categories: [javascript es2015]
+categories: [javascript,es2015]
 ---
 **Update:** I have also [recorded a video about destructuring](https://youtu.be/JoFq8e6kgEQ), if you want to watch it in adition to reading this post.
 

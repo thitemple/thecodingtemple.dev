@@ -3,7 +3,7 @@ title: What makes a senior developer?
 date: 2015-10-14
 description: Tips on how to assess a candidate during a job interview as a developer.
 layout: post
-categories: [job careers interview]
+categories: [job,careers,interview]
 comments: true
 ---
 I guess that we as developers, we cannot complain about a shortage of job offers. There are a lot of opportunities in sites such as LinkedIn or StackOverflow Careers. But what happens most of the time is that a job offer will ask for someone considered a senior developer and who knows multiple technologies, platforms and so on.
