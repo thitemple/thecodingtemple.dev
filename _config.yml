@@ -66,7 +66,7 @@ kramdown:
     coderay_css: class
 
 # Statcounter
-statcounter_project_id: 9135601
-statcounter_security_code: 1fd2b255
+statcounter_project_id: 5357260
+statcounter_security_code: 14d7610a
 
 exclude: ['bower.json', 'Gemfile', 'Gemfile.lock', 'README.md', 'CNAME']
