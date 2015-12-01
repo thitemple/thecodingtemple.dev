@@ -1,5 +1,5 @@
 # Site settings
-url: http://localhost:4000 # the base hostname & protocol for your site
+url: http://templecoding.com # the base hostname & protocol for your site
 title: Temple Coding
 subtitle: code, technology and other geek stuff
 default_bg: background/shoes.jpg
