@@ -4,6 +4,8 @@ title: "We are all professionals after all"
 date: 2015-11-24
 imagefeature: background/tunel.jpg
 comments: true
+category: career
+tags: career
 ---
 
 First, let me give you some context, and bear with me for a moment, I'll make a point. 

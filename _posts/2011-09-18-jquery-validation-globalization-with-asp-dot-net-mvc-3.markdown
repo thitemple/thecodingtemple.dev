@@ -3,9 +3,11 @@ layout: post
 title: "jQuery Validation Globalization with ASP.NET MVC 3"
 date: 2011-09-18 10:00
 comments: true
+category: code
+tags: [aspnetmvc, jquery, javascript, globalization] 
 ---
 ASP.NET MVC 3 has a great feature, which is client validation using jQuery plug-in's [jQuery validations](http://docs.jquery.com/Plugins/Validation) and using a Microsoft script the validation is made without the need of any other special code. You just have to use the attributes from System.ComponentModel.DataAnnotations namespace.
-
+<!-- more --> 
 For those who don't know, to use this validation you just need to add the following script references (which are included in the default template when a new Asp.Net Mvc 3 gets created):
 
 {% highlight html %}

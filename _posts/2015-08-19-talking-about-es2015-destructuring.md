@@ -3,11 +3,12 @@ layout: post
 title: "Talking about ES2015: destructuring"
 date: 2015-08-19
 comments: true
-categories: [javascript,es2015]
+tags: [javascript,es2015,es6]
+category: code
 ---
-**Update:** I have also [recorded a video about destructuring](https://youtu.be/JoFq8e6kgEQ), if you want to watch it in adition to reading this post.
+Destructuring is a new feature in ES2015 which allows us to declare or assign values to variables. It's a very powerful way of doing that. It might sound a little confusing at first, but it really is very simple once you tried a few times.<!-- more -->
 
-Destructuring is a new feature in ES2015 which allows us to declare or assign values to variables. It's a very powerful way of doing that. It might sound a little confusing at first, but it really is very simple once you tried a few times.
+**Update:** I have also [recorded a video about destructuring](https://youtu.be/JoFq8e6kgEQ), if you want to watch it in adition to reading this post.
 
 ## Arrays
 

@@ -2,11 +2,10 @@
 layout: home
 title: Temple Coding
 description: "The personal blog of Thiago Temple."
-headline: An Engineer's Diary
 tags: [Thiago Temple, Thiago, Temple, blog, site, development, coding]
 ---
 {% if site.paginate %}
-	{% for post in paginator.posts %}
+	{% for post in paginator.posts %}	
 		{% if site.wpm %}
 		{% assign readtime = post.content | strip_html | number_of_words | append: '.0' | divided_by:site.wpm %}
 		{% else %}
@@ -193,8 +192,8 @@ tags: [Thiago Temple, Thiago, Temple, blog, site, development, coding]
 	                </header>
 	                <div class="post-body bordered-bottom">
 	                {% assign excerptsize = post.excerpt | number_of_words %}
-	                {% if excerptsize <= 100 and excerptsize >= 50 %}<p class = "lead">{{ post.excerpt | strip_html }}&hellip;</p>{% else %}
-	                    <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>{% endif %}
+	                {% if excerptsize <= 100 and excerptsize >= 50 %}<p class = "lead">{{ post.excerpt | split: '<!-- more -->' | first | strip_html }}&hellip;</p>{% else %}
+	                    <p>{{ post.content | split: '<!-- more -->' | first | strip_html | truncatewords:100 }}&hellip;</p>{% endif %}
 	                    <div class="text-center">
 	                    {% if post.description %}
 		                <a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
@@ -219,12 +218,12 @@ tags: [Thiago Temple, Thiago, Temple, blog, site, development, coding]
 {% if paginator.previous_page == 1 %}
         <a class="newer-posts" href="{{ site.url }}">&larr; Newer Posts</a>
 {% else %}
-		<a class="newer-posts" href="{{ site.url }}/page{{ paginator.previous_page }}">&larr; Newer Posts</a>
+		<a class="newer-posts" href="{{ site.url }}/blog/page/{{ paginator.previous_page }}">&larr; Newer Posts</a>
 {% endif %}
 {% endif %}
     <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
  {% if paginator.next_page %}   
-        <a class="older-posts" href="{{ site.url }}/page{{ paginator.next_page }}">Older Posts &rarr;</a>
+        <a class="older-posts" href="{{ site.url }}/blog/page/{{ paginator.next_page }}">Older Posts &rarr;</a>
  {% endif %}
 </nav>
             </div>
@@ -414,7 +413,7 @@ tags: [Thiago Temple, Thiago, Temple, blog, site, development, coding]
 	                </header>
 	                <div class="post-body bordered-bottom">
 	                {% assign excerptsize = post.excerpt | number_of_words %}
-	                {% if excerptsize <= 100 and excerptsize >= 50 %}<p class = "lead">{{ post.excerpt | strip_html }}&hellip;</p>{% else %}
+	                {% if excerptsize <= 100 and excerptsize >= 50 %}<p class = "lead"> {{ post.excerpt | strip_html }}&hellip;</p>{% else %}
 	                    <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>{% endif %}
 	                    <div class="text-center">
 	                    {% if post.description %}

@@ -15,7 +15,7 @@ readtime: true
 triangleheader:	true
 animated_fins: true
 fin_color: "255,255,255"
-disqus_short_name: templecodingenglish
+disqus_shortname: templecodingenglish
 github_username: vintem
 github_repo_url: https://github.com/vintem/vintem.github.io
 
@@ -48,7 +48,7 @@ future: true
 highlighter: pygments
 markdown: kramdown
 paginate: 6
-paginate_path: "page:num"
+paginate_path: "/blog/page/:num"
 
 permalink: /blog/:year/:month/:day/:title/
 

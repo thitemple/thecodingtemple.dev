@@ -5,13 +5,14 @@ date: 2013-06-03 23:06
 comments: true
 description: "A breaf review of the book Pragmatic Thinking and Learning"
 keywords: "book, review, Pragmatic Thinking and Learning"
-categories: [reading,reviews]
+category: [reviews, books]
+tags: [books, reviews, reading]
 ---
 Some books are just so great that we want to spread the word about it even before we finish reading it. This book is one of those.
 
-<a href="http://vintem.me/18LjWdg">
-![Pragmatic Thinking and Learning](/images/2013/06/ahptl_xlargecover.jpg){: .aligncenter}
-</a>
+<figure>
+	<img src="{{ site.url }}/images/2013/06/ahptl_xlargecover.jpg">
+</figure>
 
 Here's a piece of the summary of the book:
 
@@ -27,6 +28,8 @@ That people learn differently is already well publicized, but what I found inter
 
 One of these techniques is a way to define learning objectives called SMART which stands for Specific, Measurable, Attainable, Relevant and Time-Bound. Others include, always carry a small notebook, create a personal wiki, draw mind maps, among others. Everything always with great theoretical basis.
 
-![SMART](/images/2013/06/smart2.jpg){: .aligncenter}
+<figure>
+	<img src="{{ site.url }}/images/2013/06/smart2.jpg" />
+</figure>
 
 Because I read a lot, I enjoyed the book very much and I'm already trying to put things in practice. I hope you enjoy the hint and read the book, I liked it a lot.

@@ -5,6 +5,8 @@ description: My notes taken during the Agile Tour 2015 at Québec City
 layout: post
 comments: true
 imagefeature: background/atomium.jpg
+category: agile
+tags: [agile, agile tour]
 ---
 It has passed more than three years and half since I moved to Canada. After all this time, I have not gone to a developer's conference. That changed last week, when I went to the Agile Tour 2015. And, it felt good.
 

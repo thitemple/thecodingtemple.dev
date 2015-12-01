@@ -5,13 +5,16 @@ date: 2013-06-10 15:39
 comments: true
 keywords: ""
 description: ""
-categories: [javascript,books,reading]
+tags: [javascript,books,reading]
+category: books
 ---
 Most programmers I know say they do not like JavaScript. I understand the language has many things that are odd. But I'm sure that not liking JavaScript, may also come from the fact that people don't know the language beyond the basic syntax and from copying / pasting scripts found on the internet.
 
 JavaScript has braces, semicolons, has Java as a part of its name, but it doesn't work anyway like Java or any other language derived from C, such as C#. Therefore, to use JavaScript in a correct manner and even begin to enjoy the language we have to understand "the JavaScript way".
 
-![Java and JavaScript](/images/2013/06/java-javascript-sm.png){: .aligncenter}
+<figure>
+	<img src="{{ site.url }}/images/2013/06/java-javascript-sm.png" >
+</figure>
 
 Here's a short list of four books I read about JavaScript that will help deepen your understanding of: the language, the interactions with the browser and how to write code faster, more organized and elegant, using what JavaScript has to offer.
 
@@ -20,19 +23,34 @@ The books listed here may have overlapped subjects. But in general, these are bo
 ## <a href="http://www.amazon.com/gp/product/0596517742/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0596517742&amp;linkCode=as2&amp;tag=tempcodi0f-20" target="_blank">JavaScript: The Good Parts</a> by <a href="http://www.crockford.com/" target="_blank">Douglas Crockford</a>
 
 <div class="row-fluid">
-<a href="http://www.amazon.com/gp/product/0596806752/ref=as_li_ss_il?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0596806752&amp;linkCode=as2&amp;tag=tempcodi0f-20"><img class="alignleft" style="border: 0px;" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;ASIN=0596806752&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=tempcodi0f-20" alt="" width="122" height="160" border="0"></a>In my opinion this book is a good introduction for anyone who wants to begin to understand a bit beyond the basic syntax of the language. No, it is not a book that will delve much into the language, will only begin to cover some topics in a more advanced way. But mostly, will help you understand a little better what's good about JavaScript. If you already understand well the syntax of JavaScript, you already know how to work with objects and functions you probably can skip this book.</div>
+<figure>
+<a href="http://www.amazon.com/gp/product/0596806752/ref=as_li_ss_il?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0596806752&amp;linkCode=as2&amp;tag=tempcodi0f-20"><img class="alignleft" style="border: 0px;" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;ASIN=0596806752&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=tempcodi0f-20" alt="" width="122" height="160" border="0"></a>
+</figure>
+In my opinion this book is a good introduction for anyone who wants to begin to understand a bit beyond the basic syntax of the language. No, it is not a book that will delve much into the language, will only begin to cover some topics in a more advanced way. But mostly, will help you understand a little better what's good about JavaScript. If you already understand well the syntax of JavaScript, you already know how to work with objects and functions you probably can skip this book.</div>
 
 ## <a href="http://www.amazon.com/gp/product/0596806752/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0596806752&amp;linkCode=as2&amp;tag=tempcodi0f-20" target="_blank">JavaScript Patterns</a> by <a href="http://www.phpied.com/" target="_blank">Stoyan Stefanov</a>
 
-<div class="row-fluid"><a href="http://www.amazon.com/gp/product/0596806752/ref=as_li_ss_il?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0596806752&amp;linkCode=as2&amp;tag=tempcodi0f-20"><img class="alignleft" style="border: 0px;" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;ASIN=0596806752&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=tempcodi0f-20" alt="" width="122" height="160" border="0"></a>As the name says, will discuss patterns. The patterns here are related to specific features of JavaScript, for example, how to reuse code using Prototype. It is also about conventions adopted in the language, how to solve the problem of global scope, how to use constructors, among others. The book also addresses some of the <a href="https://en.wikipedia.org/wiki/Design_Patterns">GoF patterns</a>, but with a vision focused on the characteristics of JavaScript. This is certainly a book that should be read by any developer who wants to take JavaScript more seriously.</div>
+<div class="row-fluid">
+<figure>
+<a href="http://www.amazon.com/gp/product/0596806752/ref=as_li_ss_il?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0596806752&amp;linkCode=as2&amp;tag=tempcodi0f-20"><img class="alignleft" style="border: 0px;" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;ASIN=0596806752&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=tempcodi0f-20" alt="" width="122" height="160" border="0"></a>
+</figure>
+As the name says, will discuss patterns. The patterns here are related to specific features of JavaScript, for example, how to reuse code using Prototype. It is also about conventions adopted in the language, how to solve the problem of global scope, how to use constructors, among others. The book also addresses some of the <a href="https://en.wikipedia.org/wiki/Design_Patterns">GoF patterns</a>, but with a vision focused on the characteristics of JavaScript. This is certainly a book that should be read by any developer who wants to take JavaScript more seriously.</div>
 
 ## <a href="http://www.amazon.com/gp/product/193398869X/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=193398869X&amp;linkCode=as2&amp;tag=tempcodi0f-20" target="_blank">Secrets of the JavaScript Ninja</a> by <a href="http://ejohn.org/" target="_blank">John Resig</a>
 
-<div class="row-fluid"><a href="http://www.amazon.com/gp/product/193398869X/ref=as_li_ss_il?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=193398869X&amp;linkCode=as2&amp;tag=tempcodi0f-20"><img class="alignleft" style="border: 0px;" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;ASIN=193398869X&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=tempcodi0f-20" alt="" width="127" height="160" border="0"></a>For me, this is the best book about JavaScript from the didactic point of view. Great examples, and clear explanations and many details about the language. In this book, was the best explanation I've ever read about how closures work in JavaScript. From the books in this list this is the one that deals more with the interactions between JavaScript and the browser, demonstrating strategies for dealing with the differences between the major browser manufacturers.</div>
+<div class="row-fluid">
+<figure>
+<a href="http://www.amazon.com/gp/product/193398869X/ref=as_li_ss_il?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=193398869X&amp;linkCode=as2&amp;tag=tempcodi0f-20"><img class="alignleft" style="border: 0px;" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;ASIN=193398869X&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=tempcodi0f-20" alt="" width="127" height="160" border="0"></a>
+</figure>
+For me, this is the best book about JavaScript from the didactic point of view. Great examples, and clear explanations and many details about the language. In this book, was the best explanation I've ever read about how closures work in JavaScript. From the books in this list this is the one that deals more with the interactions between JavaScript and the browser, demonstrating strategies for dealing with the differences between the major browser manufacturers.</div>
 
 ## <a href="http://www.amazon.com/gp/product/0321812182/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0321812182&amp;linkCode=as2&amp;tag=tempcodi0f-20" target="_blank">Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript</a> por <a href="http://calculist.org/" target="_blank">David Herman</a>
 
-<div class="row-fluid"><a href="http://www.amazon.com/gp/product/0321812182/ref=as_li_ss_il?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0321812182&amp;linkCode=as2&amp;tag=tempcodi0f-20"><img class="alignleft" style="border: 0px;" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;ASIN=0321812182&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=tempcodi0f-20" alt="" width="122" height="160" border="0"></a>This is without doubt the book that goes deeper into the language. It's a short book, but with a lot of information. If you decide to read this book after the others (I recommend that), you will see that some of the tips will be already covered by the other books, but most of the **68 specific ways** will bring enough information. Some of the items should be read more than once because they are quite complex (at least to my limited brain), but the book is pure information from beginning to end.</div>
+<div class="row-fluid">
+<figure>
+<a href="http://www.amazon.com/gp/product/0321812182/ref=as_li_ss_il?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0321812182&amp;linkCode=as2&amp;tag=tempcodi0f-20"><img class="alignleft" style="border: 0px;" src="http://ws.assoc-amazon.com/widgets/q?_encoding=UTF8&amp;ASIN=0321812182&amp;Format=_SL160_&amp;ID=AsinImage&amp;MarketPlace=US&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=tempcodi0f-20" alt="" width="122" height="160" border="0"></a>
+</figure>
+This is without doubt the book that goes deeper into the language. It's a short book, but with a lot of information. If you decide to read this book after the others (I recommend that), you will see that some of the tips will be already covered by the other books, but most of the **68 specific ways** will bring enough information. Some of the items should be read more than once because they are quite complex (at least to my limited brain), but the book is pure information from beginning to end.</div>
 
 ## All of this about JavaScript?
 

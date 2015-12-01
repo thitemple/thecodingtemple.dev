@@ -3,6 +3,8 @@ layout: post
 title: "Back in the web game"
 date: 2015-08-07
 comments: true
+category: career
+tags: [career]
 ---
 So, the last time a posted something on this blog it was almost two years ago. And, although I kept learning new things during this time, I didn't really feel like writing.
 

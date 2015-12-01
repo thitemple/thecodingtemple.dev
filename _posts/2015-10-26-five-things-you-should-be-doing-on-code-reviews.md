@@ -4,10 +4,12 @@ date: 2015-10-26
 description: Five things you should be doing on code reviews
 layout: post
 comments: true
+category: agile
+tags: [agile, code review]
 ---
 Code review or peer review, as is also known, is the practice of someone different from the author of the code to review it before it's pushed and going into production. 
 
-<iframe src="//giphy.com/embed/iRCl3ixeBCgpi" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/iRCl3ixeBCgpi">via GIPHY</a></p>
+<iframe src="//giphy.com/embed/xTiTnnLkYTDWSOWSHK" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 I have worked for many years without putting code reviews into practice. Now, I have been doing it for a few years, and I've got to tell you, I don't want to get back to not doing it again.
 

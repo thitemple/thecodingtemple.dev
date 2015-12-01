@@ -3,7 +3,7 @@ layout: post
 title: "Installing a development machine with two commands"
 date: 2013-08-25 22:36
 comments: true
-categories: [powershell,chocolatey]
+tags: [powershell,chocolatey]
 ---
 Recently I had to prepare two development machines, a new notebook with Windows 8 and a VM running Windows 7 and honestly, as much as I like a new machine, wasting a lot of time installing applications and configuring them is not something I find entertaining. Besides, there are always some things that I'm not used to doing every day, and by the time I need to do it, I don't remember how. For instance, how do I generate an RSA key for use with ssh?
 

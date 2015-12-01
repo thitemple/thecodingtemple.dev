@@ -3,7 +3,8 @@ layout: post
 title: "Programming by Coincidence"
 date: 2013-07-16 11:22
 comments: true
-categories: career
+category: career
+tags: [career]
 ---
 I like to program, I like the technical challenges that programming brings. But what I like most is the constant learning that is part of the job.
 
@@ -19,14 +20,18 @@ NOTHING IS hidden from you, enphasis on NOTHING.
 
 In the book [The Pragmatic Programmer](http://www.amazon.com/gp/product/020161622X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=020161622X&linkCode=as2&tag=tempcodi0f-20), Andrew Hunt and David Thomas dedicated a chapter to programming by coincidence and they open the chapter with a very interesting metaphor. They compare a programmer coding by trial and error, solving problems in a random way and without knowledge of the matter to a soldier walking into a minefield. The soldier can take one, two, several steps without stepping on a mine, think that he's doing something right, but it's just a random walk one hour he can step on a mine and explode.
 
-![Minefield](/images/2013/07/falklands-minefield1.jpg){: .aligncenter}
+<figure>
+	<img src="{{ site.url }}/images/2013/07/falklands-minefield1.jpg" >
+</figure>
 
 Another common thing we usually see when people do not understand the problem, is the tendency to solve things always the same way, it is the case of that old phrase "if you only have a hammer every problem is a nail." It seems that it is a magic formula, if it worked for a problem, it should work for others.
 
 Also in this sense, one cculd solve a problem by passing invalid data
 to a method that results in an unexpected response from the program. But if your only source of analysis is the answer to that call with invalid data when that program is fixed, your call will not work anymore because that coincidence was modified.
 
-![Looks like a rabbit, but...](/images/2013/07/coincidence1.jpg){: .aligncenter}
+<figure>
+	<img src="{{ site.url }}/images/2013/07/coincidence1.jpg" >
+</figure>
 
 And the worst in my opinion, is the ignorance that it generates. Even today I still see people who think POST is more secure than GET only because the data are not sent in the URL!
 

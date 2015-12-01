@@ -4,8 +4,11 @@ layout: post
 description: A brief description about some of the new features in strings on ES2015
 date: 2015-08-25
 comments: true
-categories: [javascript,es2105,es6]
+tags: [javascript,es2105,es6]
+category: code
 ---
+There are a few new features related to strings in ES2015. They're easy to learn and they allow for a more clean code.<!-- more -->
+ 
 In ES15 some new methods were added to the String object. For instance, now there's a repeat method.
 
 {% highlight js %}

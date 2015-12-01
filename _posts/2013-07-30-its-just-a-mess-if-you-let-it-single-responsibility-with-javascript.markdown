@@ -4,19 +4,24 @@ title: "It's just a mess if you let it. Single responsibility with JavaScript"
 date: 2013-07-30 21:08
 comments: true
 description: A demonstration of the application of the Single Responsibility Principle with JavaScript.
-categories: [javascript]
+category: code
+tags: [javascript]
 ---
 Many people who complain about JavaScript does not take the minimum effort to understand the language and for most of the time, the code developed is not treated as a real code, after all, "it's just JavaScript".
 
 But this is just one of the reasons of the many problems we face when we have to maintain an existing code. The good old spaghetti code.
 
-![Spaghetti code](/images/2013/07/spagett.jpg){: .aligncenter}
+<figure>
+  <img src="{{ site.url }}/images/2013/07/spagett.jpg" >
+</figure>
 
 I have to confess that I've contributed to a lot of code spaghetti (like the example I'm showing here). Exactly because I have not treated it as a serious program and have not applied basic principles such as [single responsibility](http://www.oodesign.com/single-responsibility-principle.html).
 
 Let's imagine a shopping cart such as the one from the image below, which has a link to update the quantity of items from the cart. The code I'm showing captures the click on the link using jQuery and validates the value entered in the field to make sure it is numeric. The business rules say that it has to be a number between 0 and 10. We cannot sell more than 10 units of the same item.
 
-![Shopping basket](/images/2013/07/shopping_basket.png){: .aligncenter}
+<figure>
+  <img src="{{ site.url }}/images/2013/07/shopping_basket.png" >
+</figure>
 
 A code that would do that is this:
 
@@ -135,4 +140,6 @@ The benefits of a code like this (compared to the previous) are many, and very s
 
 To conclude, we have a lot more organized code, easy to maintain and with clearer responsibilities. To get to this, I only used techniques known from other languages (or even, independent of languages) and without inventing much. So next time you say that it's very difficult to maintain JavaScript code, think about whether you are contributing to a sustainable code or just preparing the lunch for next Sunday.
 
-![Spaghetti code](/images/2013/07/spaghetti.gif){: .aligncenter}
+<figure>
+  <img src="{{ site.url }}/images/2013/07/spaghetti.gif" >
+</figure>
