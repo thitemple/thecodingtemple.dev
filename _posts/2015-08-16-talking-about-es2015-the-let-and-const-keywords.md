@@ -8,7 +8,7 @@ category: code
 ---
 In ES2015 there's a new way to declare variables, it's the **let** keyword which declares a block scope variable. Block scope variable? What does that mean exactly? <!-- more -->
 
-**Update:** I have also [recorded a video about let and const](https://youtu.be/4q-awpEJQJU), if you want to watch it in adition to reading this post.
+**Update:** I have also [recorded a video about let and const](https://youtu.be/4q-awpEJQJU), if you want to watch it in addition to reading this post.
 
 Well, let's get some context using ES5. In ES5 and earlier versions, all variables are function scoped. Meaning that no matter where inside a function a variable is declared, that variable is accessible inside the whole function.
 
@@ -145,7 +145,7 @@ const NAME = "Thiago";
 console.log(NAME); // Thiago
 {% endhighlight %}
 
-A constant must be initialize at the moment of the declaration and its value cannot be changed.
+A constant must be initialized at the moment of the declaration and its value cannot be changed.
 
 {% highlight js %}
 const MY_CONST; //SyntaxError: missing = in const declaration

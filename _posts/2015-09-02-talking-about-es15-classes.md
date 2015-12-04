@@ -7,13 +7,13 @@ layout: post
 tags: [es2015,es6,javascript]
 category: code
 ---
-**Update:** I have also [recorded a video about classes](https://youtu.be/p1jCfPIBh0M), if you want to watch it in adition to reading this post.
+**Update:** I have also [recorded a video about classes](https://youtu.be/p1jCfPIBh0M), if you want to watch it in addition to reading this post.
 
 JavaScript has always been an object-oriented language. It never had a class definition, but the same behavior could be achieved using constructor functions and the prototype object.
 
 Although many people like that, there are a lot of people who don't. So, [JavaScript libraries](http://jsclass.jcoglan.com/){:target="_blank"} were created to "solve this problem".
 
-Now in ES15 we have the capability of creating classes, which under the hoods, use the same technique of constructor functions and prototype objects. Details you don't really have to know, if all you're doing is ES15, but I think you should anyway. ;)
+Now in ES15 we have the capability of creating classes, which under the hoods, use the same technique of constructor functions and prototype objects. Details you don't really have to know if all you're doing is ES15, but I think you should anyway. ;)
 So, to define a class in ES15 is really simple.
 
 {% highlight js %}
@@ -143,7 +143,7 @@ class SpecialPerson extends Person {
 }
 {% endhighlight %}
 
-In a derived class we also have to call *super* before using *this*.
+In a derived class, we also have to call *super* before using *this*.
 
 {% highlight js %}
 class Person {}
