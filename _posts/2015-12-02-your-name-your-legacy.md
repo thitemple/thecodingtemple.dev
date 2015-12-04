@@ -27,10 +27,10 @@ But it just needs one thing to go wrong and you're done. It seems that everythin
 The first lesson I take from this is: be careful where you put your name. Yes. Don't forget that the internet has an incredible memory. So it's not any project that is out there that should have your name on it. Of course, when we work for a company, we don't always choose what we do, but with that comes two issues:
 
 1. Always you do your best, after all, the people working with you will be judging you by your work.
-2. Take in consideration if the work you're doing and where you're doing it, is in accordance with what you believe in and, if you think it is the best for you. After all, that's something you're going to carry with you forever.
+2. Take in consideration if the work you're doing and where you're doing it, is in accordance with what you believe in and if you think it is the best for you. After all, that's something you're going to carry with you forever.
 
 The second lesson comes from House's response. Bad things happen and we have to get over with it. Just because you did something wrong that doesn't mean you have to be always remembered by that. One thing I learned from listening to the [StackOverflow podcast](http://blog.stackoverflow.com/feed/podcast/) is that: if you want that good things about you are shown on Google when people look for your name, you have to work for it and earn it.
 
 Create good applications, help on communities, get involved in open source, make your name known for what you have best.
 
-Bad things will happen, people will remember that, and it's your job to make them remember you for what you did good.
+Bad things will happen, people will remember that, and it's your job to make them remember you for what you did well.

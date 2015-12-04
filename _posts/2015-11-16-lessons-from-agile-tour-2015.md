@@ -8,7 +8,7 @@ imagefeature: background/atomium.jpg
 category: agile
 tags: [agile, agile tour]
 ---
-It has passed more than three years and half since I moved to Canada. After all this time, I have not gone to a developer's conference. That changed last week, when I went to the Agile Tour 2015. And, it felt good.
+It has passed more than three years and a half since I moved to Canada. After all this time, I have not gone to a developer's conference. That changed last week when I went to the Agile Tour 2015. And, it felt good.
 
 First, the conference was well organized, in a great venue and with very good talks. Honestly, I have not noticed any major issue. Congrats to the organizing team.
 
@@ -31,27 +31,27 @@ This was the keynote, and honestly was more of a reminder of Agile in general. B
 
 I didn't know that, but Kaizen means small controlled changes. So the talk was about improving agile teams and companies.
 
-- Rewarding employees just won't work, at a given moment people just stop carring about the rewards and ideas to get better will diminish.
+- Rewarding employees just won't work, at a given moment people just stop caring about the rewards and ideas to get better will diminish.
 - The best way to get the better from an agile team is finding a way to exercise the team's and individuals motivation. 
 - Motivated people will care to improve themselves and the company they're in.
 - One idea for motivating teams is the use of gamification.
 
 **The excellence and talent: the heart of Agility by Félix-Antoine Bourbonnais** / *L'excellence et le talent: le couer de l'Agilité*
 
-For me this was the highlight of the day. An excellent talk about what makes a successful agile team.
+For me, this was the highlight of the day. An excellent talk about what makes a successful agile team.
 
-- If we want to be an Agile company we have to focus on having agile code. Changing the code cannot be what slows down a company wanting to move forward.
-- Being excellent is to take responsibility for the code we're shipping. Testable, clean, and easy to change code.
+- If we want to be an Agile company we have to focus on having an agile code. Changing the code cannot be what slows down a company wanting to move forward.
+- Being excellent is to take responsibility for the code we're shipping. Testable, clean, and easy to change the code.
 - Lately when talking about agile we have been talking about process, management, backlogs and others, we cannot forget that agile is also about technical practices that help us ship good quality code.
 - We have to have talent in our teams, it has to start with the hiring process. To hire people only to fill a position won't cut it. When hiring we have to also look for people that care, that thrive to excel and ship good quality code.
 - Excellent teams are composed of a group of excellent people. One person that is not looking to be excellent is a person that is bringing the team down.
-- One bad apple among other apples will rotte the other apples so you throw the rotten apple way and fix the problem. One bad developer among other developers will slow them down and also will leave *bad written code in your products*.
+- One bad apple among other apples will rot the other apples so you throw the rotten apple way and fix the problem. One bad developer among other developers will slow them down and also will leave *bad written code in your products*.
 
 **Catalyst your Agile transition with the codevelopment by Nicolas Mercier** / *Catalyser votre transition Agile avec le codéveloppement*
 
 I got into this one thinking it was about pair programming. Well, that's not actually it, it's about developing your skills and responsibilities with other people that do the same thing as you do.
 
-- It's a process/meetings/practices where we can expose to our peers issues we're facing, explore those issues, sintetize a plan of action and put it to practice. 
+- It's a process/meetings/practices where we can expose to our peers issues we're facing, explore those issues, synthesize a plan of action and put it to practice. 
 - This should be done regularly so every peer has a chance to expose her issues.
 
 That's it. I had a great time at the Agile Tour 2015, at Québec. I hope I can go again next year.
