@@ -50,7 +50,7 @@ And it also said that the repository has not been updated.
 
 After much searching, and because a `git pull` has not solved the problem, I decided to do a `force push` to deploy it.
 
-For that I opened the `Rakefile` file and edited the push task. Where it was:
+For that, I opened the `Rakefile` file and edited the push task. Where it was:
 
 {% highlight ruby %}
 system "git push origin #{deploy_branch}"

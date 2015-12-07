@@ -21,12 +21,12 @@ I work at [Emergensys](http://emergensys.net) as a developer and for most of the
 
 ## Why I do it?
 ----
-Even before my family bought its first computer back in the 90's I was already fascinated by them. I used to use my neighbour's computer when I was still 13. 
+Even before my family bought its first computer back in the 90's, I was already fascinated by them. I used to use my neighbour's computer when I was still 13. 
 
 Today, I love the craft of writing software, and especially I love the challenge of being up to date with new technologies. I'm sure the fact that technologies are constantly changing is one of the major things keeping me motivated. That and the fact of knowing that people are becoming more productive because of software I'm helping build.
 
 ## Why this blog?
-First, this is a way for me to practice what I'm learning. People tend to say that one really learns something when she's trying to teach somebody else. Well, I think that's true.
+First, this is a way for me to practice what I'm learning. People tend to say that one learns something when she's trying to teach somebody else. Well, I think that's true.
 
 I'm also enthusiastic about new things I learn that I want to share it. So, this is my contribution the community. Sharing my experiences.
 
@@ -40,4 +40,4 @@ Living in Québec City with its hard winters made me discover a new passion: [bo
 
 I also watch a few TV Shows, and I'm constantly reading at least one book.
 
-But one thing I really love to do is to spend time with my family. I'm married, father of one little girl and two very active greyhounds.
+But one thing I love to do is to spend time with my family. I'm married, father of one little girl and two very active greyhounds.

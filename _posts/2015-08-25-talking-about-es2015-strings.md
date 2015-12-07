@@ -9,7 +9,7 @@ category: code
 ---
 There are a few new features related to strings in ES2015. They're easy to learn and they allow for a more clean code.<!-- more -->
  
-In ES15 some new methods were added to the String object. For instance, now there's a repeat method.
+In ES15, some new methods were added to the String object. For instance, now there's a repeat method.
 
 {% highlight js %}
 var tripleX = 'X'.repeat(3);

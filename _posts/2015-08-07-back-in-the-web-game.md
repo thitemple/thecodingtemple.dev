@@ -14,7 +14,7 @@ But the main reason is that I was not working (on my daily job) with web technol
 
 Now, I'm back working with web technologies and the moment couldn't be better, ES2015 was approved, ASP.NET 5 is completely changed, open sourced and is now multiplatform. Also, every day there's a new JavaScript library being created (not sure yet if this is a good thing).
 
-So yeah, this is a fun time to be a web developer, specially if you're like me and love to learn new things!
+So yeah, this is a fun time to be a web developer, especially if you're like me and love to learn new things!
 
 So what's my plan for this blog? First, I decided to write only in English. For a while, I wrote both in English and in Portuguese, but it's too much work to keep doing that, so I decided to drop the version in Portuguese and keep only the English version.
 

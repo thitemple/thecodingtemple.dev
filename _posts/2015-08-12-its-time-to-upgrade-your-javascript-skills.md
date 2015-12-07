@@ -12,7 +12,7 @@ This is already major as news goes, but there's one thing more that's really imp
 
 This is a major change since the last two versions of EcmaScript, ES3 and ES5, were approved in 1999 and 2009 respectively.
 
-For us developers, it's crucial now, more than ever, to keep ourselves up-to-date with the new features and changes to language.
+For us developers, it's crucial now, more than ever, to keep ourselves up-to-date with the new features and changes to the language.
 
 ## Browser support
 
@@ -67,7 +67,7 @@ gulp.task('default', function() {
 });
 {% endhighlight %}
 
-In this code we're looking for a file called app.js inside a directory called *src*. After that, Babel will transpile the file and save an app.js file in the *dist* directory. Pretty simple, hum?
+In this code, we're looking for a file called app.js inside a directory called *src*. After that, Babel will transpile the file and save an app.js file in the *dist* directory. Pretty simple, hum?
 
 Let's say that inside the src\app.js we have the following code:
 
@@ -132,7 +132,7 @@ var Person = (function () {
 })();
 {% endhighlight %}
 
-A perfect and valid ES5 file! All we have to do is reference the ES5 transpiled file inside the html files.
+A perfect and valid ES5 file! All we have to do is reference the ES5 transpiled file inside the HTML files.
 
 What this means is we can start using ES2015 and even some features of ES2016 today to help us build better JavaScript code and that won't have an impact on our users.
 
