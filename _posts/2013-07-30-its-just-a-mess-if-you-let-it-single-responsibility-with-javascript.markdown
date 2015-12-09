@@ -56,6 +56,17 @@ While this is a simple code - which is slightly shorter than it would be now tha
 
 Because we don't have classes in JavaScript, functions are what is used for making separations of responsibilities. See, in the example above, the function responsible for handling the update click event, validates the data, makes an Ajax request and also refreshes the page after the result, whether successful or not.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive content -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1865353648221711"
+     data-ad-slot="8499334570"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Making a brief analogy, the Ajax request like the one above, could be compared to a web service request made​from a C# or Java program. That is, a request to an external service, or better yet, this is an external dependency that is generating high coupling code. Here's the first separation we can do.
 
 Another point, the above script reads information from the page (the DOM) and then updates information on the same page. So, in another analogy, one can say that the DOM in this case, is a form of database, therefore, is another external dependency that we can separate from the code.

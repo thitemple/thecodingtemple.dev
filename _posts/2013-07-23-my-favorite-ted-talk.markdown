@@ -23,3 +23,14 @@ But I'll take the clearest one, that is the final lesson. If two people with so 
 >> Live each day as if it is your last, learn as if you'll live forever.
 
 So there it is, from time to time, I like to watch this video to remind me of that.
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive content -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1865353648221711"
+     data-ad-slot="8499334570"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>

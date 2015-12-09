@@ -35,6 +35,17 @@ to a method that results in an unexpected response from the program. But if your
 
 And the worst in my opinion, is the ignorance that it generates. Even today I still see people who think POST is more secure than GET only because the data are not sent in the URL!
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive content -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1865353648221711"
+     data-ad-slot="8499334570"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 **Choosing the red pill**
 
 <iframe src="//www.youtube.com/embed/xFhn_GUAhGU" frameborder="0" width="420" height="315" style="visibility: visible;"></iframe>

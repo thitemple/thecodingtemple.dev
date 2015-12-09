@@ -20,6 +20,17 @@ As a fan (and I am really a fan), I understand the rebuilding process and that i
 
 I want to see my team **win**, I want to see them being great at playing basketball so I'll be entertained.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive content -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1865353648221711"
+     data-ad-slot="8499334570"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 If, by any chance you're a fan of some sort of sport, be that basketball, soccer, hockey or whatever and you're a fan of a team, I'm pretty sure you understand what I'm saying.
 
 Now take a look at the first 2 minutes and 20 seconds from this video from a few days ago, where coach Scott Skiles talks about his team.

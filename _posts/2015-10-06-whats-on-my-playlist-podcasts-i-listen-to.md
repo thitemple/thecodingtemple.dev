@@ -28,6 +28,17 @@ I listen to different podcasts on different subjects and so, here I am sharing w
 * [Adventures in Angular](https://devchat.tv/adventures-in-angular/) - Well, a podcast about Angular.
 * [WIRED's Gadget Lab](http://www.wired.com/tag/gadget-lab-podcasts/) - Not exactly technical, more about, well, gadgets. 
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive content -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1865353648221711"
+     data-ad-slot="8499334570"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## Board gaming 
 
 * [The Dice Tower](http://www.dicetower.com/game-podcast/dice-tower) - My main source of information about board gaming.

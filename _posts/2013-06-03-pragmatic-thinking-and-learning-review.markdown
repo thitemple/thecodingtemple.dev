@@ -22,6 +22,17 @@ I can summarize my review of this book in a very short sentence. **I wish I have
 
 Really the book provides various information about the functioning of our brain, information that, at least for me, were new. Or was information that I had obtained and had not retained ;). It is very interesting (and useful) the uses analogies that the author makes to explain our brain making references to computer architecture and asynchronous programming.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive content -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1865353648221711"
+     data-ad-slot="8499334570"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 The book does not stay only in the theoretical part of the functioning of the brain. It is very interesting to understand what is the Dreyfus model and the stages we go through in obtaining knowledge. They are: beginner, advanced beginner, competent, proficient and expert. Although I don't think people can be categorized into levels, or better yet, only five levels, I think that is a good form of feedback and a way to have parameters to guide us into how to achieve a higher level of knowledge.
 
 That people learn differently is already well publicized, but what I found interesting about the ways we learn (related to the functioning of our brain), was that the book sets out very clearly, and always using great metaphors, how we can explore these differences with practical techniques.

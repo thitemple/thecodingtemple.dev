@@ -28,6 +28,17 @@ The books listed here may have overlapped subjects. But in general, these are bo
 </figure>
 In my opinion this book is a good introduction for anyone who wants to begin to understand a bit beyond the basic syntax of the language. No, it is not a book that will delve much into the language, will only begin to cover some topics in a more advanced way. But mostly, will help you understand a little better what's good about JavaScript. If you already understand well the syntax of JavaScript, you already know how to work with objects and functions you probably can skip this book.</div>
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive content -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1865353648221711"
+     data-ad-slot="8499334570"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ## <a href="http://www.amazon.com/gp/product/0596806752/ref=as_li_ss_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0596806752&amp;linkCode=as2&amp;tag=tempcodi0f-20" target="_blank">JavaScript Patterns</a> by <a href="http://www.phpied.com/" target="_blank">Stoyan Stefanov</a>
 
 <div class="row-fluid">

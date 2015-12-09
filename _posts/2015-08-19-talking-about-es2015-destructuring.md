@@ -56,6 +56,17 @@ console.log(a); // 2
 console.log(b); // 1
 {% endhighlight %}
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive content -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1865353648221711"
+     data-ad-slot="8499334570"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 What happens if I don't want to declare a variable for each element of the array? No problem, if there are more values in the array, those will be ignored.
 
 {% highlight js %}

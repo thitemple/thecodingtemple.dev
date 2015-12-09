@@ -41,6 +41,17 @@ OK, enough of chatting. The complete script that I created [is available in a gi
 
 Optionally, during the execution of the script it asks if you want to install SQL Express 2012 (also using Chocolatey).
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive content -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1865353648221711"
+     data-ad-slot="8499334570"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ### Customizing PowerShell and Git Bash
 
 I have created some aliases for both PowerShell and Git Bash, so I download them automatically and add these customizations in their respective customization files.
