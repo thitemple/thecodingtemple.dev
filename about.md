@@ -5,6 +5,8 @@ permalink: /about/
 description: "Thiago Temple, brazilian, developer. And this is my web site."
 keywords: "thiago temple, vintem, temple coding"
 imagefeature: background/wall.jpg
+sitemap:
+  changefreq: 'yearly'
 ---
 ## Who am I?
 ----
