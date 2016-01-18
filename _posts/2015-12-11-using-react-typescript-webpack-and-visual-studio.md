@@ -5,6 +5,7 @@ layout: post
 category: code
 tags: [react, visual studio, webpack, typescript]
 comments: true
+imagefeature: background/atomium.jpg
 ---
 I work with Microsoft technologies in my day job. I do a lot of ASP.NET MVC related stuff, and I wanted to use [React](https://facebook.github.io/react/) with my [ASP.NET MVC](http://www.asp.net/mvc) application, but I wanted to have a nice development experience. The same I have when using text editors such as Sublime Text and other tools for Node.js.
 
