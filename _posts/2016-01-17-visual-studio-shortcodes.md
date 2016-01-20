@@ -31,7 +31,18 @@ You know when you position the cursor on a variable name or function name and Vi
 
 <figure>
     <img src="/images/2016/01/navigate-reference.gif">
-</figure> 
+</figure>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive content -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1865353648221711"
+     data-ad-slot="8499334570"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
 
 ## Peek Definition: Alt+F12
 
