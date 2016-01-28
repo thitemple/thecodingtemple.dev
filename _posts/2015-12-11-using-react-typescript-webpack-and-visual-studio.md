@@ -3,6 +3,7 @@ title: Using React, Typescript, and Webpack with Visual Studio 2015
 description: How to setup Visual Studio 2015 to develop React components using TypScript and Webpack.
 layout: post
 category: code
+date: 2015-12-11
 tags: [react, visual studio, webpack, typescript]
 comments: true
 imagefeature: background/atomium.jpg
