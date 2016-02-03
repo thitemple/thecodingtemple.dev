@@ -46,7 +46,7 @@ links:
     
 timezone: Canada/Eastern
 future: true
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 paginate: 6
 paginate_path: "/blog/page/:num"
@@ -59,13 +59,8 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: false
-  
-  coderay:
-    coderay_line_numbers:
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+  input: GFM
+  syntax_highlighter: rouge
 
 # Statcounter
 statcounter_project_id: 5357260

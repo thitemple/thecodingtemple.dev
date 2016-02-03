@@ -11,7 +11,7 @@ imagefeature: background/atomium.jpg
 Sometimes in our field putting together the pieces of the puzzle is a hard task, especially with the always moving forward nature of open source software.
 
 So here's how I managed to setup a testing project using Typescript, Mocha, Chai, Sinon, Karma and Webpack.
-
+<!-- more -->
 > TL/DR: [The code is available on GitHub.](https://github.com/vintem/TypescriptMochaWebpackDemo)
 
 ## The NPM packages
