@@ -49,7 +49,7 @@ module.exports = {
 
 ## The karma configuration file: karma.conf.js
 
-Here's the main catch: the karma config file.
+This is the tricky part: the karma config file.
 
 {% highlight js %}
 var webpackConfig = require('./webpack.config');
