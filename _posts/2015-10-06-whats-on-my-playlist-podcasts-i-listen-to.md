@@ -55,4 +55,4 @@ I listen to different podcasts on different subjects and so, here I am sharing w
 ## Miscellaneous
 
 * [SciCast](http://www.scicast.com.br/) - Another one from Brazil, a funny way to learn about science.
-* [Insiders Sports](https://itunes.apple.com/us/podcast/insiders-sports-podcast/id1002925891?mt=2) - I'm an NBA fan, so I podcast about basketball.
+* [Insiders Sports](https://itunes.apple.com/us/podcast/insiders-sports-podcast/id1002925891?mt=2) - I'm an NBA fan, so a podcast about basketball.
