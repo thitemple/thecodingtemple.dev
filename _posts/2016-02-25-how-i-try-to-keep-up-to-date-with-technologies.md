@@ -8,7 +8,7 @@ tags: [career]
 date: 2016-02-25
 ---
 There are too many technologies to keep up with. Just too many. It's hard to keep up and many times there's a feeling of fatigue just of thinking about new versions, new frameworks, new libraries, new languages, etc.
-
+<!-- more -->
 <iframe src="//giphy.com/embed/PPW6LRDNhegRG?html5=true" width="480" height="286" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/overwhelmed-joseph-gordon-levit-PPW6LRDNhegRG"></a></p>
 
 For a while, I tried to keep up with different stacks of technologies, Ruby on Rails, .NET, Java, JavaScript. And of course, I tried to keep up with databases, both SQL and No-SQL.
