@@ -70,7 +70,7 @@ Is it something that I can read early in the morning? Then I do it. Otherwise, I
 
 The point here is: you can follow people that work directly with the technologies you use, the companies that produce them, etc.
 
-## Subscribe 2
+## Subscribe (part 2)
 
 E-mails, remember them? Well, there are some folks that take the time to curate great articles and send them in periodic e-mails.
 
