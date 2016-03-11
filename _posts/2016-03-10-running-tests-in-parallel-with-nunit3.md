@@ -54,6 +54,17 @@ Here are the results:
 
 [Ah! Much better](http://www.wavsource.com/snds_2016-02-14_1408938504723674/video_games/duke/better.wav), half of the time and all the fixtures are running in parallel. 
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive content -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1865353648221711"
+     data-ad-slot="8499334570"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Now, let's say you have for some reason a class that cannot be tested in parallel. Well, then you could use the ParallelScope.None on the particular class or test. 
 
 In this example, I added the attribute to the TestFixure3 class.
