@@ -10,7 +10,7 @@ comments: true
 If you're new to TypeScript and have never worked with a language such as C#, generics might be something strange to you. 
 
 But fear not, generics are not that complicated, and we're going to see in a few examples, how does it work.
-
+<!-- more -->
 First of the syntax. To use generics in TypeScript when declaring a function we have to say the function is generic. We do that with the following:
 
 ``` js
