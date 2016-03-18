@@ -37,15 +37,15 @@ So let's try it with Babel.
 
 I'm assuming you already have [Node](https://nodejs.org/){:target="_blank"} installed. So next, we're going to install [Gulp](http://gulpjs.com/){:target="_blank"}.
 
-{% highlight bash %}
+``` bash
 npm install -g gulp
-{% endhighlight %}
+```
 
 Gulp has a plug-in for Babel that will allow us to transpile the ES2015 files to ES5 automagically.
 
 In a new folder, create a new package.json file:
 
-{% highlight json %}
+``` json
 {
     "name": "babeldemo",
     "version": "1.0.0",
@@ -56,17 +56,17 @@ In a new folder, create a new package.json file:
     "devDependencies": {
     }
 }
-{% endhighlight %}
+```
 
 Now let's install gulp to help us transpile our ES2015 code:
 
-{% highlight bash %}
+``` bash
 npm install --save-dev gulp gulp-babel
-{% endhighlight %}
+```
 
 Now it's time to configure Gulp. I'm going to do that in a gulpfile.js file (which is what Gulp expect us to have by default).
 
-{% highlight javascript %}
+``` javascript
 var gulp = require('gulp');
 var babel = require('gulp-babel');
 
@@ -76,13 +76,13 @@ gulp.task('default', function() {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist'));
 });
-{% endhighlight %}
+```
 
 In this code, we're looking for a file called app.js inside a directory called *src*. After that, Babel will transpile the file and save an app.js file in the *dist* directory. Pretty simple, hum?
 
 Let's say that inside the src\app.js we have the following code:
 
-{% highlight javascript %}
+``` javascript
 class Person {
     constructor(name) {
         this.name = name;
@@ -100,17 +100,17 @@ class Person {
         return `Hello, ${this.name}`;
     }
 }
-{% endhighlight %}
+```
 
 And in the console we run:
 
-{% highlight bash %}
+``` bash
 gulp
-{% endhighlight %}
+```
 
 Now, inside the directory *dist* we should see an *app.js* file such as:
 
-{% highlight javascript %}
+``` javascript
 "use strict";
 
 var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
@@ -141,7 +141,7 @@ var Person = (function () {
 
     return Person;
 })();
-{% endhighlight %}
+```
 
 A perfect and valid ES5 file! All we have to do is reference the ES5 transpiled file inside the HTML files.
 

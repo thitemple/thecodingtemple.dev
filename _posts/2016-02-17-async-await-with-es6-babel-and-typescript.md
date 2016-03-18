@@ -11,7 +11,7 @@ Promises are an excellent way of making asynchronous calls, and they're most def
 <!-- more -->
 Take the following example, calling a URL that returns a movie:
 
-{% highlight js %}
+``` js
 fetch('http://www.omdbapi.com/?t=The Matrix')
     .then(response => {
         return response.json()
@@ -22,7 +22,7 @@ fetch('http://www.omdbapi.com/?t=The Matrix')
     .catch(reason => {
         console.log('The reason for the erro:', reason);
     })
-{% endhighlight %}
+```
 
 The fact that we are using methods such as then and catch make for a much more readable code. And that's a great thing to aim for, to have a good readable code.
 
@@ -30,14 +30,14 @@ The fact that we are using methods such as then and catch make for a much more r
 
 Now with async/await we can make the code look even more readable. 
 
-{% highlight js %}
+``` js
 async function getMovieAsync() {
     let response = await fetch('http://www.omdbapi.com/?t=The Matrix');
     let movie = await response.json();
     console.log(movie.Title);
 }
 getMovieAsync();
-{% endhighlight %}
+```
 
 So what's happening here? And does this work?
 
@@ -51,14 +51,14 @@ Second, we can only **await** for a function that returns a Promise. In the abov
 
 All async functions return promises. So in the case of the getMovieAsync, it could be called as follows:
 
-{% highlight js %}
+``` js
 async function getMovieAsync() {
     let response = await fetch('http://www.omdbapi.com/?t=The Matrix');
     let movie = await response.json();
     return movie;
 }
 getMovieAsync().then(movie => console.log(movie.Title));
-{% endhighlight %}
+```
 
 That's great and for sure it makes for a more readable code. We even have a sense of synchronous code with a simple flow. 
 
@@ -77,7 +77,7 @@ That's great and for sure it makes for a more readable code. We even have a sens
 
 We have two choices. First is to use a try/catch:
 
-{% highlight js %}
+``` js
 async function getMovieAsync() {
     try {
         let response = await fetch('http://www.omdbapi.com/?t=The Matrix');
@@ -88,11 +88,11 @@ async function getMovieAsync() {
     }
 }
 getMovieAsync();
-{% endhighlight %}
+```
 
 And the second is to use the catch method on the Promise returned by the async function, like so: 
 
-{% highlight js %}
+``` js
 async function getMovieAsync() {
     let response = await fetch('http://www.omdbapi.com/?t=The Matrix');
     let movie = await response.json();
@@ -101,7 +101,7 @@ async function getMovieAsync() {
 getMovieAsync()
     .then(movie => console.log(movie.Title))
     .catch(reason => console.log(reason));
-{% endhighlight %}
+```
 
 ## Using it today with Babel and Webpack
 
@@ -120,25 +120,25 @@ First, here are the packages I have installed using npm (I also have a polyfill 
 - imports-loader exports-loader
 - whatwg-fetch
 
-{% highlight bash %}
+```
 npm i babel babel-core babel-loader babel-polyfill babel-preset-es2015 babel-preset-stage-3 -D
 
 npm i imports-loader exports-loader whatwg-fetch -S
-{% endhighlight %}
+```
 
 Because async functions are still a proposal for the language, Babel does not compile it by default, hence the babel-preset-stage-3 package. 
 
 Now in the .babelrc file, we have to configure Babel to enable stage-3 features. Here's my file:
 
-{% highlight js %}
+``` js
 {
   "presets": [ "es2015", "stage-3" ]
 }
-{% endhighlight %}
+```
 
 Finally, let's configure Webpack. If you don't know Webpack, I strongly advise you to check their [site and documentation](https://webpack.github.io/docs/).
 
-{% highlight js %}
+``` js
 module.exports = {
   entry: './src/app.js',
   output: {
@@ -159,7 +159,7 @@ module.exports = {
     ]
   }
 }
-{% endhighlight %}
+```
 
 And that's it.
 
@@ -169,12 +169,12 @@ You know you can make multiple async calls using Promise.all right? If you don't
 
 So how would that work with async? Well, using the power of [array destructuring](http://templecoding.com/blog/2015/08/19/talking-about-es2015-destructuring/) this becomes trivial.
 
-{% highlight js %}
+``` js
 const p1 = fetch('http://www.omdbapi.com/?t=The Matrix');
 const p2 = fetch('http://www.omdbapi.com/?t=Forrest Gump');
 const [r1, r2] = await Promise.all([p1, p2]);
 const [movie1, movie2] = await Promise.all([r1.json(), r2.json()]);
-{% endhighlight %}
+```
 
 So here we are, with two promises in *p1* and *p2*, and then we call Promise.all passing those promises with the await keyword. 
 
@@ -190,7 +190,7 @@ Async functions are part of TypeScript since version 1.7, and it work the same w
 
 The only problem is that for the current version of TypeScript (I'm talking about 1.8 beta), we can only compile async functions to ES6 code, so in a tsconfig.json file one would have something like:
 
-{% highlight js %}
+``` js
 {
   "compilerOptions": {
     "target": "es6",
@@ -200,7 +200,7 @@ The only problem is that for the current version of TypeScript (I'm talking abou
     "node_modules"
   ]
 }
-{% endhighlight %}
+```
 
 OK, but we know we cannot yet count on browsers to have full support on ES6. So the way to fix this is by recompiling the code generated by TypeScript. 
 
@@ -208,13 +208,13 @@ Because I'm already using Webpack, I'm going to configure it to compile the code
 
 To do that, let's begin by installing TypeScript locally and a loader for Webpack.
 
-{% highlight bash %}
+```
 npm i typescript ts-loader -D
-{% endhighlight %}
+```
 
 Now, let's make some changes to the Webpack config file.
 
-{% highlight js %}
+``` js
 module.exports = {
   entry: './src/app.ts',
   output: {
@@ -238,7 +238,7 @@ module.exports = {
     ]
   }
 }
-{% endhighlight %}
+```
 
 So, the main changes are:
 
@@ -247,7 +247,7 @@ So, the main changes are:
 
 That's all. Now we can have the power of TypeScript and use async functions.
 
-{% highlight js %}
+``` js
 interface Movie {
   Title: string;
 }
@@ -263,6 +263,6 @@ async function load(): Promise<Movie> {
 }
 
 load().then(movie => console.log(movie.Title));
-{% endhighlight %}
+```
 
 And that's it for today.

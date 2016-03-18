@@ -20,29 +20,29 @@ Everything worked perfectly until I had to make a clone of the repository on ano
 
 These are the steps that were performed:
 
-{% highlight Bash %}
+``` bash
 git clone git@github.com:usuario/repositorio.git
 
 bundle install #to install the ruby dependencies
-{% endhighlight %}
+```
 
-{% highlight bash %}
+``` bash
 rake setup_github_pages
-{% endhighlight %}
+```
 
 The above command creates the directory _deploy and also a local branch `gh-pages`.
 
 After I've done my changes I tried to deploy:
 
-{% highlight bash %}
+``` bash
 rake gen_deploy
-{% endhighlight %}
+```
 
 And I received the following error:
 
-{% highlight bash %}
+``` bash
 ! [rejected]     gh-pages -> gh-pages (non-fast-forward)
-{% endhighlight %}
+```
 
 And it also said that the repository has not been updated.
 
@@ -63,14 +63,14 @@ After much searching, and because a `git pull` has not solved the problem, I dec
 
 For that, I opened the `Rakefile` file and edited the push task. Where it was:
 
-{% highlight ruby %}
+``` ruby
 system "git push origin #{deploy_branch}"
-{% endhighlight %}
+```
 
 I changed to:
 
-{% highlight ruby %}
+``` ruby
 system "git push origin +#{deploy_branch}"
-{% endhighlight %}
+```
 
 Note the + sign there, it will make a force push and solve the problem. After a deployment using the force push, I went back to the task as it was before and everything started to work normally again.

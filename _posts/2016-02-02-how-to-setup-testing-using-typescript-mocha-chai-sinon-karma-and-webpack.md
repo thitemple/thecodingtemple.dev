@@ -18,15 +18,15 @@ So here's how I managed to setup a testing project using Typescript, Mocha, Chai
 
 Let's start with the packages we have to install.
 
-{% highlight bash %} 
+``` bash 
 npm install typescript webpack ts-loader chai karma karma-chai karma-mocha karma-phantomjs-launcher karma-sinon karma-typescript-preprocessor2 karma-webpack mocha phantomjs-prebuilt sinon --save-dev
-{% endhighlight %}
+```
 
 ## The Webpack config file: webpack.config.js
 
 It is a pretty straight forward Webpack config file, where I set up an entry point to the src\app.ts file and, an output to a bundle.js file. Also, I changed the supported extensions, and I configured the ts-loader to compile the Typescript files.
 
-{% highlight js %}
+``` js
 module.exports = {
   entry: './src/app.ts',
   output: {
@@ -45,13 +45,13 @@ module.exports = {
     ]
   }
 }
-{% endhighlight %}
+```
 
 ## The karma configuration file: karma.conf.js
 
 This is the tricky part: the karma config file.
 
-{% highlight js %}
+``` js
 var webpackConfig = require('./webpack.config');
 
 module.exports = function (config) {
@@ -81,7 +81,7 @@ module.exports = function (config) {
   })
 }
 
-{% endhighlight %}
+```
 
 Check out the files property. The only files included are the test files and, in the case of this example, all test files are in a test directory. 
 
@@ -110,7 +110,7 @@ Next we have to configure Webpack itself, we could copy and paste the code from 
 
 This file is also pretty straight forward. The most important setting is a module. Because Webpack does not support ES6 modules (Version 2 will support them), we have to compile the modules to CommonJS. Besides that, there's nothing special to do here. 
 
-{% highlight json %}
+``` json
 {
   "compilerOptions": {
     "target": "es5",
@@ -120,7 +120,7 @@ This file is also pretty straight forward. The most important setting is a modul
     "node_modules"
   ]
 }
-{% endhighlight %}
+```
 
 ## Type definitions
 
@@ -128,10 +128,10 @@ If you are using Typescript, I imagine you'll need the type definitions from the
 
 To use it, you have to install it globally using node. With tsd installed we can install the types with the commands:
 
-{% highlight bash %}
+``` bash
 tsd init
 tsd install mocha chai sinon -s
-{% endhighlight %}
+```
 
 ## Starting the tests
 
@@ -144,7 +144,8 @@ This post is not about how to write tests, and it's about how to set up the infr
 In any case, here are a few examples I wrote. [You can find this complete project on GitHub](https://github.com/vintem/TypescriptMochaWebpackDemo).
 
 MoviesViewModel.ts
-{% highlight js %}
+
+``` js
 import { Movie, movieDataService } from './MovieDataService'
 
 export default class MoviesViewModel {
@@ -164,10 +165,11 @@ export default class MoviesViewModel {
     movieDataService.save(this.selectedMovie);
   }
 }
-{% endhighlight %}
+```
 
 MovieDataService.spec.ts
-{% highlight js %}
+
+``` js
 import MoviesViewModel from '../src/MoviesViewModel';
 import { movieDataService, Movie } from '../src/MovieDataService'
 import { expect } from 'chai';
@@ -202,6 +204,6 @@ describe('MoviesViewModel', () => {
   });
 
 });
-{% endhighlight %}
+```
 
 And that's it, I hope it's useful.

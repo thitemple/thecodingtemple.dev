@@ -11,13 +11,13 @@ Promises are a great way of doing async programming. But testing with promises c
 
 Recently I've found a small and nice package to help to stub tests using Sinon, and the library is [sinon-stub-promise](https://github.com/substantial/sinon-stub-promise).
 
-{% highlight bach %}
+``` bach
 npm i sinon-stub-promise -D
-{% endhighlight %}
+```
 
 So, imagine you have a code like the following:
 
-{% highlight js %}
+``` js
 function fetchMovieData() {
     return fetch('/movies')
         .then(res => {
@@ -35,7 +35,7 @@ function printMovies() {
         });
     })
 }
-{% endhighlight %}
+```
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Responsive content -->
@@ -50,7 +50,7 @@ function printMovies() {
 
 A test for this code would be something like:
 
-{% highlight js %}
+``` js
 describe('printMovies', () => {
     let stubedFetch; 
    beforeEach(() => {
@@ -71,7 +71,7 @@ describe('printMovies', () => {
         // assert that error was handled
    })
 });
-{% endhighlight %}
+```
 
 Very simple, one just have to stub the function that will return the Promise, use the function returnsPromise. After that, you just have to the if the Promise will resolve and reject.
 

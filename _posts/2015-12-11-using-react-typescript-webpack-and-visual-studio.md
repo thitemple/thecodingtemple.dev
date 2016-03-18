@@ -44,7 +44,7 @@ With that installed, I'm going to install the dependencies needed to use [TypeSc
 
 Here's the result of my package.json file:
 
-{% highlight json %}
+``` json
 {
   "version": "1.0.0",
   "name": "ASP.NET",
@@ -59,7 +59,7 @@ Here's the result of my package.json file:
     "typescript": "1.7.3"
   }
 }
-{% endhighlight %} 
+``` 
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Responsive content -->
@@ -80,7 +80,7 @@ Time to configure Webpack. If you don't know Webpack, here's what it will do for
 
 For that, we need a file called Webpack.config.js in the root of the project. Here's mine:
 
-{% highlight js %}
+``` js
 module.exports = {
     entry: './Scripts/app/App.tsx',
     output: {
@@ -99,7 +99,7 @@ module.exports = {
         ]
     }
 }
-{% endhighlight %}
+```
 
 Here's what this file does: 
 
@@ -118,7 +118,7 @@ So all I have to do is launch this command from Visual Studio. The way I choose 
 
 Here's the package.json modified, notice the scripts section:
 
-{% highlight json %}
+``` json
 {
   "version": "1.0.0",
   "name": "ASP.NET",
@@ -136,7 +136,7 @@ Here's the package.json modified, notice the scripts section:
     "typescript": "1.7.3"
   }
 }
-{% endhighlight %} 
+``` 
 
 I added a script called webpack that will run the command webpack -w. 
 

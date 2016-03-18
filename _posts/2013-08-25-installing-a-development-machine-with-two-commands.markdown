@@ -72,15 +72,15 @@ Finally, the last thing I do is to generate an RSA key that I'll use connect thr
 
 Running the script requires two commands, but first, [download the script from the gist](https://gist.github.com/vintem/6334646). After that, open **PowerShell as Administrator**. To run a script downloaded from the internet you need to change the execution policy of PowerShell, so type:
 
-{% highlight bash %}
+``` bash
 Set-ExecutionPolicy Unrestricted
-{% endhighlight %}
+```
 
 After that, just run the script. Assuming it is on the desktop, execute:
 
-{% highlight bash %}
+``` bash
 ~/Desktop/dev_setup.ps1
-{% endhighlight %}
+```
 
 And that's it, you will have all the applications installed. Sometime during the execution of the script it will ask if you want to install SQL Express and also a password for the RSA key. But that's how you will have a developer machine ready with only two commands.
 

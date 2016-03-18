@@ -27,22 +27,22 @@ As you can see, at the bottom of the image, it took 13 seconds to run all tests.
 
 All the tests in this demo are the same, and they are copies of this one:
 
-{% highlight csharp %}
+``` csharp
 [Test]
 public void Test1() 
 {
     System.Threading.Thread.Sleep(1000);
     Assert.IsTrue(true);
 }
-{% endhighlight %}
+```
 
 The simplest way to activate the parallel feature in NUnit is by doing so at an assembly level. 
 
 Open your AssemblyInfo.cs file and add the following line:
 
-{% highlight csharp %}
+``` csharp
 [assembly: Parallelizable(ParallelScope.Fixtures)]
-{% endhighlight %}
+```
 
 The above line of code will make all fixture classes to run in parallel.
 
@@ -69,14 +69,14 @@ Now, let's say you have for some reason a class that cannot be tested in paralle
 
 In this example, I added the attribute to the TestFixure3 class.
 
-{% highlight csharp %}
+``` csharp
 [TestFixture]
 [Parallelizable(ParallelScope.None)]
 public class TestFixture3
 {
     // ...
 }
-{% endhighlight %}
+```
 
 And this is the result:
 

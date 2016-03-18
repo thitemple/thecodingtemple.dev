@@ -25,7 +25,7 @@ Let's imagine a shopping cart such as the one from the image below, which has a 
 
 A code that would do that is this:
 
-{% highlight js %}
+``` js
 $(document).ready(function() {
   $(".update_cart").click(function(e) {
     e.preventDefault();
@@ -50,7 +50,7 @@ $(document).ready(function() {
     });
   });
 });
-{% endhighlight %}
+```
 
 While this is a simple code - which is slightly shorter than it would be now that I omitted some details of implementation - it violates one of the most important principles of development in my opinion that is, the single responsibility principle. But, it is the kind of code that we can quite easily see in many web applications.
 
@@ -73,7 +73,7 @@ Another point, the above script reads information from the page (the DOM) and th
 
 So let's see what would be a better code for this case.
 
-{% highlight js %}
+``` js
 $(document).ready(function() {
 
   function BasketUpdater (basketView, basketService) {
@@ -137,7 +137,7 @@ $(document).ready(function() {
   basketUpdater.init();
 
 });
-{% endhighlight %}
+```
 
 Even though this code is somewhat longer than the previous one, there's a very clear division of responsibilities. We have a function to update the view **BasketView**, one to make the Ajax request **BasketService** and one with the business logic required to the page **BasketUpdater**.
 
