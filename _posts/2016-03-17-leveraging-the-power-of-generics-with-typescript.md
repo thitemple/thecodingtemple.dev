@@ -132,7 +132,7 @@ If I do that, the compiler will complain that 'resourceName' does not exist in t
     <img src="/images/2016/03/generics-05.png">
 </figure>
 
-That's obvious, and the function can't know which type T will be and that it has the properties we're expecting.
+That's obvious, the function can't know which type T will be and that it has the properties we're expecting.
 
 To achieve this, we have to use a constraint. I'm going to create an interface Resource, and I'll say that the type T must implement that interface.
 
