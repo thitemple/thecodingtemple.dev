@@ -3,6 +3,7 @@ layout: page
 title: Videos
 description: "Some videos I have produced and shared online"
 tags: [Thiago Temple, Thiago, Temple, blog, site, development, coding, videos]
+imagefeature: background/winter.jpg
 sitemap:
   changefreq: 'monthly'
 ---
