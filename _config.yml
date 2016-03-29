@@ -43,6 +43,8 @@ links:
     external: false
   - title: Categories
     url: /categories
+  - title: Videos
+    url: /videos
     
 timezone: Canada/Eastern
 future: true
