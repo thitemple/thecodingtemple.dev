@@ -29,6 +29,7 @@ Here are the topics I've covered so far:
 * [objects](https://youtu.be/XIgxohyeTUM)
 * [modules](https://youtu.be/5P04OK6KlXA)
 * [promises](https://youtu.be/bZil2xFUf0o)
+* [map and set](https://youtu.be/EyEggHAuVgo)
 
 
 Or if you want to access [the playlist on YouTube](https://www.youtube.com/playlist?list=PLI3B_tXbkuVVeWEHELV16nWFSbP5Tabzf).
