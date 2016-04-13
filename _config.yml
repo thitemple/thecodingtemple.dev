@@ -34,16 +34,19 @@ owner:
 google_analytics: UA-41090209-2
 
 links:
-  - title: Home
+  - title: home
     url: /
     external: false
     icon: home
-  - title: About
+  - title: about
     url: /about
     external: false
-  - title: Categories
+  - title: categories
     url: /categories
-  - title: Videos
+  - title: contact
+    url: https://github.com/vintem/vintem.github.io/issues/new
+    external: true
+  - title: videos
     url: /videos
     
 timezone: Canada/Eastern
