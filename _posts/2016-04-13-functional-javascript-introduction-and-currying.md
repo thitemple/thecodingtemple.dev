@@ -111,7 +111,7 @@ logError('....');
 
 See that R? That's Ramda, and Ramda has a curry function. And that's it! That's how we curry functions using Ramda.
 
-Now let's see an even more useful example. Let's use the good old fetch API to make some ajax calls. 
+Now let's see an even more useful example. Let's use the good old fetch API to make some ajax calls. The implementation details of the bellow function are not important. The important is that the function takes three arguments: an url, a method (post, put, etc...) and the data that will be sent in the request.
 
 ``` javascript
 const apiCall = function (url, method, body) {
