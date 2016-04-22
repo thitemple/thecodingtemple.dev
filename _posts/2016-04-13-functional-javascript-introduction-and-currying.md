@@ -4,7 +4,7 @@ description: How to use curried functions with JavaScript and Ramda
 layout: post
 category: code
 date: 2016-04-13
-tags: [javascript, functional programming, currying]
+tags: [javascript, functional programming, currying, ramda]
 imagefeature: background/winter.jpg
 comments: true
 ---
