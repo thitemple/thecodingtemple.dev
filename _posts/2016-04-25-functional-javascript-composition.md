@@ -90,6 +90,17 @@ var compose = function(f, g) {
 
 Compose is a function that takes two other functions as arguments, and return a new function. That new function takes in the data that will be transformed and will call both functions from right to left passing the data to first one and its result to the second.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive content -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1865353648221711"
+     data-ad-slot="8499334570"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 Why from right to left? Well [because Math](https://en.wikipedia.org/wiki/Function_composition), functional programming is all about applying Math principles to programming and that's how it works with in Math.
 
 And talking about Math, the idea of composition is all about Math. The idea is: if you a function f that takes A as argument and the result is B, then you have a function g takes B as an argument and the result is C you can say that the result of the composition of g and f when having A as an argument will always result in C. 
@@ -97,7 +108,7 @@ And talking about Math, the idea of composition is all about Math. The idea is: 
 But don't take my word for it, check this image:
 
 <figure>
-  <img src="https://en.wikipedia.org/wiki/Function_composition#/media/File:Example_for_a_composition_of_two_functions.svg">
+  <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/38/Example_for_a_composition_of_two_functions.svg/220px-Example_for_a_composition_of_two_functions.svg.png" width="220" height="264" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/38/Example_for_a_composition_of_two_functions.svg/330px-Example_for_a_composition_of_two_functions.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/38/Example_for_a_composition_of_two_functions.svg/440px-Example_for_a_composition_of_two_functions.svg.png 2x" data-file-width="450" data-file-height="541">
 </figure>
 
 OK, that's the Math of it and the theory. Now let's get back to the code. 
