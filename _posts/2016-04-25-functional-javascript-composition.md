@@ -76,7 +76,7 @@ logMovie(movies);
 
 See? With another composition, a *logMovie* function was created combination the *console.log* and the previously created function *uppercasedFirstMovie*. Now, one just have to call *logMovie* and pass in the array.
 
-The beauty of this code is that we have small functions that are describing what the code is supposed to do. We're not telling every step of the way how to do it.
+The beauty of this code is that we have small functions that are describing what the code is supposed to do. We're not telling every step of the way how to do it. That's  the **declarative** way of programming.
 
 That's great but what is that *compose* function? I haven't shown it yet, so let's see an implementation of it.
 
