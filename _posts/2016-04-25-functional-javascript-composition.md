@@ -1,6 +1,6 @@
 ---
 title: Functional JavaScript - Composition
-description: How to use compose functions in JavaScript using Ramda
+description: How to compose functions in JavaScript using Ramda
 layout: post
 category: code
 date: 2016-04-25
