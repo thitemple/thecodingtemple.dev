@@ -8,87 +8,67 @@ tags: [javascript, functional programming, currying]
 imagefeature: background/winter.jpg
 comments: true
 ---
-Composition is a nice way of reusing existing functions to create new ones. Each of those functions will act on some data that is passed by as an argument, transforming it and then returning it so that the next function in the composition can do the same.
+There has been a lot of buzz around functional programming lately, sure enough I was catch by the buzz, and here I am sharing some of what I have learned.
 <!-- more -->
-This may sound complicated at first, but it's simpler than it reads. 
+I won't talk about anything new here, in fact, in this post and in (probably) some other posts I might write on functional programming using JavaScript, all the concepts were already explored and explained.
 
-By the way, this is the second post on the subject of functional programming using JavaScript, first [I wrote about curried functions](/blog/2016/04/13/functional-javascript-introduction-and-currying/) which is an essential technique when doing composition. So I suggest you read it and understand curried functions before reading this post, it will make things a lot easier. If you do know what curried functions are, be my guest and have a good reading.
+Then why write about it? 
 
-I think that a good way to understand composition is by comparing it to the "traditional" way of doing things. So let's start with an example using the imperative way?
+<iframe src="//giphy.com/embed/lYKvaJ8EQTzCU" width="480" height="357" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
-Say we have two functions, a function that takes an array and returns the fist element, and a second function that takes a string and returns it all caps.
+Well, they say that if you can't explain something using simple terms you don't really understood it. So, I hope I can write down on the subject using simple and clear terms.
 
-Like this:
+## The theory
 
-``` js
-function head(arr) {
-  return arr[0];
+Functional programming is based on Math, I won't start explaining the Math and theory unless I feel it's relevant and needed for the subject. As for what I'm talking about in this post - currying - I won't touch on any theories.
+
+## Currying
+
+What is currying? Currying is a way of calling a function with less arguments than the function requires. 
+
+Every time the function is called it will return a new function expecting one less argument. And when all the arguments are passed, then the original function will be called.
+
+Here's the most common and straightforward example using currying (I could not escape that), the add function.
+
+Take and add function that expects two arguments and add them. Traditionally one could write it this way:
+
+``` javascript
+function add(x, y) {
+    return x + y;
+}
+add(2, 3); // 5
+```
+
+Now using currying:
+
+``` javascript
+function add(x) {
+    return function(y) {
+        return x + y;
+    }
+}
+const add2 = add(2);
+add2(3); // 5
+```
+
+So calling, the add function will create a closure that will make the value passed to x available to the next function being returned. That next function can be called later with any other argument.
+
+Here's another example a little bit more useful:
+
+``` javascript
+function log(prefix) {
+    return function(text) {
+        console.log(prefix, text);
+    }
 }
 
-function toUpper(str) {
-  return str.toUpperCase();
-}
+const logError = log('Error:');
+const logInfo = log('Info:')
+logError('Houston, we have a problem'); // Error: Houston, we have a problem
+logInfo("nah, we're good"); // Info: nah, we're good
 ```
 
-Using those functions in an imperative way it would look like this:
-
-``` javascript
-var movies = ['Star Wars', 'The Matrix', 'Forrest Gump'];
-var firstMovie = head(movies);
-var upperMovie = toUpper(firstMovie);
-console.log(upperMovie); // STAR WARS
-```
-
-Or another way we could do to achieve the same result:
-
-``` javascript
-var movies = ['Star Wars', 'The Matrix', 'Forrest Gump'];
-console.log(toUpper(head(movies)));
-```
-
-Let's keep in mind that this example is very simple. But in both examples, we have some issues. 
-
-In the first example, one problem is that we have a couple of unnecessary variables *firstMovie* and *upperMovie*, and also, we have to tell the program what to do every step of the way. Step one, find the first item in the array, step two, transform the text to uppercase, step three, print it.
-
-In the second example, we removed the issue of the unnecessary variables but now, we have a code a little harder to read, because we have to read it from the inside out.
-
-And how would that work with a composition?
-
-First, we will use the two functions already created *head* and *toUpper* and we will compose them into a third one. And then we will call that function. 
-
-``` javascript
-var movies = ['Star Wars', 'The Matrix', 'Forrest Gump'];
-var uppercasedFirstMovie = compose(toUpper, head);
-console.log(uppercasedFirstMovie(movies));
-```
-
-So, what's happening here?
-First, we have a function *uppercasedFirstMovie* that describes exactly what it's doing without having any line of code written specifically for it. It is just the result of the combination of two other functions. Don't worry about the compose function; we'll talk about that in a moment.
-
-And then we're logging the result. At this point, one could say that we still have an inside-out way of reading the code, so let's fix that.
-
-``` javascript
-var movies = ['Star Wars', 'The Matrix', 'Forrest Gump'];
-var uppercasedFirstMovie = compose(toUpper, head);
-var logMovie = compose(console.log, uppercasedFirstMovie);
-logMovie(movies);
-```
-
-See? With another composition, a *logMovie* function was created combination the *console.log* and the previously created function *uppercasedFirstMovie*. Now, one just have to call *logMovie* and pass in the array.
-
-The beauty of this code is that we have small functions that are describing what the code is supposed to do. We're not telling every step of the way how to do it.
-
-That's great but what is that *compose* function? I haven't shown it yet, so let's see an implementation of it.
-
-``` javascript
-var compose = function(f, g) {
-  return function(data) {
-    return f(g(data));
-  }
-};
-```
-
-Compose is a function that takes two other functions as arguments, and return a new function. That new function takes in the data that will be transformed and will call both functions from right to left passing the data to first one and its result to the second.
+See how quickly we can create new functions, just by currying another one?
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Responsive content -->
@@ -101,133 +81,108 @@ Compose is a function that takes two other functions as arguments, and return a 
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-Why from right to left? Well, [because Math](https://en.wikipedia.org/wiki/Function_composition). Functional programming is all about applying Math principles to programming, and that's how it works within Math.
+OK, but wait a minute, earlier I said that currying is a way of calling a function with less arguments than the function requires. With those examples, one could argue that each function expects only one argument, and that's true.
 
-And talking about Math, the idea of composition is all about Math. The idea is: if you a function f that takes A as an argument, and the result is B. Then, you have a function g takes B as an argument, and the result is C, you can say that the result of the composition of g and f when having A as an argument will always result in C. 
+That's because although we can program JavaScript in a functional way, JavaScript does not have all the tools needed to do so by default, for instance, functions are not curried by default like in some other languages.
 
-But don't take my word for it, check this image:
-
-<figure>
-  <img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/38/Example_for_a_composition_of_two_functions.svg/220px-Example_for_a_composition_of_two_functions.svg.png" width="220" height="264" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/38/Example_for_a_composition_of_two_functions.svg/330px-Example_for_a_composition_of_two_functions.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/38/Example_for_a_composition_of_two_functions.svg/440px-Example_for_a_composition_of_two_functions.svg.png 2x" data-file-width="450" data-file-height="541">
-</figure>
-
-OK, that's the Math of it and the theory. Now let's get back to the code. 
-
-The above implementation of *compose* is a very simple one, that does not take many things into consideration, for instance, what if I'd like to compose more than two functions, like so:
+Surely I could write a function that would curry other functions and it would work like this:
 
 ``` javascript
-var logMovie = compose(console.log, toUpper, head);
+const log = curry(function (prefix, text) {
+    console.log(prefix, text)
+});
+const logError = log('Error:');
+logError('....');
 ```
 
-Well with that implementation we can't. But some libraries can do it. In my previous post on curried functions I talked about [Ramda](ramdajs.com) and I'll be using it in the next examples as well.
+The curry function would be responsible for managing if all the arguments were passed and then call the original function. 
 
-So, using Ramda, it's possible to compose multiple functions:
+But instead of writing the curry function we can use a library that does that, like [Ramda](http://ramdajs.com/). Ramda is a library much like [lodash](https://lodash.com/) or [underscore](http://underscorejs.org/), but Ramda focus is on providing functions that will allow us to write code in a functional way, either by providing automatically curried functions or by making it easy for us to create ours.
+
+So the above example using Ramda (from now on I'm assuming a reference to the Ramda library), could be written like this:
 
 ``` javascript
-var movies = ['Star Wars', 'The Matrix', 'Forrest Gump'];
-var logMovie = R.compose(console.log, toUpper, head);
-logMovie(movies);
+const log = R.curry(function (prefix, text) {
+    console.log(prefix, text)
+});
+const logError = log('Error:');
+logError('....');
 ```
 
-Ramda even has the *toUpper* and *head* functions, so we wouldn't have to write those.
+See that R? That's Ramda, and Ramda has a curry function. And that's it! That's how we curry functions using Ramda.
+
+Now let's see an even more useful example. Let's use the good old fetch API to make some ajax calls. The implementation details of the bellow function are not important. The important is that the function takes three arguments: an url, a method (post, put, etc...) and the data that will be sent in the request.
 
 ``` javascript
-var movies = ['Star Wars', 'The Matrix', 'Forrest Gump'];
-var logMovie = R.compose(console.log, R.toUpper, R.head);
-logMovie(movies);
-```
-
-Now let's get a little deeper and say we have an array of movie objects:
-
-``` javascript
-var movies = [
-    {
-        title: 'Star Wars',
-        director: 'George Lucas'
+const apiCall = function (url, method, body) {
+  let json = JSON.stringify(body);
+  const request = {
+    body: json, 
+    credentials: 'same-origin', 
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
     },
-    {
-        title: 'The Matrix',
-        director: 'Lana Wachowski'
+    method,
+  };
+  return fetch(url, request)
+    .then(response => { 
+      return response.json(); 
+});
+```
+
+So there's a function that can make a POST or a PUT request to an URI, let's say to create or update a movie, here's an example of usage of this function:
+
+``` javascript
+apiCall('/movies', 'post', { title: 'The Matrix' })
+    .then(res => ...);
+
+apiCall('/movies', 'put', { title: 'The Matrix', id: 1, rating: 5 })
+    .then(res => ...);
+```
+
+That works, but here's how we could achieve the same using a curried function. First, let's make the apiCall function curried using Ramda. That's easy, we just have to wrap the original function with the curry function from Ramda.
+
+``` javascript
+const apiCall = R.curry(function (url, method, body) {
+  let json = JSON.stringify(body);
+  const request = {
+    body: json, 
+    credentials: 'same-origin', 
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
     },
-    {
-        title: 'Forrest Gump',
-        director: 'Robert Zemeckis'
-    }
-];
+    method,
+  };
+  return fetch(url, request)
+    .then(response => { 
+      return response.json(); 
+}));
 ```
 
-And with that array, I want to return the first name of director from the first movie.
-
-One could write it this way:
+Next, let's change the code that uses the apiCall function.
 
 ``` javascript
-var directorsFirstName = R.compose(console.log, R.head, R.split(' '), R.prop('director'), R.head);
-directorsFirstName(movies); // George
+const moviesApi = apiCall('/movies');
+const createMovie = moviesApi('post');
+const updateMovie = moviesApi('put');
+
+createMovie({ title: 'The Matrix' })
+    .then(res => ...);
+
+updateMovie({ title: 'The Matrix', id: 1, rating: 5 })
+    .then(res => ...);
 ```
 
-OK. There's a lot in this piece of code, so let's review it step by step.
+See how that's a lot more declarative? Creating simpler and smaller functions turns the code (at least in my option) a lot more readable.
 
-From right to left:
+Instead of calling the apiCall function passing three arguments each time, there's a function that represents the moviesApi so now there's no need to repeat the URI everywhere.
 
-R.head: will take the first element in the array, in this case: { title: 'Star Wars', director: 'George Lucas' }.
+Next, two new small functions were created, createMovie and updateMovie, one with a post method and another with a put method. Again, we're declaring the intention of the functions with good naming and also hiding implementation details from the users. Now the users of the code don't need to know the URI, nor the method that should be called, they only have to call one of those functions and pass in the data.
 
-R.prop('director'): this is a Ramda function that will look for the value of a property in a object, in this case, we're looking for the *director* property, so the result is: 'George Lucas.'
+All of that was achieved by reusing the same function, just by currying it and passing one argument at a time.
 
-R.split: this is also a Ramda function, that will split a string by the text passed in as a parameter, so the result is: ['George', 'Lucas'].
+I hope that this is as clear for you as is evident for me.
 
-R.head: well, you know that one, the result is: 'George'.
-
-And finally the result will be logged to the console.
-
-The great thing is, all of this was achieved without even writing a new line of logic. A new function was created by combining all those other ones that already existed.
-
-Another important thing to mention is that those two functions *split* and *prop* are curried functions that take two arguments. *split* takes a separator and a string, and *prop* takes a property name and an object.
-
-Because of the nature of composition, where the return value of a function will be passed as an argument to the next one, each function in the composition must expect only one argument. So when building the composition we have to partially apply those functions that expect more than one argument. That's the importance of currying when composing functions.
-
-Another way to write the same composition and maybe making it a little bit more clear to read is this way:
-
-``` javascript
-var splitSpace = R.split(' ');
-var findDirector = R.prop('director');
-var directorsFirstName = R.compose(console.log, R.head, splitSpace, findDirector, R.head);
-directorsFirstName(movies); // George
-```
-
-*split* and *prop* were partially applied before the composition and assigned to *splitSpace* and *findDirector* respectively. Those functions now take only one argument and can be used in the composition. **Both examples are equivalent.**
-
-To finish, one last example. Let's find the first name of all directors in all the movies.
-
-Now, instead of retrieving the first item of the array, we'll be iterating over it. Sounds like a job for *map*.
-
-Every array has a map function, but the problem with that function is that it will act on an instance of an array. And what we want to do is compose the *map* function to operate on any instance of a movies array. So, we'll be using the *map* function provided by Ramda which is also a curried function.
-
-Here's how it looks:
-
-``` javascript
-var directorsFirstNames = R.compose(console.log, R.map(R.compose(R.head, R.split(' '), R.prop('director'))));
-
-directorsFirstNames(movies);
-```
-
-In the above example, we have two compositions. One that will log the results of the mapping, and one that will be applied to every item in the array.
-
-The idea is the same as before, but let's split that a bit to make it more readable.
-
-``` javascript
-var directorsFirstName = R.compose(R.head, R.split(' '), R.prop('director'));
-
-var logDirectors =  R.compose(console.log, R.map(directorsFirstName));
-
-logDirectors(movies);
-```
-
-Now we have two functions; *directorsFirstName* will return the first name of a director from a movie object, just as before. This function is passed to the *map* function which is curried and is now waiting for an array of movies to be executed.
-
-*logDirectors* is a function that will take the result of the mapping and log it to the console.
-
-Now, when we call *logDirectors* and pass in the movies array, the *map* functions has all the arguments it needs to execute so that it will call *directorsFirstName* for each of its elements.
-
-That's neat! And again just using the power of combining functions.
-
-And that's it for today.
+That's all for today.

@@ -9,14 +9,14 @@ imagefeature: background/atomium.jpg
 comments: true
 ---
 Composition is a nice way of reusing existing functions to create new ones. Each of those functions will act on some data that is passed by as an argument, transforming it and then returning it so that the next function in the composition can do the same.
-
-This may sound complicated at first, but it's simpler than it reads. You'll see with a few examples. 
+<!-- more -->
+This may sound complicated at first, but it's simpler than it reads. 
 
 By the way, this is the second post on the subject of functional programming using JavaScript, first [I wrote about curried functions](/blog/2016/04/13/functional-javascript-introduction-and-currying/) which is an essential technique when doing composition. So I suggest you read it and understand curried functions before reading this post, it will make things a lot easier. If you do know what curried functions are, be my guest and have a good reading.
 
-Let's start with an example using the imperative way?
+I think that a good way to understand composition is by comparing it to the "traditional" way of doing things. So let's start with an example using the imperative way?
 
-Say we have two functions, a function that takes an array and returns the fist element, a second function that takes a string and returns it all caps.
+Say we have two functions, a function that takes an array and returns the fist element, and a second function that takes a string and returns it all caps.
 
 Like this:
 
@@ -39,22 +39,22 @@ var upperMovie = toUpper(firstMovie);
 console.log(upperMovie); // STAR WARS
 ```
 
-Or another way could to achieve the same result:
+Or another way we could do to achieve the same result:
 
 ``` javascript
 var movies = ['Star Wars', 'The Matrix', 'Forrest Gump'];
 console.log(toUpper(head(movies)));
 ```
 
-Let's keep in mind that this example is very simple. But in both examples we have some issues. 
+Let's keep in mind that this example is very simple. But in both examples, we have some issues. 
 
-In the first example, one problem is that we have a couple of unnecessary variables *firstMovie* and *upperMovie*, and also we also have to tell the program what to do every step of the way. Step one, go find the first item in the array, step two transform the text to uppercase, step three print it.
+In the first example, one problem is that we have a couple of unnecessary variables *firstMovie* and *upperMovie*, and also, we have to tell the program what to do every step of the way. Step one, find the first item in the array, step two, transform the text to uppercase, step three, print it.
 
 In the second example, we removed the issue of the unnecessary variables but now, we have a code a little harder to read, because we have to read it from the inside out.
 
 And how would that work with a composition?
 
-First, we will use the two functions already created *head* and *toUpper* and we will compose them into a third one. And then we will call that function.
+First, we will use the two functions already created *head* and *toUpper* and we will compose them into a third one. And then we will call that function. 
 
 ``` javascript
 var movies = ['Star Wars', 'The Matrix', 'Forrest Gump'];
@@ -63,7 +63,7 @@ console.log(uppercasedFirstMovie(movies));
 ```
 
 So, what's happening here?
-First, we have a function *uppercasedFirstMovie* that describes exactly what it's doing without having any line of code written specifically for it. It is just the result of the combination of two other functions.
+First, we have a function *uppercasedFirstMovie* that describes exactly what it's doing without having any line of code written specifically for it. It is just the result of the combination of two other functions. Don't worry about the compose function; we'll talk about that in a moment.
 
 And then we're logging the result. At this point, one could say that we still have an inside-out way of reading the code, so let's fix that.
 
@@ -74,11 +74,11 @@ var logMovie = compose(console.log, uppercasedFirstMovie);
 logMovie(movies);
 ```
 
-See? With another composition a *logMovie* function was created combination the *console.log* and the previously created function *uppercasedFirstMovie*. Now, one just have to call *logMovie* and pass in the array.
+See? With another composition, a *logMovie* function was created combination the *console.log* and the previously created function *uppercasedFirstMovie*. Now, one just have to call *logMovie* and pass in the array.
 
 The beauty of this code is that we have small functions that are describing what the code is supposed to do. We're not telling every step of the way how to do it.
 
-That's great but what is that *compose* function? I haven't showed it yet, so let's see an implementation of it.
+That's great but what is that *compose* function? I haven't shown it yet, so let's see an implementation of it.
 
 ``` javascript
 var compose = function(f, g) {
@@ -101,9 +101,9 @@ Compose is a function that takes two other functions as arguments, and return a 
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-Why from right to left? Well [because Math](https://en.wikipedia.org/wiki/Function_composition), functional programming is all about applying Math principles to programming and that's how it works with in Math.
+Why from right to left? Well, [because Math](https://en.wikipedia.org/wiki/Function_composition). Functional programming is all about applying Math principles to programming, and that's how it works within Math.
 
-And talking about Math, the idea of composition is all about Math. The idea is: if you a function f that takes A as argument and the result is B, then you have a function g takes B as an argument and the result is C you can say that the result of the composition of g and f when having A as an argument will always result in C. 
+And talking about Math, the idea of composition is all about Math. The idea is: if you a function f that takes A as an argument, and the result is B. Then, you have a function g takes B as an argument, and the result is C, you can say that the result of the composition of g and f when having A as an argument will always result in C. 
 
 But don't take my word for it, check this image:
 
@@ -113,13 +113,13 @@ But don't take my word for it, check this image:
 
 OK, that's the Math of it and the theory. Now let's get back to the code. 
 
-The above implementation of *compose* is a very simple one, that does not take many things in consideration, for instance, what if I'd like to compose more than two functions, like so:
+The above implementation of *compose* is a very simple one, that does not take many things into consideration, for instance, what if I'd like to compose more than two functions, like so:
 
 ``` javascript
 var logMovie = compose(console.log, toUpper, head);
 ```
 
-Well with that implementation we can't. But there are libraries that can do it. In my previous post on curried functions I talked about [Ramda](ramdajs.com) and I'll be using it in the next examples as well.
+Well with that implementation we can't. But some libraries can do it. In my previous post on curried functions I talked about [Ramda](ramdajs.com) and I'll be using it in the next examples as well.
 
 So, using Ramda, it's possible to compose multiple functions:
 
@@ -171,21 +171,21 @@ From right to left:
 
 R.head: will take the first element in the array, in this case: { title: 'Star Wars', director: 'George Lucas' }.
 
-R.prop('director'): this is a Ramda function that will look for the value of a property in a object, in this case we're looking for the *director* property, so the result is: 'George Lucas'
+R.prop('director'): this is a Ramda function that will look for the value of a property in a object, in this case, we're looking for the *director* property, so the result is: 'George Lucas.'
 
-R.split: this is also a Ramda function, tha will split a string by the text passed in as parameter, so the result is: ['George', 'Lucas']
+R.split: this is also a Ramda function, that will split a string by the text passed in as a parameter, so the result is: ['George', 'Lucas'].
 
-R.head: well, you know that one, the result is: 'George'
+R.head: well, you know that one, the result is: 'George'.
 
 And finally the result will be logged to the console.
 
-The great thing is, all of this was achieved without even writing a new line of called. A new function was creating by combining all those other ones that already existed.
+The great thing is, all of this was achieved without even writing a new line of logic. A new function was created by combining all those other ones that already existed.
 
 Another important thing to mention is that those two functions *split* and *prop* are curried functions that take two arguments. *split* takes a separator and a string, and *prop* takes a property name and an object.
 
-Because of the nature of composition, where the return value of a function will be passed as argument to the next one, each function in the composition must expect only one argument. So when building the composition we have to partially apply those functions that expect more than one argument. That's the importance of currying when composing functions.
+Because of the nature of composition, where the return value of a function will be passed as an argument to the next one, each function in the composition must expect only one argument. So when building the composition we have to partially apply those functions that expect more than one argument. That's the importance of currying when composing functions.
 
-Another way to write the same composition and maybe making it a little bit more clear is this way:
+Another way to write the same composition and maybe making it a little bit more clear to read is this way:
 
 ``` javascript
 var splitSpace = R.split(' ');
@@ -194,22 +194,23 @@ var directorsFirstName = R.compose(console.log, R.head, splitSpace, findDirector
 directorsFirstName(movies); // George
 ```
 
-*split* and *prop* were partially applyed before the composition and assigned to *splitSpace* and *findDirector* respectivelly. Those functions now take only one argument and can be used in the composition. **Both examples are equivalent.**
+*split* and *prop* were partially applied before the composition and assigned to *splitSpace* and *findDirector* respectively. Those functions now take only one argument and can be used in the composition. **Both examples are equivalent.**
 
 To finish, one last example. Let's find the first name of all directors in all the movies.
 
 Now, instead of retrieving the first item of the array, we'll be iterating over it. Sounds like a job for *map*.
 
-Every array has a map function, but the problem with that function is that it will act on an instance of an array. And what we want to do is compose the *map* function to act on any instance of a movies array. So, we'll be using the *map* function provided by Ramda which is also a curried function.
+Every array has a map function, but the problem with that function is that it will act on an instance of an array. And what we want to do is compose the *map* function to operate on any instance of a movies array. So, we'll be using the *map* function provided by Ramda which is also a curried function.
 
 Here's how it looks:
 
 ``` javascript
 var directorsFirstNames = R.compose(console.log, R.map(R.compose(R.head, R.split(' '), R.prop('director'))));
+
 directorsFirstNames(movies);
 ```
 
-Here we have two compositions. One that will log the results of the mapping, and one that will be applyed for every item of the array.
+In the above example, we have two compositions. One that will log the results of the mapping, and one that will be applied to every item in the array.
 
 The idea is the same as before, but let's split that a bit to make it more readable.
 
@@ -221,11 +222,11 @@ var logDirectors =  R.compose(console.log, R.map(directorsFirstName));
 logDirectors(movies);
 ```
 
-Now we have two functions, *directorsFirstName* will return the first name of a director from a movie object, just as before. This function is passed to the *map* function which is curried and is now waiting for an array of movies to be executed.
+Now we have two functions; *directorsFirstName* will return the first name of a director from a movie object, just as before. This function is passed to the *map* function which is curried and is now waiting for an array of movies to be executed.
 
 *logDirectors* is a function that will take the result of the mapping and log it to the console.
 
-Now, when we call *logDirectors* and pass in the movies array, the *map* functions has all the argument it needs to execute, so it will call *directorsFirstName* for each of its elements.
+Now, when we call *logDirectors* and pass in the movies array, the *map* functions has all the arguments it needs to execute so that it will call *directorsFirstName* for each of its elements.
 
 That's neat! And again just using the power of combining functions.
 
