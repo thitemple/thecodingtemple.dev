@@ -9,7 +9,9 @@ imagefeature: background/tunel.jpg
 comments: true
 ---
 When you first start looking into functional programming, you hear a lot of scary terms such as functors, monads, monoids, lift, fold, etc. Some of those things are sort of complicated to understand if you don't have a master's degree in Math, others are not that complex. In any case, those things are generally very useful.
+
 <!-- more -->
+
 Many times you don't even have to know what the terminology means, we just use it and follow with our life. For instance, in languages that are purely functional or have a functional first approach, things like Functors are part of the language, and we don't have to worry about them.
 
 That's not the case of JavaScript as we have to write our Functors, or use a library that does it for us.
@@ -27,6 +29,17 @@ Simply put, a functor is a value (in JS it's an object) that:
 1. Has a map method that expects a function
 2. The expected function can return any kind of value
 3. The map function will return another functor of the same type (as the original functor)
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive content -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1865353648221711"
+     data-ad-slot="8499334570"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## I still don't get it, give me an example
 
