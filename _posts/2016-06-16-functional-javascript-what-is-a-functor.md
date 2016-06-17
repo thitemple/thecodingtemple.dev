@@ -123,6 +123,8 @@ class Maybe {
 
 The results of this and the previous example are the same.
 
+And why is that a functional heresy you might ask? Well, because in functional programming is about functions, and classes are from another paradigm, they're from OOP and, although we can mix both and the results are the same, we should write code for the next person reading it. If you agree with your teammates that those types can be written using classes, then it's OK.
+
 ## What's next
 
 Next, I'll be talking about how to put a few Functors into practice.
