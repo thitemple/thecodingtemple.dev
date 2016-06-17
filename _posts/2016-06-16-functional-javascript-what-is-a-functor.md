@@ -1,6 +1,6 @@
 ---
-title: Functional JavaScript - What is a functor?
-description: Understand in a very simple way what is a function
+title: Functional JavaScript - What is a Functor?
+description: Understand in a very simple way what is a Functor
 layout: post
 category: code
 date: 2016-06-16
@@ -9,7 +9,7 @@ imagefeature: background/tunel.jpg
 comments: true
 ---
 When you first start looking into functional programming, you hear a lot of scary terms such as functors, monads, monoids, lift, fold, etc. Some of those things are sort of complicated to understand if you don't have a master's degree in Math, others are not that complex. In any case, those things are generally very useful.
-
+<!-- more -->
 Many times you don't even have to know what the terminology means, we just use it and follow with our life. For instance, in languages that are purely functional or have a functional first approach, things like Functors are part of the language, and we don't have to worry about them.
 
 That's not the case of JavaScript as we have to write our Functors, or use a library that does it for us.
