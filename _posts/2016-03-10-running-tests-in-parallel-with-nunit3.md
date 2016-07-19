@@ -9,7 +9,7 @@ comments: true
 ---
 Since version 3 of NUnit, it is possible to run tests in parallel. And if you can turn this feature on, you should. The implementation is simple, and you will probably notice a considerable improvement in the time spent running the tests.
 <!-- more -->
-According to the docs, there are three types of parallel execution to choose from:
+[According to the docs](https://github.com/nunit/docs/wiki/Parallelizable-Attribute), there are three types of parallel execution to choose from:
 
 - Self      // the test itself may be run in parallel with other tests
 - Children  // child tests may be run in parallel with one another
