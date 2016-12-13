@@ -54,7 +54,7 @@ Simple as that, no error, it's the same variable.
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-** The let keyword
+##The let keyword
 
 In ES15, there's a new new keyword to declare variables, and it's a block scope variable. So now, if we declare a variable inside a *if* or a *for loop* that variable is not accessible outside that scope.
 
