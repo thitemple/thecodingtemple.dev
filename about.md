@@ -19,7 +19,7 @@ Vintem doesn't mean much, it's just a mix of my middle and last names.
 
 ## What I do?
 ----
-I work at [Kinaxis](http://kinaxis.com) as a developer and for most of the time I'm programming with web related stuff.
+I work at [Kinaxis](http://www.kinaxis.com) as a developer and for most of the time I'm programming with web related stuff.
 
 ## Why I do it?
 ----
