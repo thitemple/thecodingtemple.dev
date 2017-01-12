@@ -13,13 +13,13 @@ sitemap:
 <figure>
     <img src="{{ site.url }}/images/vintem.jpg">
 </figure>
-My name is Thiago Temple, I'm Brazilian and I'm living and working in Québec/Canada. Some of my friends also call me vintem, which is the handle I user for many things such as [my twitter](https://twitter.com/vintem12) and my [email](mailto:vintem@gmail.com).
+My name is Thiago Temple, I'm Brazilian and I'm living and working in Ottawa/Canada. Some of my friends also call me vintem, which is the handle I user for many things such as [my twitter](https://twitter.com/vintem12) and my [email](mailto:vintem@gmail.com).
 
 Vintem doesn't mean much, it's just a mix of my middle and last names.
 
 ## What I do?
 ----
-I work at [Emergensys](http://emergensys.net) as a developer and for most of the time I'm programming with web related stuff.
+I work at [Kinaxis](http://kinaxis.com) as a developer and for most of the time I'm programming with web related stuff.
 
 ## Why I do it?
 ----
