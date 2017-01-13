@@ -13,13 +13,13 @@ sitemap:
 <figure>
     <img src="{{ site.url }}/images/vintem.jpg">
 </figure>
-My name is Thiago Temple, I'm Brazilian and I'm living and working in Québec/Canada. Some of my friends also call me vintem, which is the handle I user for many things such as [my twitter](https://twitter.com/vintem12) and my [email](mailto:vintem@gmail.com).
+My name is Thiago Temple, I'm Brazilian and I'm living and working in Ottawa/Canada. Some of my friends also call me vintem, which is the handle I user for many things such as [my twitter](https://twitter.com/vintem12) and my [email](mailto:vintem@gmail.com).
 
 Vintem doesn't mean much, it's just a mix of my middle and last names.
 
 ## What I do?
 ----
-I work at [Emergensys](http://emergensys.net) as a developer and for most of the time I'm programming with web related stuff.
+I work at [Kinaxis](http://www.kinaxis.com) as a developer and for most of the time I'm programming with web related stuff.
 
 ## Why I do it?
 ----
@@ -34,7 +34,7 @@ I'm also enthusiastic about new things I learn that I want to share it. So, this
 
 ## What I do for fun?
 ----
-Living in Québec City with its hard winters made me discover a new passion: [board games](http://boardgamegeek.com/). Now I love them and I have a somewhat growing collection: 
+Living in Canada with its hard winters made me discover a new passion: [board games](http://boardgamegeek.com/). Now I love them and I have a somewhat growing collection: 
 
 <figure>
     <img src="http://boardgamegeek.com/jswidget.php?username=vintem&numitems=5&header=1&text=title&images=medium&show=random&imagesonly=1&imagepos=center&inline=1&domains%5B%5D=boardgame&imagewidget=1" border="0"/>
