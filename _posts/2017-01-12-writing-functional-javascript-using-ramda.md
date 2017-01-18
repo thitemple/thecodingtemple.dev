@@ -3,9 +3,11 @@ layout: post
 title: Pluralsight = fn -> JS >> Ramda
 description: My first course on Pluralsight on functional javascript using Ramda
 category: presentations
+date: 2017-01-12
 tags: [ramda, javascript, functional programming]
 comments: true
 link: https://app.pluralsight.com/library/courses/javascript-ramda-functional
+imagefeature: background/winter.jpg
 ---
 The course I produced for Pluralsight is live!!
 
