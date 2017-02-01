@@ -41,6 +41,17 @@ Bottom line is: *don't return or pass null in your code, EVER!*
 
 In your code, you might feel tempted to return a null value, because you can't return anything else or you think you can't return anything else which is not true, you can always use the [Null Object Pattern](https://dotnetcodr.com/2013/05/06/design-patterns-and-practices-in-net-the-null-object-pattern/), after all, C# is an object-oriented language.
 
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive content -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1865353648221711"
+     data-ad-slot="8499334570"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+
 ## The not so simple solution
 
 But life is not that simple, and most of the times we are interacting with third party libraries or legacy code that we can't or won't change for whatever reason, and that code or libraries may return null values.
