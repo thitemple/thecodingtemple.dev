@@ -37,7 +37,7 @@ I'm also enthusiastic about new things I learn that I want to share it. So, this
 Living in Canada with its hard winters made me discover a new passion: [board games](http://boardgamegeek.com/). Now I love them and I have a somewhat growing collection: 
 
 <figure>
-    <img src="http://boardgamegeek.com/jswidget.php?username=vintem&numitems=5&header=1&text=title&images=medium&show=random&imagesonly=1&imagepos=center&inline=1&domains%5B%5D=boardgame&imagewidget=1" border="0"/>
+    <img src="http://boardgamegeek.com/jswidget.php?username=vintem&numitems=5&header=1&text=title&images=medium&show=recentplays&imagesonly=1&imagepos=center&inline=1&domains%5B%5D=boardgame&imagewidget=1" border="0"/>
 </figure>
 
 I also watch a few TV Shows, and I'm constantly reading at least one book.
