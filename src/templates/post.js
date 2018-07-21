@@ -8,6 +8,7 @@ import SEO from "../components/SEO";
 import Wrapper from "../components/Wrapper";
 import Header from "../components/Header";
 import Subline from "../components/Subline";
+import Social from "../components/Social";
 import { media } from "../utils/media";
 import { DiscussionEmbed } from "disqus-react";
 
@@ -73,6 +74,18 @@ const Post = props => {
                     <PostContent
                         dangerouslySetInnerHTML={{ __html: postNode.html }}
                     />
+                    <Social path={post.path} title={post.title} />
+                    <Link to="https://www.buymeacoffee.com/thitemple">
+                        <img
+                            src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png"
+                            alt="Buy Me A Coffee"
+                            className="center-me"
+                            style={{
+                                height: "auto !important",
+                                width: "auto !important"
+                            }}
+                        />
+                    </Link>
                     <DiscussionEmbed
                         shortname={disqusShortname}
                         config={disqusConfig}
