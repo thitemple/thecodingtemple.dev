@@ -1,4 +1,5 @@
-# vintem.github.io
-*My blog!*
+# Temple Coding
 
-templecoding.com
+_My blog!_
+
+[https://templecoding.com](https://templecoding.com)

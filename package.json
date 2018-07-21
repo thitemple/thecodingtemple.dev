@@ -1,0 +1,69 @@
+{
+    "name": "templecoding-site",
+    "description": "The personal blog of Thiago Temple.",
+    "version": "1.0.0",
+    "author": "Thiago Temple <thitemple@gmail.com>",
+    "dependencies": {
+        "babel-plugin-styled-components": "^1.5.1",
+        "disqus-react": "^1.0.5",
+        "gatsby": "^2.0.0-beta.40",
+        "gatsby-plugin-catch-links": "^2.0.2-beta.2",
+        "gatsby-plugin-feed": "^1.3.25",
+        "gatsby-plugin-google-analytics": "^1.0.31",
+        "gatsby-plugin-lodash": "^3.0.1-beta.2",
+        "gatsby-plugin-manifest": "^2.0.2-beta.2",
+        "gatsby-plugin-offline": "^2.0.0-beta.3",
+        "gatsby-plugin-react-helmet": "^3.0.0-beta.3",
+        "gatsby-plugin-sharp": "^1.6.48",
+        "gatsby-plugin-sitemap": "^2.0.0-beta.2",
+        "gatsby-plugin-styled-components": "^3.0.0-beta.2",
+        "gatsby-plugin-typography": "^2.2.0-beta.2",
+        "gatsby-remark-autolink-headers": "^2.0.0-beta.3",
+        "gatsby-remark-copy-linked-files": "^1.5.37",
+        "gatsby-remark-external-links": "0.0.4",
+        "gatsby-remark-images": "^1.5.67",
+        "gatsby-remark-prismjs": "^3.0.0-beta.3",
+        "gatsby-remark-responsive-image": "^1.0.0-alpha13-alpha.435e0178",
+        "gatsby-source-filesystem": "^2.0.1-beta.5",
+        "gatsby-transformer-remark": "^2.1.1-beta.3",
+        "polished": "^1.9.2",
+        "prismjs": "^1.14.0",
+        "prop-types": "^15.6.1",
+        "react": "^16.4.1",
+        "react-dom": "^16.4.1",
+        "react-helmet": "^5.2.0",
+        "react-typography": "^0.16.13",
+        "styled-components": "^3.3.2",
+        "typography": "^0.16.17"
+    },
+    "keywords": [
+        "gatsby",
+        "thiago temple",
+        "temple coding",
+        "blog"
+    ],
+    "license": "MIT",
+    "main": "n/a",
+    "scripts": {
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "dev": "gatsby develop -o"
+    },
+    "devDependencies": {
+        "babel-eslint": "^8.2.2",
+        "babel-preset-env": "^1.6.1",
+        "eslint": "^4.18.2",
+        "eslint-config-airbnb": "^16.1.0",
+        "eslint-config-prettier": "^2.9.0",
+        "eslint-plugin-import": "^2.9.0",
+        "eslint-plugin-jsx-a11y": "^6.0.3",
+        "eslint-plugin-prettier": "^2.6.0",
+        "eslint-plugin-react": "^7.7.0",
+        "prettier": "^1.11.1"
+    },
+    "browserslist": [
+        "> 1%",
+        "IE >= 9",
+        "last 2 versions"
+    ]
+}
