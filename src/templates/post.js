@@ -75,7 +75,10 @@ const Post = props => {
                         dangerouslySetInnerHTML={{ __html: postNode.html }}
                     />
                     <Social path={post.path} title={post.title} />
-                    <Link to="https://www.buymeacoffee.com/thitemple">
+                    <a
+                        href="https://www.buymeacoffee.com/thitemple"
+                        target="_blank"
+                    >
                         <img
                             src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png"
                             alt="Buy Me A Coffee"
@@ -85,7 +88,7 @@ const Post = props => {
                                 width: "auto !important"
                             }}
                         />
-                    </Link>
+                    </a>
                     <DiscussionEmbed
                         shortname={disqusShortname}
                         config={disqusConfig}

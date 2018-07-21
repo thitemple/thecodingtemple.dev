@@ -5,6 +5,7 @@ import kebabCase from "lodash/kebabCase";
 
 import Subline from "./Subline";
 import { media } from "../utils/media";
+import Button from "../components/Button";
 
 const Post = styled.article`
     display: flex;
@@ -16,6 +17,14 @@ const Post = styled.article`
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
+`;
+
+const Divider = styled.div`
+    display: block;
+    height: 1px;
+    width: 6em;
+    background-color: #cbc9cf;
+    margin: 3em auto;
 `;
 
 const Title = styled.h2`
@@ -47,6 +56,10 @@ const Excerpt = styled.p`
     margin-bottom: 1rem;
 `;
 
+const ReadMore = styled.div`
+    margin: 0 auto;
+`;
+
 const Article = ({ title, date, excerpt, timeToRead, category, path }) => {
     const firstChar = title.charAt(0);
 
@@ -63,6 +76,12 @@ const Article = ({ title, date, excerpt, timeToRead, category, path }) => {
                 </Link>
             </Subline>
             <Excerpt>{excerpt}</Excerpt>
+            <ReadMore>
+                <Link to={path}>
+                    <Button>read more...</Button>
+                </Link>
+            </ReadMore>
+            <Divider />
         </Post>
     );
 };
