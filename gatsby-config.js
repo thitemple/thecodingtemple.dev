@@ -56,19 +56,19 @@ module.exports = {
         "gatsby-plugin-catch-links",
         "gatsby-plugin-sitemap",
         "gatsby-plugin-lodash",
-        {
-            resolve: "gatsby-plugin-manifest",
-            options: {
-                name: config.siteTitle,
-                short_name: config.siteTitleAlt,
-                description: config.siteDescription,
-                start_url: config.pathPrefix,
-                background_color: config.backgroundColor,
-                theme_color: config.themeColor,
-                display: "fullscreen",
-                icon: "src/favicon.jpg"
-            }
-        },
+        // {
+        //     resolve: "gatsby-plugin-manifest",
+        //     options: {
+        //         name: config.siteTitle,
+        //         short_name: config.siteTitleAlt,
+        //         description: config.siteDescription,
+        //         start_url: config.pathPrefix,
+        //         background_color: config.backgroundColor,
+        //         theme_color: config.themeColor,
+        //         display: "fullscreen",
+        //         icon: "src/favicon.jpg"
+        //     }
+        // },
         "gatsby-plugin-offline",
         {
             resolve: "gatsby-plugin-google-analytics",
