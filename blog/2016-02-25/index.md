@@ -11,7 +11,9 @@ path: "/blog/2016/02/25/how-i-try-to-keep-up-to-date-with-technologies"
 
 There are too many technologies to keep up with. Just too many. It's hard to keep up and many times there's a feeling of fatigue just of thinking about new versions, new frameworks, new libraries, new languages, etc.
 
-<iframe src="//giphy.com/embed/PPW6LRDNhegRG?html5=true?style=centerme" width="480" height="286" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/overwhelmed-joseph-gordon-levit-PPW6LRDNhegRG"></a></p>
+<div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 49.8853%;margin-bottom: 2em;">
+    <iframe src="https://giphy.com/embed/PPW6LRDNhegRG/twitter/iframe" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" style="top: 0px; left: 0px; width: 100%; height: 100%; position: absolute;"></iframe>
+</div>
 
 For a while, I tried to keep up with different stacks of technologies, Ruby on Rails, .NET, Java, JavaScript. And of course, I tried to keep up with databases, both SQL and No-SQL.
 

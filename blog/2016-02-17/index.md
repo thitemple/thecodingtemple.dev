@@ -45,7 +45,9 @@ getMovieAsync();
 
 So what's happening here? And does this work?
 
-<iframe class="align-center" src="//giphy.com/embed/3o7ZeF03Nfo2k1G3de?html5=true?style=centerme" width="480" height="270" style="margin-left: auto; margin-right: auto" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 49.8853%;margin-bottom: 2em;">
+    <iframe src="https://giphy.com/embed/3o7ZeF03Nfo2k1G3de/twitter/iframe" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" style="top: 0px; left: 0px; width: 100%; height: 100%; position: absolute;"></iframe>
+</div>
 
 Well, underneath it's all about Promises and some syntactic sugar over them.
 

@@ -38,7 +38,7 @@ If, by any chance you're a fan of some sort of sport, be that basketball, soccer
 
 Now take a look at the first 2 minutes and 20 seconds from this video from a few days ago, where coach Scott Skiles talks about his team.
 
-<iframe width="640" height="360" src="http://player.foxfdm.com/sports/embed-iframe.html?videourl=http://link.theplatform.com/s/BKQ29B/LUSjGeSWDaA4?mbr=true&assetTypes=Video&feed=Fox%20Sports%20All&iu=/fscom/florida/video&style=centerme" frameborder="0" scrolling="no"> </iframe>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src="http://player.foxfdm.com/sports/embed-iframe.html?videourl=http://link.theplatform.com/s/BKQ29B/LUSjGeSWDaA4?mbr=true&assetTypes=Video&feed=Fox%20Sports%20All&iu=/fscom/florida/video&style=centerme" frameborder="0" scrolling="no"> </iframe></div>
 
 Imagine you as a fan of this team, don't you love this guy, pushing his players to get better and also holding them accountable for their interest, or lack of interest? Yeah, I want to see my team playing their best players, the ones that are really trying to bring a win back home.
 

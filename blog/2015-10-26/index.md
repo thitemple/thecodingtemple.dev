@@ -12,7 +12,7 @@ path: "/blog/2015/10/26/five-things-you-should-be-doing-on-code-reviews"
 
 Code review or peer review, as is also known, is the practice of someone different from the author of the code to review it before it's pushed and going into production.
 
-<iframe src="//giphy.com/embed/xTiTnnLkYTDWSOWSHK?style=centerme" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 49.8853%;margin-bottom: 2em;"><iframe src="https://giphy.com/embed/xTiTnnLkYTDWSOWSHK/twitter/iframe" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" style="top: 0px; left: 0px; width: 100%; height: 100%; position: absolute;"></iframe></div>
 
 I have worked for many years without putting code reviews into practice. Now, I have been doing it for a few years, and I've got to tell you, I don't want to get back to not doing it again.
 

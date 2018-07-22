@@ -12,7 +12,7 @@ path: "/blog/2015/12/02/your-name-your-legacy"
 This is the translation from a post I wrote in 2010 in Portuguese that I still think is relevant. I wrote it right after reading the great book
 [The Passionate Programmer](https://pragprog.com/book/cfcar2/the-passionate-programmer).<!-- more -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/26DTsHQ42SM?style=centerme" frameborder="0" allowfullscreen></iframe>
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/26DTsHQ42SM' frameborder='0' allowfullscreen></iframe></div>
 
 <p>
 

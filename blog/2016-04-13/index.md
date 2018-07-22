@@ -17,7 +17,7 @@ I won't talk about anything new here, in fact, in this post and in (probably) so
 
 Then why write about it?
 
-<iframe src="//giphy.com/embed/lYKvaJ8EQTzCU?style=centerme" width="480" height="357" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 49.8853%;margin-bottom: 2em;"><iframe src="https://giphy.com/embed/lYKvaJ8EQTzCU/twitter/iframe" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" style="top: 0px; left: 0px; width: 100%; height: 100%; position: absolute;"></iframe></div>
 
 Well, they say that if you can't explain something using simple terms you don't really understood it. So, I hope I can write down on the subject using simple and clear terms.
 
