@@ -49,8 +49,8 @@ const Menu = props => (
     <MenuContainer>
         <Item path="/about" text="About" inverted={props.inverted} />
         <Item path="/categories" text="Categories" inverted={props.inverted} />
-        <Item path="/videos" text="Videos" inverted={props.inverted} />
-        <Item path="/rss.xml" text="Feed" inverted={props.inverted} />
+        {/* <Item path="/videos" text="Videos" inverted={props.inverted} />
+        <Item path="/rss.xml" text="Feed" inverted={props.inverted} /> */}
     </MenuContainer>
 );
 
