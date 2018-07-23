@@ -49,8 +49,10 @@ const Post = props => {
     const postNode = props.data.markdownRemark;
     const post = postNode.frontmatter;
     const disqusShortname = "templecodingenglish";
+    const url = `${config.siteUrl}/${post.path}`;
     const disqusConfig = {
-        identifier: post.path,
+        identifier: url,
+        url,
         title: post.title
     };
 
