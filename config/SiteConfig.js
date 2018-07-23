@@ -21,5 +21,7 @@ module.exports = {
     // Settings for typography.js
     headerFontFamily: "Bitter",
     bodyFontFamily: "Open Sans",
-    baseFontSize: "18px"
+    baseFontSize: "18px",
+
+    disqusShortName: "templecodingenglish"
 };

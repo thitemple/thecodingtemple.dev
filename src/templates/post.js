@@ -11,6 +11,7 @@ import Subline from "../components/Subline";
 import Social from "../components/Social";
 import { media } from "../utils/media";
 import { DiscussionEmbed } from "disqus-react";
+import ReactDisqusComments from "react-disqus-comments";
 
 import config from "../../config/SiteConfig";
 import "../utils/dracula-prism.css";
@@ -48,13 +49,13 @@ const PostContent = styled.div`
 const Post = props => {
     const postNode = props.data.markdownRemark;
     const post = postNode.frontmatter;
-    const disqusShortname = "templecodingenglish";
+    // const disqusShortname = "templecodingenglish";
     const url = `${config.siteUrl}/${post.path}`;
-    const disqusConfig = {
-        identifier: url,
-        url,
-        title: post.title
-    };
+    // const disqusConfig = {
+    //     identifier: url,
+    //     url,
+    //     title: post.title
+    // };
 
     return (
         <Layout>
@@ -91,9 +92,15 @@ const Post = props => {
                             }}
                         />
                     </a>
-                    <DiscussionEmbed
+                    {/* <DiscussionEmbed
                         shortname={disqusShortname}
                         config={disqusConfig}
+                    /> */}
+                    <ReactDisqusComments
+                        shortname={config.disqusShortName}
+                        identifier={url}
+                        url={url}
+                        title={post.title}
                     />
                 </Content>
             </Wrapper>
