@@ -1,7 +1,9 @@
 const theme = {
     primary: "#663399",
     primaryLight: "#8B6CAA",
+    primaryDark: "#442266",
     bg: "white",
+    footerBg: "lightgray",
     dark: "rgba(0, 0, 0, 0.9)",
     default: "rgba(0, 0, 0, 0.7)",
     light: "rgba(0, 0, 0, 0.6)",

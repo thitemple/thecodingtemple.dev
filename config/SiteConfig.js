@@ -3,7 +3,7 @@ module.exports = {
 
     siteTitle: "Temple Coding", // Navigation and Site Title
     siteTitleAlt:
-        "Hello, I'm Thiago Temple, a developer, geek and this is my site.", // Alternative Site title for SEO
+        "Hi, I'm Thiago Temple, a developer, geek and this is my site.", // Alternative Site title for SEO
     siteUrl: "https://templecoding.com", // Domain of your site. No trailing slash!
     siteLanguage: "en", // Language Tag on <html> element
     siteBanner: "/social/banner.jpg",
@@ -16,7 +16,7 @@ module.exports = {
 
     // Manifest and Progress color
     themeColor: "#663399",
-    backgroundColor: "#2b2e3c",
+    backgroundColor: "#FFF",
 
     // Settings for typography.js
     headerFontFamily: "Bitter",
