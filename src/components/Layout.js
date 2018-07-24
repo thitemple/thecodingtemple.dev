@@ -150,7 +150,7 @@ const Layout = props => {
                                         <Link to="/categories">Categories</Link>
                                     </li>
                                     <li>
-                                        <Link to="/rss.xml">Feed</Link>
+                                        <a href="/rss.xml">Feed</a>
                                     </li>
                                     <li>
                                         <Link to="/videos">Videos</Link>
@@ -160,9 +160,9 @@ const Layout = props => {
                             <FollowMe>
                                 <h4>Follow me</h4>
                                 <div>
-                                    <Link to="/rss.xml">
+                                    <a href="/rss.xml">
                                         <TiRss size={40} />
-                                    </Link>
+                                    </a>
                                     <a
                                         href="https://twitter.com/vintem12"
                                         target="_blank"
