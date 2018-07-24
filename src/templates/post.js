@@ -91,7 +91,7 @@ const Post = props => {
                         />
                     </a>
                     <DiscussionEmbed
-                        shortname={disqusShortname}
+                        shortname={config.disqusShortname}
                         config={disqusConfig}
                     />
                     {/* <ReactDisqusComments
@@ -115,7 +115,7 @@ export const postQuery = graphql`
             html
             frontmatter {
                 title
-                date(formatString: "DD.MM.YYYY")
+                date(formatString: "YYYY-MM-DD")
                 category
                 path
             }
