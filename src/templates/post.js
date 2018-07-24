@@ -91,7 +91,7 @@ const Post = props => {
                         />
                     </a>
                     <DiscussionEmbed
-                        shortname={config.disqusShortname}
+                        shortname={config.disqusShortName}
                         config={disqusConfig}
                     />
                     {/* <ReactDisqusComments
