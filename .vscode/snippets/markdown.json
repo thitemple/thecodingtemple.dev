@@ -1,0 +1,18 @@
+{
+    "Add frontmatter": {
+        "prefix": "frontmatter",
+        "body": [
+            "---",
+            "title: ",
+            "description:",
+            "category: ",
+            "date: \"\"",
+            "tags: ",
+            "    - ",
+            "comments: true",
+            "path: \"\"",
+            "---"
+        ],
+        "description": "Add frontmatter"
+    }
+}

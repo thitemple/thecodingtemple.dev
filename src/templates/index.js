@@ -45,8 +45,8 @@ const Hero = styled.div`
 `;
 
 const MenuWrapper = styled.div`
-    padding-right: 2em;
-    padding-bottom: 1.6em;
+    padding-right: ${props => (props.isHome ? "2em" : null)};
+    padding-bottom: ${props => (props.isHome ? "1.6em" : null)};
     grid-column: 2;
     display: flex;
     justify-content: space-between;
@@ -92,7 +92,7 @@ const IndexPage = props => {
                         </p>
                     </Hero>
                 ) : null}
-                <MenuWrapper>
+                <MenuWrapper isHome={index === 1}>
                     {index > 1 ? <SiteTitle>{siteTitle}</SiteTitle> : <span />}
                     <Menu current="/" />
                 </MenuWrapper>
