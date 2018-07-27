@@ -93,7 +93,13 @@ const IndexPage = props => {
                     </Hero>
                 ) : null}
                 <MenuWrapper isHome={index === 1}>
-                    {index > 1 ? <SiteTitle>{siteTitle}</SiteTitle> : <span />}
+                    {index > 1 ? (
+                        <Link to="/">
+                            <SiteTitle>{siteTitle}</SiteTitle>
+                        </Link>
+                    ) : (
+                        <span />
+                    )}
                     <Menu current="/" />
                 </MenuWrapper>
                 <Content>
