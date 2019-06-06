@@ -2,18 +2,22 @@
 
 import React from "react";
 import { StaticQuery, graphql, Link } from "gatsby";
-import styled, { ThemeProvider, injectGlobal } from "styled-components";
-import SEO from "../components/SEO";
+import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
+import {
+    TiSocialTwitter,
+    TiSocialLinkedin,
+    TiSocialInstagram,
+    TiSocialYoutube,
+    TiSocialGithub,
+    TiRss
+} from "react-icons/ti";
+import PropTypes from "prop-types";
+
+import SEO from "./SEO";
 import theme from "../../config/Theme";
 import { media } from "../utils/media";
-import TiSocialTwitter from "react-icons/lib/ti/social-twitter";
-import TiSocialLinkedin from "react-icons/lib/ti/social-linkedin";
-import TiSocialInstagram from "react-icons/lib/ti/social-instagram";
-import TiSocialYoutube from "react-icons/lib/ti/social-youtube";
-import TiSocialGithub from "react-icons/lib/ti/social-github";
-import TiRss from "react-icons/lib/ti/rss";
 
-injectGlobal`
+const GlobalStyle = createGlobalStyle`
   ::selection {
     color: ${theme.bg};
     background: ${theme.primary};
@@ -118,8 +122,7 @@ const FollowMe = styled.div`
     }
 `;
 
-const Layout = props => {
-    const { children } = props;
+const Layout = ({ children }) => {
     return (
         <StaticQuery
             query={graphql`
@@ -131,9 +134,10 @@ const Layout = props => {
                     }
                 }
             `}
-            render={data => (
+            render={() => (
                 <ThemeProvider theme={theme}>
                     <React.Fragment>
+                        <GlobalStyle />
                         <SEO />
                         {children}
                         <Footer>
@@ -165,30 +169,35 @@ const Layout = props => {
                                     </a>
                                     <a
                                         href="https://twitter.com/vintem12"
+                                        rel="noopener noreferrer"
                                         target="_blank"
                                     >
                                         <TiSocialTwitter size={40} />
                                     </a>
                                     <a
                                         href="https://www.linkedin.com/in/thitemple/"
+                                        rel="noopener noreferrer"
                                         target="_blank"
                                     >
                                         <TiSocialLinkedin size={40} />
                                     </a>
                                     <a
                                         href="https://www.instagram.com/thitemple/"
+                                        rel="noopener noreferrer"
                                         target="_blank"
                                     >
                                         <TiSocialInstagram size={40} />
                                     </a>
                                     <a
                                         href="https://www.youtube.com/templecoding"
+                                        rel="noopener noreferrer"
                                         target="_blank"
                                     >
                                         <TiSocialYoutube size={40} />
                                     </a>
                                     <a
                                         href="https://github.com/thitemple"
+                                        rel="noopener noreferrer"
                                         target="_blank"
                                     >
                                         <TiSocialGithub size={40} />
@@ -197,7 +206,7 @@ const Layout = props => {
                             </FollowMe>
                             <Copyrights>
                                 &copy; 2018 by Thiago Temple. All rights
-                                reserved.{" "}
+                                reserved.
                             </Copyrights>
                         </Footer>
                     </React.Fragment>
@@ -205,6 +214,10 @@ const Layout = props => {
             )}
         />
     );
+};
+
+Layout.propTypes = {
+    children: PropTypes.node.isRequired
 };
 
 export default Layout;

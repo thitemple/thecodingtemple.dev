@@ -2,10 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import Link from "gatsby-link";
 import kebabCase from "lodash/kebabCase";
+import PropTypes from "prop-types";
 
 import Subline from "./Subline";
 import { media } from "../utils/media";
-import Button from "../components/Button";
+import Button from "./Button";
 
 const Post = styled.article`
     display: flex;
@@ -70,7 +71,7 @@ const Article = ({ title, date, excerpt, timeToRead, category, path }) => {
                 <Link to={path}>{title}</Link>
             </Title>
             <Subline>
-                {date} &mdash; {timeToRead} Min Read &mdash; In{" "}
+                {`${date} - ${timeToRead} Min Read - In `}
                 <Link to={`/categories/${kebabCase(category)}`}>
                     {category}
                 </Link>
@@ -84,6 +85,15 @@ const Article = ({ title, date, excerpt, timeToRead, category, path }) => {
             <Divider />
         </Post>
     );
+};
+
+Article.propTypes = {
+    title: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    excerpt: PropTypes.string.isRequired,
+    timeToRead: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    path: PropTypes.string.isRequired
 };
 
 export default Article;

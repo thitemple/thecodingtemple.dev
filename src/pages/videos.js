@@ -1,8 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { Link, graphql } from "gatsby";
+import { Link } from "gatsby";
 import styled from "styled-components";
-import kebabCase from "lodash/kebabCase";
 import Layout from "../components/Layout";
 import Wrapper from "../components/Wrapper";
 import Header from "../components/Header";
@@ -28,13 +27,7 @@ const Content = styled.div`
     }
 `;
 
-const Title = styled.h3`
-    position: relative;
-    text-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-    margin-bottom: 0.75rem;
-`;
-
-const Videos = props => {
+const Videos = () => {
     return (
         <Layout>
             <Wrapper>
@@ -51,7 +44,7 @@ const Videos = props => {
                         A series of videos about some of the new features of
                         ES2015 (a.k.a. ES6).
                     </p>
-                    <p>Here are the topics I've covered so far:</p>
+                    <p>Here are the topics I&apos;ve covered so far:</p>
 
                     <ul>
                         <li>
@@ -98,7 +91,7 @@ const Videos = props => {
                         </li>
                     </ul>
                     <p>
-                        Or if you want to access{" "}
+                        Or if you want to access&nbsp;
                         <a href="https://www.youtube.com/playlist?list=PLI3B_tXbkuVVeWEHELV16nWFSbP5Tabzf">
                             the playlist on YouTube
                         </a>

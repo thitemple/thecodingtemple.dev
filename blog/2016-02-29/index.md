@@ -18,7 +18,7 @@ Promises are a great way of doing async programming. But testing with promises c
 
 Recently I've found a small and nice package to help to stub tests using Sinon, and the library is [sinon-stub-promise](https://github.com/substantial/sinon-stub-promise).
 
-```bach
+```bash
 npm i sinon-stub-promise -D
 ```
 

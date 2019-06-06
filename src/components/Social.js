@@ -32,27 +32,27 @@ const Social = props => {
         <SocialBar>
             <SocialLink>
                 <TwitterShareButton url={url} title={title}>
-                    <TwitterIcon round={true} size={40} />
+                    <TwitterIcon round size={40} />
                 </TwitterShareButton>
             </SocialLink>
             <SocialLink>
                 <LinkedinShareButton url={url} title={title}>
-                    <LinkedinIcon round={true} size={40} />
+                    <LinkedinIcon round size={40} />
                 </LinkedinShareButton>
             </SocialLink>
             <SocialLink>
                 <RedditShareButton url={url} title={title}>
-                    <RedditIcon round={true} size={40} />
+                    <RedditIcon round size={40} />
                 </RedditShareButton>
             </SocialLink>
             <SocialLink>
                 <FacebookShareButton url={url} quote={title}>
-                    <FacebookIcon round={true} size={40} />
+                    <FacebookIcon round size={40} />
                 </FacebookShareButton>
             </SocialLink>
             <SocialLink>
                 <EmailShareButton url={url} subject={title}>
-                    <EmailIcon round={true} size={40} />
+                    <EmailIcon round size={40} />
                 </EmailShareButton>
             </SocialLink>
         </SocialBar>

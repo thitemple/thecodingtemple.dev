@@ -22,9 +22,7 @@ exports.onCreateNode = ({ node, actions }) => {
     }
 };
 
-exports.createPages = ({ graphql, actions }) => {
-    const { createPage } = actions;
-
+exports.createPages = ({ graphql, actions: { createPage } }) => {
     return new Promise((resolve, reject) => {
         const postPage = path.resolve("src/templates/post.js");
         const categoryPage = path.resolve("src/templates/category.js");
@@ -59,10 +57,10 @@ exports.createPages = ({ graphql, actions }) => {
 
                 createPaginatedPages({
                     edges: result.data.posts.edges,
-                    createPage: createPage,
+                    createPage,
                     pageTemplate: "src/templates/index.js",
                     pageLength: 5, // This is optional and defaults to 10 if not used
-                    pathPrefix: "", // This is optional and defaults to an empty string if not used
+                    pathPrefix: "/", // This is optional and defaults to an empty string if not used
                     context: {} // This is optional and defaults to an empty object if not used
                 });
 

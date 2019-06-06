@@ -36,7 +36,7 @@ const Header = props => (
     <Wrapper>
         <Content>
             {props.children}
-            <Menu inverted={true} />
+            <Menu inverted />
         </Content>
     </Wrapper>
 );
