@@ -105,7 +105,7 @@ const About = () => {
                         <a href="https://boardgamegeek.com/user/vintem">
                             <img
                                 alt="Board games collection"
-                                src="http://boardgamegeek.com/jswidget.php?username=vintem&numitems=5&header=1&text=title&images=medium&show=recentplays&imagesonly=1&imagepos=center&inline=1&domains%5B%5D=boardgame&imagewidget=1"
+                                src="https://boardgamegeek.com/jswidget.php?username=vintem&numitems=5&header=1&text=title&images=medium&show=recentplays&imagesonly=1&imagepos=center&inline=1&domains%5B%5D=boardgame&imagewidget=1"
                                 border="0"
                                 className="center-me"
                             />

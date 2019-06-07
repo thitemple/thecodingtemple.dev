@@ -10,9 +10,9 @@ date: 2016-01-27
 path: "/blog/2016/01/27/a-tale-of-a-pragmatic-programmer"
 ---
 
-[The Pragmatic Programmers](http://amzn.to/1KGgBxX) is a technical book from 1999. Actually, to consider it just a technical book does not do justice to the book. In my opinion, it's a timeless compilation of solutions, tips and wisdom that every programmer that cares about his or her craft should read.
+[The Pragmatic Programmers](https://amzn.to/1KGgBxX) is a technical book from 1999. Actually, to consider it just a technical book does not do justice to the book. In my opinion, it's a timeless compilation of solutions, tips and wisdom that every programmer that cares about his or her craft should read.
 
-[![](http://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=020161622X&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=tempcodi0f-20)](http://www.amazon.com/gp/product/020161622X/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=020161622X&linkCode=as2&tag=tempcodi0f-20&linkId=6QYSJR2Z4HZWZZUQ)
+[![](https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=020161622X&Format=_SL110_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=tempcodi0f-20)](https://www.amazon.com/gp/product/020161622X/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=020161622X&linkCode=as2&tag=tempcodi0f-20&linkId=6QYSJR2Z4HZWZZUQ)
 
 I'm not writing a review of the book, and I'm sure you can quickly find many of those. This is I, sharing some of what I learned from reading the book for the second time.
 
