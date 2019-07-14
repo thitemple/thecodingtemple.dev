@@ -11,7 +11,7 @@ comments: true
 path: "/blog/2017/01/12/writing-functional-javascript-using-ramda"
 ---
 
-The course I produced for Pluralsight is live!!
+The course I produced for PluralSight is live!!
 
 This course will introduce you to the basics of functional programming in JavaScript including what pure functions are, currying, composition, and how to control the application flow in a functional way.
 
