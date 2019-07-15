@@ -26,10 +26,23 @@ I have shared my [podcast playlist](/blog/2015/10/06/whats-on-my-playlist-podcas
 
 ## News and varieties
 
--   [Freakonomics Radio](http://freakonomics.com/) - Well, it's the > the podcast about the inside of everything.
+-   [Freakonomics Radio](http://freakonomics.com/) - Well, it's the > the podcast about the hidden side of everything.
 -   [Planet Money](https://www.npr.org/sections/money/) - Economics for people who are not expert in the subject.
 -   [Science Vs](https://www.gimletmedia.com/science-vs/) - Each episode is a subject being explored in the eyes of science.
 -   [TED Radio Hour](https://www.npr.org/podcasts/510298/ted-radio-hour) - You know TED right?
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive content -->
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1865353648221711"
+     data-ad-slot="8499334570"
+     data-ad-format="auto"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Entertainment
 

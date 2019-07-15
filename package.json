@@ -53,7 +53,8 @@
     "main": "n/a",
     "scripts": {
         "build": "gatsby build",
-        "dev": "gatsby clean && gatsby develop"
+        "dev": "gatsby clean && gatsby develop",
+        "start": "npm run dev"
     },
     "devDependencies": {
         "babel-eslint": "10.0.1",
