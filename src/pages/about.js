@@ -44,23 +44,17 @@ const About = () => {
                     </p>
                     <p>
                         My name is Thiago Temple, I&apos;m Brazilian and
-                        I&apos;m living and working in Ottawa/Canada. Some of my
-                        friends also call me vintem, which is the handle I user
-                        for many things such as&nbsp;
-                        <a href="https://twitter.com/vintem12">my twitter</a>
+                        I&apos;m living and working in Ottawa/Canada. You can reach out to on&nbsp;
+                        <a href="https://twitter.com/ThiagoTemple">twitter</a>
                         &nbsp; and my&nbsp;
                         <a href="mailto:thitemple@gmail.com">email</a>.
-                    </p>
-                    <p>
-                        Vintem doesn&apos;t mean much, it&apos;s just a mix of
-                        my middle and last names.
                     </p>
 
                     <h2>What I do?</h2>
                     <p>
-                        I work for&nbsp;
-                        <a href="http://wyhn.ca">Wyhn</a>
-                        &nbsp;as a developer and for most of the time I&apos;m
+                        I work at&nbsp;
+                        <a href="http://surveymonkey.com">SurveyMonkey</a>
+                        &nbsp;as a software engineer and for most of the time I&apos;m
                         programming with web and mobile related technologies.
                     </p>
 
