@@ -2,7 +2,6 @@ import React from "react";
 import Helmet from "react-helmet";
 import { Link, graphql } from "gatsby";
 import styled from "styled-components";
-import kebabCase from "lodash/kebabCase";
 import { DiscussionEmbed } from "disqus-react";
 import PropTypes from "prop-types";
 
@@ -10,8 +9,6 @@ import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import Wrapper from "../components/Wrapper";
 import Header from "../components/Header";
-import Subline from "../components/Subline";
-import Social from "../components/Social";
 import { media } from "../utils/media";
 
 import config from "../../config/SiteConfig";
@@ -47,51 +44,29 @@ const PostContent = styled.div`
     margin-top: 4rem;
 `;
 
-const Post = props => {
-    const postNode = props.data.markdownRemark;
-    const post = postNode.frontmatter;
-    const url = `${config.siteUrl}${post.path}`;
+const Page = ({ data: { markdownRemark: postNode } }) => {
+    const page = postNode.frontmatter;
+    const url = `${config.siteUrl}${page.path}`;
     const disqusConfig = {
         identifier: url,
         url,
-        title: post.title
+        title: page.title
     };
     return (
         <Layout>
             <Wrapper>
-                <SEO postPath={post.path} postNode={postNode} postSEO />
-                <Helmet title={`${post.title} | ${config.siteTitle}`} />
+                <SEO postPath={page.path} postNode={postNode} postSEO />
+                <Helmet title={`${page.title} | ${config.siteTitle}`} />
                 <Header>
                     <Link to="/">{config.siteTitle}</Link>
                 </Header>
                 <Content>
-                    <Title>{post.title}</Title>
-                    <Subline>
-                        {post.date} &mdash; {postNode.timeToRead} Min Read
-                        &mdash; In&nbsp;
-                        <Link to={`/categories/${kebabCase(post.category)}`}>
-                            {post.category}
-                        </Link>
-                    </Subline>
+                    <Title>{page.title}</Title>
+
                     <PostContent
                         dangerouslySetInnerHTML={{ __html: postNode.html }}
                     />
-                    <Social path={post.path} title={post.title} />
-                    <a
-                        href="https://www.buymeacoffee.com/thitemple"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img
-                            src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png"
-                            alt="Buy Me A Coffee"
-                            className="center-me"
-                            style={{
-                                height: "auto !important",
-                                width: "auto !important"
-                            }}
-                        />
-                    </a>
+
                     <DiscussionEmbed
                         shortname={config.disqusShortName}
                         config={disqusConfig}
@@ -102,30 +77,28 @@ const Post = props => {
     );
 };
 
-export default Post;
-Post.propTypes = {
+export default Page;
+Page.propTypes = {
     data: PropTypes.shape({
         markdownRemark: PropTypes.shape({
             html: PropTypes.string,
             frontmatter: PropTypes.shape({
                 title: PropTypes.string,
-                date: PropTypes.string,
-                category: PropTypes.string,
                 path: PropTypes.string
             })
         }).isRequired
     }).isRequired
 };
+
 /* eslint no-undef: off */
-export const postQuery = graphql`
-    query postByPath($path: String!) {
+export const pageQuery = graphql`
+    query pageByPath($path: String!) {
         markdownRemark(frontmatter: { path: { eq: $path } }) {
             html
             frontmatter {
                 title
-                date(formatString: "YYYY-MM-DD")
-                category
                 path
+                # lastUpdated
             }
             timeToRead
         }
