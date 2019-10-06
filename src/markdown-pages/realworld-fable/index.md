@@ -1,6 +1,8 @@
 ---
 title: RealWorld Fable
 path: /realworld-fable
+order: 1
+series: RealWorld Fable
 ---
 
 ### Intro

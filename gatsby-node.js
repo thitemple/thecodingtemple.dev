@@ -27,6 +27,7 @@ async function createMarkdownPages(graphql, createPage, reporter) {
         {
             pages: allMarkdownRemark(
                 filter: { fileAbsolutePath: { regex: "/(markdown-pages)/" } }
+                sort: { fields: frontmatter___order, order: ASC }
             ) {
                 edges {
                     node {
@@ -46,15 +47,21 @@ async function createMarkdownPages(graphql, createPage, reporter) {
     if (result.errors) {
         reporter.panicOnBuild("Oh nooooo");
     }
-    console.table(result.data.edges);
-    result.data.pages.edges.forEach(({ node }) => {
+    const pages = result.data.pages.edges;
+    pages.forEach(({ node }, index) => {
+        const { path: prevPath, title: prevTitle } =
+            index === 0 ? {} : pages[index - 1].node.frontmatter;
+        const { path: nextPath, title: nextTitle } =
+            index === pages.length - 1 ? {} : pages[index + 1].node.frontmatter;
         createPage({
             path: node.frontmatter.path,
-            component: path.resolve(`./src/templates/page.js`),
+            component: path.resolve(`./src/templates/series.js`),
             context: {
-                // Data passed to context is available
-                // in page queries as GraphQL variables.
-                slug: node.fields.slug
+                slug: node.fields.slug,
+                prevPath,
+                prevTitle,
+                nextPath,
+                nextTitle
             }
         });
     });

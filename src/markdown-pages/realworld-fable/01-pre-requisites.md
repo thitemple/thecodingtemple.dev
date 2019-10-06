@@ -1,6 +1,8 @@
 ---
-title: RealWorld Fable - Pre-requisites
+title: Pre-requisites
 path: /realworld-fable/01-pre-requisites
+order: 2
+series: RealWorld Fable
 --- 
 
 ### Here's what you need installed before you begin
@@ -43,6 +45,6 @@ This is the F# REPL and to quit from it just enter:
 #quit;;
 ```
 
-If you can run all of the above commands that means you have everything install.
+If you can run all of the above commands that means you have everything install and you can now start coding.
 
-It's time now to scaffold the project and say "Hello World" in F# and Fable.
+It's time now to scaffold the project and say "Hello World" in F# with Fable.
