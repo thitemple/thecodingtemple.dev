@@ -37,6 +37,8 @@ async function createMarkdownPages(graphql, createPage, reporter) {
                         frontmatter {
                             title
                             path
+                            series
+                            order
                         }
                         timeToRead
                     }
@@ -53,6 +55,16 @@ async function createMarkdownPages(graphql, createPage, reporter) {
             index === 0 ? {} : pages[index - 1].node.frontmatter;
         const { path: nextPath, title: nextTitle } =
             index === pages.length - 1 ? {} : pages[index + 1].node.frontmatter;
+
+        const landingSeries = pages.find(
+            x =>
+                x.node.frontmatter.series === node.frontmatter.series &&
+                x.node.frontmatter.order === 1
+        );
+        const landingPath = landingSeries
+            ? landingSeries.node.frontmatter.path
+            : null;
+
         createPage({
             path: node.frontmatter.path,
             component: path.resolve(`./src/templates/series.js`),
@@ -61,7 +73,8 @@ async function createMarkdownPages(graphql, createPage, reporter) {
                 prevPath,
                 prevTitle,
                 nextPath,
-                nextTitle
+                nextTitle,
+                landingPath
             }
         });
     });

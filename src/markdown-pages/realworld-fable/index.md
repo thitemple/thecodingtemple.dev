@@ -26,3 +26,4 @@ This walkthrough is target to folks who have experience with front-end developme
 ### Table of Contents
 
 1) [Pre-requisites](/realworld-fable/01-pre-requisites)
+2) [Hello F# and Fable](/realworld-fable/02-hello-world-fsharp-fable)

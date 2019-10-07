@@ -16,15 +16,7 @@ import config from "../../config/SiteConfig";
 import "../utils/dracula-prism.css";
 import "../utils/styles.css";
 
-const Series = styled.h1`
-    margin-bottom: 1rem;
-
-    @media ${media.phone} {
-        font-size: 2rem;
-    }
-`;
-
-const Title = styled.h2`
+const Title = styled.h1`
     margin-bottom: 1rem;
 
     @media ${media.phone} {
@@ -39,11 +31,12 @@ const PageContent = styled.div`
 const Footer = styled.div`
     display: flex;
     justify-content: space-around;
+    margin-top: 2rem;
 `;
 
 const Page = ({
     data: { markdownRemark: pageNode },
-    pageContext: { prevPath, prevTitle, nextPath, nextTitle }
+    pageContext: { prevPath, prevTitle, nextPath, nextTitle, landingPath }
 }) => {
     const page = pageNode.frontmatter;
     return (
@@ -55,9 +48,12 @@ const Page = ({
                     <Link to="/">{config.siteTitle}</Link>
                 </Header>
                 <Content>
-                    <Series>{page.series}</Series>
+                    <Title>{page.title}</Title>
                     {page.series !== page.title ? (
-                        <Title>{page.title}</Title>
+                        <>
+                            This article is part of the series:&nbsp;
+                            <Link to={landingPath}>{page.series}</Link>
+                        </>
                     ) : null}
                     <PageContent
                         dangerouslySetInnerHTML={{ __html: pageNode.html }}
@@ -106,7 +102,8 @@ Page.propTypes = {
         prevPath: PropTypes.string,
         prevTitle: PropTypes.string,
         nextPath: PropTypes.string,
-        nextTitle: PropTypes.string
+        nextTitle: PropTypes.string,
+        landingPath: PropTypes.string
     }).isRequired
 };
 
