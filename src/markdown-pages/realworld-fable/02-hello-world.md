@@ -1,7 +1,7 @@
 ---
 title: Hello World in F# with Fable
 path: /realworld-fable/02-hello-world-fsharp-fable
-order: 3
+order: 2
 series: RealWorld Fable
 --- 
 Now that you have everything you need installed let's begin scaffolding our RealWorld app. At the end of this step you should have a running application where you'll finally be saying Hello 👋 to the World 🌎!
@@ -159,7 +159,7 @@ Great! We're almost finished, just a couple more steps.
 
 ### Your first F# lines of code
 
-Inside the `src/App.fs` enter the following lines, and don't worry if they don't make sense right, on the next article we'll be exploring them.
+Inside the `src/App.fs` enter the following lines, and don't worry if they don't make sense right, on the next lesson we'll be exploring them.
 
 
 ```fsharp
@@ -169,7 +169,7 @@ open Fable.React
 
 type Model = string
 
-type Msg = Msg of unit
+type Msg = Msg
 
 let init() = "Hello World from Fable and F#"
 

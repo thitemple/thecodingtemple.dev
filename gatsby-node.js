@@ -59,7 +59,7 @@ async function createMarkdownPages(graphql, createPage, reporter) {
         const landingSeries = pages.find(
             x =>
                 x.node.frontmatter.series === node.frontmatter.series &&
-                x.node.frontmatter.order === 1
+                x.node.frontmatter.order === 0
         );
         const landingPath = landingSeries
             ? landingSeries.node.frontmatter.path

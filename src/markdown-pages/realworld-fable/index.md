@@ -1,7 +1,7 @@
 ---
 title: RealWorld Fable
 path: /realworld-fable
-order: 1
+order: 0
 series: RealWorld Fable
 ---
 
@@ -11,7 +11,9 @@ If you never head of the [RealWord example apps](https://realworld.io) project y
 
 *So what's the app people are building?* It's **Conduit**, a medium.com clone. If you visit the [RealWorld example apps](https://realworld.io) site you're gonna find some live demos.
 
-Here what you will find is a walkthrough on how to build a version of Conduit using [F#](https://fsharp.org) and [Fable](https://fable.io).
+Here what you will find is a walk-through on how to build a version of Conduit using [F#](https://fsharp.org) and [Fable](https://fable.io).
+
+The goal is to build this application in a series of small, gentle and palatable lessons.
 
 ### What's F# and Fable
 
@@ -21,9 +23,10 @@ If you want more then that, I suggest you visit their sites [F#](https://fsharp.
 
 ### Who's is this for?
 
-This walkthrough is target to folks who have experience with front-end development, probably some JavaScript. I will not assume you know any F# nor Fable. We're gonna walkthrough those together.
+This walk-through is target to folks who have experience with front-end development, probably some JavaScript. I will not assume you know any F# nor Fable. We're gonna walkthrough those together.
 
 ### Table of Contents
 
 1) [Pre-requisites](/realworld-fable/01-pre-requisites)
 2) [Hello F# and Fable](/realworld-fable/02-hello-world-fsharp-fable)
+3) [F# Basics](/realworld-fable/03-fsharp-basics)
