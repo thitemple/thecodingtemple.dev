@@ -9,11 +9,11 @@ series: RealWorld Fable
 
 1) Some version of .NET, I'm using .NET Core 3 that I installed [from here](https://dotnet.microsoft.com/download).
 2) NodeJS. I'm running version 10.15 and [I got it from here](https://nodejs.org/en/download/).
-3) You also need to install F#, follow the instructions for your OS [according to the F# site](https://fsharp.org).
+3) You also need to install F#. Follow the instructions for your OS [according to the F# site](https://fsharp.org).
 
-It will be helpful to have some editor that supports F#, there's a free version of Visual Studio but I am using [VSCode](https://code.visualstudio.com/) with the [Ionide extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).
+It will be helpful to have some editor that supports F#, there's a free version of [Visual Studio](https://visualstudio.microsoft.com/vs/community/) but I am using [VSCode](https://code.visualstudio.com/) with the [Ionide extension](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).
 
-Make sure that everything is working by running the following on a terminal:
+Make sure that everything is working by running the following commands on a terminal:
 
 ```
 node --version
