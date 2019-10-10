@@ -29,9 +29,37 @@ const PageContent = styled.div`
 `;
 
 const Footer = styled.div`
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
     margin-top: 2rem;
+
+    @media (min-width: 992px) {
+        grid-template-columns: 1fr 1fr;
+    }
+`;
+
+const NavigationButton = styled(Button)`
+    justify-self: center;
+`;
+
+const PreviousButton = styled(NavigationButton)`
+    grid-column: 1;
+    grid-row: 2;
+
+    @media (min-width: 992px) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+`;
+
+const NextButton = styled(NavigationButton)`
+    grid-column: 1;
+    grid-row: 1;
+
+    @media (min-width: 992px) {
+        grid-column: 2;
+    }
 `;
 
 const Page = ({
@@ -60,22 +88,22 @@ const Page = ({
                     />
                     <Footer>
                         {prevPath ? (
-                            <Button>
+                            <PreviousButton>
                                 <Link to={prevPath}>
                                     &lt;&lt;&nbsp;
                                     {prevTitle}
                                 </Link>
-                            </Button>
+                            </PreviousButton>
                         ) : (
                             <div />
                         )}
                         {nextPath ? (
-                            <Button>
+                            <NextButton>
                                 <Link to={nextPath}>
                                     {nextTitle}
                                     &nbsp;&gt;&gt;
                                 </Link>
-                            </Button>
+                            </NextButton>
                         ) : (
                             <div />
                         )}

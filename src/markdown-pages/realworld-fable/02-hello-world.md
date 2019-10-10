@@ -1,6 +1,6 @@
 ---
 title: Hello World in F# with Fable
-path: /realworld-fable/02-hello-world-fsharp-fable
+path: /real-world-fable/02-hello-world-fsharp-fable
 order: 2
 series: RealWorld Fable
 --- 

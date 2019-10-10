@@ -1,6 +1,6 @@
 ---
 title: F# Basics
-path: /realworld-fable/03-fsharp-basics
+path: /real-world-fable/03-fsharp-basics
 order: 3
 series: RealWorld Fable
 --- 

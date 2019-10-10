@@ -1,6 +1,6 @@
 ---
 title: Pre-requisites
-path: /realworld-fable/01-pre-requisites
+path: /real-world-fable/01-pre-requisites
 order: 1
 series: RealWorld Fable
 --- 

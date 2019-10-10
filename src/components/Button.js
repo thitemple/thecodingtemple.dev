@@ -33,7 +33,11 @@ const Wrapper = styled.button`
     }
 `;
 
-const Button = props => <Wrapper big={props.big}>{props.children}</Wrapper>;
+const Button = props => (
+    <Wrapper big={props.big} {...props}>
+        {props.children}
+    </Wrapper>
+);
 Button.propTypes = {
     big: PropTypes.bool,
     children: PropTypes.node.isRequired
