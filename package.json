@@ -2,7 +2,7 @@
     "name": "templecoding-site",
     "description": "The personal blog of Thiago Temple.",
     "version": "1.0.0",
-    "author": "Thiago Temple <thitemple@gmail.com>",
+    "author": "Thiago Temple <thitemple@pm.me>",
     "dependencies": {
         "babel-plugin-styled-components": "1.10.6",
         "disqus-react": "1.0.7",
