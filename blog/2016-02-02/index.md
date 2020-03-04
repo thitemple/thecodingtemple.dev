@@ -96,19 +96,6 @@ First, we have to tell karma to pre-process all test files using Webpack.
 
 Next we have to configure Webpack itself, we could copy and paste the code from the Webpack config file, but we don't want to repeat ourselves, right? So we can import the Webpack config file and reuse its configurations.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## The Typescript config file: tsconfig.json
 
 This file is also pretty straight forward. The most important setting is a module. Because Webpack does not support ES6 modules (Version 2 will support them), we have to compile the modules to CommonJS. Besides that, there's nothing special to do here.

@@ -40,19 +40,6 @@ public class Person
 
 Having a filled in form with the date 16/09/1980, for instance, automatically it was detected as an invalid date since the expected is a date using the pattern mm/dd/yyyy, but of course, here in Brazil the pattern is different, it is dd/mm/yyyy.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 So how can I fix it?
 
 First of all, I have to use the [jQuery's plug-in Globalize](https://github.com/jquery/globalize). I just have to add references to two scripts.

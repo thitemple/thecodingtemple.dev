@@ -68,19 +68,6 @@ getMovieAsync().then(movie => console.log(movie.Title));
 
 That's great and for sure it makes for a more readable code. We even have a sense of synchronous code with a simple flow.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## What about error handling?
 
 We have two choices. First is to use a try/catch:

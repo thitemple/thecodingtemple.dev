@@ -34,19 +34,6 @@ In this case, I'm assuming that when the package is deployed there will be a fol
 
 If TypeScript does not find a typings key in the package.json file, it will look for an index.d.ts file in the root of the package's folder.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## The type definition file
 
 Now, on to the d.ts file itself. Here's how we define a type for a React component.

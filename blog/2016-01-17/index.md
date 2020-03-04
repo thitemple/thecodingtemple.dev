@@ -32,19 +32,6 @@ You know when you position the cursor on a variable name or function name and Vi
 
 <img alt="Navigate reference" src="navigate-reference.gif" class="center-me" />
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## Peek Definition: Alt+F12
 
 Just want to check rapidly what a method or class do? Use the peek definition. To get back to your code just press Esc.

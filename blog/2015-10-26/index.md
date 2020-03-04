@@ -18,19 +18,6 @@ I have worked for many years without putting code reviews into practice. Now, I 
 
 There are many and different benefits when doing code reviews, but what I want to discuss today is what one should aim for when doing a code review.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 Here are five goals, in no particular order:
 
 1.  **Make sure there are good quality tests**: automated tests aren't just important, they're one of the practices that separate a professional developer from someone not so professional. So I'm assuming you're writing them. But it's important to check if the written tests have real meaning. Sometimes we write tests (intentionally or not) that just makes that freaking bullet become green. Never forget: test code is as important as production code.

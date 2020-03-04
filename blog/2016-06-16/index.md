@@ -32,19 +32,6 @@ Simply put, a functor is a value (in JS it's an object) that:
 2.  The expected function can return any kind of value
 3.  The map function will return another functor of the same type (as the original functor)
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## I still don't get it, give me an example
 
 Let's see one of the most simple Functors, the Maybe.

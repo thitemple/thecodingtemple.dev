@@ -42,19 +42,6 @@ console.log("The red pill".startsWith("red", 4)); //true
 console.log("Hello Mr. Anderson".endsWith("Hello Mr", 8)); //true
 ```
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## Template literals
 
 Template literals are a new string literal which we can have multiple lines and we also can interpolate expressions.

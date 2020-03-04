@@ -49,19 +49,6 @@ And I received the following error:
 
 And it also said that the repository has not been updated.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## The solution
 
 After much searching, and because a `git pull` has not solved the problem, I decided to do a `force push` to deploy it.

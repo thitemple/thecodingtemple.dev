@@ -45,19 +45,6 @@ You can do that with Evernote if you want to. Or let's say you've found an inter
 
 Me? I use the Watch Later playlist on YouTube. For interesting, I use [Pocket](https://getpocket.com/). You can have it installed on your phone, tablet, as an extension on Chrome, so if there's something to read and you can't right now, save it for later.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## Listen
 
 Podcasts are great I just love them. [I've already talked about what I listen to](http://templecoding.com/blog/2015/10/06/whats-on-my-playlist-podcasts-i-listen-to/). The list may have changed a bit (and it sure does from time to time), but it still is reasonable.

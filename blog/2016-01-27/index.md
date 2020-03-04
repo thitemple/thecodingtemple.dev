@@ -43,19 +43,6 @@ I guess this sounds familiar, I bet we have all been cooked slowly (at least) on
 
 It all starts with simple changes, those that almost never will do any harm, but then, you combine those with some other ones. "I'm just going to inherit this class" they say, or "why not just copy, paste and make some adjustments" you hear, "just do it quickly, we'll come back later and clean it up afterwards". The examples could go on.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 After a while, you're surrounded by boiling water, and there's nothing left to do: you're cooked.
 
 So to avoid that, let's do some...

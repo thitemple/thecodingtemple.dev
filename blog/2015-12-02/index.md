@@ -28,19 +28,6 @@ It is not uncommon on our industry, and I bet you already know the story as well
 
 But it just needs one thing to go wrong and you're done. It seems that everything that has been done has been forgotten and suddenly you are no longer the king of anyone's world anymore.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 The first lesson I take from this is: be careful where you put your name. Yes. Don't forget that the internet has an incredible memory. So it's not any project that is out there that should have your name on it. Of course, when we work for a company, we don't always choose what we do, but with that comes two issues:
 
 1.  Always you do your best, after all, the people working with you will be judging you by your work.

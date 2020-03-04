@@ -48,19 +48,6 @@ console.log(demo()); // Temple
 
 Simple as that, no error, it's the same variable.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ##The let keyword
 
 In ES15, there's a new new keyword to declare variables, and it's a block scope variable. So now, if we declare a variable inside a _if_ or a _for loop_ that variable is not accessible outside that scope.

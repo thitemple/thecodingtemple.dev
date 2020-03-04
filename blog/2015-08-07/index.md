@@ -15,19 +15,6 @@ For one thing, I really took some (long) time to do other things, like, for inst
 
 But the main reason is that I was not working (on my daily job) with web technologies. I've worked some time with BizTalk and for almost two years, with WPF. And, I may not dislike WPF, but I really don't enjoy it much either. So, from time to time, I wrote some pet projects to keep myself up-to-date with the new stuff on web technologies.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 Now, I'm back working with web technologies and the moment couldn't be better, ES2015 was approved, ASP.NET 5 is completely changed, open sourced and is now multiplatform. Also, every day there's a new JavaScript library being created (not sure yet if this is a good thing).
 
 So yeah, this is a fun time to be a web developer, especially if you're like me and love to learn new things!

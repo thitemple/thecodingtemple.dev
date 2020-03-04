@@ -52,19 +52,6 @@ The above snippet will *not* compile 💣 because we are now making an assumptio
 
 Now you have a choice, either type the first `movie` argument as a `string` or something else that you can turn in to a `string`.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 Here's another example:
 
 ```ts

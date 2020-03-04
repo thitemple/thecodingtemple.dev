@@ -18,19 +18,6 @@ Second, it was nice that the conference I went was not a technical one. Sometime
 
 Third, it was also a good place regain some energy. See what other people are doing to improve, get new ideas and realize that other teams also have issues.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 So here are a few notes I took from the sessions I attended.
 
 **The disciplined Agile Business: Harmonize Agile and Lean by Scott W. Ambler** / _L'Entreprise Agile disciplinée: Harmoniser Agilité et Lean_

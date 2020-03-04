@@ -41,19 +41,6 @@ Note that we didn't specify the type, but because the function only expects one 
 
 ![Generics](generics-01.png)
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 Big deal, you may say, so much work for that. OK, let's see another more useful example.
 
 Let's say we want to make an Ajax request and that we know that this Ajax request will be returning a JSON that we can parse into an object or class. That function may look like this:

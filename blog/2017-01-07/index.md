@@ -29,19 +29,6 @@ You don't want a group of people that think the same way all the time.
 
 I am certainly at fault of many times forgetting about the human side of things. I like the technical aspect of developing software, but for many times I forget that some actions and/or decisions might not be so well taken by others. So it is great to have at least someone on your team, that is always worried about the impact of the team's decisions on people.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## Attention to Details
 
 It is extremely important to have people in the team that have the attention to details and consequences that some decisions might have.

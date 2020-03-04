@@ -73,19 +73,6 @@ logInfo("nah, we're good"); // Info: nah, we're good
 
 See how quickly we can create new functions, just by currying another one?
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 OK, but wait a minute, earlier I said that currying is a way of calling a function with less arguments than the function requires. With those examples, one could argue that each function expects only one argument, and that's true.
 
 That's because although we can program JavaScript in a functional way, JavaScript does not have all the tools needed to do so by default, for instance, functions are not curried by default like in some other languages.

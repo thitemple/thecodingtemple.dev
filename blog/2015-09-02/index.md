@@ -61,19 +61,6 @@ console.log(p.name); // Temple
 
 The code is pretty straightforward, but one thing to notice is that inside the constructor, the value of _name_ was assigned to a "private" variable _\_name_. That's necessary because otherwise the getter name would call itself until a stack overflow error would be thrown. And, when I say "private", what I mean is that under the hoods, the class is no more than a function and there's no such thing as a private variable inside a function in JavaScript. One could write the code below and would be perfectly valid.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ```js
 let p = new Person("Thiago");
 console.log(p._name); // Thiago

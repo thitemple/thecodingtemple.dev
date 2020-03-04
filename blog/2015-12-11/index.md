@@ -61,19 +61,6 @@ Here's the result of my package.json file:
 }
 ```
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## Webpack
 
 Time to configure Webpack. If you don't know Webpack, here's what it will do for us: it will bundle all of our JavaScript or TypeScript files in a single file, and will transpile the JSX and TypeScript syntax into JavaScript that the browser will understand.

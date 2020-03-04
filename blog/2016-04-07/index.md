@@ -39,19 +39,6 @@ tslint i
 
 Then, it's just a matter of changing the file to something that your team agrees with.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 To be honest, I'm a linter addicted, if the linter is telling me to fix something I'll do it. If I don't agree with the linter, I can change the rule.
 
 But there may be moments when someone on the team can forget to check the linter's warnings, so if you'd like, you could enforce those rules while building the files.

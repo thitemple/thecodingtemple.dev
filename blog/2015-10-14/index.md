@@ -22,19 +22,6 @@ Some of those questions are not so easy to answer and for some companies, instan
 
 So thinking about that, I decided to elaborate a few questions I'd like to ask a candidate. Some of those questions don't have a straight answer, rather, if those questions are interesting to you, you have to align the answers with what your team thinks is right.
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Responsive content -->
-
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1865353648221711"
-     data-ad-slot="8499334570"
-     data-ad-format="auto"></ins>
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## What makes a good code?
 
 What I want to know is, what the candidate thinks is a good code? Is it having separation of concerns? Is it having code generation? Is it having the simplest possible code? Is it having comments? Let the candidate speak freely, a more experienced developer will most certainly know what she thinks is a good code.
