@@ -77,10 +77,12 @@ type Immutable<T> = {
 
 This type uses [Generics](https://www.typescriptlang.org/docs/handbook/generics.html) and [Mapped types](https://www.typescriptlang.org/docs/handbook/advanced-types.html#mapped-types) and in essence is:
 
-    - Accepting another type as an argument (thus the generic) and that is represented by the `T`. The type can be an interface, a type alias or an inline type, just like the `Person` example.
-    - Iterating over each attribute of the given type, and representing that attribute as the `K` letter (this is the mapped type part).
-    - For each attribute, it modifies the attribute by pre-pending the attribute with a `readonly` keyword.
-    - Wrapping the type of each attribute with a recursive call to the `Immutable` type once again, thus turning all of its nested attributes immutable as well.
+
+1. Accepting another type as an argument (thus the generic) and that is represented by the `T`. The type can be an interface, a type alias or an inline type, just like the `Person` example.
+2. Iterating over each attribute of the given type, and representing that attribute as the `K` letter (this is the mapped type part).
+3. For each attribute, it modifies the attribute by pre-pending the attribute with a `readonly` keyword.
+4. Wrapping the type of each attribute with a recursive call to the `Immutable` type once again, thus turning all of its nested attributes immutable as well.
+
 
 It's a lot to unpack, I understand, and it may take some to sink in. But this is a very elegant (at least in my opinion) solution to this problem. So, if you don't understand Generics or Mapped types, take your time to read about it.
 
