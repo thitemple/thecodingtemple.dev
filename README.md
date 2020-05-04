@@ -1,5 +1,7 @@
 # Temple Coding
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9113178f-7b64-4471-b23e-75e12e633795/deploy-status)](https://app.netlify.com/sites/templecoding/deploys)
+
 _My blog!_
 
 [https://templecoding.com](https://templecoding.com)
