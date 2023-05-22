@@ -53,9 +53,9 @@ const About = () => {
                     <h2>What I do?</h2>
                     <p>
                         I work at&nbsp;
-                        <a href="http://surveymonkey.com">SurveyMonkey</a>
-                        &nbsp;as a software engineer and for most of the time I&apos;m
-                        programming with web and mobile related technologies.
+                        <a href="http://shopify.com">Shopify</a>
+                        &nbsp;as a staff developer and for most of the time I&apos;m
+                        programming with web related technologies.
                     </p>
 
                     <h2>Why I do it?</h2>
