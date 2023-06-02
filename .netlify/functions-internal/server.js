@@ -34,7 +34,7 @@ __export(assets_manifest_exports, {
 });
 var assets_manifest_default, init_assets_manifest = __esm({
   "server-assets-manifest:@remix-run/dev/assets-manifest"() {
-    assets_manifest_default = { entry: { module: "/build/entry.client-JLJGVRA2.js", imports: ["/build/_shared/chunk-2G7PDDD5.js", "/build/_shared/chunk-NLQNPAAV.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-YAPOH4AB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-3UTEROWS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages": { id: "routes/_pages", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_pages-53VBVETB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages.about": { id: "routes/_pages.about", parentId: "routes/_pages", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_pages.about-HQUYZIRT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages.categories": { id: "routes/_pages.categories", parentId: "routes/_pages", path: "categories", index: void 0, caseSensitive: void 0, module: "/build/routes/_pages.categories-UKFBKO23.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog": { id: "routes/blog", parentId: "root", path: "blog", index: void 0, caseSensitive: void 0, module: "/build/routes/blog-5JWVSH64.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog.$slug": { id: "routes/blog.$slug", parentId: "routes/blog", path: ":slug", index: void 0, caseSensitive: void 0, module: "/build/routes/blog.$slug-SF7EXBXM.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "d7326b28", hmr: void 0, url: "/build/manifest-D7326B28.js" };
+    assets_manifest_default = { entry: { module: "/build/entry.client-DULRKKFN.js", imports: ["/build/_shared/chunk-ST7TJEML.js", "/build/_shared/chunk-2G7PDDD5.js", "/build/_shared/chunk-NLQNPAAV.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-YAPOH4AB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-3UTEROWS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages": { id: "routes/_pages", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_pages-53VBVETB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages.about": { id: "routes/_pages.about", parentId: "routes/_pages", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_pages.about-HQUYZIRT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages.categories": { id: "routes/_pages.categories", parentId: "routes/_pages", path: "categories", index: void 0, caseSensitive: void 0, module: "/build/routes/_pages.categories-UKFBKO23.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog": { id: "routes/blog", parentId: "root", path: "blog", index: void 0, caseSensitive: void 0, module: "/build/routes/blog-5JWVSH64.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog.$slug": { id: "routes/blog.$slug", parentId: "routes/blog", path: ":slug", index: void 0, caseSensitive: void 0, module: "/build/routes/blog.$slug-YWY45EVO.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "e44efaab", hmr: void 0, url: "/build/manifest-E44EFAAB.js" };
   }
 });
 
@@ -268,27 +268,36 @@ __export(blog_slug_exports, {
   default: () => BlogPostPage,
   loader: () => loader
 });
-var import_react3 = require("@remix-run/react");
+var import_react3 = require("@remix-run/react"), import_react4 = require("react");
 
-// app/util/mdx.ts
+// app/util/mdx.server.ts
+var import_path = __toESM(require("path")), import_mdx_bundler = require("mdx-bundler");
 async function getMdxContent(slug) {
-  return slug;
+  let pathToContent = `/content/posts/${slug}/index.mdx`, dir = import_path.default.dirname(pathToContent);
+  return (0, import_mdx_bundler.bundleMDX)({
+    file: import_path.default.join(process.cwd(), pathToContent),
+    cwd: import_path.default.join(process.cwd(), dir)
+  });
 }
 
 // app/routes/blog.$slug.tsx
-var import_jsx_dev_runtime5 = require("react/jsx-dev-runtime");
-function loader({ params }) {
-  return params.slug, getMdxContent(params.slug);
+var import_client = require("mdx-bundler/client"), import_jsx_dev_runtime5 = require("react/jsx-dev-runtime");
+async function loader({ params }) {
+  if (!params.slug)
+    throw new Error("Slug not found");
+  let { code, frontmatter } = await getMdxContent(params.slug);
+  return { code, frontmatter };
 }
 function BlogPostPage() {
-  let data = (0, import_react3.useLoaderData)();
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("article", { children: [
-    "The blog post for: ",
-    data
-  ] }, void 0, !0, {
+  let { code } = (0, import_react3.useLoaderData)(), Component = (0, import_react4.useMemo)(() => (0, import_client.getMDXComponent)(code), [code]);
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("article", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(Component, {}, void 0, !1, {
     fileName: "app/routes/blog.$slug.tsx",
-    lineNumber: 15,
-    columnNumber: 9
+    lineNumber: 23,
+    columnNumber: 4
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/blog.$slug.tsx",
+    lineNumber: 22,
+    columnNumber: 3
   }, this);
 }
 
@@ -378,9 +387,9 @@ var pages_exports = {};
 __export(pages_exports, {
   default: () => PagesLayout
 });
-var import_react4 = require("@remix-run/react"), import_jsx_dev_runtime7 = require("react/jsx-dev-runtime");
+var import_react5 = require("@remix-run/react"), import_jsx_dev_runtime7 = require("react/jsx-dev-runtime");
 function PagesLayout() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("main", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react4.Outlet, {}, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("main", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react5.Outlet, {}, void 0, !1, {
     fileName: "app/routes/_pages.tsx",
     lineNumber: 6,
     columnNumber: 4
@@ -397,7 +406,7 @@ __export(blog_exports, {
   default: () => BlogLayout,
   loader: () => loader2
 });
-var import_node2 = require("@remix-run/node"), import_react5 = require("@remix-run/react"), import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
+var import_node2 = require("@remix-run/node"), import_react6 = require("@remix-run/react"), import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
 function loader2({ params }) {
   return params.slug ? null : (0, import_node2.redirect)("/");
 }
@@ -408,7 +417,7 @@ function BlogLayout() {
       lineNumber: 15,
       columnNumber: 4
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react5.Outlet, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react6.Outlet, {}, void 0, !1, {
       fileName: "app/routes/blog.tsx",
       lineNumber: 16,
       columnNumber: 4

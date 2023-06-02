@@ -1,16 +1,26 @@
-import { LoaderArgs, redirect } from "@remix-run/node";
+import { LoaderArgs } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { getMdxContent } from "~/util/mdx";
+import { useMemo } from "react";
+import { getMdxContent } from "~/util/mdx.server";
+import { getMDXComponent } from "mdx-bundler/client";
 
-export function loader({ params }: LoaderArgs) {
+export async function loader({ params }: LoaderArgs) {
 	if (!params.slug) {
-		// return redirect("/");
+		throw new Error("Slug not found");
 	}
 
-	return getMdxContent(params.slug);
+	const { code, frontmatter } = await getMdxContent(params.slug);
+	return { code, frontmatter };
 }
 
 export default function BlogPostPage() {
-	const data = useLoaderData<typeof loader>();
-	return <article>The blog post for: {data}</article>;
+	const { code } = useLoaderData<typeof loader>();
+
+	const Component = useMemo(() => getMDXComponent(code), [code]);
+
+	return (
+		<article>
+			<Component />
+		</article>
+	);
 }
