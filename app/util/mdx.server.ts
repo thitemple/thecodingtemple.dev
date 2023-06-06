@@ -1,4 +1,5 @@
 import path from "path";
+import remarkMdxImages from "remark-mdx-images";
 
 import { bundleMDX } from "mdx-bundler";
 
@@ -8,5 +9,21 @@ export async function getMdxContent(slug: string) {
 	return bundleMDX({
 		file: path.join(process.cwd(), pathToContent),
 		cwd: path.join(process.cwd(), dir),
+		mdxOptions: options => {
+			options.remarkPlugins = [
+				...(options.remarkPlugins ?? []),
+				remarkMdxImages,
+			];
+			return options;
+		},
+		esbuildOptions: options => {
+			options.loader = {
+				...options.loader,
+				".png": "dataurl",
+				".jpg": "dataurl",
+			};
+
+			return options;
+		},
 	});
 }
