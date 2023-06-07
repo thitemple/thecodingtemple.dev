@@ -1,5 +1,6 @@
 import path from "path";
 import remarkMdxImages from "remark-mdx-images";
+import rehypeHighlight from "rehype-highlight";
 
 import { bundleMDX } from "mdx-bundler";
 
@@ -14,6 +15,7 @@ export async function getMdxContent(slug: string) {
 				...(options.remarkPlugins ?? []),
 				remarkMdxImages,
 			];
+			options.rehypePlugins = [rehypeHighlight];
 			return options;
 		},
 		esbuildOptions: options => {
@@ -21,6 +23,7 @@ export async function getMdxContent(slug: string) {
 				...options.loader,
 				".png": "dataurl",
 				".jpg": "dataurl",
+				".gif": "dataurl",
 			};
 
 			return options;
