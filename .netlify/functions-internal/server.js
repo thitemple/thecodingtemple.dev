@@ -27,32 +27,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   mod
 )), __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: !0 }), mod);
 
-// server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_exports = {};
-__export(assets_manifest_exports, {
-  default: () => assets_manifest_default
-});
-var assets_manifest_default, init_assets_manifest = __esm({
-  "server-assets-manifest:@remix-run/dev/assets-manifest"() {
-    assets_manifest_default = { entry: { module: "/build/entry.client-DULRKKFN.js", imports: ["/build/_shared/chunk-ST7TJEML.js", "/build/_shared/chunk-2G7PDDD5.js", "/build/_shared/chunk-NLQNPAAV.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-YAPOH4AB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-3UTEROWS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages": { id: "routes/_pages", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_pages-53VBVETB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages.about": { id: "routes/_pages.about", parentId: "routes/_pages", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_pages.about-JWESLJAP.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog": { id: "routes/blog", parentId: "root", path: "blog", index: void 0, caseSensitive: void 0, module: "/build/routes/blog-5JWVSH64.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog.$slug": { id: "routes/blog.$slug", parentId: "routes/blog", path: ":slug", index: void 0, caseSensitive: void 0, module: "/build/routes/blog.$slug-YWY45EVO.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, version: "6b191eb2", hmr: void 0, url: "/build/manifest-6B191EB2.js" };
-  }
-});
-
-// node_modules/@remix-run/css-bundle/dist/server.js
-var require_server = __commonJS({
-  "node_modules/@remix-run/css-bundle/dist/server.js"(exports) {
-    "use strict";
-    Object.defineProperty(exports, "__esModule", { value: !0 });
-    var assetsManifest = (init_assets_manifest(), __toCommonJS(assets_manifest_exports));
-    function _interopDefaultLegacy(e) {
-      return e && typeof e == "object" && "default" in e ? e : { default: e };
-    }
-    var assetsManifest__default = /* @__PURE__ */ _interopDefaultLegacy(assetsManifest), cssBundleHref2 = assetsManifest__default.default.cssBundleHref;
-    exports.cssBundleHref = cssBundleHref2;
-  }
-});
-
-// node_modules/fault/index.js
+// node_modules/.pnpm/fault@2.0.1/node_modules/fault/index.js
 function create(Constructor) {
   return FormattedError.displayName = Constructor.displayName || Constructor.name, FormattedError;
   function FormattedError(format, ...values) {
@@ -61,7 +36,7 @@ function create(Constructor) {
   }
 }
 var import_format, fault, init_fault = __esm({
-  "node_modules/fault/index.js"() {
+  "node_modules/.pnpm/fault@2.0.1/node_modules/fault/index.js"() {
     import_format = __toESM(require("format"), 1), fault = Object.assign(create(Error), {
       eval: create(EvalError),
       range: create(RangeError),
@@ -73,9 +48,9 @@ var import_format, fault, init_fault = __esm({
   }
 });
 
-// node_modules/@babel/runtime/helpers/interopRequireDefault.js
+// node_modules/.pnpm/@babel+runtime@7.22.5/node_modules/@babel/runtime/helpers/interopRequireDefault.js
 var require_interopRequireDefault = __commonJS({
-  "node_modules/@babel/runtime/helpers/interopRequireDefault.js"(exports, module2) {
+  "node_modules/.pnpm/@babel+runtime@7.22.5/node_modules/@babel/runtime/helpers/interopRequireDefault.js"(exports, module2) {
     function _interopRequireDefault(obj) {
       return obj && obj.__esModule ? obj : {
         default: obj
@@ -85,9 +60,9 @@ var require_interopRequireDefault = __commonJS({
   }
 });
 
-// node_modules/remark-mdx-frontmatter/dist/index.js
+// node_modules/.pnpm/remark-mdx-frontmatter@1.1.1/node_modules/remark-mdx-frontmatter/dist/index.js
 var require_dist = __commonJS({
-  "node_modules/remark-mdx-frontmatter/dist/index.js"(exports) {
+  "node_modules/.pnpm/remark-mdx-frontmatter@1.1.1/node_modules/remark-mdx-frontmatter/dist/index.js"(exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: !0 });
     exports.remarkMdxFrontmatter = void 0;
@@ -139,22 +114,22 @@ ${value2}`);
   }
 });
 
-// node_modules/mdx-bundler/dist/dirname-messed-up.cjs
+// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/dist/dirname-messed-up.cjs
 var require_dirname_messed_up = __commonJS({
-  "node_modules/mdx-bundler/dist/dirname-messed-up.cjs"(exports, module2) {
+  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/dist/dirname-messed-up.cjs"(exports, module2) {
     "use strict";
     module2.exports = !__dirname.includes("mdx-bundler");
   }
 });
 
-// node_modules/micromark-util-character/lib/unicode-punctuation-regex.js
+// node_modules/.pnpm/micromark-util-character@1.2.0/node_modules/micromark-util-character/lib/unicode-punctuation-regex.js
 var unicodePunctuationRegex, init_unicode_punctuation_regex = __esm({
-  "node_modules/micromark-util-character/lib/unicode-punctuation-regex.js"() {
-    unicodePunctuationRegex = /[!-/:-@[-`{-~\u00A1\u00A7\u00AB\u00B6\u00B7\u00BB\u00BF\u037E\u0387\u055A-\u055F\u0589\u058A\u05BE\u05C0\u05C3\u05C6\u05F3\u05F4\u0609\u060A\u060C\u060D\u061B\u061E\u061F\u066A-\u066D\u06D4\u0700-\u070D\u07F7-\u07F9\u0830-\u083E\u085E\u0964\u0965\u0970\u09FD\u0A76\u0AF0\u0C77\u0C84\u0DF4\u0E4F\u0E5A\u0E5B\u0F04-\u0F12\u0F14\u0F3A-\u0F3D\u0F85\u0FD0-\u0FD4\u0FD9\u0FDA\u104A-\u104F\u10FB\u1360-\u1368\u1400\u166E\u169B\u169C\u16EB-\u16ED\u1735\u1736\u17D4-\u17D6\u17D8-\u17DA\u1800-\u180A\u1944\u1945\u1A1E\u1A1F\u1AA0-\u1AA6\u1AA8-\u1AAD\u1B5A-\u1B60\u1BFC-\u1BFF\u1C3B-\u1C3F\u1C7E\u1C7F\u1CC0-\u1CC7\u1CD3\u2010-\u2027\u2030-\u2043\u2045-\u2051\u2053-\u205E\u207D\u207E\u208D\u208E\u2308-\u230B\u2329\u232A\u2768-\u2775\u27C5\u27C6\u27E6-\u27EF\u2983-\u2998\u29D8-\u29DB\u29FC\u29FD\u2CF9-\u2CFC\u2CFE\u2CFF\u2D70\u2E00-\u2E2E\u2E30-\u2E4F\u2E52\u3001-\u3003\u3008-\u3011\u3014-\u301F\u3030\u303D\u30A0\u30FB\uA4FE\uA4FF\uA60D-\uA60F\uA673\uA67E\uA6F2-\uA6F7\uA874-\uA877\uA8CE\uA8CF\uA8F8-\uA8FA\uA8FC\uA92E\uA92F\uA95F\uA9C1-\uA9CD\uA9DE\uA9DF\uAA5C-\uAA5F\uAADE\uAADF\uAAF0\uAAF1\uABEB\uFD3E\uFD3F\uFE10-\uFE19\uFE30-\uFE52\uFE54-\uFE61\uFE63\uFE68\uFE6A\uFE6B\uFF01-\uFF03\uFF05-\uFF0A\uFF0C-\uFF0F\uFF1A\uFF1B\uFF1F\uFF20\uFF3B-\uFF3D\uFF3F\uFF5B\uFF5D\uFF5F-\uFF65]/;
+  "node_modules/.pnpm/micromark-util-character@1.2.0/node_modules/micromark-util-character/lib/unicode-punctuation-regex.js"() {
+    unicodePunctuationRegex = /[!-\/:-@\[-`\{-~\xA1\xA7\xAB\xB6\xB7\xBB\xBF\u037E\u0387\u055A-\u055F\u0589\u058A\u05BE\u05C0\u05C3\u05C6\u05F3\u05F4\u0609\u060A\u060C\u060D\u061B\u061D-\u061F\u066A-\u066D\u06D4\u0700-\u070D\u07F7-\u07F9\u0830-\u083E\u085E\u0964\u0965\u0970\u09FD\u0A76\u0AF0\u0C77\u0C84\u0DF4\u0E4F\u0E5A\u0E5B\u0F04-\u0F12\u0F14\u0F3A-\u0F3D\u0F85\u0FD0-\u0FD4\u0FD9\u0FDA\u104A-\u104F\u10FB\u1360-\u1368\u1400\u166E\u169B\u169C\u16EB-\u16ED\u1735\u1736\u17D4-\u17D6\u17D8-\u17DA\u1800-\u180A\u1944\u1945\u1A1E\u1A1F\u1AA0-\u1AA6\u1AA8-\u1AAD\u1B5A-\u1B60\u1B7D\u1B7E\u1BFC-\u1BFF\u1C3B-\u1C3F\u1C7E\u1C7F\u1CC0-\u1CC7\u1CD3\u2010-\u2027\u2030-\u2043\u2045-\u2051\u2053-\u205E\u207D\u207E\u208D\u208E\u2308-\u230B\u2329\u232A\u2768-\u2775\u27C5\u27C6\u27E6-\u27EF\u2983-\u2998\u29D8-\u29DB\u29FC\u29FD\u2CF9-\u2CFC\u2CFE\u2CFF\u2D70\u2E00-\u2E2E\u2E30-\u2E4F\u2E52-\u2E5D\u3001-\u3003\u3008-\u3011\u3014-\u301F\u3030\u303D\u30A0\u30FB\uA4FE\uA4FF\uA60D-\uA60F\uA673\uA67E\uA6F2-\uA6F7\uA874-\uA877\uA8CE\uA8CF\uA8F8-\uA8FA\uA8FC\uA92E\uA92F\uA95F\uA9C1-\uA9CD\uA9DE\uA9DF\uAA5C-\uAA5F\uAADE\uAADF\uAAF0\uAAF1\uABEB\uFD3E\uFD3F\uFE10-\uFE19\uFE30-\uFE52\uFE54-\uFE61\uFE63\uFE68\uFE6A\uFE6B\uFF01-\uFF03\uFF05-\uFF0A\uFF0C-\uFF0F\uFF1A\uFF1B\uFF1F\uFF20\uFF3B-\uFF3D\uFF3F\uFF5B\uFF5D\uFF5F-\uFF65]/;
   }
 });
 
-// node_modules/micromark-util-character/index.js
+// node_modules/.pnpm/micromark-util-character@1.2.0/node_modules/micromark-util-character/index.js
 function markdownLineEnding(code) {
   return code !== null && code < -2;
 }
@@ -167,15 +142,15 @@ function regexCheck(regex) {
     return code !== null && regex.test(String.fromCharCode(code));
   }
 }
-var asciiAlpha, asciiDigit, asciiHexDigit, asciiAlphanumeric, asciiPunctuation, asciiAtext, unicodeWhitespace, unicodePunctuation, init_micromark_util_character = __esm({
-  "node_modules/micromark-util-character/index.js"() {
+var asciiAlpha, asciiAlphanumeric, asciiAtext, asciiDigit, asciiHexDigit, asciiPunctuation, unicodePunctuation, unicodeWhitespace, init_micromark_util_character = __esm({
+  "node_modules/.pnpm/micromark-util-character@1.2.0/node_modules/micromark-util-character/index.js"() {
     init_unicode_punctuation_regex();
-    asciiAlpha = regexCheck(/[A-Za-z]/), asciiDigit = regexCheck(/\d/), asciiHexDigit = regexCheck(/[\dA-Fa-f]/), asciiAlphanumeric = regexCheck(/[\dA-Za-z]/), asciiPunctuation = regexCheck(/[!-/:-@[-`{-~]/), asciiAtext = regexCheck(/[#-'*+\--9=?A-Z^-~]/);
-    unicodeWhitespace = regexCheck(/\s/), unicodePunctuation = regexCheck(unicodePunctuationRegex);
+    asciiAlpha = regexCheck(/[A-Za-z]/), asciiAlphanumeric = regexCheck(/[\dA-Za-z]/), asciiAtext = regexCheck(/[#-'*+\--9=?A-Z^-~]/), asciiDigit = regexCheck(/\d/), asciiHexDigit = regexCheck(/[\dA-Fa-f]/), asciiPunctuation = regexCheck(/[!-/:-@[-`{-~]/);
+    unicodePunctuation = regexCheck(unicodePunctuationRegex), unicodeWhitespace = regexCheck(/\s/);
   }
 });
 
-// node_modules/micromark-extension-frontmatter/matters.js
+// node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/matters.js
 function matters(options) {
   let result = [], index = -1, presetsOrMatters = Array.isArray(options) ? options : options ? [options] : ["yaml"];
   for (; ++index < presetsOrMatters.length; )
@@ -200,7 +175,7 @@ function matter(option) {
   return result;
 }
 var own3, markers, init_matters = __esm({
-  "node_modules/micromark-extension-frontmatter/matters.js"() {
+  "node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/matters.js"() {
     init_fault();
     own3 = {}.hasOwnProperty, markers = {
       yaml: "-",
@@ -209,7 +184,7 @@ var own3, markers, init_matters = __esm({
   }
 });
 
-// node_modules/micromark-extension-frontmatter/lib/syntax.js
+// node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/lib/syntax.js
 function frontmatter(options) {
   let listOfMatters = matters(options), flow = {}, index = -1;
   for (; ++index < listOfMatters.length; ) {
@@ -221,7 +196,19 @@ function frontmatter(options) {
   };
 }
 function createConstruct(matter2) {
-  let anywhere = matter2.anywhere, frontmatterType = matter2.type, fenceType = frontmatterType + "Fence", sequenceType = fenceType + "Sequence", valueType = frontmatterType + "Value", closingFenceConstruct = {
+  let anywhere = matter2.anywhere, frontmatterType = (
+    /** @type {TokenType} */
+    matter2.type
+  ), fenceType = (
+    /** @type {TokenType} */
+    frontmatterType + "Fence"
+  ), sequenceType = (
+    /** @type {TokenType} */
+    fenceType + "Sequence"
+  ), valueType = (
+    /** @type {TokenType} */
+    frontmatterType + "Value"
+  ), closingFenceConstruct = {
     tokenize: tokenizeClosingFence,
     partial: !0
   }, buffer, bufferIndex = 0;
@@ -289,20 +276,20 @@ function pick(schema, prop) {
   return typeof schema == "string" ? schema : schema[prop];
 }
 var init_syntax = __esm({
-  "node_modules/micromark-extension-frontmatter/lib/syntax.js"() {
+  "node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/lib/syntax.js"() {
     init_micromark_util_character();
     init_matters();
   }
 });
 
-// node_modules/micromark-extension-frontmatter/index.js
+// node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/index.js
 var init_micromark_extension_frontmatter = __esm({
-  "node_modules/micromark-extension-frontmatter/index.js"() {
+  "node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/index.js"() {
     init_syntax();
   }
 });
 
-// node_modules/mdast-util-frontmatter/lib/index.js
+// node_modules/.pnpm/mdast-util-frontmatter@1.0.1/node_modules/mdast-util-frontmatter/lib/index.js
 function frontmatterFromMarkdown(options) {
   let settings = matters(options), enter = {}, exit = {}, index = -1;
   for (; ++index < settings.length; ) {
@@ -354,19 +341,19 @@ function pick2(schema, prop) {
   return typeof schema == "string" ? schema : schema[prop];
 }
 var init_lib = __esm({
-  "node_modules/mdast-util-frontmatter/lib/index.js"() {
+  "node_modules/.pnpm/mdast-util-frontmatter@1.0.1/node_modules/mdast-util-frontmatter/lib/index.js"() {
     init_matters();
   }
 });
 
-// node_modules/mdast-util-frontmatter/index.js
+// node_modules/.pnpm/mdast-util-frontmatter@1.0.1/node_modules/mdast-util-frontmatter/index.js
 var init_mdast_util_frontmatter = __esm({
-  "node_modules/mdast-util-frontmatter/index.js"() {
+  "node_modules/.pnpm/mdast-util-frontmatter@1.0.1/node_modules/mdast-util-frontmatter/index.js"() {
     init_lib();
   }
 });
 
-// node_modules/remark-frontmatter/index.js
+// node_modules/.pnpm/remark-frontmatter@4.0.1/node_modules/remark-frontmatter/index.js
 var remark_frontmatter_exports = {};
 __export(remark_frontmatter_exports, {
   default: () => remarkFrontmatter
@@ -382,15 +369,15 @@ function remarkFrontmatter(options = "yaml") {
   }
 }
 var init_remark_frontmatter = __esm({
-  "node_modules/remark-frontmatter/index.js"() {
+  "node_modules/.pnpm/remark-frontmatter@4.0.1/node_modules/remark-frontmatter/index.js"() {
     init_micromark_extension_frontmatter();
     init_mdast_util_frontmatter();
   }
 });
 
-// node_modules/mdx-bundler/dist/index.js
+// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/dist/index.js
 var require_dist2 = __commonJS({
-  "node_modules/mdx-bundler/dist/index.js"(exports) {
+  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/dist/index.js"(exports) {
     "use strict";
     var _interopRequireDefault = require_interopRequireDefault();
     Object.defineProperty(exports, "__esModule", {
@@ -509,11 +496,11 @@ var require_dist2 = __commonJS({
             let fileType = (_path.default.extname(filePath) || ".jsx").slice(1), contents = absoluteFiles[filePath];
             if (fileType === "mdx")
               return null;
-            let loader3;
-            return build.initialOptions.loader && build.initialOptions.loader[`.${fileType}`] ? loader3 = build.initialOptions.loader[`.${fileType}`] : loader3 = /** @type import('esbuild').Loader */
+            let loader4;
+            return build.initialOptions.loader && build.initialOptions.loader[`.${fileType}`] ? loader4 = build.initialOptions.loader[`.${fileType}`] : loader4 = /** @type import('esbuild').Loader */
             fileType, {
               contents,
-              loader: loader3
+              loader: loader4
             };
           });
         }
@@ -581,9 +568,9 @@ var require_dist2 = __commonJS({
   }
 });
 
-// node_modules/mdx-bundler/dist/client.js
+// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/dist/client.js
 var require_client = __commonJS({
-  "node_modules/mdx-bundler/dist/client.js"(exports) {
+  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/dist/client.js"(exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", {
       value: !0
@@ -630,9 +617,9 @@ var require_client = __commonJS({
   }
 });
 
-// node_modules/mdx-bundler/client/index.js
+// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/client/index.js
 var require_client2 = __commonJS({
-  "node_modules/mdx-bundler/client/index.js"(exports, module2) {
+  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/client/index.js"(exports, module2) {
     module2.exports = require_client();
   }
 });
@@ -755,66 +742,74 @@ __export(root_exports, {
   default: () => App,
   links: () => links
 });
-var import_css_bundle = __toESM(require_server()), import_react2 = require("@remix-run/react"), import_jsx_dev_runtime2 = require("react/jsx-dev-runtime"), links = () => [
-  ...import_css_bundle.cssBundleHref ? [{ rel: "stylesheet", href: import_css_bundle.cssBundleHref }] : []
-];
+var import_react2 = require("@remix-run/react");
+
+// app/assets/css/tailwind.css
+var tailwind_default = "/build/_assets/tailwind-N4M5GHIP.css";
+
+// app/root.tsx
+var import_jsx_dev_runtime2 = require("react/jsx-dev-runtime"), links = () => [{ rel: "stylesheet", href: tailwind_default }];
 function App() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("html", { lang: "en", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("html", { lang: "en", className: "h-full", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("head", { children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("meta", { charSet: "utf-8" }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 20,
-        columnNumber: 9
+        lineNumber: 19,
+        columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("meta", { name: "viewport", content: "width=device-width,initial-scale=1" }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 21,
-        columnNumber: 9
+        lineNumber: 20,
+        columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Meta, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 22,
-        columnNumber: 9
+        lineNumber: 21,
+        columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Links, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 23,
-        columnNumber: 9
+        lineNumber: 22,
+        columnNumber: 5
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 19,
-      columnNumber: 7
+      lineNumber: 18,
+      columnNumber: 4
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("body", { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("body", { className: "h-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("main", { className: "mx-auto max-w-7xl", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Outlet, {}, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 26,
-        columnNumber: 9
+        columnNumber: 6
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.ScrollRestoration, {}, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 27,
-        columnNumber: 9
+        columnNumber: 6
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.Scripts, {}, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 28,
-        columnNumber: 9
+        columnNumber: 6
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(import_react2.LiveReload, {}, void 0, !1, {
         fileName: "app/root.tsx",
         lineNumber: 29,
-        columnNumber: 9
+        columnNumber: 6
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
       lineNumber: 25,
-      columnNumber: 7
+      columnNumber: 5
+    }, this) }, void 0, !1, {
+      fileName: "app/root.tsx",
+      lineNumber: 24,
+      columnNumber: 4
     }, this)
   ] }, void 0, !0, {
     fileName: "app/root.tsx",
-    lineNumber: 18,
+    lineNumber: 17,
     columnNumber: 5
   }, this);
 }
@@ -987,224 +982,13 @@ __export(blog_slug_exports, {
 });
 var import_react3 = require("@remix-run/react"), import_react4 = require("react");
 
-// app/util/mdx.server.ts
+// app/utils/mdx.server.ts
 var import_path = __toESM(require("path"));
 
-// node_modules/unist-util-is/lib/index.js
-var convert = (
-  /**
-   * @type {(
-   *   (<Kind extends Node>(test: PredicateTest<Kind>) => AssertPredicate<Kind>) &
-   *   ((test?: Test) => AssertAnything)
-   * )}
-   */
-  /**
-   * @param {Test} [test]
-   * @returns {AssertAnything}
-   */
-  function(test) {
-    if (test == null)
-      return ok;
-    if (typeof test == "string")
-      return typeFactory(test);
-    if (typeof test == "object")
-      return Array.isArray(test) ? anyFactory(test) : propsFactory(test);
-    if (typeof test == "function")
-      return castFactory(test);
-    throw new Error("Expected function, string, or object as test");
-  }
-);
-function anyFactory(tests) {
-  let checks = [], index = -1;
-  for (; ++index < tests.length; )
-    checks[index] = convert(tests[index]);
-  return castFactory(any);
-  function any(...parameters) {
-    let index2 = -1;
-    for (; ++index2 < checks.length; )
-      if (checks[index2].call(this, ...parameters))
-        return !0;
-    return !1;
-  }
-}
-function propsFactory(check) {
-  return castFactory(all);
-  function all(node) {
-    let key;
-    for (key in check)
-      if (node[key] !== check[key])
-        return !1;
-    return !0;
-  }
-}
-function typeFactory(check) {
-  return castFactory(type);
-  function type(node) {
-    return node && node.type === check;
-  }
-}
-function castFactory(check) {
-  return assertion;
-  function assertion(node, ...parameters) {
-    return Boolean(
-      node && typeof node == "object" && "type" in node && // @ts-expect-error: fine.
-      Boolean(check.call(this, node, ...parameters))
-    );
-  }
-}
-function ok() {
-  return !0;
-}
-
-// node_modules/unist-util-visit-parents/lib/color.js
-function color(d) {
-  return "\x1B[33m" + d + "\x1B[39m";
-}
-
-// node_modules/unist-util-visit-parents/lib/index.js
-var CONTINUE = !0, EXIT = !1, SKIP = "skip", visitParents = (
-  /**
-   * @type {(
-   *   (<Tree extends Node, Check extends Test>(tree: Tree, test: Check, visitor: BuildVisitor<Tree, Check>, reverse?: boolean | null | undefined) => void) &
-   *   (<Tree extends Node>(tree: Tree, visitor: BuildVisitor<Tree>, reverse?: boolean | null | undefined) => void)
-   * )}
-   */
-  /**
-   * @param {Node} tree
-   * @param {Test} test
-   * @param {Visitor<Node>} visitor
-   * @param {boolean | null | undefined} [reverse]
-   * @returns {void}
-   */
-  function(tree, test, visitor, reverse) {
-    typeof test == "function" && typeof visitor != "function" && (reverse = visitor, visitor = test, test = null);
-    let is2 = convert(test), step = reverse ? -1 : 1;
-    factory(tree, void 0, [])();
-    function factory(node, index, parents) {
-      let value2 = node && typeof node == "object" ? node : {};
-      if (typeof value2.type == "string") {
-        let name = (
-          // `hast`
-          typeof value2.tagName == "string" ? value2.tagName : (
-            // `xast`
-            typeof value2.name == "string" ? value2.name : void 0
-          )
-        );
-        Object.defineProperty(visit2, "name", {
-          value: "node (" + color(node.type + (name ? "<" + name + ">" : "")) + ")"
-        });
-      }
-      return visit2;
-      function visit2() {
-        let result = [], subresult, offset, grandparents;
-        if ((!test || is2(node, index, parents[parents.length - 1] || null)) && (result = toResult(visitor(node, parents)), result[0] === EXIT))
-          return result;
-        if (node.children && result[0] !== SKIP)
-          for (offset = (reverse ? node.children.length : -1) + step, grandparents = parents.concat(node); offset > -1 && offset < node.children.length; ) {
-            if (subresult = factory(node.children[offset], offset, grandparents)(), subresult[0] === EXIT)
-              return subresult;
-            offset = typeof subresult[1] == "number" ? subresult[1] : offset + step;
-          }
-        return result;
-      }
-    }
-  }
-);
-function toResult(value2) {
-  return Array.isArray(value2) ? value2 : typeof value2 == "number" ? [CONTINUE, value2] : [value2];
-}
-
-// node_modules/unist-util-visit/lib/index.js
-var visit = (
-  /**
-   * @type {(
-   *   (<Tree extends Node, Check extends Test>(tree: Tree, test: Check, visitor: BuildVisitor<Tree, Check>, reverse?: boolean | null | undefined) => void) &
-   *   (<Tree extends Node>(tree: Tree, visitor: BuildVisitor<Tree>, reverse?: boolean | null | undefined) => void)
-   * )}
-   */
-  /**
-   * @param {Node} tree
-   * @param {Test} test
-   * @param {Visitor} visitor
-   * @param {boolean | null | undefined} [reverse]
-   * @returns {void}
-   */
-  function(tree, test, visitor, reverse) {
-    typeof test == "function" && typeof visitor != "function" && (reverse = visitor, visitor = test, test = null), visitParents(tree, test, overload, reverse);
-    function overload(node, parents) {
-      let parent = parents[parents.length - 1];
-      return visitor(
-        node,
-        parent ? parent.children.indexOf(node) : null,
-        parent
-      );
-    }
-  }
-);
-
-// node_modules/remark-mdx-images/index.js
-var urlPattern = /^(https?:)?\//, relativePathPattern = /\.\.?\//, remarkMdxImages = ({ resolve = !0 } = {}) => (ast) => {
-  let imports = [], imported = /* @__PURE__ */ new Map();
-  visit(ast, "image", (node, index, parent) => {
-    let { alt = null, title, url } = node;
-    if (urlPattern.test(url))
-      return;
-    !relativePathPattern.test(url) && resolve && (url = `./${url}`);
-    let name = imported.get(url);
-    name || (name = `__${imported.size}_${url.replace(/\W/g, "_")}__`, imports.push({
-      type: "mdxjsEsm",
-      value: "",
-      data: {
-        estree: {
-          type: "Program",
-          sourceType: "module",
-          body: [
-            {
-              type: "ImportDeclaration",
-              source: { type: "Literal", value: url, raw: JSON.stringify(url) },
-              specifiers: [
-                {
-                  type: "ImportDefaultSpecifier",
-                  local: { type: "Identifier", name }
-                }
-              ]
-            }
-          ]
-        }
-      }
-    }), imported.set(url, name));
-    let textElement = {
-      type: "mdxJsxTextElement",
-      name: "img",
-      children: [],
-      attributes: [
-        { type: "mdxJsxAttribute", name: "alt", value: alt },
-        {
-          type: "mdxJsxAttribute",
-          name: "src",
-          value: {
-            type: "mdxJsxAttributeValueExpression",
-            value: name,
-            data: {
-              estree: {
-                type: "Program",
-                sourceType: "module",
-                comments: [],
-                body: [{ type: "ExpressionStatement", expression: { type: "Identifier", name } }]
-              }
-            }
-          }
-        }
-      ]
-    };
-    title && textElement.attributes.push({ type: "mdxJsxAttribute", name: "title", value: title }), parent.children.splice(index, 1, textElement);
-  }), ast.children.unshift(...imports);
-}, remark_mdx_images_default = remarkMdxImages;
-
-// node_modules/lowlight/lib/common.js
+// node_modules/.pnpm/lowlight@2.9.0/node_modules/lowlight/lib/common.js
 var import_arduino = __toESM(require("highlight.js/lib/languages/arduino"), 1), import_bash = __toESM(require("highlight.js/lib/languages/bash"), 1), import_c = __toESM(require("highlight.js/lib/languages/c"), 1), import_cpp = __toESM(require("highlight.js/lib/languages/cpp"), 1), import_csharp = __toESM(require("highlight.js/lib/languages/csharp"), 1), import_css = __toESM(require("highlight.js/lib/languages/css"), 1), import_diff = __toESM(require("highlight.js/lib/languages/diff"), 1), import_go = __toESM(require("highlight.js/lib/languages/go"), 1), import_graphql = __toESM(require("highlight.js/lib/languages/graphql"), 1), import_ini = __toESM(require("highlight.js/lib/languages/ini"), 1), import_java = __toESM(require("highlight.js/lib/languages/java"), 1), import_javascript = __toESM(require("highlight.js/lib/languages/javascript"), 1), import_json = __toESM(require("highlight.js/lib/languages/json"), 1), import_kotlin = __toESM(require("highlight.js/lib/languages/kotlin"), 1), import_less = __toESM(require("highlight.js/lib/languages/less"), 1), import_lua = __toESM(require("highlight.js/lib/languages/lua"), 1), import_makefile = __toESM(require("highlight.js/lib/languages/makefile"), 1), import_markdown = __toESM(require("highlight.js/lib/languages/markdown"), 1), import_objectivec = __toESM(require("highlight.js/lib/languages/objectivec"), 1), import_perl = __toESM(require("highlight.js/lib/languages/perl"), 1), import_php = __toESM(require("highlight.js/lib/languages/php"), 1), import_php_template = __toESM(require("highlight.js/lib/languages/php-template"), 1), import_plaintext = __toESM(require("highlight.js/lib/languages/plaintext"), 1), import_python = __toESM(require("highlight.js/lib/languages/python"), 1), import_python_repl = __toESM(require("highlight.js/lib/languages/python-repl"), 1), import_r = __toESM(require("highlight.js/lib/languages/r"), 1), import_ruby = __toESM(require("highlight.js/lib/languages/ruby"), 1), import_rust = __toESM(require("highlight.js/lib/languages/rust"), 1), import_scss = __toESM(require("highlight.js/lib/languages/scss"), 1), import_shell = __toESM(require("highlight.js/lib/languages/shell"), 1), import_sql = __toESM(require("highlight.js/lib/languages/sql"), 1), import_swift = __toESM(require("highlight.js/lib/languages/swift"), 1), import_typescript = __toESM(require("highlight.js/lib/languages/typescript"), 1), import_vbnet = __toESM(require("highlight.js/lib/languages/vbnet"), 1), import_wasm = __toESM(require("highlight.js/lib/languages/wasm"), 1), import_xml = __toESM(require("highlight.js/lib/languages/xml"), 1), import_yaml = __toESM(require("highlight.js/lib/languages/yaml"), 1);
 
-// node_modules/lowlight/lib/core.js
+// node_modules/.pnpm/lowlight@2.9.0/node_modules/lowlight/lib/core.js
 var import_core = __toESM(require("highlight.js/lib/core"), 1);
 init_fault();
 var own = {}.hasOwnProperty, defaultPrefix = "hljs-";
@@ -1353,7 +1137,7 @@ var HastEmitter = class {
   registerAlias
 };
 
-// node_modules/lowlight/lib/common.js
+// node_modules/.pnpm/lowlight@2.9.0/node_modules/lowlight/lib/common.js
 lowlight.registerLanguage("arduino", import_arduino.default);
 lowlight.registerLanguage("bash", import_bash.default);
 lowlight.registerLanguage("c", import_c.default);
@@ -1392,7 +1176,7 @@ lowlight.registerLanguage("wasm", import_wasm.default);
 lowlight.registerLanguage("xml", import_xml.default);
 lowlight.registerLanguage("yaml", import_yaml.default);
 
-// node_modules/hast-util-is-element/index.js
+// node_modules/.pnpm/hast-util-is-element@2.1.3/node_modules/hast-util-is-element/index.js
 var convertElement = (
   /**
    * @type {(
@@ -1410,17 +1194,17 @@ var convertElement = (
     if (typeof test == "string")
       return tagNameFactory(test);
     if (typeof test == "object")
-      return anyFactory2(test);
+      return anyFactory(test);
     if (typeof test == "function")
-      return castFactory2(test);
+      return castFactory(test);
     throw new Error("Expected function, string, or array as test");
   }
 );
-function anyFactory2(tests) {
+function anyFactory(tests) {
   let checks = [], index = -1;
   for (; ++index < tests.length; )
     checks[index] = convertElement(tests[index]);
-  return castFactory2(any);
+  return castFactory(any);
   function any(...parameters) {
     let index2 = -1;
     for (; ++index2 < checks.length; )
@@ -1435,7 +1219,7 @@ function tagNameFactory(check) {
     return element(node) && node.tagName === check;
   }
 }
-function castFactory2(check) {
+function castFactory(check) {
   return assertion;
   function assertion(node, ...parameters) {
     return element(node) && Boolean(check.call(this, node, ...parameters));
@@ -1449,7 +1233,73 @@ function element(node) {
   );
 }
 
-// node_modules/unist-util-find-after/lib/index.js
+// node_modules/.pnpm/unist-util-is@5.2.1/node_modules/unist-util-is/lib/index.js
+var convert = (
+  /**
+   * @type {(
+   *   (<Kind extends Node>(test: PredicateTest<Kind>) => AssertPredicate<Kind>) &
+   *   ((test?: Test) => AssertAnything)
+   * )}
+   */
+  /**
+   * @param {Test} [test]
+   * @returns {AssertAnything}
+   */
+  function(test) {
+    if (test == null)
+      return ok;
+    if (typeof test == "string")
+      return typeFactory(test);
+    if (typeof test == "object")
+      return Array.isArray(test) ? anyFactory2(test) : propsFactory(test);
+    if (typeof test == "function")
+      return castFactory2(test);
+    throw new Error("Expected function, string, or object as test");
+  }
+);
+function anyFactory2(tests) {
+  let checks = [], index = -1;
+  for (; ++index < tests.length; )
+    checks[index] = convert(tests[index]);
+  return castFactory2(any);
+  function any(...parameters) {
+    let index2 = -1;
+    for (; ++index2 < checks.length; )
+      if (checks[index2].call(this, ...parameters))
+        return !0;
+    return !1;
+  }
+}
+function propsFactory(check) {
+  return castFactory2(all);
+  function all(node) {
+    let key;
+    for (key in check)
+      if (node[key] !== check[key])
+        return !1;
+    return !0;
+  }
+}
+function typeFactory(check) {
+  return castFactory2(type);
+  function type(node) {
+    return node && node.type === check;
+  }
+}
+function castFactory2(check) {
+  return assertion;
+  function assertion(node, ...parameters) {
+    return Boolean(
+      node && typeof node == "object" && "type" in node && // @ts-expect-error: fine.
+      Boolean(check.call(this, node, ...parameters))
+    );
+  }
+}
+function ok() {
+  return !0;
+}
+
+// node_modules/.pnpm/unist-util-find-after@4.0.1/node_modules/unist-util-find-after/lib/index.js
 var findAfter = (
   /**
    * @type {(
@@ -1479,7 +1329,7 @@ var findAfter = (
   }
 );
 
-// node_modules/hast-util-to-text/lib/index.js
+// node_modules/.pnpm/hast-util-to-text@3.1.2/node_modules/hast-util-to-text/lib/index.js
 var searchLineFeeds = /\n/g, searchTabOrSpaces = /[\t ]+/g, br = convertElement("br"), p = convertElement("p"), cell = convertElement(["th", "td"]), row = convertElement("tr"), notRendered = convertElement(
   [
     // List from: <https://html.spec.whatwg.org/#hidden-elements>
@@ -1692,7 +1542,93 @@ function closedDialog(node) {
   return node.tagName === "dialog" && !(node.properties || {}).open;
 }
 
-// node_modules/rehype-highlight/lib/index.js
+// node_modules/.pnpm/unist-util-visit-parents@5.1.3/node_modules/unist-util-visit-parents/lib/color.js
+function color(d) {
+  return "\x1B[33m" + d + "\x1B[39m";
+}
+
+// node_modules/.pnpm/unist-util-visit-parents@5.1.3/node_modules/unist-util-visit-parents/lib/index.js
+var CONTINUE = !0, EXIT = !1, SKIP = "skip", visitParents = (
+  /**
+   * @type {(
+   *   (<Tree extends Node, Check extends Test>(tree: Tree, test: Check, visitor: BuildVisitor<Tree, Check>, reverse?: boolean | null | undefined) => void) &
+   *   (<Tree extends Node>(tree: Tree, visitor: BuildVisitor<Tree>, reverse?: boolean | null | undefined) => void)
+   * )}
+   */
+  /**
+   * @param {Node} tree
+   * @param {Test} test
+   * @param {Visitor<Node>} visitor
+   * @param {boolean | null | undefined} [reverse]
+   * @returns {void}
+   */
+  function(tree, test, visitor, reverse) {
+    typeof test == "function" && typeof visitor != "function" && (reverse = visitor, visitor = test, test = null);
+    let is2 = convert(test), step = reverse ? -1 : 1;
+    factory(tree, void 0, [])();
+    function factory(node, index, parents) {
+      let value2 = node && typeof node == "object" ? node : {};
+      if (typeof value2.type == "string") {
+        let name = (
+          // `hast`
+          typeof value2.tagName == "string" ? value2.tagName : (
+            // `xast`
+            typeof value2.name == "string" ? value2.name : void 0
+          )
+        );
+        Object.defineProperty(visit2, "name", {
+          value: "node (" + color(node.type + (name ? "<" + name + ">" : "")) + ")"
+        });
+      }
+      return visit2;
+      function visit2() {
+        let result = [], subresult, offset, grandparents;
+        if ((!test || is2(node, index, parents[parents.length - 1] || null)) && (result = toResult(visitor(node, parents)), result[0] === EXIT))
+          return result;
+        if (node.children && result[0] !== SKIP)
+          for (offset = (reverse ? node.children.length : -1) + step, grandparents = parents.concat(node); offset > -1 && offset < node.children.length; ) {
+            if (subresult = factory(node.children[offset], offset, grandparents)(), subresult[0] === EXIT)
+              return subresult;
+            offset = typeof subresult[1] == "number" ? subresult[1] : offset + step;
+          }
+        return result;
+      }
+    }
+  }
+);
+function toResult(value2) {
+  return Array.isArray(value2) ? value2 : typeof value2 == "number" ? [CONTINUE, value2] : [value2];
+}
+
+// node_modules/.pnpm/unist-util-visit@4.1.2/node_modules/unist-util-visit/lib/index.js
+var visit = (
+  /**
+   * @type {(
+   *   (<Tree extends Node, Check extends Test>(tree: Tree, test: Check, visitor: BuildVisitor<Tree, Check>, reverse?: boolean | null | undefined) => void) &
+   *   (<Tree extends Node>(tree: Tree, visitor: BuildVisitor<Tree>, reverse?: boolean | null | undefined) => void)
+   * )}
+   */
+  /**
+   * @param {Node} tree
+   * @param {Test} test
+   * @param {Visitor} visitor
+   * @param {boolean | null | undefined} [reverse]
+   * @returns {void}
+   */
+  function(tree, test, visitor, reverse) {
+    typeof test == "function" && typeof visitor != "function" && (reverse = visitor, visitor = test, test = null), visitParents(tree, test, overload, reverse);
+    function overload(node, parents) {
+      let parent = parents[parents.length - 1];
+      return visitor(
+        node,
+        parent ? parent.children.indexOf(node) : null,
+        parent
+      );
+    }
+  }
+);
+
+// node_modules/.pnpm/rehype-highlight@6.0.0/node_modules/rehype-highlight/lib/index.js
 var own2 = {}.hasOwnProperty;
 function rehypeHighlight(options = {}) {
   let { aliases, languages, prefix, plainText, ignoreMissing, subset, detect } = options, name = "hljs";
@@ -1746,13 +1682,71 @@ function language(node) {
     }
 }
 
-// app/util/mdx.server.ts
+// node_modules/.pnpm/remark-mdx-images@2.0.0/node_modules/remark-mdx-images/index.js
+var urlPattern = /^(https?:)?\//, relativePathPattern = /\.\.?\//, remarkMdxImages = ({ resolve = !0 } = {}) => (ast) => {
+  let imports = [], imported = /* @__PURE__ */ new Map();
+  visit(ast, "image", (node, index, parent) => {
+    let { alt = null, title, url } = node;
+    if (urlPattern.test(url))
+      return;
+    !relativePathPattern.test(url) && resolve && (url = `./${url}`);
+    let name = imported.get(url);
+    name || (name = `__${imported.size}_${url.replace(/\W/g, "_")}__`, imports.push({
+      type: "mdxjsEsm",
+      value: "",
+      data: {
+        estree: {
+          type: "Program",
+          sourceType: "module",
+          body: [
+            {
+              type: "ImportDeclaration",
+              source: { type: "Literal", value: url, raw: JSON.stringify(url) },
+              specifiers: [
+                {
+                  type: "ImportDefaultSpecifier",
+                  local: { type: "Identifier", name }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }), imported.set(url, name));
+    let textElement = {
+      type: "mdxJsxTextElement",
+      name: "img",
+      children: [],
+      attributes: [
+        { type: "mdxJsxAttribute", name: "alt", value: alt },
+        {
+          type: "mdxJsxAttribute",
+          name: "src",
+          value: {
+            type: "mdxJsxAttributeValueExpression",
+            value: name,
+            data: {
+              estree: {
+                type: "Program",
+                sourceType: "module",
+                comments: [],
+                body: [{ type: "ExpressionStatement", expression: { type: "Identifier", name } }]
+              }
+            }
+          }
+        }
+      ]
+    };
+    title && textElement.attributes.push({ type: "mdxJsxAttribute", name: "title", value: title }), parent.children.splice(index, 1, textElement);
+  }), ast.children.unshift(...imports);
+}, remark_mdx_images_default = remarkMdxImages;
+
+// app/utils/mdx.server.ts
 var import_mdx_bundler = __toESM(require_dist2());
-async function getMdxContent(slug) {
-  let pathToContent = `/content/posts/${slug}/index.mdx`, dir = import_path.default.dirname(pathToContent);
+function getMdxContentForFile(pathToFile) {
   return (0, import_mdx_bundler.bundleMDX)({
-    file: import_path.default.join(process.cwd(), pathToContent),
-    cwd: import_path.default.join(process.cwd(), dir),
+    file: import_path.default.join(process.cwd(), pathToFile),
+    cwd: import_path.default.join(process.cwd(), import_path.default.dirname(pathToFile)),
     mdxOptions: (options) => (options.remarkPlugins = [
       ...options.remarkPlugins ?? [],
       remark_mdx_images_default
@@ -1764,6 +1758,10 @@ async function getMdxContent(slug) {
       ".gif": "dataurl"
     }, options)
   });
+}
+async function getMdxContent(slug) {
+  let pathToContent = `/content/posts/${slug}/index.mdx`;
+  return getMdxContentForFile(pathToContent);
 }
 
 // app/routes/blog.$slug.tsx
@@ -1790,81 +1788,475 @@ function BlogPostPage() {
 // app/routes/_index.tsx
 var index_exports = {};
 __export(index_exports, {
+  PostMeta: () => PostMeta,
   default: () => Index,
+  loader: () => loader2,
   meta: () => meta
 });
-var import_jsx_dev_runtime5 = require("react/jsx-dev-runtime"), meta = () => [
-  { title: "New Remix App" },
-  { name: "description", content: "Welcome to Remix!" }
-];
-function Index() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { style: { fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }, children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h1", { children: "Welcome to Remix" }, void 0, !1, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 13,
-      columnNumber: 7
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("ul", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
-        "a",
-        {
-          target: "_blank",
-          href: "https://remix.run/tutorials/blog",
-          rel: "noreferrer",
-          children: "15m Quickstart Blog Tutorial"
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/routes/_index.tsx",
-          lineNumber: 16,
-          columnNumber: 11
-        },
-        this
-      ) }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 15,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
-        "a",
-        {
-          target: "_blank",
-          href: "https://remix.run/tutorials/jokes",
-          rel: "noreferrer",
-          children: "Deep Dive Jokes App Tutorial"
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/routes/_index.tsx",
-          lineNumber: 25,
-          columnNumber: 11
-        },
-        this
-      ) }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 24,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("a", { target: "_blank", href: "https://remix.run/docs", rel: "noreferrer", children: "Remix Docs" }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 34,
-        columnNumber: 11
+var import_react6 = require("@remix-run/react");
+
+// app/components/Nav/Nav.tsx
+var import_react5 = require("@remix-run/react");
+
+// app/assets/images/brand/symbol-transparent.svg
+var symbol_transparent_default = "/build/_assets/symbol-transparent-STZQOOFB.svg";
+
+// app/components/Nav/Nav.tsx
+var import_jsx_dev_runtime5 = require("react/jsx-dev-runtime");
+function NavLink({ to, children }) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react5.Link, { to, className: "", children }, void 0, !1, {
+    fileName: "app/components/Nav/Nav.tsx",
+    lineNumber: 8,
+    columnNumber: 3
+  }, this);
+}
+function Nav() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("header", { className: "mx-auto max-w-7xl lg:px-8", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "relative flex gap-4 px-4 py-2", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex flex-1", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react5.Link, { to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("img", { src: symbol_transparent_default, className: "w-10" }, void 0, !1, {
+        fileName: "app/components/Nav/Nav.tsx",
+        lineNumber: 20,
+        columnNumber: 7
       }, this) }, void 0, !1, {
+        fileName: "app/components/Nav/Nav.tsx",
+        lineNumber: 19,
+        columnNumber: 6
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("nav", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("ul", { className: "", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(NavLink, { to: "blog", children: "Blog" }, void 0, !1, {
+          fileName: "app/components/Nav/Nav.tsx",
+          lineNumber: 26,
+          columnNumber: 10
+        }, this) }, void 0, !1, {
+          fileName: "app/components/Nav/Nav.tsx",
+          lineNumber: 25,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(NavLink, { to: "about", children: "About" }, void 0, !1, {
+          fileName: "app/components/Nav/Nav.tsx",
+          lineNumber: 29,
+          columnNumber: 10
+        }, this) }, void 0, !1, {
+          fileName: "app/components/Nav/Nav.tsx",
+          lineNumber: 28,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(NavLink, { to: "speaking", children: "Speaking" }, void 0, !1, {
+          fileName: "app/components/Nav/Nav.tsx",
+          lineNumber: 32,
+          columnNumber: 10
+        }, this) }, void 0, !1, {
+          fileName: "app/components/Nav/Nav.tsx",
+          lineNumber: 31,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(NavLink, { to: "uses", children: "Uses" }, void 0, !1, {
+          fileName: "app/components/Nav/Nav.tsx",
+          lineNumber: 35,
+          columnNumber: 10
+        }, this) }, void 0, !1, {
+          fileName: "app/components/Nav/Nav.tsx",
+          lineNumber: 34,
+          columnNumber: 9
+        }, this)
+      ] }, void 0, !0, {
+        fileName: "app/components/Nav/Nav.tsx",
+        lineNumber: 24,
+        columnNumber: 8
+      }, this) }, void 0, !1, {
+        fileName: "app/components/Nav/Nav.tsx",
+        lineNumber: 23,
+        columnNumber: 7
+      }, this) }, void 0, !1, {
+        fileName: "app/components/Nav/Nav.tsx",
+        lineNumber: 22,
+        columnNumber: 6
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/components/Nav/Nav.tsx",
+      lineNumber: 18,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex flex-1 justify-end md:justify-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
+      "button",
+      {
+        title: "Toggle mobile menu",
+        className: "group flex items-center rounded-full px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur",
+        children: [
+          "Menu",
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
+            "svg",
+            {
+              xmlns: "http://www.w3.org/2000/svg",
+              fill: "none",
+              viewBox: "0 0 24 24",
+              strokeWidth: "1.5",
+              stroke: "currentColor",
+              className: "ml-3 h-auto w-4 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400",
+              children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
+                "path",
+                {
+                  strokeLinecap: "round",
+                  strokeLinejoin: "round",
+                  d: "M19.5 8.25l-7.5 7.5-7.5-7.5"
+                },
+                void 0,
+                !1,
+                {
+                  fileName: "app/components/Nav/Nav.tsx",
+                  lineNumber: 55,
+                  columnNumber: 8
+                },
+                this
+              )
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/components/Nav/Nav.tsx",
+              lineNumber: 47,
+              columnNumber: 7
+            },
+            this
+          )
+        ]
+      },
+      void 0,
+      !0,
+      {
+        fileName: "app/components/Nav/Nav.tsx",
+        lineNumber: 42,
+        columnNumber: 6
+      },
+      this
+    ) }, void 0, !1, {
+      fileName: "app/components/Nav/Nav.tsx",
+      lineNumber: 41,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex justify-end md:flex-1", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("button", { className: "group ml-2 rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
+      "svg",
+      {
+        xmlns: "http://www.w3.org/2000/svg",
+        fill: "none",
+        viewBox: "0 0 24 24",
+        "stroke-width": "1.5",
+        stroke: "currentColor",
+        className: "h-auto w-6 stroke-yellow-600",
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
+          "path",
+          {
+            strokeLinecap: "round",
+            strokeLinejoin: "round",
+            d: "M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+          },
+          void 0,
+          !1,
+          {
+            fileName: "app/components/Nav/Nav.tsx",
+            lineNumber: 73,
+            columnNumber: 8
+          },
+          this
+        )
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/components/Nav/Nav.tsx",
+        lineNumber: 65,
+        columnNumber: 7
+      },
+      this
+    ) }, void 0, !1, {
+      fileName: "app/components/Nav/Nav.tsx",
+      lineNumber: 64,
+      columnNumber: 6
+    }, this) }, void 0, !1, {
+      fileName: "app/components/Nav/Nav.tsx",
+      lineNumber: 63,
+      columnNumber: 5
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/Nav/Nav.tsx",
+    lineNumber: 17,
+    columnNumber: 4
+  }, this) }, void 0, !1, {
+    fileName: "app/components/Nav/Nav.tsx",
+    lineNumber: 16,
+    columnNumber: 3
+  }, this);
+}
+
+// app/utils/blog.server.ts
+var import_fs = __toESM(require("fs")), import_path2 = __toESM(require("path"));
+var DIRECTORY_PATH = "./content/posts";
+async function traverseDirectories(directoryPath) {
+  let files = import_fs.default.readdirSync(directoryPath);
+  return (await Promise.all(
+    files.map(async (file) => {
+      let filePath = import_path2.default.join(directoryPath, file, "index.mdx"), stat = import_fs.default.statSync(filePath);
+      if (import_fs.default.existsSync(filePath)) {
+        let { frontmatter: frontmatter2 } = await getMdxContentForFile(filePath);
+        return frontmatter2;
+      }
+      return null;
+    })
+  )).filter((file) => Boolean(file));
+}
+async function getAllArticles() {
+  return traverseDirectories(DIRECTORY_PATH);
+}
+async function getLatestArticle() {
+  let allArticles = await getAllArticles();
+  return allArticles.sort((a, b) => a.date > b.date ? -1 : 1), allArticles[0];
+}
+
+// app/utils/dateFormats.ts
+function formatDate(sourceDate) {
+  let date = typeof sourceDate == "string" || typeof sourceDate == "number" ? new Date(sourceDate) : sourceDate;
+  return new Intl.DateTimeFormat(void 0, { dateStyle: "medium" }).format(
+    date
+  );
+}
+
+// app/routes/_index.tsx
+var import_jsx_dev_runtime6 = require("react/jsx-dev-runtime"), meta = () => [
+  { title: "The Coding Temple" },
+  {
+    name: "description",
+    content: "Hi, I'm Thiago Temple, a developer, geek and this is my site."
+  }
+];
+async function loader2() {
+  return { latestArticle: await getLatestArticle() };
+}
+function PostMeta({
+  date,
+  readTime
+}) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_jsx_dev_runtime6.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { children: formatDate(date) }, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 31,
+      columnNumber: 4
+    }, this),
+    readTime && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_jsx_dev_runtime6.Fragment, { children: [
+      " ",
+      "\u2022 ",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { children: [
+        readTime,
+        " min read"
+      ] }, void 0, !0, {
         fileName: "app/routes/_index.tsx",
-        lineNumber: 33,
-        columnNumber: 9
+        lineNumber: 35,
+        columnNumber: 8
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/_index.tsx",
-      lineNumber: 14,
-      columnNumber: 7
+      lineNumber: 33,
+      columnNumber: 5
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/_index.tsx",
-    lineNumber: 12,
-    columnNumber: 5
+    lineNumber: 30,
+    columnNumber: 3
+  }, this);
+}
+function Index() {
+  let { latestArticle } = (0, import_react6.useLoaderData)();
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "py-6", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Nav, {}, void 0, !1, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 47,
+      columnNumber: 4
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("section", { className: "mt-6 w-full bg-gradient-to-b from-pink/10 to-fuchsia/20 px-4 py-12", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h1", { className: "font-heading  text-2xl text-fuchsia", children: "Hi, I'm Thiago Temple. I love building products, writing code and learning through it." }, void 0, !1, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 49,
+        columnNumber: 5
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "mt-6 hidden text-lg text-zinc-600", children: "I'm a web-loving staff developer, driven by curiosity and a passion for learning. I'm eager to share my knowledge and always up for new challenges. With a friendly and open-minded approach, I embrace the ever-evolving world of web technologies, staying ahead of the game and inspiring others along the way." }, void 0, !1, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 53,
+        columnNumber: 5
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 48,
+      columnNumber: 4
+    }, this),
+    latestArticle && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("section", { className: "px-4 py-8", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_react6.Link, { to: `/blog/${latestArticle.slug}`, children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h2", { className: "font-heading text-2xl text-zinc-700", children: latestArticle.title }, void 0, !1, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 64,
+        columnNumber: 7
+      }, this) }, void 0, !1, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 63,
+        columnNumber: 6
+      }, this),
+      latestArticle.banner && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("img", { src: latestArticle.banner, className: "mt-6 opacity-75" }, void 0, !1, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 69,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "mt-6 text-zinc-600", children: latestArticle.summary }, void 0, !1, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 71,
+        columnNumber: 6
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "mt-6 text-zinc-400", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+        PostMeta,
+        {
+          date: latestArticle.date,
+          readTime: latestArticle.readTime
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/routes/_index.tsx",
+          lineNumber: 73,
+          columnNumber: 7
+        },
+        this
+      ) }, void 0, !1, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 72,
+        columnNumber: 6
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+        import_react6.Link,
+        {
+          to: `/blog/${latestArticle.slug}`,
+          className: "mt-6 flex justify-center rounded-lg border-2 border-fuchsia bg-white py-2 uppercase text-fuchsia",
+          children: [
+            "Read more",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+              "svg",
+              {
+                xmlns: "http://www.w3.org/2000/svg",
+                fill: "none",
+                viewBox: "0 0 24 24",
+                "stroke-width": "1.5",
+                stroke: "currentColor",
+                className: "ml-3 h-auto w-6",
+                children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+                  "path",
+                  {
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round",
+                    d: "M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                  },
+                  void 0,
+                  !1,
+                  {
+                    fileName: "app/routes/_index.tsx",
+                    lineNumber: 91,
+                    columnNumber: 8
+                  },
+                  this
+                )
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/routes/_index.tsx",
+                lineNumber: 83,
+                columnNumber: 7
+              },
+              this
+            )
+          ]
+        },
+        void 0,
+        !0,
+        {
+          fileName: "app/routes/_index.tsx",
+          lineNumber: 78,
+          columnNumber: 6
+        },
+        this
+      )
+    ] }, void 0, !0, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 62,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("section", { className: "px-4 py-8", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h2", { className: "font-heading text-2xl text-zinc-700", children: "Experience" }, void 0, !1, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 101,
+        columnNumber: 5
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "mt-6 text-zinc-600", children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis posuere urna sit amet malesuada. Mauris dapibus, mauris et tempus sollicitudin, tortor metus tempus ipsum." }, void 0, !1, {
+        fileName: "app/routes/_index.tsx",
+        lineNumber: 102,
+        columnNumber: 5
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+        "a",
+        {
+          href: "https://bit.ly/thiago-temple-resume",
+          className: "mt-6 flex justify-center rounded-lg border-2 border-fuchsia bg-white py-2 uppercase text-fuchsia",
+          children: [
+            "Download CV",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+              "svg",
+              {
+                xmlns: "http://www.w3.org/2000/svg",
+                fill: "none",
+                viewBox: "0 0 24 24",
+                strokeWidth: "1.5",
+                stroke: "currentColor",
+                className: "ml-3 h-auto w-6",
+                children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+                  "path",
+                  {
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round",
+                    d: "M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+                  },
+                  void 0,
+                  !1,
+                  {
+                    fileName: "app/routes/_index.tsx",
+                    lineNumber: 120,
+                    columnNumber: 7
+                  },
+                  this
+                )
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/routes/_index.tsx",
+                lineNumber: 112,
+                columnNumber: 6
+              },
+              this
+            )
+          ]
+        },
+        void 0,
+        !0,
+        {
+          fileName: "app/routes/_index.tsx",
+          lineNumber: 107,
+          columnNumber: 5
+        },
+        this
+      )
+    ] }, void 0, !0, {
+      fileName: "app/routes/_index.tsx",
+      lineNumber: 100,
+      columnNumber: 4
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/_index.tsx",
+    lineNumber: 46,
+    columnNumber: 3
   }, this);
 }
 
@@ -1873,13 +2265,24 @@ var pages_exports = {};
 __export(pages_exports, {
   default: () => PagesLayout
 });
-var import_react5 = require("@remix-run/react"), import_jsx_dev_runtime6 = require("react/jsx-dev-runtime");
+var import_react7 = require("@remix-run/react"), import_jsx_dev_runtime7 = require("react/jsx-dev-runtime");
 function PagesLayout() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("main", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_react5.Outlet, {}, void 0, !1, {
-    fileName: "app/routes/_pages.tsx",
-    lineNumber: 6,
-    columnNumber: 4
-  }, this) }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_jsx_dev_runtime7.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("header", {}, void 0, !1, {
+      fileName: "app/routes/_pages.tsx",
+      lineNumber: 6,
+      columnNumber: 4
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("main", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react7.Outlet, {}, void 0, !1, {
+      fileName: "app/routes/_pages.tsx",
+      lineNumber: 8,
+      columnNumber: 5
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/_pages.tsx",
+      lineNumber: 7,
+      columnNumber: 4
+    }, this)
+  ] }, void 0, !0, {
     fileName: "app/routes/_pages.tsx",
     lineNumber: 5,
     columnNumber: 3
@@ -1890,20 +2293,20 @@ function PagesLayout() {
 var blog_exports = {};
 __export(blog_exports, {
   default: () => BlogLayout,
-  loader: () => loader2
+  loader: () => loader3
 });
-var import_node2 = require("@remix-run/node"), import_react6 = require("@remix-run/react"), import_jsx_dev_runtime7 = require("react/jsx-dev-runtime");
-function loader2({ params }) {
+var import_node2 = require("@remix-run/node"), import_react8 = require("@remix-run/react"), import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
+function loader3({ params }) {
   return params.slug ? null : (0, import_node2.redirect)("/");
 }
 function BlogLayout() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("main", { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("p", { children: "the layout" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("main", { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { children: "the layout" }, void 0, !1, {
       fileName: "app/routes/blog.tsx",
       lineNumber: 15,
       columnNumber: 4
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react6.Outlet, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react8.Outlet, {}, void 0, !1, {
       fileName: "app/routes/blog.tsx",
       lineNumber: 16,
       columnNumber: 4
@@ -1915,9 +2318,11 @@ function BlogLayout() {
   }, this);
 }
 
+// server-assets-manifest:@remix-run/dev/assets-manifest
+var assets_manifest_default = { entry: { module: "/build/entry.client-KLR3NQAH.js", imports: ["/build/_shared/chunk-MQHJW45L.js", "/build/_shared/chunk-VQPMKUVV.js", "/build/_shared/chunk-Y6ENU7FD.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-GC4DVH64.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-ZGQN5DIW.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages": { id: "routes/_pages", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_pages-SI5ZGV47.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages.about": { id: "routes/_pages.about", parentId: "routes/_pages", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_pages.about-AQQTTKZJ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog": { id: "routes/blog", parentId: "root", path: "blog", index: void 0, caseSensitive: void 0, module: "/build/routes/blog-GP3CEP5F.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog.$slug": { id: "routes/blog.$slug", parentId: "routes/blog", path: ":slug", index: void 0, caseSensitive: void 0, module: "/build/routes/blog.$slug-I3JMGVMB.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "7ee65507", hmr: void 0, url: "/build/manifest-7EE65507.js" };
+
 // server-entry-module:@remix-run/dev/server-build
-init_assets_manifest();
-var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
+var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !1, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
   root: {
     id: "root",
     parentId: void 0,
@@ -1976,18 +2381,4 @@ var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable
   publicPath,
   routes
 });
-/*! Bundled license information:
-
-@remix-run/css-bundle/dist/server.js:
-  (**
-   * @remix-run/css-bundle v1.16.1
-   *
-   * Copyright (c) Remix Software Inc.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.md file in the root directory of this source tree.
-   *
-   * @license MIT
-   *)
-*/
 //# sourceMappingURL=server.js.map
