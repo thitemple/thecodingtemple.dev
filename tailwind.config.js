@@ -10,9 +10,19 @@ export default {
 				white: colors.white,
 				black: colors.black,
 				zinc: colors.zinc,
-				violet: "#3C2360",
-				fuchsia: "#641C64",
-				pink: "#921D64",
+				slate: colors.slate,
+				violet: {
+					300: "#4F1A84",
+					500: "#3C1464",
+					700: "#301051",
+				},
+				fuchsia: {
+					500: "#841C64",
+				},
+				pink: {
+					300: "#E45FB0",
+					500: "#921D64",
+				},
 			},
 			fontFamily: {
 				sans: ["IBM Plex Sans", "sans-serif"],

@@ -13,6 +13,7 @@ export interface PostFrontMatter {
 	tags?: string[];
 	category?: string;
 	banner?: string;
+	thumbnail?: string;
 	readTime?: number;
 }
 

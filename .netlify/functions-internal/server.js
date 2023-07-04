@@ -27,6 +27,12 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   mod
 )), __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: !0 }), mod);
 
+// <define:process.env.REMIX_DEV_HTTP_ORIGIN>
+var init_define_process_env_REMIX_DEV_HTTP_ORIGIN = __esm({
+  "<define:process.env.REMIX_DEV_HTTP_ORIGIN>"() {
+  }
+});
+
 // node_modules/.pnpm/fault@2.0.1/node_modules/fault/index.js
 function create(Constructor) {
   return FormattedError.displayName = Constructor.displayName || Constructor.name, FormattedError;
@@ -37,6 +43,7 @@ function create(Constructor) {
 }
 var import_format, fault, init_fault = __esm({
   "node_modules/.pnpm/fault@2.0.1/node_modules/fault/index.js"() {
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     import_format = __toESM(require("format"), 1), fault = Object.assign(create(Error), {
       eval: create(EvalError),
       range: create(RangeError),
@@ -51,6 +58,7 @@ var import_format, fault, init_fault = __esm({
 // node_modules/.pnpm/@babel+runtime@7.22.5/node_modules/@babel/runtime/helpers/interopRequireDefault.js
 var require_interopRequireDefault = __commonJS({
   "node_modules/.pnpm/@babel+runtime@7.22.5/node_modules/@babel/runtime/helpers/interopRequireDefault.js"(exports, module2) {
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     function _interopRequireDefault(obj) {
       return obj && obj.__esModule ? obj : {
         default: obj
@@ -64,6 +72,7 @@ var require_interopRequireDefault = __commonJS({
 var require_dist = __commonJS({
   "node_modules/.pnpm/remark-mdx-frontmatter@1.1.1/node_modules/remark-mdx-frontmatter/dist/index.js"(exports) {
     "use strict";
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     Object.defineProperty(exports, "__esModule", { value: !0 });
     exports.remarkMdxFrontmatter = void 0;
     var estree_util_is_identifier_name_1 = require("estree-util-is-identifier-name"), estree_util_value_to_estree_1 = require("estree-util-value-to-estree"), js_yaml_1 = require("js-yaml"), toml_1 = require("toml"), remarkMdxFrontmatter = ({ name } = {}) => (ast) => {
@@ -114,10 +123,11 @@ ${value2}`);
   }
 });
 
-// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/dist/dirname-messed-up.cjs
+// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.11/node_modules/mdx-bundler/dist/dirname-messed-up.cjs
 var require_dirname_messed_up = __commonJS({
-  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/dist/dirname-messed-up.cjs"(exports, module2) {
+  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.11/node_modules/mdx-bundler/dist/dirname-messed-up.cjs"(exports, module2) {
     "use strict";
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     module2.exports = !__dirname.includes("mdx-bundler");
   }
 });
@@ -125,6 +135,7 @@ var require_dirname_messed_up = __commonJS({
 // node_modules/.pnpm/micromark-util-character@1.2.0/node_modules/micromark-util-character/lib/unicode-punctuation-regex.js
 var unicodePunctuationRegex, init_unicode_punctuation_regex = __esm({
   "node_modules/.pnpm/micromark-util-character@1.2.0/node_modules/micromark-util-character/lib/unicode-punctuation-regex.js"() {
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     unicodePunctuationRegex = /[!-\/:-@\[-`\{-~\xA1\xA7\xAB\xB6\xB7\xBB\xBF\u037E\u0387\u055A-\u055F\u0589\u058A\u05BE\u05C0\u05C3\u05C6\u05F3\u05F4\u0609\u060A\u060C\u060D\u061B\u061D-\u061F\u066A-\u066D\u06D4\u0700-\u070D\u07F7-\u07F9\u0830-\u083E\u085E\u0964\u0965\u0970\u09FD\u0A76\u0AF0\u0C77\u0C84\u0DF4\u0E4F\u0E5A\u0E5B\u0F04-\u0F12\u0F14\u0F3A-\u0F3D\u0F85\u0FD0-\u0FD4\u0FD9\u0FDA\u104A-\u104F\u10FB\u1360-\u1368\u1400\u166E\u169B\u169C\u16EB-\u16ED\u1735\u1736\u17D4-\u17D6\u17D8-\u17DA\u1800-\u180A\u1944\u1945\u1A1E\u1A1F\u1AA0-\u1AA6\u1AA8-\u1AAD\u1B5A-\u1B60\u1B7D\u1B7E\u1BFC-\u1BFF\u1C3B-\u1C3F\u1C7E\u1C7F\u1CC0-\u1CC7\u1CD3\u2010-\u2027\u2030-\u2043\u2045-\u2051\u2053-\u205E\u207D\u207E\u208D\u208E\u2308-\u230B\u2329\u232A\u2768-\u2775\u27C5\u27C6\u27E6-\u27EF\u2983-\u2998\u29D8-\u29DB\u29FC\u29FD\u2CF9-\u2CFC\u2CFE\u2CFF\u2D70\u2E00-\u2E2E\u2E30-\u2E4F\u2E52-\u2E5D\u3001-\u3003\u3008-\u3011\u3014-\u301F\u3030\u303D\u30A0\u30FB\uA4FE\uA4FF\uA60D-\uA60F\uA673\uA67E\uA6F2-\uA6F7\uA874-\uA877\uA8CE\uA8CF\uA8F8-\uA8FA\uA8FC\uA92E\uA92F\uA95F\uA9C1-\uA9CD\uA9DE\uA9DF\uAA5C-\uAA5F\uAADE\uAADF\uAAF0\uAAF1\uABEB\uFD3E\uFD3F\uFE10-\uFE19\uFE30-\uFE52\uFE54-\uFE61\uFE63\uFE68\uFE6A\uFE6B\uFF01-\uFF03\uFF05-\uFF0A\uFF0C-\uFF0F\uFF1A\uFF1B\uFF1F\uFF20\uFF3B-\uFF3D\uFF3F\uFF5B\uFF5D\uFF5F-\uFF65]/;
   }
 });
@@ -144,6 +155,7 @@ function regexCheck(regex) {
 }
 var asciiAlpha, asciiAlphanumeric, asciiAtext, asciiDigit, asciiHexDigit, asciiPunctuation, unicodePunctuation, unicodeWhitespace, init_micromark_util_character = __esm({
   "node_modules/.pnpm/micromark-util-character@1.2.0/node_modules/micromark-util-character/index.js"() {
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     init_unicode_punctuation_regex();
     asciiAlpha = regexCheck(/[A-Za-z]/), asciiAlphanumeric = regexCheck(/[\dA-Za-z]/), asciiAtext = regexCheck(/[#-'*+\--9=?A-Z^-~]/), asciiDigit = regexCheck(/\d/), asciiHexDigit = regexCheck(/[\dA-Fa-f]/), asciiPunctuation = regexCheck(/[!-/:-@[-`{-~]/);
     unicodePunctuation = regexCheck(unicodePunctuationRegex), unicodeWhitespace = regexCheck(/\s/);
@@ -176,6 +188,7 @@ function matter(option) {
 }
 var own3, markers, init_matters = __esm({
   "node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/matters.js"() {
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     init_fault();
     own3 = {}.hasOwnProperty, markers = {
       yaml: "-",
@@ -277,6 +290,7 @@ function pick(schema, prop) {
 }
 var init_syntax = __esm({
   "node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/lib/syntax.js"() {
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     init_micromark_util_character();
     init_matters();
   }
@@ -285,6 +299,7 @@ var init_syntax = __esm({
 // node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/index.js
 var init_micromark_extension_frontmatter = __esm({
   "node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/index.js"() {
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     init_syntax();
   }
 });
@@ -342,6 +357,7 @@ function pick2(schema, prop) {
 }
 var init_lib = __esm({
   "node_modules/.pnpm/mdast-util-frontmatter@1.0.1/node_modules/mdast-util-frontmatter/lib/index.js"() {
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     init_matters();
   }
 });
@@ -349,6 +365,7 @@ var init_lib = __esm({
 // node_modules/.pnpm/mdast-util-frontmatter@1.0.1/node_modules/mdast-util-frontmatter/index.js
 var init_mdast_util_frontmatter = __esm({
   "node_modules/.pnpm/mdast-util-frontmatter@1.0.1/node_modules/mdast-util-frontmatter/index.js"() {
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     init_lib();
   }
 });
@@ -370,15 +387,17 @@ function remarkFrontmatter(options = "yaml") {
 }
 var init_remark_frontmatter = __esm({
   "node_modules/.pnpm/remark-frontmatter@4.0.1/node_modules/remark-frontmatter/index.js"() {
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     init_micromark_extension_frontmatter();
     init_mdast_util_frontmatter();
   }
 });
 
-// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/dist/index.js
+// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.11/node_modules/mdx-bundler/dist/index.js
 var require_dist2 = __commonJS({
-  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/dist/index.js"(exports) {
+  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.11/node_modules/mdx-bundler/dist/index.js"(exports) {
     "use strict";
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     var _interopRequireDefault = require_interopRequireDefault();
     Object.defineProperty(exports, "__esModule", {
       value: !0
@@ -568,10 +587,11 @@ var require_dist2 = __commonJS({
   }
 });
 
-// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/dist/client.js
+// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.11/node_modules/mdx-bundler/dist/client.js
 var require_client = __commonJS({
-  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/dist/client.js"(exports) {
+  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.11/node_modules/mdx-bundler/dist/client.js"(exports) {
     "use strict";
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     Object.defineProperty(exports, "__esModule", {
       value: !0
     });
@@ -617,9 +637,10 @@ var require_client = __commonJS({
   }
 });
 
-// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/client/index.js
+// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.11/node_modules/mdx-bundler/client/index.js
 var require_client2 = __commonJS({
-  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.17.19/node_modules/mdx-bundler/client/index.js"(exports, module2) {
+  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.11/node_modules/mdx-bundler/client/index.js"(exports, module2) {
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     module2.exports = require_client();
   }
 });
@@ -629,18 +650,24 @@ var stdin_exports = {};
 __export(stdin_exports, {
   assets: () => assets_manifest_default,
   assetsBuildDirectory: () => assetsBuildDirectory,
+  dev: () => dev,
   entry: () => entry,
   future: () => future,
   publicPath: () => publicPath,
   routes: () => routes
 });
 module.exports = __toCommonJS(stdin_exports);
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
+// server-entry-module:@remix-run/dev/server-build
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
 // app/entry.server.tsx
 var entry_server_exports = {};
 __export(entry_server_exports, {
   default: () => handleRequest
 });
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_node_stream = require("node:stream"), import_node = require("@remix-run/node"), import_react = require("@remix-run/react"), import_isbot = __toESM(require("isbot")), import_server = require("react-dom/server"), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), ABORT_DELAY = 5e3;
 function handleRequest(request, responseStatusCode, responseHeaders, remixContext) {
   return (0, import_isbot.default)(request.headers.get("user-agent")) ? handleBotRequest(
@@ -742,10 +769,11 @@ __export(root_exports, {
   default: () => App,
   links: () => links
 });
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_react2 = require("@remix-run/react");
 
 // app/assets/css/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-N4M5GHIP.css";
+var tailwind_default = "/build/_assets/tailwind-QW4SE73P.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime2 = require("react/jsx-dev-runtime"), links = () => [{ rel: "stylesheet", href: tailwind_default }];
@@ -819,6 +847,7 @@ var pages_about_exports = {};
 __export(pages_about_exports, {
   default: () => AboutPage
 });
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
 // app/assets/images/me.jpg
 var me_default = "/build/_assets/me-WTPDWHAB.jpg";
@@ -980,15 +1009,28 @@ __export(blog_slug_exports, {
   default: () => BlogPostPage,
   loader: () => loader
 });
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_react3 = require("@remix-run/react"), import_react4 = require("react");
 
 // app/utils/mdx.server.ts
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_path = __toESM(require("path"));
 
+// node_modules/.pnpm/rehype-highlight@6.0.0/node_modules/rehype-highlight/index.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
+// node_modules/.pnpm/rehype-highlight@6.0.0/node_modules/rehype-highlight/lib/index.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
+// node_modules/.pnpm/lowlight@2.9.0/node_modules/lowlight/index.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
 // node_modules/.pnpm/lowlight@2.9.0/node_modules/lowlight/lib/common.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_arduino = __toESM(require("highlight.js/lib/languages/arduino"), 1), import_bash = __toESM(require("highlight.js/lib/languages/bash"), 1), import_c = __toESM(require("highlight.js/lib/languages/c"), 1), import_cpp = __toESM(require("highlight.js/lib/languages/cpp"), 1), import_csharp = __toESM(require("highlight.js/lib/languages/csharp"), 1), import_css = __toESM(require("highlight.js/lib/languages/css"), 1), import_diff = __toESM(require("highlight.js/lib/languages/diff"), 1), import_go = __toESM(require("highlight.js/lib/languages/go"), 1), import_graphql = __toESM(require("highlight.js/lib/languages/graphql"), 1), import_ini = __toESM(require("highlight.js/lib/languages/ini"), 1), import_java = __toESM(require("highlight.js/lib/languages/java"), 1), import_javascript = __toESM(require("highlight.js/lib/languages/javascript"), 1), import_json = __toESM(require("highlight.js/lib/languages/json"), 1), import_kotlin = __toESM(require("highlight.js/lib/languages/kotlin"), 1), import_less = __toESM(require("highlight.js/lib/languages/less"), 1), import_lua = __toESM(require("highlight.js/lib/languages/lua"), 1), import_makefile = __toESM(require("highlight.js/lib/languages/makefile"), 1), import_markdown = __toESM(require("highlight.js/lib/languages/markdown"), 1), import_objectivec = __toESM(require("highlight.js/lib/languages/objectivec"), 1), import_perl = __toESM(require("highlight.js/lib/languages/perl"), 1), import_php = __toESM(require("highlight.js/lib/languages/php"), 1), import_php_template = __toESM(require("highlight.js/lib/languages/php-template"), 1), import_plaintext = __toESM(require("highlight.js/lib/languages/plaintext"), 1), import_python = __toESM(require("highlight.js/lib/languages/python"), 1), import_python_repl = __toESM(require("highlight.js/lib/languages/python-repl"), 1), import_r = __toESM(require("highlight.js/lib/languages/r"), 1), import_ruby = __toESM(require("highlight.js/lib/languages/ruby"), 1), import_rust = __toESM(require("highlight.js/lib/languages/rust"), 1), import_scss = __toESM(require("highlight.js/lib/languages/scss"), 1), import_shell = __toESM(require("highlight.js/lib/languages/shell"), 1), import_sql = __toESM(require("highlight.js/lib/languages/sql"), 1), import_swift = __toESM(require("highlight.js/lib/languages/swift"), 1), import_typescript = __toESM(require("highlight.js/lib/languages/typescript"), 1), import_vbnet = __toESM(require("highlight.js/lib/languages/vbnet"), 1), import_wasm = __toESM(require("highlight.js/lib/languages/wasm"), 1), import_xml = __toESM(require("highlight.js/lib/languages/xml"), 1), import_yaml = __toESM(require("highlight.js/lib/languages/yaml"), 1);
 
 // node_modules/.pnpm/lowlight@2.9.0/node_modules/lowlight/lib/core.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_core = __toESM(require("highlight.js/lib/core"), 1);
 init_fault();
 var own = {}.hasOwnProperty, defaultPrefix = "hljs-";
@@ -1176,7 +1218,14 @@ lowlight.registerLanguage("wasm", import_wasm.default);
 lowlight.registerLanguage("xml", import_xml.default);
 lowlight.registerLanguage("yaml", import_yaml.default);
 
+// node_modules/.pnpm/hast-util-to-text@3.1.2/node_modules/hast-util-to-text/index.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
+// node_modules/.pnpm/hast-util-to-text@3.1.2/node_modules/hast-util-to-text/lib/index.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
 // node_modules/.pnpm/hast-util-is-element@2.1.3/node_modules/hast-util-is-element/index.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var convertElement = (
   /**
    * @type {(
@@ -1233,7 +1282,17 @@ function element(node) {
   );
 }
 
+// node_modules/.pnpm/unist-util-find-after@4.0.1/node_modules/unist-util-find-after/index.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
+// node_modules/.pnpm/unist-util-find-after@4.0.1/node_modules/unist-util-find-after/lib/index.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
+// node_modules/.pnpm/unist-util-is@5.2.1/node_modules/unist-util-is/index.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
 // node_modules/.pnpm/unist-util-is@5.2.1/node_modules/unist-util-is/lib/index.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var convert = (
   /**
    * @type {(
@@ -1542,7 +1601,20 @@ function closedDialog(node) {
   return node.tagName === "dialog" && !(node.properties || {}).open;
 }
 
+// node_modules/.pnpm/unist-util-visit@4.1.2/node_modules/unist-util-visit/index.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
+// node_modules/.pnpm/unist-util-visit@4.1.2/node_modules/unist-util-visit/lib/index.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
+// node_modules/.pnpm/unist-util-visit-parents@5.1.3/node_modules/unist-util-visit-parents/index.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
+// node_modules/.pnpm/unist-util-visit-parents@5.1.3/node_modules/unist-util-visit-parents/lib/index.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
 // node_modules/.pnpm/unist-util-visit-parents@5.1.3/node_modules/unist-util-visit-parents/lib/color.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 function color(d) {
   return "\x1B[33m" + d + "\x1B[39m";
 }
@@ -1683,6 +1755,7 @@ function language(node) {
 }
 
 // node_modules/.pnpm/remark-mdx-images@2.0.0/node_modules/remark-mdx-images/index.js
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var urlPattern = /^(https?:)?\//, relativePathPattern = /\.\.?\//, remarkMdxImages = ({ resolve = !0 } = {}) => (ast) => {
   let imports = [], imported = /* @__PURE__ */ new Map();
   visit(ast, "image", (node, index, parent) => {
@@ -1785,210 +1858,289 @@ function BlogPostPage() {
   }, this);
 }
 
-// app/routes/_index.tsx
-var index_exports = {};
-__export(index_exports, {
-  PostMeta: () => PostMeta,
+// app/routes/_index/route.tsx
+var route_exports = {};
+__export(route_exports, {
   default: () => Index,
   loader: () => loader2,
   meta: () => meta
 });
-var import_react6 = require("@remix-run/react");
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+var import_react10 = require("@remix-run/react");
 
-// app/components/Nav/Nav.tsx
-var import_react5 = require("@remix-run/react");
+// app/components/index.ts
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
+// app/components/Footer.tsx
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+var import_react5 = require("@remix-run/react"), import_jsx_dev_runtime5 = require("react/jsx-dev-runtime");
+function FooterLink({ to, label }) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react5.Link, { to, className: "hover:underline", children: label }, void 0, !1, {
+    fileName: "app/components/Footer.tsx",
+    lineNumber: 6,
+    columnNumber: 4
+  }, this) }, void 0, !1, {
+    fileName: "app/components/Footer.tsx",
+    lineNumber: 5,
+    columnNumber: 3
+  }, this);
+}
+function Footer() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "mt-6 flex flex-col items-center gap-6 bg-slate-200 py-6", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("ul", { className: "flex flex-wrap justify-center gap-6 px-6 text-slate-700", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(FooterLink, { to: "/", label: "Home" }, void 0, !1, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 17,
+        columnNumber: 5
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(FooterLink, { to: "/articles", label: "Articles" }, void 0, !1, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 18,
+        columnNumber: 5
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(FooterLink, { to: "/courses", label: "Courses" }, void 0, !1, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 19,
+        columnNumber: 5
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(FooterLink, { to: "/speaking", label: "Speaking" }, void 0, !1, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 20,
+        columnNumber: 5
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(FooterLink, { to: "/uses", label: "Uses" }, void 0, !1, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 21,
+        columnNumber: 5
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(FooterLink, { to: "/about", label: "About" }, void 0, !1, {
+        fileName: "app/components/Footer.tsx",
+        lineNumber: 22,
+        columnNumber: 5
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/components/Footer.tsx",
+      lineNumber: 16,
+      columnNumber: 4
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "text-slate-500", children: "The Coding Temple \xA9 2023" }, void 0, !1, {
+      fileName: "app/components/Footer.tsx",
+      lineNumber: 24,
+      columnNumber: 4
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/Footer.tsx",
+    lineNumber: 15,
+    columnNumber: 3
+  }, this);
+}
+
+// app/components/Nav.tsx
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+var import_react6 = require("@remix-run/react"), import_classnames = __toESM(require("classnames")), import_react7 = require("react");
+
+// app/assets/images/index.ts
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
 // app/assets/images/brand/symbol-transparent.svg
 var symbol_transparent_default = "/build/_assets/symbol-transparent-STZQOOFB.svg";
 
-// app/components/Nav/Nav.tsx
-var import_jsx_dev_runtime5 = require("react/jsx-dev-runtime");
+// app/components/Nav.tsx
+var import_jsx_dev_runtime6 = require("react/jsx-dev-runtime");
 function NavLink({ to, children }) {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react5.Link, { to, className: "", children }, void 0, !1, {
-    fileName: "app/components/Nav/Nav.tsx",
-    lineNumber: 8,
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_react6.Link, { to, className: "", children }, void 0, !1, {
+    fileName: "app/components/Nav.tsx",
+    lineNumber: 9,
     columnNumber: 3
   }, this);
 }
+function MobileNav({ open = !1 }) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+    "div",
+    {
+      className: (0, import_classnames.default)({
+        hidden: !open
+      })
+    },
+    void 0,
+    !1,
+    {
+      fileName: "app/components/Nav.tsx",
+      lineNumber: 17,
+      columnNumber: 3
+    },
+    this
+  );
+}
 function Nav() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("header", { className: "mx-auto max-w-7xl lg:px-8", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "relative flex gap-4 px-4 py-2", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex flex-1", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react5.Link, { to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("img", { src: symbol_transparent_default, className: "w-10" }, void 0, !1, {
-        fileName: "app/components/Nav/Nav.tsx",
-        lineNumber: 20,
-        columnNumber: 7
-      }, this) }, void 0, !1, {
-        fileName: "app/components/Nav/Nav.tsx",
-        lineNumber: 19,
-        columnNumber: 6
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("nav", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("ul", { className: "", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(NavLink, { to: "blog", children: "Blog" }, void 0, !1, {
-          fileName: "app/components/Nav/Nav.tsx",
-          lineNumber: 26,
-          columnNumber: 10
+  let [mobileOpened, setMobileOpened] = (0, import_react7.useState)(!1);
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("header", { className: "mx-auto max-w-7xl lg:px-8", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(MobileNav, { open: mobileOpened }, void 0, !1, {
+      fileName: "app/components/Nav.tsx",
+      lineNumber: 29,
+      columnNumber: 4
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "relative flex gap-4 px-4 py-2", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "flex flex-1", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_react6.Link, { to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("img", { src: symbol_transparent_default, className: "w-10" }, void 0, !1, {
+          fileName: "app/components/Nav.tsx",
+          lineNumber: 33,
+          columnNumber: 7
         }, this) }, void 0, !1, {
-          fileName: "app/components/Nav/Nav.tsx",
-          lineNumber: 25,
-          columnNumber: 9
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(NavLink, { to: "about", children: "About" }, void 0, !1, {
-          fileName: "app/components/Nav/Nav.tsx",
-          lineNumber: 29,
-          columnNumber: 10
-        }, this) }, void 0, !1, {
-          fileName: "app/components/Nav/Nav.tsx",
-          lineNumber: 28,
-          columnNumber: 9
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(NavLink, { to: "speaking", children: "Speaking" }, void 0, !1, {
-          fileName: "app/components/Nav/Nav.tsx",
+          fileName: "app/components/Nav.tsx",
           lineNumber: 32,
-          columnNumber: 10
-        }, this) }, void 0, !1, {
-          fileName: "app/components/Nav/Nav.tsx",
-          lineNumber: 31,
-          columnNumber: 9
+          columnNumber: 6
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(NavLink, { to: "uses", children: "Uses" }, void 0, !1, {
-          fileName: "app/components/Nav/Nav.tsx",
-          lineNumber: 35,
-          columnNumber: 10
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("nav", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("ul", { className: "", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(NavLink, { to: "blog", children: "Blog" }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 39,
+            columnNumber: 10
+          }, this) }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 38,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(NavLink, { to: "about", children: "About" }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 42,
+            columnNumber: 10
+          }, this) }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 41,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(NavLink, { to: "speaking", children: "Speaking" }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 45,
+            columnNumber: 10
+          }, this) }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 44,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(NavLink, { to: "uses", children: "Uses" }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 48,
+            columnNumber: 10
+          }, this) }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 47,
+            columnNumber: 9
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/components/Nav.tsx",
+          lineNumber: 37,
+          columnNumber: 8
         }, this) }, void 0, !1, {
-          fileName: "app/components/Nav/Nav.tsx",
-          lineNumber: 34,
-          columnNumber: 9
+          fileName: "app/components/Nav.tsx",
+          lineNumber: 36,
+          columnNumber: 7
+        }, this) }, void 0, !1, {
+          fileName: "app/components/Nav.tsx",
+          lineNumber: 35,
+          columnNumber: 6
         }, this)
       ] }, void 0, !0, {
-        fileName: "app/components/Nav/Nav.tsx",
-        lineNumber: 24,
-        columnNumber: 8
-      }, this) }, void 0, !1, {
-        fileName: "app/components/Nav/Nav.tsx",
-        lineNumber: 23,
-        columnNumber: 7
-      }, this) }, void 0, !1, {
-        fileName: "app/components/Nav/Nav.tsx",
-        lineNumber: 22,
-        columnNumber: 6
+        fileName: "app/components/Nav.tsx",
+        lineNumber: 31,
+        columnNumber: 5
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "flex flex-1 justify-end md:justify-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+        "button",
+        {
+          title: "Toggle mobile menu",
+          className: "bg-gr group flex items-center rounded-full px-4 py-2 text-sm font-medium text-zinc-800 shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur",
+          onClick: () => setMobileOpened(!mobileOpened),
+          children: [
+            "Menu",
+            /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+              "svg",
+              {
+                xmlns: "http://www.w3.org/2000/svg",
+                fill: "none",
+                viewBox: "0 0 24 24",
+                strokeWidth: "1.5",
+                stroke: "currentColor",
+                className: "ml-3 h-auto w-4 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400",
+                children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+                  "path",
+                  {
+                    strokeLinecap: "round",
+                    strokeLinejoin: "round",
+                    d: "M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  },
+                  void 0,
+                  !1,
+                  {
+                    fileName: "app/components/Nav.tsx",
+                    lineNumber: 69,
+                    columnNumber: 8
+                  },
+                  this
+                )
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/components/Nav.tsx",
+                lineNumber: 61,
+                columnNumber: 7
+              },
+              this
+            )
+          ]
+        },
+        void 0,
+        !0,
+        {
+          fileName: "app/components/Nav.tsx",
+          lineNumber: 55,
+          columnNumber: 6
+        },
+        this
+      ) }, void 0, !1, {
+        fileName: "app/components/Nav.tsx",
+        lineNumber: 54,
+        columnNumber: 5
       }, this)
     ] }, void 0, !0, {
-      fileName: "app/components/Nav/Nav.tsx",
-      lineNumber: 18,
-      columnNumber: 5
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex flex-1 justify-end md:justify-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
-      "button",
-      {
-        title: "Toggle mobile menu",
-        className: "group flex items-center rounded-full px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur",
-        children: [
-          "Menu",
-          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
-            "svg",
-            {
-              xmlns: "http://www.w3.org/2000/svg",
-              fill: "none",
-              viewBox: "0 0 24 24",
-              strokeWidth: "1.5",
-              stroke: "currentColor",
-              className: "ml-3 h-auto w-4 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400",
-              children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
-                "path",
-                {
-                  strokeLinecap: "round",
-                  strokeLinejoin: "round",
-                  d: "M19.5 8.25l-7.5 7.5-7.5-7.5"
-                },
-                void 0,
-                !1,
-                {
-                  fileName: "app/components/Nav/Nav.tsx",
-                  lineNumber: 55,
-                  columnNumber: 8
-                },
-                this
-              )
-            },
-            void 0,
-            !1,
-            {
-              fileName: "app/components/Nav/Nav.tsx",
-              lineNumber: 47,
-              columnNumber: 7
-            },
-            this
-          )
-        ]
-      },
-      void 0,
-      !0,
-      {
-        fileName: "app/components/Nav/Nav.tsx",
-        lineNumber: 42,
-        columnNumber: 6
-      },
-      this
-    ) }, void 0, !1, {
-      fileName: "app/components/Nav/Nav.tsx",
-      lineNumber: 41,
-      columnNumber: 5
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "flex justify-end md:flex-1", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("button", { className: "group ml-2 rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
-      "svg",
-      {
-        xmlns: "http://www.w3.org/2000/svg",
-        fill: "none",
-        viewBox: "0 0 24 24",
-        "stroke-width": "1.5",
-        stroke: "currentColor",
-        className: "h-auto w-6 stroke-yellow-600",
-        children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
-          "path",
-          {
-            strokeLinecap: "round",
-            strokeLinejoin: "round",
-            d: "M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
-          },
-          void 0,
-          !1,
-          {
-            fileName: "app/components/Nav/Nav.tsx",
-            lineNumber: 73,
-            columnNumber: 8
-          },
-          this
-        )
-      },
-      void 0,
-      !1,
-      {
-        fileName: "app/components/Nav/Nav.tsx",
-        lineNumber: 65,
-        columnNumber: 7
-      },
-      this
-    ) }, void 0, !1, {
-      fileName: "app/components/Nav/Nav.tsx",
-      lineNumber: 64,
-      columnNumber: 6
-    }, this) }, void 0, !1, {
-      fileName: "app/components/Nav/Nav.tsx",
-      lineNumber: 63,
-      columnNumber: 5
+      fileName: "app/components/Nav.tsx",
+      lineNumber: 30,
+      columnNumber: 4
     }, this)
   ] }, void 0, !0, {
-    fileName: "app/components/Nav/Nav.tsx",
-    lineNumber: 17,
-    columnNumber: 4
-  }, this) }, void 0, !1, {
-    fileName: "app/components/Nav/Nav.tsx",
-    lineNumber: 16,
+    fileName: "app/components/Nav.tsx",
+    lineNumber: 28,
+    columnNumber: 3
+  }, this);
+}
+
+// app/components/Page.tsx
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+var import_jsx_dev_runtime7 = require("react/jsx-dev-runtime");
+function Page({ children }) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("main", { className: "py-6", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(Nav, {}, void 0, !1, {
+      fileName: "app/components/Page.tsx",
+      lineNumber: 12,
+      columnNumber: 4
+    }, this),
+    children,
+    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(Footer, {}, void 0, !1, {
+      fileName: "app/components/Page.tsx",
+      lineNumber: 14,
+      columnNumber: 4
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/components/Page.tsx",
+    lineNumber: 11,
     columnNumber: 3
   }, this);
 }
 
 // app/utils/blog.server.ts
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_fs = __toESM(require("fs")), import_path2 = __toESM(require("path"));
 var DIRECTORY_PATH = "./content/posts";
 async function traverseDirectories(directoryPath) {
@@ -2012,7 +2164,273 @@ async function getLatestArticle() {
   return allArticles.sort((a, b) => a.date > b.date ? -1 : 1), allArticles[0];
 }
 
+// app/routes/_index/components/About.tsx
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
+// app/routes/_index/components/Section.tsx
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+var import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
+function Section({
+  title,
+  children
+}) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("section", { className: "px-4 py-8", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("h2", { className: "font-heading text-2xl text-slate-700", children: title }, void 0, !1, {
+      fileName: "app/routes/_index/components/Section.tsx",
+      lineNumber: 12,
+      columnNumber: 4
+    }, this),
+    children
+  ] }, void 0, !0, {
+    fileName: "app/routes/_index/components/Section.tsx",
+    lineNumber: 11,
+    columnNumber: 3
+  }, this);
+}
+
+// app/routes/_index/components/About.tsx
+var import_jsx_dev_runtime9 = require("react/jsx-dev-runtime");
+function About() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(Section, { title: "About", children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("div", { className: "flex flex-col", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(
+      "img",
+      {
+        src: "https://res.cloudinary.com/duacbnsfa/image/upload/f_auto,q_auto/nfhbzkqa7by6n6znan0s",
+        alt: "Thiago Temple",
+        className: "mt-6 h-32 w-32 content-center place-self-center rounded-full"
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/routes/_index/components/About.tsx",
+        lineNumber: 7,
+        columnNumber: 5
+      },
+      this
+    ),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("p", { className: "mt-6 text-slate-600", children: "As a software engineer based in Ottawa, Canada, I'm passionate about web and mobile technologies. I've always been captivated by the ever-evolving world of tech, and I love sharing my learning journey on my blog. When I'm not immersed in code, you'll find me enjoying board games, diving into a good book, or spending quality time with my family. It's all about balance!" }, void 0, !1, {
+      fileName: "app/routes/_index/components/About.tsx",
+      lineNumber: 12,
+      columnNumber: 5
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/_index/components/About.tsx",
+    lineNumber: 6,
+    columnNumber: 4
+  }, this) }, void 0, !1, {
+    fileName: "app/routes/_index/components/About.tsx",
+    lineNumber: 5,
+    columnNumber: 3
+  }, this);
+}
+
+// app/routes/_index/components/Experience.tsx
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+
+// app/assets/images/kinaxis-logo.png
+var kinaxis_logo_default = "/build/_assets/kinaxis-logo-LHQXBA3U.png";
+
+// app/assets/images/shopify-logo.png
+var shopify_logo_default = "/build/_assets/shopify-logo-TSIOHSL5.png";
+
+// app/assets/images/sm-logo.png
+var sm_logo_default = "/build/_assets/sm-logo-U54RCH2J.png";
+
+// app/assets/images/wyhn-logo.png
+var wyhn_logo_default = "/build/_assets/wyhn-logo-4MFFAMB7.png";
+
+// app/routes/_index/components/Experience.tsx
+var import_jsx_dev_runtime10 = require("react/jsx-dev-runtime");
+function ExperienceItem({
+  logo,
+  company,
+  position,
+  date
+}) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("li", { className: "flex justify-between", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("img", { src: logo, className: "mr-2 w-11" }, void 0, !1, {
+      fileName: "app/routes/_index/components/Experience.tsx",
+      lineNumber: 21,
+      columnNumber: 4
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("div", { className: "flex flex-1 flex-col", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("span", { className: "font-medium text-slate-600", children: company }, void 0, !1, {
+        fileName: "app/routes/_index/components/Experience.tsx",
+        lineNumber: 23,
+        columnNumber: 5
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("span", { className: "text-slate-500", children: position }, void 0, !1, {
+        fileName: "app/routes/_index/components/Experience.tsx",
+        lineNumber: 24,
+        columnNumber: 5
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/_index/components/Experience.tsx",
+      lineNumber: 22,
+      columnNumber: 4
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("div", { className: "flex items-end", children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("span", { className: "text-slate-500", children: date }, void 0, !1, {
+      fileName: "app/routes/_index/components/Experience.tsx",
+      lineNumber: 27,
+      columnNumber: 5
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/_index/components/Experience.tsx",
+      lineNumber: 26,
+      columnNumber: 4
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/_index/components/Experience.tsx",
+    lineNumber: 20,
+    columnNumber: 3
+  }, this);
+}
+function Experience() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(Section, { title: "Experience", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("p", { className: "mt-6 text-slate-600", children: "I'm a seasoned Staff Software Developer at Shopify, skilled in TypeScript, Elm, JavaScript, and React. With a career spanning over two decades, I've led impactful projects, pioneered the adoption of TypeScript at SurveyMonkey, and developed innovative web and mobile applications. I'm a tech-savvy problem solver and a relentless learner." }, void 0, !1, {
+      fileName: "app/routes/_index/components/Experience.tsx",
+      lineNumber: 36,
+      columnNumber: 4
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("ul", { className: "mt-6 flex flex-col items-stretch gap-6", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
+        ExperienceItem,
+        {
+          logo: shopify_logo_default,
+          company: "Shopify",
+          position: "Staff Developer",
+          date: "2022 - now"
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/routes/_index/components/Experience.tsx",
+          lineNumber: 44,
+          columnNumber: 5
+        },
+        this
+      ),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
+        ExperienceItem,
+        {
+          logo: sm_logo_default,
+          company: "SurveyMonkey",
+          position: "Senior Engineer",
+          date: "2019 - 2022"
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/routes/_index/components/Experience.tsx",
+          lineNumber: 50,
+          columnNumber: 5
+        },
+        this
+      ),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
+        ExperienceItem,
+        {
+          logo: wyhn_logo_default,
+          company: "Wyhn",
+          position: "Senior Engineer",
+          date: "2018 - 2018"
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/routes/_index/components/Experience.tsx",
+          lineNumber: 56,
+          columnNumber: 5
+        },
+        this
+      ),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
+        ExperienceItem,
+        {
+          logo: kinaxis_logo_default,
+          company: "Kinaxis",
+          position: "Advisory Developer",
+          date: "2017 - 2018"
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/routes/_index/components/Experience.tsx",
+          lineNumber: 62,
+          columnNumber: 5
+        },
+        this
+      )
+    ] }, void 0, !0, {
+      fileName: "app/routes/_index/components/Experience.tsx",
+      lineNumber: 43,
+      columnNumber: 4
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/_index/components/Experience.tsx",
+    lineNumber: 35,
+    columnNumber: 3
+  }, this);
+}
+
+// app/routes/_index/components/Hero.tsx
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+var import_jsx_dev_runtime11 = require("react/jsx-dev-runtime");
+function Hero() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("section", { className: "bg-gradient-to-b from-[#921D6403] to-[#921D6435] px-4 py-12 text-fuchsia-500", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("h1", { className: "text-fuchsia  font-heading text-2xl", children: "Hi, I'm Thiago Temple. I love building products, writing code and learning through it." }, void 0, !1, {
+      fileName: "app/routes/_index/components/Hero.tsx",
+      lineNumber: 4,
+      columnNumber: 4
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("p", { className: "mt-6 hidden text-lg text-zinc-600", children: "I'm a web-loving staff developer, driven by curiosity and a passion for learning. I'm eager to share my knowledge and always up for new challenges. With a friendly and open-minded approach, I embrace the ever-evolving world of web technologies, staying ahead of the game and inspiring others along the way." }, void 0, !1, {
+      fileName: "app/routes/_index/components/Hero.tsx",
+      lineNumber: 8,
+      columnNumber: 4
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/_index/components/Hero.tsx",
+    lineNumber: 3,
+    columnNumber: 3
+  }, this);
+}
+
+// app/routes/_index/components/LatestArticle.tsx
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+var import_react9 = require("@remix-run/react");
+
+// app/components/Button.tsx
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+var import_react8 = require("@remix-run/react"), import_classnames2 = __toESM(require("classnames")), import_jsx_dev_runtime12 = require("react/jsx-dev-runtime");
+function Button({ label, icon, to, external, onClick }) {
+  let classes = (0, import_classnames2.default)(
+    "mt-6 flex justify-center rounded-lg border-2 border-fuchsia-500 bg-white py-2 uppercase text-fuchsia-500"
+  );
+  return to && external ? /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("a", { href: to, className: classes, children: [
+    label,
+    icon
+  ] }, void 0, !0, {
+    fileName: "app/components/Button.tsx",
+    lineNumber: 21,
+    columnNumber: 4
+  }, this) : to ? /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(import_react8.Link, { to, className: classes, children: [
+    label,
+    icon
+  ] }, void 0, !0, {
+    fileName: "app/components/Button.tsx",
+    lineNumber: 30,
+    columnNumber: 4
+  }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("button", { className: classes, onClick, children: [
+    label,
+    icon
+  ] }, void 0, !0, {
+    fileName: "app/components/Button.tsx",
+    lineNumber: 38,
+    columnNumber: 3
+  }, this);
+}
+
 // app/utils/dateFormats.ts
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 function formatDate(sourceDate) {
   let date = typeof sourceDate == "string" || typeof sourceDate == "number" ? new Date(sourceDate) : sourceDate;
   return new Intl.DateTimeFormat(void 0, { dateStyle: "medium" }).format(
@@ -2020,8 +2438,282 @@ function formatDate(sourceDate) {
   );
 }
 
-// app/routes/_index.tsx
-var import_jsx_dev_runtime6 = require("react/jsx-dev-runtime"), meta = () => [
+// app/routes/_index/components/LatestArticle.tsx
+var import_jsx_dev_runtime13 = require("react/jsx-dev-runtime");
+function PostMeta({
+  date,
+  readTime
+}) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(import_jsx_dev_runtime13.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("span", { children: formatDate(date) }, void 0, !1, {
+      fileName: "app/routes/_index/components/LatestArticle.tsx",
+      lineNumber: 15,
+      columnNumber: 4
+    }, this),
+    readTime && /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(import_jsx_dev_runtime13.Fragment, { children: [
+      " ",
+      "\u2022 ",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("span", { children: [
+        readTime,
+        " min read"
+      ] }, void 0, !0, {
+        fileName: "app/routes/_index/components/LatestArticle.tsx",
+        lineNumber: 19,
+        columnNumber: 8
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/routes/_index/components/LatestArticle.tsx",
+      lineNumber: 17,
+      columnNumber: 5
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/_index/components/LatestArticle.tsx",
+    lineNumber: 14,
+    columnNumber: 3
+  }, this);
+}
+function LatestArticle({ latestArticle }) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("section", { className: "px-4 py-8", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(import_react9.Link, { to: `/blog/${latestArticle.slug}`, children: /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("h2", { className: "font-heading text-2xl text-slate-700", children: latestArticle.title }, void 0, !1, {
+      fileName: "app/routes/_index/components/LatestArticle.tsx",
+      lineNumber: 34,
+      columnNumber: 5
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/_index/components/LatestArticle.tsx",
+      lineNumber: 33,
+      columnNumber: 4
+    }, this),
+    latestArticle.thumbnail && /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(
+      "img",
+      {
+        src: latestArticle.thumbnail,
+        className: "mt-6 w-full object-cover opacity-75"
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/routes/_index/components/LatestArticle.tsx",
+        lineNumber: 39,
+        columnNumber: 5
+      },
+      this
+    ),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("p", { className: "mt-6 text-slate-600", children: latestArticle.summary }, void 0, !1, {
+      fileName: "app/routes/_index/components/LatestArticle.tsx",
+      lineNumber: 44,
+      columnNumber: 4
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("p", { className: "mt-6 text-slate-400", children: /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(PostMeta, { date: latestArticle.date, readTime: latestArticle.readTime }, void 0, !1, {
+      fileName: "app/routes/_index/components/LatestArticle.tsx",
+      lineNumber: 46,
+      columnNumber: 5
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/_index/components/LatestArticle.tsx",
+      lineNumber: 45,
+      columnNumber: 4
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(
+      Button,
+      {
+        label: "Read more",
+        icon: /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(
+          "svg",
+          {
+            xmlns: "http://www.w3.org/2000/svg",
+            fill: "none",
+            viewBox: "0 0 24 24",
+            strokeWidth: "1.5",
+            stroke: "currentColor",
+            className: "ml-3 h-auto w-6",
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(
+              "path",
+              {
+                strokeLinecap: "round",
+                strokeLinejoin: "round",
+                d: "M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              },
+              void 0,
+              !1,
+              {
+                fileName: "app/routes/_index/components/LatestArticle.tsx",
+                lineNumber: 59,
+                columnNumber: 7
+              },
+              this
+            )
+          },
+          void 0,
+          !1,
+          {
+            fileName: "app/routes/_index/components/LatestArticle.tsx",
+            lineNumber: 51,
+            columnNumber: 6
+          },
+          this
+        ),
+        to: `/blog/${latestArticle.slug}`
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/routes/_index/components/LatestArticle.tsx",
+        lineNumber: 48,
+        columnNumber: 4
+      },
+      this
+    )
+  ] }, void 0, !0, {
+    fileName: "app/routes/_index/components/LatestArticle.tsx",
+    lineNumber: 32,
+    columnNumber: 3
+  }, this);
+}
+
+// app/routes/_index/components/NewsletterSubscription.tsx
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+var import_jsx_dev_runtime14 = require("react/jsx-dev-runtime");
+function NewsletterSubscription() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(Section, { title: "News From the Temple", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("p", { className: "mt-6 text-slate-600", children: "Stay up to date with the latest news from the Temple. From what I'm up to, to what I am following. Unsubscribe at any time." }, void 0, !1, {
+      fileName: "app/routes/_index/components/NewsletterSubscription.tsx",
+      lineNumber: 7,
+      columnNumber: 4
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(
+      "form",
+      {
+        action: "https://thiagotemple.us1.list-manage.com/subscribe/post?u=8b9b0b0c9b9b0b0c9b9b0b0c9&id=8b9b0b0c9b",
+        method: "post",
+        id: "mc-embedded-subscribe-form",
+        name: "mc-embedded-subscribe-form",
+        className: "mt-6",
+        target: "_blank",
+        noValidate: !0,
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "flex flex-col sm:flex-row", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(
+            "input",
+            {
+              type: "email",
+              name: "EMAIL",
+              className: "w-full rounded-md border border-gray-300 px-4 py-2 focus:border-blue-500 focus:ring-blue-500 sm:max-w-xs sm:rounded-l-md sm:rounded-r-none",
+              placeholder: "E-mail",
+              required: !0
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/routes/_index/components/NewsletterSubscription.tsx",
+              lineNumber: 21,
+              columnNumber: 6
+            },
+            this
+          ),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(
+            Button,
+            {
+              label: "Sign up",
+              icon: /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(
+                "svg",
+                {
+                  xmlns: "http://www.w3.org/2000/svg",
+                  fill: "none",
+                  viewBox: "0 0 24 24",
+                  strokeWidth: "1.5",
+                  stroke: "currentColor",
+                  className: "ml-3 h-auto w-6",
+                  children: /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(
+                    "path",
+                    {
+                      "stroke-linecap": "round",
+                      "stroke-linejoin": "round",
+                      d: "M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                    },
+                    void 0,
+                    !1,
+                    {
+                      fileName: "app/routes/_index/components/NewsletterSubscription.tsx",
+                      lineNumber: 39,
+                      columnNumber: 9
+                    },
+                    this
+                  )
+                },
+                void 0,
+                !1,
+                {
+                  fileName: "app/routes/_index/components/NewsletterSubscription.tsx",
+                  lineNumber: 31,
+                  columnNumber: 8
+                },
+                this
+              )
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/routes/_index/components/NewsletterSubscription.tsx",
+              lineNumber: 28,
+              columnNumber: 6
+            },
+            this
+          )
+        ] }, void 0, !0, {
+          fileName: "app/routes/_index/components/NewsletterSubscription.tsx",
+          lineNumber: 20,
+          columnNumber: 5
+        }, this)
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/routes/_index/components/NewsletterSubscription.tsx",
+        lineNumber: 11,
+        columnNumber: 4
+      },
+      this
+    )
+  ] }, void 0, !0, {
+    fileName: "app/routes/_index/components/NewsletterSubscription.tsx",
+    lineNumber: 6,
+    columnNumber: 3
+  }, this);
+}
+
+// app/routes/_index/components/Passions.tsx
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+var import_jsx_dev_runtime15 = require("react/jsx-dev-runtime");
+function Passions() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(Section, { title: "Passions", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)(
+      "img",
+      {
+        src: "https://res.cloudinary.com/duacbnsfa/image/upload/f_auto,q_auto/qj7mhjhxvw8uedb0jfni",
+        alt: "Board game collection",
+        className: "mt-6"
+      },
+      void 0,
+      !1,
+      {
+        fileName: "app/routes/_index/components/Passions.tsx",
+        lineNumber: 6,
+        columnNumber: 4
+      },
+      this
+    ),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("p", { className: "mt-6 text-slate-600", children: "Outside of the tech world, I have a deep love for board games and have been building a growing collection. I'm also a fan of various TV shows and always have at least one book on the go. But above all, spending time with my family is my favorite pastime. Life's all about enjoying these simple pleasures!" }, void 0, !1, {
+      fileName: "app/routes/_index/components/Passions.tsx",
+      lineNumber: 11,
+      columnNumber: 4
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/_index/components/Passions.tsx",
+    lineNumber: 5,
+    columnNumber: 3
+  }, this);
+}
+
+// app/routes/_index/route.tsx
+var import_jsx_dev_runtime16 = require("react/jsx-dev-runtime"), meta = () => [
   { title: "The Coding Temple" },
   {
     name: "description",
@@ -2031,231 +2723,42 @@ var import_jsx_dev_runtime6 = require("react/jsx-dev-runtime"), meta = () => [
 async function loader2() {
   return { latestArticle: await getLatestArticle() };
 }
-function PostMeta({
-  date,
-  readTime
-}) {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_jsx_dev_runtime6.Fragment, { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { children: formatDate(date) }, void 0, !1, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 31,
-      columnNumber: 4
-    }, this),
-    readTime && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_jsx_dev_runtime6.Fragment, { children: [
-      " ",
-      "\u2022 ",
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("span", { children: [
-        readTime,
-        " min read"
-      ] }, void 0, !0, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 35,
-        columnNumber: 8
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 33,
-      columnNumber: 5
-    }, this)
-  ] }, void 0, !0, {
-    fileName: "app/routes/_index.tsx",
-    lineNumber: 30,
-    columnNumber: 3
-  }, this);
-}
 function Index() {
-  let { latestArticle } = (0, import_react6.useLoaderData)();
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "py-6", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(Nav, {}, void 0, !1, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 47,
+  let { latestArticle } = (0, import_react10.useLoaderData)();
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(Page, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(Hero, {}, void 0, !1, {
+      fileName: "app/routes/_index/route.tsx",
+      lineNumber: 33,
       columnNumber: 4
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("section", { className: "mt-6 w-full bg-gradient-to-b from-pink/10 to-fuchsia/20 px-4 py-12", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h1", { className: "font-heading  text-2xl text-fuchsia", children: "Hi, I'm Thiago Temple. I love building products, writing code and learning through it." }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 49,
-        columnNumber: 5
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "mt-6 hidden text-lg text-zinc-600", children: "I'm a web-loving staff developer, driven by curiosity and a passion for learning. I'm eager to share my knowledge and always up for new challenges. With a friendly and open-minded approach, I embrace the ever-evolving world of web technologies, staying ahead of the game and inspiring others along the way." }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 53,
-        columnNumber: 5
-      }, this)
-    ] }, void 0, !0, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 48,
+    latestArticle && /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(LatestArticle, { latestArticle }, void 0, !1, {
+      fileName: "app/routes/_index/route.tsx",
+      lineNumber: 34,
+      columnNumber: 22
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(Experience, {}, void 0, !1, {
+      fileName: "app/routes/_index/route.tsx",
+      lineNumber: 35,
       columnNumber: 4
     }, this),
-    latestArticle && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("section", { className: "px-4 py-8", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_react6.Link, { to: `/blog/${latestArticle.slug}`, children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h2", { className: "font-heading text-2xl text-zinc-700", children: latestArticle.title }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 64,
-        columnNumber: 7
-      }, this) }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 63,
-        columnNumber: 6
-      }, this),
-      latestArticle.banner && /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("img", { src: latestArticle.banner, className: "mt-6 opacity-75" }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 69,
-        columnNumber: 7
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "mt-6 text-zinc-600", children: latestArticle.summary }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 71,
-        columnNumber: 6
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "mt-6 text-zinc-400", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
-        PostMeta,
-        {
-          date: latestArticle.date,
-          readTime: latestArticle.readTime
-        },
-        void 0,
-        !1,
-        {
-          fileName: "app/routes/_index.tsx",
-          lineNumber: 73,
-          columnNumber: 7
-        },
-        this
-      ) }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 72,
-        columnNumber: 6
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
-        import_react6.Link,
-        {
-          to: `/blog/${latestArticle.slug}`,
-          className: "mt-6 flex justify-center rounded-lg border-2 border-fuchsia bg-white py-2 uppercase text-fuchsia",
-          children: [
-            "Read more",
-            /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
-              "svg",
-              {
-                xmlns: "http://www.w3.org/2000/svg",
-                fill: "none",
-                viewBox: "0 0 24 24",
-                "stroke-width": "1.5",
-                stroke: "currentColor",
-                className: "ml-3 h-auto w-6",
-                children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
-                  "path",
-                  {
-                    strokeLinecap: "round",
-                    strokeLinejoin: "round",
-                    d: "M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  },
-                  void 0,
-                  !1,
-                  {
-                    fileName: "app/routes/_index.tsx",
-                    lineNumber: 91,
-                    columnNumber: 8
-                  },
-                  this
-                )
-              },
-              void 0,
-              !1,
-              {
-                fileName: "app/routes/_index.tsx",
-                lineNumber: 83,
-                columnNumber: 7
-              },
-              this
-            )
-          ]
-        },
-        void 0,
-        !0,
-        {
-          fileName: "app/routes/_index.tsx",
-          lineNumber: 78,
-          columnNumber: 6
-        },
-        this
-      )
-    ] }, void 0, !0, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 62,
-      columnNumber: 5
+    /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(About, {}, void 0, !1, {
+      fileName: "app/routes/_index/route.tsx",
+      lineNumber: 36,
+      columnNumber: 4
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("section", { className: "px-4 py-8", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h2", { className: "font-heading text-2xl text-zinc-700", children: "Experience" }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 101,
-        columnNumber: 5
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("p", { className: "mt-6 text-zinc-600", children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis posuere urna sit amet malesuada. Mauris dapibus, mauris et tempus sollicitudin, tortor metus tempus ipsum." }, void 0, !1, {
-        fileName: "app/routes/_index.tsx",
-        lineNumber: 102,
-        columnNumber: 5
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
-        "a",
-        {
-          href: "https://bit.ly/thiago-temple-resume",
-          className: "mt-6 flex justify-center rounded-lg border-2 border-fuchsia bg-white py-2 uppercase text-fuchsia",
-          children: [
-            "Download CV",
-            /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
-              "svg",
-              {
-                xmlns: "http://www.w3.org/2000/svg",
-                fill: "none",
-                viewBox: "0 0 24 24",
-                strokeWidth: "1.5",
-                stroke: "currentColor",
-                className: "ml-3 h-auto w-6",
-                children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
-                  "path",
-                  {
-                    strokeLinecap: "round",
-                    strokeLinejoin: "round",
-                    d: "M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
-                  },
-                  void 0,
-                  !1,
-                  {
-                    fileName: "app/routes/_index.tsx",
-                    lineNumber: 120,
-                    columnNumber: 7
-                  },
-                  this
-                )
-              },
-              void 0,
-              !1,
-              {
-                fileName: "app/routes/_index.tsx",
-                lineNumber: 112,
-                columnNumber: 6
-              },
-              this
-            )
-          ]
-        },
-        void 0,
-        !0,
-        {
-          fileName: "app/routes/_index.tsx",
-          lineNumber: 107,
-          columnNumber: 5
-        },
-        this
-      )
-    ] }, void 0, !0, {
-      fileName: "app/routes/_index.tsx",
-      lineNumber: 100,
+    /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(Passions, {}, void 0, !1, {
+      fileName: "app/routes/_index/route.tsx",
+      lineNumber: 37,
+      columnNumber: 4
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime16.jsxDEV)(NewsletterSubscription, {}, void 0, !1, {
+      fileName: "app/routes/_index/route.tsx",
+      lineNumber: 38,
       columnNumber: 4
     }, this)
   ] }, void 0, !0, {
-    fileName: "app/routes/_index.tsx",
-    lineNumber: 46,
+    fileName: "app/routes/_index/route.tsx",
+    lineNumber: 32,
     columnNumber: 3
   }, this);
 }
@@ -2265,15 +2768,16 @@ var pages_exports = {};
 __export(pages_exports, {
   default: () => PagesLayout
 });
-var import_react7 = require("@remix-run/react"), import_jsx_dev_runtime7 = require("react/jsx-dev-runtime");
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+var import_react11 = require("@remix-run/react"), import_jsx_dev_runtime17 = require("react/jsx-dev-runtime");
 function PagesLayout() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_jsx_dev_runtime7.Fragment, { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("header", {}, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(import_jsx_dev_runtime17.Fragment, { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("header", {}, void 0, !1, {
       fileName: "app/routes/_pages.tsx",
       lineNumber: 6,
       columnNumber: 4
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("main", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react7.Outlet, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)("main", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime17.jsxDEV)(import_react11.Outlet, {}, void 0, !1, {
       fileName: "app/routes/_pages.tsx",
       lineNumber: 8,
       columnNumber: 5
@@ -2295,18 +2799,19 @@ __export(blog_exports, {
   default: () => BlogLayout,
   loader: () => loader3
 });
-var import_node2 = require("@remix-run/node"), import_react8 = require("@remix-run/react"), import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+var import_node2 = require("@remix-run/node"), import_react12 = require("@remix-run/react"), import_jsx_dev_runtime18 = require("react/jsx-dev-runtime");
 function loader3({ params }) {
   return params.slug ? null : (0, import_node2.redirect)("/");
 }
 function BlogLayout() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("main", { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("p", { children: "the layout" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("main", { children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)("p", { children: "the layout" }, void 0, !1, {
       fileName: "app/routes/blog.tsx",
       lineNumber: 15,
       columnNumber: 4
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react8.Outlet, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime18.jsxDEV)(import_react12.Outlet, {}, void 0, !1, {
       fileName: "app/routes/blog.tsx",
       lineNumber: 16,
       columnNumber: 4
@@ -2319,10 +2824,11 @@ function BlogLayout() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-KLR3NQAH.js", imports: ["/build/_shared/chunk-MQHJW45L.js", "/build/_shared/chunk-VQPMKUVV.js", "/build/_shared/chunk-Y6ENU7FD.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-GC4DVH64.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-ZGQN5DIW.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages": { id: "routes/_pages", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_pages-SI5ZGV47.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages.about": { id: "routes/_pages.about", parentId: "routes/_pages", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_pages.about-AQQTTKZJ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog": { id: "routes/blog", parentId: "root", path: "blog", index: void 0, caseSensitive: void 0, module: "/build/routes/blog-GP3CEP5F.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog.$slug": { id: "routes/blog.$slug", parentId: "routes/blog", path: ":slug", index: void 0, caseSensitive: void 0, module: "/build/routes/blog.$slug-I3JMGVMB.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "7ee65507", hmr: void 0, url: "/build/manifest-7EE65507.js" };
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+var assets_manifest_default = { entry: { module: "/build/entry.client-SBXCQNVG.js", imports: ["/build/_shared/chunk-BA6NHEY4.js", "/build/_shared/chunk-H5ZE7JVG.js", "/build/_shared/chunk-ZPLGRDWL.js", "/build/_shared/chunk-SE6AVHRO.js", "/build/_shared/chunk-BYNVZQKR.js", "/build/_shared/chunk-K6PKGSTD.js", "/build/_shared/chunk-O4OKU2LD.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-4DBCSZQE.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-7N4NAWJZ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages": { id: "routes/_pages", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_pages-ZLELD7EY.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages.about": { id: "routes/_pages.about", parentId: "routes/_pages", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_pages.about-SXAL2RGQ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog": { id: "routes/blog", parentId: "root", path: "blog", index: void 0, caseSensitive: void 0, module: "/build/routes/blog-OW5GPKGE.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog.$slug": { id: "routes/blog.$slug", parentId: "routes/blog", path: ":slug", index: void 0, caseSensitive: void 0, module: "/build/routes/blog.$slug-4NF4P55U.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "e473e833", hmr: { runtime: "/build/_shared/chunk-BYNVZQKR.js", timestamp: 1688434924590 }, url: "/build/manifest-E473E833.js" };
 
 // server-entry-module:@remix-run/dev/server-build
-var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !1, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
+var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, dev = { port: 3001 }, routes = {
   root: {
     id: "root",
     parentId: void 0,
@@ -2353,7 +2859,7 @@ var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable
     path: void 0,
     index: !0,
     caseSensitive: void 0,
-    module: index_exports
+    module: route_exports
   },
   "routes/_pages": {
     id: "routes/_pages",
@@ -2376,6 +2882,7 @@ var assetsBuildDirectory = "public/build", future = { unstable_dev: !1, unstable
 0 && (module.exports = {
   assets,
   assetsBuildDirectory,
+  dev,
   entry,
   future,
   publicPath,
