@@ -1,5 +1,6 @@
 import { LoaderArgs, redirect } from "@remix-run/node";
 import { Outlet } from "@remix-run/react";
+import { Page } from "~/components";
 
 export function loader({ params }: LoaderArgs) {
 	if (!params.slug) {
@@ -11,9 +12,8 @@ export function loader({ params }: LoaderArgs) {
 
 export default function BlogLayout() {
 	return (
-		<main>
-			<p>the layout</p>
+		<Page>
 			<Outlet />
-		</main>
+		</Page>
 	);
 }
