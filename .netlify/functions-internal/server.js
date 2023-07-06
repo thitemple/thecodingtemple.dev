@@ -773,7 +773,7 @@ init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_react2 = require("@remix-run/react");
 
 // app/assets/css/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-QW4SE73P.css";
+var tailwind_default = "/build/_assets/tailwind-GXEII7YF.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime2 = require("react/jsx-dev-runtime"), links = () => [{ rel: "stylesheet", href: tailwind_default }];
@@ -1934,7 +1934,7 @@ function Footer() {
 
 // app/components/Nav.tsx
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var import_react6 = require("@remix-run/react"), import_classnames = __toESM(require("classnames")), import_react7 = require("react");
+var import_react6 = require("@remix-run/react"), import_react7 = require("react");
 
 // app/assets/images/index.ts
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
@@ -1947,23 +1947,142 @@ var import_jsx_dev_runtime6 = require("react/jsx-dev-runtime");
 function NavLink({ to, children }) {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_react6.Link, { to, className: "", children }, void 0, !1, {
     fileName: "app/components/Nav.tsx",
-    lineNumber: 9,
+    lineNumber: 8,
     columnNumber: 3
   }, this);
 }
-function MobileNav({ open = !1 }) {
+function MobileNavItem({ to, children }) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "border-b border-slate-200 py-4 last:border-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_react6.Link, { to, children }, void 0, !1, {
+    fileName: "app/components/Nav.tsx",
+    lineNumber: 17,
+    columnNumber: 4
+  }, this) }, void 0, !1, {
+    fileName: "app/components/Nav.tsx",
+    lineNumber: 16,
+    columnNumber: 3
+  }, this);
+}
+function MobileNav({
+  open = !1,
+  onClose
+}) {
+  let ref = (0, import_react7.useRef)(null);
+  (0, import_react7.useEffect)(() => {
+    var _a;
+    ref.current && open && (ref.current.showModal(), ref.current.focus()), (_a = ref.current) != null && _a.open && !open && ref.current.close();
+  }, [ref.current, open]), (0, import_react7.useEffect)(() => {
+    var _a;
+    function handleCancel() {
+      onClose();
+    }
+    return (_a = ref.current) == null || _a.addEventListener("cancel", handleCancel), () => {
+      var _a2;
+      (_a2 = ref.current) == null || _a2.removeEventListener("cancel", handleCancel);
+    };
+  }, []);
+  function handleClick(e) {
+    e.target === e.currentTarget && onClose();
+  }
   return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
-    "div",
+    "dialog",
     {
-      className: (0, import_classnames.default)({
-        hidden: !open
-      })
+      className: "z-50 w-5/6 rounded-2xl bg-white px-4 py-6 backdrop:bg-gray-900/50 backdrop:backdrop-blur-sm",
+      onClick: handleClick,
+      ref,
+      children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("header", { className: "flex justify-between text-slate-500", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("h2", { children: "Navigation" }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 63,
+            columnNumber: 5
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("button", { onClick: onClose, children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+            "svg",
+            {
+              xmlns: "http://www.w3.org/2000/svg",
+              fill: "none",
+              viewBox: "0 0 24 24",
+              strokeWidth: "1.5",
+              stroke: "currentColor",
+              className: "h-6 w-6",
+              children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+                "path",
+                {
+                  strokeLinecap: "round",
+                  strokeLinejoin: "round",
+                  d: "M6 18L18 6M6 6l12 12"
+                },
+                void 0,
+                !1,
+                {
+                  fileName: "app/components/Nav.tsx",
+                  lineNumber: 73,
+                  columnNumber: 7
+                },
+                this
+              )
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/components/Nav.tsx",
+              lineNumber: 65,
+              columnNumber: 6
+            },
+            this
+          ) }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 64,
+            columnNumber: 5
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/components/Nav.tsx",
+          lineNumber: 62,
+          columnNumber: 4
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("ul", { className: "mt-6 flex flex-col text-lg text-slate-600", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(MobileNavItem, { to: "/", children: "Home" }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 82,
+            columnNumber: 5
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(MobileNavItem, { to: "/articles", children: "Articles" }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 83,
+            columnNumber: 5
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(MobileNavItem, { to: "/courses", children: "Courses" }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 84,
+            columnNumber: 5
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(MobileNavItem, { to: "/speaking", children: "Speaking" }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 85,
+            columnNumber: 5
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(MobileNavItem, { to: "/uses", children: "Uses" }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 86,
+            columnNumber: 5
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(MobileNavItem, { to: "/about", children: "About" }, void 0, !1, {
+            fileName: "app/components/Nav.tsx",
+            lineNumber: 87,
+            columnNumber: 5
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/components/Nav.tsx",
+          lineNumber: 81,
+          columnNumber: 4
+        }, this)
+      ]
     },
     void 0,
-    !1,
+    !0,
     {
       fileName: "app/components/Nav.tsx",
-      lineNumber: 17,
+      lineNumber: 57,
       columnNumber: 3
     },
     this
@@ -1971,84 +2090,79 @@ function MobileNav({ open = !1 }) {
 }
 function Nav() {
   let [mobileOpened, setMobileOpened] = (0, import_react7.useState)(!1);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("header", { className: "mx-auto max-w-7xl lg:px-8", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(MobileNav, { open: mobileOpened }, void 0, !1, {
-      fileName: "app/components/Nav.tsx",
-      lineNumber: 29,
-      columnNumber: 4
-    }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "relative flex gap-4 px-4 py-2", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "flex flex-1", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_react6.Link, { to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("img", { src: symbol_transparent_default, className: "w-10" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("header", { className: "mx-auto max-w-7xl lg:px-8 ", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "relative flex gap-4 px-4 py-2", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "flex flex-1", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(import_react6.Link, { to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("img", { src: symbol_transparent_default, className: "w-10" }, void 0, !1, {
+        fileName: "app/components/Nav.tsx",
+        lineNumber: 100,
+        columnNumber: 7
+      }, this) }, void 0, !1, {
+        fileName: "app/components/Nav.tsx",
+        lineNumber: 99,
+        columnNumber: 6
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("nav", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("ul", { className: "", children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(NavLink, { to: "blog", children: "Blog" }, void 0, !1, {
           fileName: "app/components/Nav.tsx",
-          lineNumber: 33,
-          columnNumber: 7
+          lineNumber: 106,
+          columnNumber: 10
         }, this) }, void 0, !1, {
           fileName: "app/components/Nav.tsx",
-          lineNumber: 32,
-          columnNumber: 6
+          lineNumber: 105,
+          columnNumber: 9
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("nav", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("ul", { className: "", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(NavLink, { to: "blog", children: "Blog" }, void 0, !1, {
-            fileName: "app/components/Nav.tsx",
-            lineNumber: 39,
-            columnNumber: 10
-          }, this) }, void 0, !1, {
-            fileName: "app/components/Nav.tsx",
-            lineNumber: 38,
-            columnNumber: 9
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(NavLink, { to: "about", children: "About" }, void 0, !1, {
-            fileName: "app/components/Nav.tsx",
-            lineNumber: 42,
-            columnNumber: 10
-          }, this) }, void 0, !1, {
-            fileName: "app/components/Nav.tsx",
-            lineNumber: 41,
-            columnNumber: 9
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(NavLink, { to: "speaking", children: "Speaking" }, void 0, !1, {
-            fileName: "app/components/Nav.tsx",
-            lineNumber: 45,
-            columnNumber: 10
-          }, this) }, void 0, !1, {
-            fileName: "app/components/Nav.tsx",
-            lineNumber: 44,
-            columnNumber: 9
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(NavLink, { to: "uses", children: "Uses" }, void 0, !1, {
-            fileName: "app/components/Nav.tsx",
-            lineNumber: 48,
-            columnNumber: 10
-          }, this) }, void 0, !1, {
-            fileName: "app/components/Nav.tsx",
-            lineNumber: 47,
-            columnNumber: 9
-          }, this)
-        ] }, void 0, !0, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(NavLink, { to: "about", children: "About" }, void 0, !1, {
           fileName: "app/components/Nav.tsx",
-          lineNumber: 37,
-          columnNumber: 8
+          lineNumber: 109,
+          columnNumber: 10
         }, this) }, void 0, !1, {
           fileName: "app/components/Nav.tsx",
-          lineNumber: 36,
-          columnNumber: 7
+          lineNumber: 108,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(NavLink, { to: "speaking", children: "Speaking" }, void 0, !1, {
+          fileName: "app/components/Nav.tsx",
+          lineNumber: 112,
+          columnNumber: 10
         }, this) }, void 0, !1, {
           fileName: "app/components/Nav.tsx",
-          lineNumber: 35,
-          columnNumber: 6
+          lineNumber: 111,
+          columnNumber: 9
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(NavLink, { to: "uses", children: "Uses" }, void 0, !1, {
+          fileName: "app/components/Nav.tsx",
+          lineNumber: 115,
+          columnNumber: 10
+        }, this) }, void 0, !1, {
+          fileName: "app/components/Nav.tsx",
+          lineNumber: 114,
+          columnNumber: 9
         }, this)
       ] }, void 0, !0, {
         fileName: "app/components/Nav.tsx",
-        lineNumber: 31,
-        columnNumber: 5
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "flex flex-1 justify-end md:justify-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+        lineNumber: 104,
+        columnNumber: 8
+      }, this) }, void 0, !1, {
+        fileName: "app/components/Nav.tsx",
+        lineNumber: 103,
+        columnNumber: 7
+      }, this) }, void 0, !1, {
+        fileName: "app/components/Nav.tsx",
+        lineNumber: 102,
+        columnNumber: 6
+      }, this)
+    ] }, void 0, !0, {
+      fileName: "app/components/Nav.tsx",
+      lineNumber: 98,
+      columnNumber: 5
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("div", { className: "flex flex-1 justify-end lg:hidden", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
         "button",
         {
           title: "Toggle mobile menu",
           className: "bg-gr group flex items-center rounded-full px-4 py-2 text-sm font-medium text-zinc-800 shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur",
-          onClick: () => setMobileOpened(!mobileOpened),
+          onClick: () => setMobileOpened(!0),
           children: [
             "Menu",
             /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
@@ -2059,7 +2173,7 @@ function Nav() {
                 viewBox: "0 0 24 24",
                 strokeWidth: "1.5",
                 stroke: "currentColor",
-                className: "ml-3 h-auto w-4 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400",
+                className: "ml-3 h-auto w-4 stroke-zinc-500 backdrop:backdrop-blur-sm group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400",
                 children: /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
                   "path",
                   {
@@ -2071,7 +2185,7 @@ function Nav() {
                   !1,
                   {
                     fileName: "app/components/Nav.tsx",
-                    lineNumber: 69,
+                    lineNumber: 136,
                     columnNumber: 8
                   },
                   this
@@ -2081,7 +2195,7 @@ function Nav() {
               !1,
               {
                 fileName: "app/components/Nav.tsx",
-                lineNumber: 61,
+                lineNumber: 128,
                 columnNumber: 7
               },
               this
@@ -2092,23 +2206,38 @@ function Nav() {
         !0,
         {
           fileName: "app/components/Nav.tsx",
-          lineNumber: 55,
+          lineNumber: 122,
           columnNumber: 6
         },
         this
-      ) }, void 0, !1, {
-        fileName: "app/components/Nav.tsx",
-        lineNumber: 54,
-        columnNumber: 5
-      }, this)
+      ),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(
+        MobileNav,
+        {
+          open: mobileOpened,
+          onClose: () => setMobileOpened(!1)
+        },
+        void 0,
+        !1,
+        {
+          fileName: "app/components/Nav.tsx",
+          lineNumber: 143,
+          columnNumber: 6
+        },
+        this
+      )
     ] }, void 0, !0, {
       fileName: "app/components/Nav.tsx",
-      lineNumber: 30,
-      columnNumber: 4
+      lineNumber: 121,
+      columnNumber: 5
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/Nav.tsx",
-    lineNumber: 28,
+    lineNumber: 97,
+    columnNumber: 4
+  }, this) }, void 0, !1, {
+    fileName: "app/components/Nav.tsx",
+    lineNumber: 96,
     columnNumber: 3
   }, this);
 }
@@ -2421,9 +2550,9 @@ var import_react9 = require("@remix-run/react");
 
 // app/components/Button.tsx
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var import_react8 = require("@remix-run/react"), import_classnames2 = __toESM(require("classnames")), import_jsx_dev_runtime13 = require("react/jsx-dev-runtime");
+var import_react8 = require("@remix-run/react"), import_classnames = __toESM(require("classnames")), import_jsx_dev_runtime13 = require("react/jsx-dev-runtime");
 function Button({ label, icon, to, external, onClick }) {
-  let classes = (0, import_classnames2.default)(
+  let classes = (0, import_classnames.default)(
     "mt-6 flex justify-center rounded-lg border-2 border-fuchsia-500 bg-white py-2 uppercase text-fuchsia-500"
   );
   return to && external ? /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("a", { href: to, className: classes, children: [
@@ -2840,7 +2969,7 @@ function BlogLayout() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var assets_manifest_default = { entry: { module: "/build/entry.client-SBXCQNVG.js", imports: ["/build/_shared/chunk-BA6NHEY4.js", "/build/_shared/chunk-H5ZE7JVG.js", "/build/_shared/chunk-ZPLGRDWL.js", "/build/_shared/chunk-SE6AVHRO.js", "/build/_shared/chunk-BYNVZQKR.js", "/build/_shared/chunk-K6PKGSTD.js", "/build/_shared/chunk-O4OKU2LD.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-4DBCSZQE.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-BJXEWPCZ.js", imports: ["/build/_shared/chunk-7BB6N7QS.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages": { id: "routes/_pages", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_pages-ZLELD7EY.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages.about": { id: "routes/_pages.about", parentId: "routes/_pages", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_pages.about-SXAL2RGQ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles": { id: "routes/articles", parentId: "root", path: "articles", index: void 0, caseSensitive: void 0, module: "/build/routes/articles-2VNWLP3T.js", imports: ["/build/_shared/chunk-7BB6N7QS.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog": { id: "routes/blog", parentId: "root", path: "blog", index: void 0, caseSensitive: void 0, module: "/build/routes/blog-KFCOA3S3.js", imports: ["/build/_shared/chunk-7BB6N7QS.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog.$slug": { id: "routes/blog.$slug", parentId: "routes/blog", path: ":slug", index: void 0, caseSensitive: void 0, module: "/build/routes/blog.$slug-4NF4P55U.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "0c2455ce", hmr: { runtime: "/build/_shared/chunk-BYNVZQKR.js", timestamp: 1688518479665 }, url: "/build/manifest-0C2455CE.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-SBXCQNVG.js", imports: ["/build/_shared/chunk-BA6NHEY4.js", "/build/_shared/chunk-H5ZE7JVG.js", "/build/_shared/chunk-ZPLGRDWL.js", "/build/_shared/chunk-SE6AVHRO.js", "/build/_shared/chunk-BYNVZQKR.js", "/build/_shared/chunk-K6PKGSTD.js", "/build/_shared/chunk-O4OKU2LD.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-OOQ6CFUB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-Q62KQCZJ.js", imports: ["/build/_shared/chunk-GZGPGTJT.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages": { id: "routes/_pages", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/_pages-ZLELD7EY.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_pages.about": { id: "routes/_pages.about", parentId: "routes/_pages", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/_pages.about-SXAL2RGQ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles": { id: "routes/articles", parentId: "root", path: "articles", index: void 0, caseSensitive: void 0, module: "/build/routes/articles-NC5Z2H46.js", imports: ["/build/_shared/chunk-GZGPGTJT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog": { id: "routes/blog", parentId: "root", path: "blog", index: void 0, caseSensitive: void 0, module: "/build/routes/blog-IEAEONL7.js", imports: ["/build/_shared/chunk-GZGPGTJT.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog.$slug": { id: "routes/blog.$slug", parentId: "routes/blog", path: ":slug", index: void 0, caseSensitive: void 0, module: "/build/routes/blog.$slug-4NF4P55U.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "43c7224a", hmr: { runtime: "/build/_shared/chunk-BYNVZQKR.js", timestamp: 1688607141837 }, url: "/build/manifest-43C7224A.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, dev = { port: 3001 }, routes = {
