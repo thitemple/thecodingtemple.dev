@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Footer } from "./Footer";
-import { Nav } from "./Nav";
+import { Nav } from "./Nav/Nav";
 
 interface PageProps {
 	children: ReactNode;
@@ -8,10 +8,12 @@ interface PageProps {
 
 export function Page({ children }: PageProps) {
 	return (
-		<main className="py-6">
-			<Nav />
-			{children}
-			<Footer />
-		</main>
+		<div className="bg-slate-100">
+			<main className="mx-auto max-w-5xl bg-white py-6">
+				<Nav />
+				{children}
+				<Footer />
+			</main>
+		</div>
 	);
 }

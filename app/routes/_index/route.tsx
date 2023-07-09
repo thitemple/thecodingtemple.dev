@@ -7,7 +7,6 @@ import { About } from "./components/About";
 import { Experience } from "./components/Experience";
 import { Hero } from "./components/Hero";
 import { LatestArticle } from "./components/LatestArticle";
-import { NewsletterSubscription } from "./components/NewsletterSubscription";
 import { Passions } from "./components/Passions";
 
 export const meta: V2_MetaFunction = () => {
@@ -30,12 +29,14 @@ export default function Index() {
 
 	return (
 		<Page>
-			<Hero />
-			{latestArticle && <LatestArticle latestArticle={latestArticle} />}
-			<Experience />
-			<About />
-			<Passions />
-			<NewsletterSubscription />
+			<div className="flex flex-col lg:gap-4">
+				<Hero />
+				{latestArticle && <LatestArticle latestArticle={latestArticle} />}
+				<Experience />
+				<About />
+				<Passions />
+				{/* <NewsletterSubscription /> */}
+			</div>
 		</Page>
 	);
 }

@@ -32,15 +32,15 @@ function ExperienceItem({
 
 export function Experience() {
 	return (
-		<Section title="Experience">
-			<p className="mt-6 text-slate-600">
+		<Section title="Experience" className="lg:grid lg:grid-cols-2">
+			<p className="mt-6 text-slate-600 lg:col-start-1 lg:pr-4">
 				I'm a seasoned Staff Software Developer at Shopify, skilled in
 				TypeScript, Elm, JavaScript, and React. With a career spanning over two
 				decades, I've led impactful projects, pioneered the adoption of
 				TypeScript at SurveyMonkey, and developed innovative web and mobile
 				applications. I'm a tech-savvy problem solver and a relentless learner.
 			</p>
-			<ul className="mt-6 flex flex-col items-stretch gap-6">
+			<ul className="mt-6 flex flex-col items-stretch gap-6 lg:col-start-2">
 				<ExperienceItem
 					logo={shopifyLogo}
 					company="Shopify"
