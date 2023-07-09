@@ -20,11 +20,13 @@ function ExperienceItem({
 		<li className="flex justify-between">
 			<img src={logo} className="mr-2 w-11" />
 			<div className="flex flex-1 flex-col">
-				<span className="font-medium text-slate-600">{company}</span>
-				<span className="text-slate-500">{position}</span>
+				<span className="font-medium text-slate-600 dark:text-slate-200">
+					{company}
+				</span>
+				<span className="text-slate-500 dark:text-slate-300">{position}</span>
 			</div>
 			<div className="flex items-end">
-				<span className="text-slate-500">{date}</span>
+				<span className="text-slate-500 dark:text-slate-300">{date}</span>
 			</div>
 		</li>
 	);
@@ -33,7 +35,7 @@ function ExperienceItem({
 export function Experience() {
 	return (
 		<Section title="Experience" className="lg:grid lg:grid-cols-2">
-			<p className="mt-6 text-slate-600 lg:col-start-1 lg:pr-4">
+			<p className="mt-6 text-slate-600 dark:text-slate-300 lg:col-start-1 lg:pr-4">
 				I'm a seasoned Staff Software Developer at Shopify, skilled in
 				TypeScript, Elm, JavaScript, and React. With a career spanning over two
 				decades, I've led impactful projects, pioneered the adoption of

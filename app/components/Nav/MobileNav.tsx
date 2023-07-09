@@ -18,7 +18,7 @@ export function MobileNav({
 }) {
 	const ref = useRef<HTMLDialogElement>(null);
 	useEffect(() => {
-		if (ref.current && open) {
+		if (ref.current && open && !ref.current.open) {
 			ref.current.showModal();
 			ref.current.focus();
 		}
@@ -45,11 +45,11 @@ export function MobileNav({
 
 	return (
 		<dialog
-			className="z-50 w-5/6 rounded-2xl bg-white px-4 py-6 backdrop:bg-gray-900/50 backdrop:backdrop-blur-sm"
+			className="z-50 w-5/6 rounded-2xl bg-white px-4 py-6 backdrop:bg-gray-900/50 backdrop:backdrop-blur-sm dark:bg-violet-500"
 			onClick={handleClick}
 			ref={ref}
 		>
-			<header className="flex justify-between text-slate-500">
+			<header className="flex justify-between text-slate-500 dark:text-slate-200">
 				<h2>Navigation</h2>
 				<button onClick={onClose}>
 					<svg
@@ -68,7 +68,7 @@ export function MobileNav({
 					</svg>
 				</button>
 			</header>
-			<ul className="mt-6 flex flex-col text-lg text-slate-600">
+			<ul className="mt-6 flex flex-col text-lg text-slate-600 dark:text-slate-200">
 				<MobileNavItem to="/">Home</MobileNavItem>
 				<MobileNavItem to="/articles">Articles</MobileNavItem>
 				<MobileNavItem to="/courses">Courses</MobileNavItem>

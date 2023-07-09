@@ -34,7 +34,7 @@ export function LatestArticle({ latestArticle }: LatestArticleProps) {
 				to={`/blog/${latestArticle.slug}`}
 				className="lg:col-start-2 lg:mt-4"
 			>
-				<h2 className="font-heading text-2xl text-slate-700">
+				<h2 className="font-heading text-2xl text-slate-700 dark:text-slate-200">
 					{latestArticle.title}
 				</h2>
 			</Link>
@@ -44,7 +44,7 @@ export function LatestArticle({ latestArticle }: LatestArticleProps) {
 					className="mt-6 w-full object-cover opacity-75 lg:col-start-1 lg:row-span-5 lg:row-start-1 lg:pr-4"
 				/>
 			)}
-			<p className="mt-6 text-slate-600 lg:col-start-2 lg:row-span-2 lg:row-start-3 lg:mt-4">
+			<p className="mt-6 text-slate-600 dark:text-slate-300 lg:col-start-2 lg:row-span-2 lg:row-start-3 lg:mt-4">
 				{latestArticle.summary}
 			</p>
 			<p className="mt-6 text-slate-400 lg:col-start-2 lg:mt-2">
