@@ -28,7 +28,6 @@ export default function Index() {
 	const { latestArticle } = useLoaderData<typeof loader>();
 
 	return (
-		<Page>
 			<div className="flex flex-col lg:gap-4">
 				<Hero />
 				{latestArticle && <LatestArticle latestArticle={latestArticle} />}
@@ -37,6 +36,5 @@ export default function Index() {
 				<Passions />
 				{/* <NewsletterSubscription /> */}
 			</div>
-		</Page>
 	);
 }

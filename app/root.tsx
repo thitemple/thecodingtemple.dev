@@ -9,6 +9,7 @@ import {
 	ScrollRestoration,
 } from "@remix-run/react";
 import styles from "~/assets/css/tailwind.css";
+import { Footer, Nav } from "./components";
 
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
@@ -22,8 +23,12 @@ export default function App() {
 				<Links />
 			</head>
 			<body className="h-full">
-				<main className="mx-auto max-w-7xl">
-					<Outlet />
+				<main className="mx-auto max-w-7xl bg-slate-100">
+				<main className="mx-auto max-w-5xl bg-white py-6 dark:bg-violet-700">
+				<Nav />
+				<Outlet />
+				<Footer />
+			</main>
 					<ScrollRestoration />
 					<Scripts />
 					<LiveReload />

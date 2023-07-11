@@ -13,7 +13,7 @@ interface ButtonProps {
 
 export function Button({ label, icon, to, external, onClick }: ButtonProps) {
 	const classes = classnames(
-		"flex justify-center rounded-lg border-2 border-fuchsia-500 bg-white py-2 uppercase text-fuchsia-500 dark:bg-violet-500 dark:border-pink-300 dark:text-slate-200",
+		"flex justify-center rounded-lg border-2 border-fuchsia-500 bg-white py-2 uppercase text-fuchsia-500 dark:bg-violet-500 dark:border-pink-300 dark:text-slate-200 cursor-pointer shadow-md dark:hover:bg-violet-300",
 	);
 
 	if (to && external) {
