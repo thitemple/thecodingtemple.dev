@@ -10,7 +10,7 @@ interface CourseCardProps {
 
 function CourseCard({ title, image, description, url }: CourseCardProps) {
 	return (
-		<div className="mt-6 grid gap-4 overflow-hidden lg:rounded-md lg:border lg:border-pink-300 lg:p-6">
+		<div className="mt-6 grid gap-4 overflow-hidden md:rounded-md md:border md:border-slate-200 md:p-6 dark:md:border-pink-300/40">
 			<h3 className="font-heading text-xl">{title}</h3>
 			<img src={image} alt={title} className="mx-auto block w-full max-w-lg" />
 			<p>{description}</p>
@@ -41,7 +41,7 @@ function CourseCard({ title, image, description, url }: CourseCardProps) {
 
 export default function CoursesPage() {
 	return (
-		<article className="grid gap-4 px-4">
+		<article className="grid gap-4 px-4 md:px-6 lg:px-8">
 			<Title>Courses</Title>
 			<div className="text-slate-600 dark:text-slate-300">
 				<p>

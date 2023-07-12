@@ -1,4 +1,3 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@remix-run/node";
 import {
 	Links,
@@ -23,16 +22,16 @@ export default function App() {
 				<Links />
 			</head>
 			<body className="h-full">
-				<main className="mx-auto max-w-7xl bg-slate-100">
-				<main className="mx-auto max-w-5xl bg-white py-6 dark:bg-violet-700">
-				<Nav />
-				<Outlet />
-				<Footer />
-			</main>
+				<div className="bg-slate-100 dark:bg-violet-900">
+					<main className="mx-auto max-w-5xl bg-white py-6 dark:bg-violet-700">
+						<Nav />
+						<Outlet />
+						<Footer />
+					</main>
 					<ScrollRestoration />
 					<Scripts />
 					<LiveReload />
-				</main>
+				</div>
 			</body>
 		</html>
 	);

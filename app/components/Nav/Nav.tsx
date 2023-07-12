@@ -24,8 +24,8 @@ export function Nav() {
 						<nav className="flex items-center gap-4 rounded-xl border border-slate-300 bg-white px-4 py-2 text-slate-600 shadow-md ring-1 ring-slate-300 dark:border-slate-400 dark:bg-violet-500 dark:text-slate-200 dark:ring-slate-400">
 							<DesktopNavLink to="/articles">Articles</DesktopNavLink>
 							<DesktopNavLink to="/courses">Courses</DesktopNavLink>
-							<DesktopNavLink to="/speaking">Speaking</DesktopNavLink>
-							<DesktopNavLink to="/uses">Uses</DesktopNavLink>
+							{/* <DesktopNavLink to="/speaking">Speaking</DesktopNavLink>
+							<DesktopNavLink to="/uses">Uses</DesktopNavLink> */}
 							<DesktopNavLink to="/about">About</DesktopNavLink>
 						</nav>
 					</div>

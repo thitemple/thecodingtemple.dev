@@ -28,8 +28,8 @@ export function Footer() {
 				<FooterLink to="/" label="Home" />
 				<FooterLink to="/articles" label="Articles" />
 				<FooterLink to="/courses" label="Courses" />
-				<FooterLink to="/speaking" label="Speaking" />
-				<FooterLink to="/uses" label="Uses" />
+				{/* <FooterLink to="/speaking" label="Speaking" />
+				<FooterLink to="/uses" label="Uses" /> */}
 				<FooterLink to="/about" label="About" />
 			</ul>
 			<p className="text-slate-500 dark:text-slate-400">

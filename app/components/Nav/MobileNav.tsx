@@ -1,10 +1,20 @@
 import { Link } from "@remix-run/react";
 import { ReactNode, useEffect, useRef } from "react";
 
-function MobileNavItem({ to, children, autoFocus }: { to: string; autoFocus?: boolean; children: ReactNode }) {
+function MobileNavItem({
+	to,
+	children,
+	autoFocus,
+}: {
+	to: string;
+	autoFocus?: boolean;
+	children: ReactNode;
+}) {
 	return (
 		<li className="border-b border-slate-200 py-4 last:border-0">
-			<Link to={to} autoFocus={autoFocus}>{children}</Link>
+			<Link to={to} autoFocus={autoFocus}>
+				{children}
+			</Link>
 		</li>
 	);
 }
@@ -70,10 +80,12 @@ export function MobileNav({
 			</header>
 			<ul className="mt-6 flex flex-col text-lg text-slate-600 dark:text-slate-200">
 				<MobileNavItem to="/">Home</MobileNavItem>
-				<MobileNavItem to="/articles" autoFocus>Articles</MobileNavItem>
+				<MobileNavItem to="/articles" autoFocus>
+					Articles
+				</MobileNavItem>
 				<MobileNavItem to="/courses">Courses</MobileNavItem>
-				<MobileNavItem to="/speaking">Speaking</MobileNavItem>
-				<MobileNavItem to="/uses">Uses</MobileNavItem>
+				{/* <MobileNavItem to="/speaking">Speaking</MobileNavItem>
+				<MobileNavItem to="/uses">Uses</MobileNavItem> */}
 				<MobileNavItem to="/about">About</MobileNavItem>
 			</ul>
 		</dialog>

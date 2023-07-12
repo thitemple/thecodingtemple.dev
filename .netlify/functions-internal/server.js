@@ -773,7 +773,7 @@ init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_react8 = require("@remix-run/react");
 
 // app/assets/css/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-KNTMMJES.css";
+var tailwind_default = "/build/_assets/tailwind-5A6DFQMK.css";
 
 // app/components/index.ts
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
@@ -824,16 +824,6 @@ function Footer() {
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(FooterLink, { to: "/courses", label: "Courses" }, void 0, !1, {
         fileName: "app/components/Footer.tsx",
         lineNumber: 30,
-        columnNumber: 5
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(FooterLink, { to: "/speaking", label: "Speaking" }, void 0, !1, {
-        fileName: "app/components/Footer.tsx",
-        lineNumber: 31,
-        columnNumber: 5
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(FooterLink, { to: "/uses", label: "Uses" }, void 0, !1, {
-        fileName: "app/components/Footer.tsx",
-        lineNumber: 32,
         columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(FooterLink, { to: "/about", label: "About" }, void 0, !1, {
@@ -928,14 +918,18 @@ function DesktopNavLink({
 // app/components/Nav/MobileNav.tsx
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_react4 = require("@remix-run/react"), import_react5 = require("react"), import_jsx_dev_runtime5 = require("react/jsx-dev-runtime");
-function MobileNavItem({ to, children, autoFocus }) {
+function MobileNavItem({
+  to,
+  children,
+  autoFocus
+}) {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("li", { className: "border-b border-slate-200 py-4 last:border-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(import_react4.Link, { to, autoFocus, children }, void 0, !1, {
     fileName: "app/components/Nav/MobileNav.tsx",
-    lineNumber: 7,
+    lineNumber: 15,
     columnNumber: 4
   }, this) }, void 0, !1, {
     fileName: "app/components/Nav/MobileNav.tsx",
-    lineNumber: 6,
+    lineNumber: 14,
     columnNumber: 3
   }, this);
 }
@@ -970,7 +964,7 @@ function MobileNav({
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("header", { className: "flex justify-between text-slate-500 dark:text-slate-200", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h2", { children: "Navigation" }, void 0, !1, {
             fileName: "app/components/Nav/MobileNav.tsx",
-            lineNumber: 53,
+            lineNumber: 63,
             columnNumber: 5
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("button", { onClick: onClose, children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
@@ -993,7 +987,7 @@ function MobileNav({
                 !1,
                 {
                   fileName: "app/components/Nav/MobileNav.tsx",
-                  lineNumber: 63,
+                  lineNumber: 73,
                   columnNumber: 7
                 },
                 this
@@ -1003,54 +997,44 @@ function MobileNav({
             !1,
             {
               fileName: "app/components/Nav/MobileNav.tsx",
-              lineNumber: 55,
+              lineNumber: 65,
               columnNumber: 6
             },
             this
           ) }, void 0, !1, {
             fileName: "app/components/Nav/MobileNav.tsx",
-            lineNumber: 54,
+            lineNumber: 64,
             columnNumber: 5
           }, this)
         ] }, void 0, !0, {
           fileName: "app/components/Nav/MobileNav.tsx",
-          lineNumber: 52,
+          lineNumber: 62,
           columnNumber: 4
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("ul", { className: "mt-6 flex flex-col text-lg text-slate-600 dark:text-slate-200", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(MobileNavItem, { to: "/", children: "Home" }, void 0, !1, {
             fileName: "app/components/Nav/MobileNav.tsx",
-            lineNumber: 72,
+            lineNumber: 82,
             columnNumber: 5
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(MobileNavItem, { to: "/articles", autoFocus: !0, children: "Articles" }, void 0, !1, {
             fileName: "app/components/Nav/MobileNav.tsx",
-            lineNumber: 73,
+            lineNumber: 83,
             columnNumber: 5
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(MobileNavItem, { to: "/courses", children: "Courses" }, void 0, !1, {
             fileName: "app/components/Nav/MobileNav.tsx",
-            lineNumber: 74,
-            columnNumber: 5
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(MobileNavItem, { to: "/speaking", children: "Speaking" }, void 0, !1, {
-            fileName: "app/components/Nav/MobileNav.tsx",
-            lineNumber: 75,
-            columnNumber: 5
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(MobileNavItem, { to: "/uses", children: "Uses" }, void 0, !1, {
-            fileName: "app/components/Nav/MobileNav.tsx",
-            lineNumber: 76,
+            lineNumber: 86,
             columnNumber: 5
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(MobileNavItem, { to: "/about", children: "About" }, void 0, !1, {
             fileName: "app/components/Nav/MobileNav.tsx",
-            lineNumber: 77,
+            lineNumber: 89,
             columnNumber: 5
           }, this)
         ] }, void 0, !0, {
           fileName: "app/components/Nav/MobileNav.tsx",
-          lineNumber: 71,
+          lineNumber: 81,
           columnNumber: 4
         }, this)
       ]
@@ -1059,7 +1043,7 @@ function MobileNav({
     !0,
     {
       fileName: "app/components/Nav/MobileNav.tsx",
-      lineNumber: 47,
+      lineNumber: 57,
       columnNumber: 3
     },
     this
@@ -1117,16 +1101,6 @@ function Nav() {
         /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(DesktopNavLink, { to: "/courses", children: "Courses" }, void 0, !1, {
           fileName: "app/components/Nav/Nav.tsx",
           lineNumber: 26,
-          columnNumber: 8
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(DesktopNavLink, { to: "/speaking", children: "Speaking" }, void 0, !1, {
-          fileName: "app/components/Nav/Nav.tsx",
-          lineNumber: 27,
-          columnNumber: 8
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(DesktopNavLink, { to: "/uses", children: "Uses" }, void 0, !1, {
-          fileName: "app/components/Nav/Nav.tsx",
-          lineNumber: 28,
           columnNumber: 8
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)(DesktopNavLink, { to: "/about", children: "About" }, void 0, !1, {
@@ -1268,78 +1242,78 @@ function App() {
     /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("head", { children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("meta", { charSet: "utf-8" }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 20,
+        lineNumber: 19,
         columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("meta", { name: "viewport", content: "width=device-width,initial-scale=1" }, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 21,
+        lineNumber: 20,
         columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react8.Meta, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 22,
+        lineNumber: 21,
         columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react8.Links, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 23,
+        lineNumber: 22,
         columnNumber: 5
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 19,
+      lineNumber: 18,
       columnNumber: 4
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("body", { className: "h-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("main", { className: "mx-auto max-w-7xl bg-slate-100", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("body", { className: "h-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("div", { className: "bg-slate-100 dark:bg-violet-900", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("main", { className: "mx-auto max-w-5xl bg-white py-6 dark:bg-violet-700", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Nav, {}, void 0, !1, {
           fileName: "app/root.tsx",
-          lineNumber: 28,
-          columnNumber: 5
+          lineNumber: 27,
+          columnNumber: 7
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react8.Outlet, {}, void 0, !1, {
           fileName: "app/root.tsx",
-          lineNumber: 29,
-          columnNumber: 5
+          lineNumber: 28,
+          columnNumber: 7
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(Footer, {}, void 0, !1, {
           fileName: "app/root.tsx",
-          lineNumber: 30,
-          columnNumber: 5
+          lineNumber: 29,
+          columnNumber: 7
         }, this)
       ] }, void 0, !0, {
         fileName: "app/root.tsx",
-        lineNumber: 27,
-        columnNumber: 5
+        lineNumber: 26,
+        columnNumber: 6
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react8.ScrollRestoration, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 32,
+        lineNumber: 31,
         columnNumber: 6
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react8.Scripts, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 33,
+        lineNumber: 32,
         columnNumber: 6
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(import_react8.LiveReload, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 34,
+        lineNumber: 33,
         columnNumber: 6
       }, this)
     ] }, void 0, !0, {
       fileName: "app/root.tsx",
-      lineNumber: 26,
+      lineNumber: 25,
       columnNumber: 5
     }, this) }, void 0, !1, {
       fileName: "app/root.tsx",
-      lineNumber: 25,
+      lineNumber: 24,
       columnNumber: 4
     }, this)
   ] }, void 0, !0, {
     fileName: "app/root.tsx",
-    lineNumber: 18,
+    lineNumber: 17,
     columnNumber: 5
   }, this);
 }
@@ -2270,7 +2244,7 @@ function Button({ label, icon, to, external, onClick }) {
 // app/routes/courses.tsx
 var import_jsx_dev_runtime13 = require("react/jsx-dev-runtime");
 function CourseCard({ title, image, description, url }) {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("div", { className: "mt-6 grid gap-4 overflow-hidden lg:rounded-md lg:border lg:border-pink-300 lg:p-6", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("div", { className: "mt-6 grid gap-4 overflow-hidden md:rounded-md md:border md:border-slate-200 md:p-6 dark:md:border-pink-300/40", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("h3", { className: "font-heading text-xl", children: title }, void 0, !1, {
       fileName: "app/routes/courses.tsx",
       lineNumber: 14,
@@ -2344,7 +2318,7 @@ function CourseCard({ title, image, description, url }) {
   }, this);
 }
 function CoursesPage() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("article", { className: "grid gap-4 px-4", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)("article", { className: "grid gap-4 px-4 md:px-6 lg:px-8", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime13.jsxDEV)(Title, { children: "Courses" }, void 0, !1, {
       fileName: "app/routes/courses.tsx",
       lineNumber: 45,
@@ -3109,7 +3083,7 @@ function UsesPage() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var assets_manifest_default = { entry: { module: "/build/entry.client-LEU7ZDGJ.js", imports: ["/build/_shared/chunk-BA6NHEY4.js", "/build/_shared/chunk-H5ZE7JVG.js", "/build/_shared/chunk-FQTGFZMB.js", "/build/_shared/chunk-SE6AVHRO.js", "/build/_shared/chunk-O4OKU2LD.js", "/build/_shared/chunk-BYNVZQKR.js", "/build/_shared/chunk-K6PKGSTD.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-AE42DKM4.js", imports: ["/build/_shared/chunk-G7I3DNCR.js", "/build/_shared/chunk-XDCBS5I4.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-KN27THNH.js", imports: ["/build/_shared/chunk-DBN4WOBN.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-GCR3DXXP.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles": { id: "routes/articles", parentId: "root", path: "articles", index: void 0, caseSensitive: void 0, module: "/build/routes/articles-ZFEHUBXA.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog": { id: "routes/blog", parentId: "root", path: "blog", index: void 0, caseSensitive: void 0, module: "/build/routes/blog-LJ4VZHQR.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog.$slug": { id: "routes/blog.$slug", parentId: "routes/blog", path: ":slug", index: void 0, caseSensitive: void 0, module: "/build/routes/blog.$slug-7J4KURXU.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/courses": { id: "routes/courses", parentId: "root", path: "courses", index: void 0, caseSensitive: void 0, module: "/build/routes/courses-TW2FLB6N.js", imports: ["/build/_shared/chunk-DBN4WOBN.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/speaking": { id: "routes/speaking", parentId: "root", path: "speaking", index: void 0, caseSensitive: void 0, module: "/build/routes/speaking-R3RRGRFW.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/uses": { id: "routes/uses", parentId: "root", path: "uses", index: void 0, caseSensitive: void 0, module: "/build/routes/uses-VPA2S5HP.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "9c696629", hmr: { runtime: "/build/_shared/chunk-BYNVZQKR.js", timestamp: 1689041150514 }, url: "/build/manifest-9C696629.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-LEU7ZDGJ.js", imports: ["/build/_shared/chunk-BA6NHEY4.js", "/build/_shared/chunk-H5ZE7JVG.js", "/build/_shared/chunk-FQTGFZMB.js", "/build/_shared/chunk-SE6AVHRO.js", "/build/_shared/chunk-O4OKU2LD.js", "/build/_shared/chunk-BYNVZQKR.js", "/build/_shared/chunk-K6PKGSTD.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-CTAMJUXL.js", imports: ["/build/_shared/chunk-PFFEH7IO.js", "/build/_shared/chunk-XDCBS5I4.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-5FBRK7TT.js", imports: ["/build/_shared/chunk-DBN4WOBN.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-5RPZJYVM.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles": { id: "routes/articles", parentId: "root", path: "articles", index: void 0, caseSensitive: void 0, module: "/build/routes/articles-ZFEHUBXA.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog": { id: "routes/blog", parentId: "root", path: "blog", index: void 0, caseSensitive: void 0, module: "/build/routes/blog-SPNB5O3S.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/blog.$slug": { id: "routes/blog.$slug", parentId: "routes/blog", path: ":slug", index: void 0, caseSensitive: void 0, module: "/build/routes/blog.$slug-7J4KURXU.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/courses": { id: "routes/courses", parentId: "root", path: "courses", index: void 0, caseSensitive: void 0, module: "/build/routes/courses-IJHW56LZ.js", imports: ["/build/_shared/chunk-DBN4WOBN.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/speaking": { id: "routes/speaking", parentId: "root", path: "speaking", index: void 0, caseSensitive: void 0, module: "/build/routes/speaking-R3RRGRFW.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/uses": { id: "routes/uses", parentId: "root", path: "uses", index: void 0, caseSensitive: void 0, module: "/build/routes/uses-VPA2S5HP.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "d86c1459", hmr: { runtime: "/build/_shared/chunk-BYNVZQKR.js", timestamp: 1689121802272 }, url: "/build/manifest-D86C1459.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, dev = { port: 3001 }, routes = {
