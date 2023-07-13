@@ -31,7 +31,7 @@ export function LatestArticle({ latestArticle }: LatestArticleProps) {
 	return (
 		<section className="grid px-4 py-8 md:px-6 lg:grid-cols-2 lg:grid-rows-[auto_auto_1fr_auto_auto] lg:px-8">
 			<Link
-				to={`/blog/${latestArticle.slug}`}
+				to={`/article/${latestArticle.slug}`}
 				className="lg:col-start-2 lg:mt-4"
 			>
 				<h2 className="font-heading text-2xl text-slate-700 dark:text-slate-200">
