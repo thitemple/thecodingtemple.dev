@@ -1,5 +1,4 @@
-import { Title } from "~/components";
-import { Button } from "~/components/Button";
+import { OutlineLink, Title } from "~/components";
 
 interface CourseCardProps {
 	title: string;
@@ -14,10 +13,8 @@ function CourseCard({ title, image, description, url }: CourseCardProps) {
 			<h3 className="font-heading text-xl">{title}</h3>
 			<img src={image} alt={title} className="mx-auto block w-full max-w-lg" />
 			<p>{description}</p>
-			<Button
-				label="Enroll"
+			<OutlineLink
 				to={url}
-				external
 				icon={
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +22,6 @@ function CourseCard({ title, image, description, url }: CourseCardProps) {
 						viewBox="0 0 24 24"
 						strokeWidth={1.5}
 						stroke="currentColor"
-						className="h-6 w-6"
 					>
 						<path
 							strokeLinecap="round"
@@ -34,7 +30,9 @@ function CourseCard({ title, image, description, url }: CourseCardProps) {
 						/>
 					</svg>
 				}
-			/>
+			>
+				Enroll
+			</OutlineLink>
 		</div>
 	);
 }

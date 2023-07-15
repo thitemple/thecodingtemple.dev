@@ -22,8 +22,8 @@ export default function App() {
 				<Links />
 			</head>
 			<body className="h-full">
-				<div className="bg-slate-100 dark:bg-violet-900">
-					<main className="mx-auto max-w-5xl bg-white py-6 dark:bg-violet-700">
+				<div className="bg-slate-100 dark:bg-zinc-900">
+					<main className="mx-auto max-w-5xl bg-white py-6 dark:bg-violet-900">
 						<Nav />
 						<Outlet />
 						<Footer />

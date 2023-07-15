@@ -29,7 +29,7 @@ export function MobileNav({
 	const ref = useRef<HTMLDialogElement>(null);
 	useEffect(() => {
 		if (ref.current && open && !ref.current.open) {
-			ref.current.show();
+			ref.current.showModal();
 			ref.current.focus();
 		}
 		if (ref.current?.open && !open) {
@@ -55,7 +55,7 @@ export function MobileNav({
 
 	return (
 		<dialog
-			className="z-50 w-5/6 rounded-2xl bg-white px-4 py-6 backdrop:bg-gray-900/50 backdrop:backdrop-blur-sm dark:bg-violet-500"
+			className="backdrop:bg-gray-900/50 z-50 w-5/6 rounded-2xl bg-white px-4 py-6 backdrop:backdrop-blur-sm dark:bg-violet-700"
 			onClick={handleClick}
 			ref={ref}
 		>

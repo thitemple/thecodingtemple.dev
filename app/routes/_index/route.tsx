@@ -1,6 +1,4 @@
 import type { V2_MetaFunction } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
-import { Page } from "~/components";
 import { getLatestArticle } from "~/utils/blog.server";
 
 import { About } from "./components/About";
@@ -8,6 +6,7 @@ import { Experience } from "./components/Experience";
 import { Hero } from "./components/Hero";
 import { LatestArticle } from "./components/LatestArticle";
 import { Passions } from "./components/Passions";
+import { typedjson, useTypedLoaderData } from "remix-typedjson";
 
 export const meta: V2_MetaFunction = () => {
 	return [
@@ -21,11 +20,11 @@ export const meta: V2_MetaFunction = () => {
 
 export async function loader() {
 	const latestArticle = await getLatestArticle();
-	return { latestArticle };
+	return typedjson({ latestArticle });
 }
 
 export default function Index() {
-	const { latestArticle } = useLoaderData<typeof loader>();
+	const { latestArticle } = useTypedLoaderData<typeof loader>();
 
 	return (
 			<div className="flex flex-col lg:gap-4">

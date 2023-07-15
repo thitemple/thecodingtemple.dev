@@ -1,6 +1,6 @@
 export function Hero() {
 	return (
-		<section className="bg-gradient-to-b from-[#921D6403] to-[#921D6435] px-4 py-12 text-fuchsia-500 dark:from-[#A02279] dark:to-[#4F1A84] md:px-6 lg:px-8 lg:py-20">
+		<section className="bg-gradient-to-b from-[#921D6403] to-[#921D6435] px-4 py-12 text-fuchsia-500 dark:from-violet-300 dark:to-violet-500/50 md:px-6 lg:px-8 lg:py-20">
 			<h1 className="font-heading  text-2xl text-violet-500 dark:text-slate-100 lg:max-w-2xl lg:text-5xl lg:font-medium">
 				Hi, I'm Thiago Temple. I love building products, writing code and
 				learning through it.

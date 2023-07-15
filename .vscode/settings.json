@@ -1,5 +1,4 @@
 {
-  "cSpell.words": [
-    "frontmatter"
-  ]
+	"cSpell.words": ["clsx", "frontmatter", "typedjson"],
+	"typescript.tsdk": "node_modules/typescript/lib"
 }

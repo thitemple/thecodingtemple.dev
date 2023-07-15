@@ -1,27 +1,6 @@
 import { Link } from "@remix-run/react";
-import { Button } from "~/components/Button";
-import { formatDate } from "~/utils/dateFormats";
+import { OutlineLink, PostMeta } from "~/components";
 import { PostFrontMatter } from "~/utils/mdx.server";
-
-export function PostMeta({
-	date,
-	readTime,
-}: {
-	date: Date;
-	readTime?: number;
-}) {
-	return (
-		<>
-			<span>{formatDate(date)}</span>
-			{readTime && (
-				<>
-					{" "}
-					• <span>{readTime} min read</span>
-				</>
-			)}
-		</>
-	);
-}
 
 interface LatestArticleProps {
 	latestArticle: PostFrontMatter;
@@ -51,8 +30,7 @@ export function LatestArticle({ latestArticle }: LatestArticleProps) {
 				<PostMeta date={latestArticle.date} readTime={latestArticle.readTime} />
 			</p>
 			<p className="mt-6 lg:col-start-2">
-				<Button
-					label="Read more"
+				<OutlineLink
 					icon={
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +38,6 @@ export function LatestArticle({ latestArticle }: LatestArticleProps) {
 							viewBox="0 0 24 24"
 							strokeWidth="1.5"
 							stroke="currentColor"
-							className="ml-3 h-auto w-6"
 						>
 							<path
 								strokeLinecap="round"
@@ -69,8 +46,10 @@ export function LatestArticle({ latestArticle }: LatestArticleProps) {
 							/>
 						</svg>
 					}
-					to={`/blog/${latestArticle.slug}`}
-				/>
+					to={`/articles/${latestArticle.slug}`}
+				>
+					Read more
+				</OutlineLink>
 			</p>
 		</section>
 	);

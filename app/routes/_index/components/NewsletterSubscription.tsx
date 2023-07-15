@@ -26,7 +26,6 @@ export function NewsletterSubscription() {
 						required
 					/>
 					<Button
-						label="Sign up"
 						icon={
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +42,9 @@ export function NewsletterSubscription() {
 								/>
 							</svg>
 						}
-					/>
+					>
+						Sign up
+					</Button>
 				</div>
 			</form>
 		</Section>
