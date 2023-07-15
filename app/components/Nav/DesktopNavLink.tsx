@@ -1,5 +1,5 @@
 import { NavLink } from "@remix-run/react";
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { ReactNode } from "react";
 
 export function DesktopNavLink({
@@ -14,7 +14,7 @@ export function DesktopNavLink({
 			<NavLink
 				to={to}
 				className={({ isActive }) => {
-					return classNames(
+					return clsx(
 						"transition-all duration-300 ease-in-out hover:text-violet-500 hover:underline dark:hover:text-pink-300",
 						{
 							"cursor-default text-slate-500 no-underline hover:text-slate-500 hover:no-underline dark:text-slate-400 dark:hover:text-slate-400":

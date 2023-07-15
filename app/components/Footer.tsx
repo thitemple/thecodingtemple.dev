@@ -1,12 +1,12 @@
 import { NavLink } from "@remix-run/react";
-import classNames from "classnames";
+import { clsx } from "clsx";
 function FooterLink({ to, label }: { to: string; label: string }) {
 	return (
 		<li>
 			<NavLink
 				to={to}
 				className={({ isActive }) => {
-					return classNames(
+					return clsx(
 						"text-slate-700 hover:text-violet-500 hover:underline dark:text-slate-200 dark:hover:text-pink-300",
 						{
 							"cursor-default text-slate-400 hover:text-slate-400 hover:no-underline":

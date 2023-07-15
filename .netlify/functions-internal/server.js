@@ -780,13 +780,13 @@ init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
 // app/components/Footer.tsx
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var import_react2 = require("@remix-run/react"), import_classnames = __toESM(require("classnames")), import_jsx_dev_runtime2 = require("react/jsx-dev-runtime");
+var import_react2 = require("@remix-run/react"), import_clsx = require("clsx"), import_jsx_dev_runtime2 = require("react/jsx-dev-runtime");
 function FooterLink({ to, label }) {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("li", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(
     import_react2.NavLink,
     {
       to,
-      className: ({ isActive }) => (0, import_classnames.default)(
+      className: ({ isActive }) => (0, import_clsx.clsx)(
         "text-slate-700 hover:text-violet-500 hover:underline dark:text-slate-200 dark:hover:text-pink-300",
         {
           "cursor-default text-slate-400 hover:text-slate-400 hover:no-underline": isActive
@@ -872,7 +872,7 @@ var symbol_transparent_default = "/build/_assets/symbol-transparent-STZQOOFB.svg
 
 // app/components/Nav/DesktopNavLink.tsx
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var import_react3 = require("@remix-run/react"), import_classnames2 = __toESM(require("classnames")), import_jsx_dev_runtime3 = require("react/jsx-dev-runtime");
+var import_react3 = require("@remix-run/react"), import_clsx2 = require("clsx"), import_jsx_dev_runtime3 = require("react/jsx-dev-runtime");
 function DesktopNavLink({
   to,
   children
@@ -881,7 +881,7 @@ function DesktopNavLink({
     import_react3.NavLink,
     {
       to,
-      className: ({ isActive }) => (0, import_classnames2.default)(
+      className: ({ isActive }) => (0, import_clsx2.clsx)(
         "transition-all duration-300 ease-in-out hover:text-violet-500 hover:underline dark:hover:text-pink-300",
         {
           "cursor-default text-slate-500 no-underline hover:text-slate-500 hover:no-underline dark:text-slate-400 dark:hover:text-slate-400": isActive
@@ -1199,7 +1199,7 @@ function Nav() {
 
 // app/components/OutlineLink.tsx
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var import_react8 = require("@remix-run/react"), import_clsx = require("clsx"), import_jsx_dev_runtime6 = require("react/jsx-dev-runtime");
+var import_react8 = require("@remix-run/react"), import_clsx3 = require("clsx"), import_jsx_dev_runtime6 = require("react/jsx-dev-runtime");
 function OutlineLink({
   children,
   icon,
@@ -1211,7 +1211,7 @@ function OutlineLink({
     import_react8.Link,
     {
       to,
-      className: (0, import_clsx.clsx)(
+      className: (0, import_clsx3.clsx)(
         "flex cursor-pointer justify-center rounded-lg border-2 border-fuchsia-500 bg-white px-4 py-2 uppercase text-fuchsia-500 shadow-md transition-colors duration-300 ease-in-out hover:border-pink-500 hover:bg-slate-100 hover:text-pink-500 dark:border-fuchsia-500 dark:bg-violet-700 dark:text-slate-200 dark:hover:bg-violet-500 dark:hover:text-slate-100",
         className ?? ""
       ),
@@ -1285,12 +1285,12 @@ function PostMeta({
 
 // app/components/Title.tsx
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var import_clsx2 = require("clsx"), import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
+var import_clsx4 = require("clsx"), import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
 function Title({ children, className }) {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
     "h1",
     {
-      className: (0, import_clsx2.clsx)(
+      className: (0, import_clsx4.clsx)(
         "w-full font-heading text-2xl text-slate-700 dark:text-slate-100 lg:text-3xl",
         className
       ),
@@ -1401,7 +1401,7 @@ __export(articles_index_exports, {
   loader: () => loader
 });
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var import_react10 = require("@remix-run/react"), import_clsx3 = require("clsx"), import_remix_typedjson = require("remix-typedjson");
+var import_react10 = require("@remix-run/react"), import_clsx5 = require("clsx"), import_remix_typedjson = require("remix-typedjson");
 
 // app/utils/mdx.server.ts
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
@@ -2411,7 +2411,7 @@ function ArticlesPage() {
         {
           "aria-disabled": !data.hasPreviousPage,
           to: data.hasPreviousPage ? `/articles?page=${data.previousPage}` : "",
-          className: (0, import_clsx3.clsx)(
+          className: (0, import_clsx5.clsx)(
             "flex items-center text-fuchsia-500 hover:underline dark:text-slate-300",
             {
               "cursor-not-allowed text-slate-500  hover:no-underline dark:text-slate-500": !data.hasPreviousPage
@@ -2474,7 +2474,7 @@ function ArticlesPage() {
         {
           "aria-disabled": !data.hasNextPage,
           to: data.hasNextPage ? `/articles?page=${data.nextPage}` : "",
-          className: (0, import_clsx3.clsx)(
+          className: (0, import_clsx5.clsx)(
             "flex items-center text-fuchsia-500 hover:underline dark:text-slate-300",
             {
               "cursor-not-allowed hover:no-underline dark:text-slate-500": !data.hasNextPage
@@ -2831,9 +2831,9 @@ var wyhn_logo_default = "/build/_assets/wyhn-logo-4MFFAMB7.png";
 
 // app/routes/_index/components/Section.tsx
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var import_classnames3 = __toESM(require("classnames")), import_jsx_dev_runtime15 = require("react/jsx-dev-runtime");
+var import_clsx6 = require("clsx"), import_jsx_dev_runtime15 = require("react/jsx-dev-runtime");
 function Section({ title, children, className }) {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("section", { className: (0, import_classnames3.default)("px-4 py-8 md:px-6 lg:px-8", className), children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("section", { className: (0, import_clsx6.clsx)("px-4 py-8 md:px-6 lg:px-8", className), children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime15.jsxDEV)("h2", { className: "font-heading text-2xl text-slate-700 dark:text-slate-200", children: title }, void 0, !1, {
       fileName: "app/routes/_index/components/Section.tsx",
       lineNumber: 13,
@@ -3399,7 +3399,7 @@ function UsesPage() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var assets_manifest_default = { entry: { module: "/build/entry.client-SBXCQNVG.js", imports: ["/build/_shared/chunk-BA6NHEY4.js", "/build/_shared/chunk-H5ZE7JVG.js", "/build/_shared/chunk-ZPLGRDWL.js", "/build/_shared/chunk-SE6AVHRO.js", "/build/_shared/chunk-BYNVZQKR.js", "/build/_shared/chunk-K6PKGSTD.js", "/build/_shared/chunk-O4OKU2LD.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-UXZUDGON.js", imports: ["/build/_shared/chunk-Q7YSUAR5.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-IIMI5667.js", imports: ["/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-TCDTEWRN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles.$slug": { id: "routes/articles.$slug", parentId: "root", path: "articles/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/articles.$slug-EWQ6KTNQ.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles._index": { id: "routes/articles._index", parentId: "root", path: "articles", index: !0, caseSensitive: void 0, module: "/build/routes/articles._index-7NO25UON.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js", "/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/courses": { id: "routes/courses", parentId: "root", path: "courses", index: void 0, caseSensitive: void 0, module: "/build/routes/courses-4RT7UNYW.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/speaking": { id: "routes/speaking", parentId: "root", path: "speaking", index: void 0, caseSensitive: void 0, module: "/build/routes/speaking-WBF2GHV6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/uses": { id: "routes/uses", parentId: "root", path: "uses", index: void 0, caseSensitive: void 0, module: "/build/routes/uses-BY2EPHR3.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "e6c57ed9", hmr: { runtime: "/build/_shared/chunk-BYNVZQKR.js", timestamp: 1689426761880 }, url: "/build/manifest-E6C57ED9.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-SBXCQNVG.js", imports: ["/build/_shared/chunk-BA6NHEY4.js", "/build/_shared/chunk-H5ZE7JVG.js", "/build/_shared/chunk-ZPLGRDWL.js", "/build/_shared/chunk-SE6AVHRO.js", "/build/_shared/chunk-BYNVZQKR.js", "/build/_shared/chunk-K6PKGSTD.js", "/build/_shared/chunk-O4OKU2LD.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-R6V6R36E.js", imports: ["/build/_shared/chunk-PRO7SOU6.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-3T32RKPY.js", imports: ["/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-TGY3DGPF.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles.$slug": { id: "routes/articles.$slug", parentId: "root", path: "articles/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/articles.$slug-2GW5FIDE.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles._index": { id: "routes/articles._index", parentId: "root", path: "articles", index: !0, caseSensitive: void 0, module: "/build/routes/articles._index-JX6QURNC.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js", "/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/courses": { id: "routes/courses", parentId: "root", path: "courses", index: void 0, caseSensitive: void 0, module: "/build/routes/courses-3CDZB32A.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/speaking": { id: "routes/speaking", parentId: "root", path: "speaking", index: void 0, caseSensitive: void 0, module: "/build/routes/speaking-WBF2GHV6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/uses": { id: "routes/uses", parentId: "root", path: "uses", index: void 0, caseSensitive: void 0, module: "/build/routes/uses-BY2EPHR3.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "bb002aa8", hmr: { runtime: "/build/_shared/chunk-BYNVZQKR.js", timestamp: 1689432249559 }, url: "/build/manifest-BB002AA8.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, dev = { port: 3001 }, routes = {
