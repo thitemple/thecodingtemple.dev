@@ -773,7 +773,7 @@ init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_react9 = require("@remix-run/react");
 
 // app/assets/css/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-QWBVXRGL.css";
+var tailwind_default = "/build/_assets/tailwind-GLYJUCAL.css";
 
 // app/components/index.ts
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
@@ -877,7 +877,7 @@ function DesktopNavLink({
   to,
   children
 }) {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "h-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex h-full items-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
     import_react3.NavLink,
     {
       to,
@@ -1066,12 +1066,12 @@ function Nav() {
           },
           this
         ),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("img", { src: logo_transparent_default, className: "hidden w-40 lg:block dark:lg:hidden" }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("img", { src: logo_transparent_default, className: "hidden w-48 lg:block dark:lg:hidden" }, void 0, !1, {
           fileName: "app/components/Nav/Nav.tsx",
           lineNumber: 20,
           columnNumber: 7
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("img", { src: logo_dark_mode_default, className: "hidden w-40 dark:lg:block" }, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("img", { src: logo_dark_mode_default, className: "hidden w-48 dark:lg:block" }, void 0, !1, {
           fileName: "app/components/Nav/Nav.tsx",
           lineNumber: 21,
           columnNumber: 7
@@ -1285,13 +1285,26 @@ function PostMeta({
 
 // app/components/Title.tsx
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
-function Title({ children }) {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)("h1", { className: "w-full font-heading text-2xl text-slate-700 dark:text-slate-200", children }, void 0, !1, {
-    fileName: "app/components/Title.tsx",
-    lineNumber: 3,
-    columnNumber: 3
-  }, this);
+var import_clsx2 = require("clsx"), import_jsx_dev_runtime8 = require("react/jsx-dev-runtime");
+function Title({ children, className }) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime8.jsxDEV)(
+    "h1",
+    {
+      className: (0, import_clsx2.clsx)(
+        "w-full font-heading text-2xl text-slate-700 dark:text-slate-100 lg:text-3xl",
+        className
+      ),
+      children
+    },
+    void 0,
+    !1,
+    {
+      fileName: "app/components/Title.tsx",
+      lineNumber: 11,
+      columnNumber: 3
+    },
+    this
+  );
 }
 
 // app/root.tsx
@@ -1325,20 +1338,24 @@ function App() {
       columnNumber: 4
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("body", { className: "h-full", children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("div", { className: "bg-slate-100 dark:bg-zinc-900", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("main", { className: "mx-auto max-w-5xl bg-white py-6 dark:bg-violet-900", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("div", { className: "mx-auto max-w-5xl bg-white py-6 dark:bg-violet-900", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(Nav, {}, void 0, !1, {
           fileName: "app/root.tsx",
           lineNumber: 27,
           columnNumber: 7
         }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(import_react9.Outlet, {}, void 0, !1, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)("main", { className: "py-2 md:py-4", children: /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(import_react9.Outlet, {}, void 0, !1, {
+          fileName: "app/root.tsx",
+          lineNumber: 29,
+          columnNumber: 8
+        }, this) }, void 0, !1, {
           fileName: "app/root.tsx",
           lineNumber: 28,
           columnNumber: 7
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(Footer, {}, void 0, !1, {
           fileName: "app/root.tsx",
-          lineNumber: 29,
+          lineNumber: 31,
           columnNumber: 7
         }, this)
       ] }, void 0, !0, {
@@ -1348,17 +1365,17 @@ function App() {
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(import_react9.ScrollRestoration, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 31,
+        lineNumber: 33,
         columnNumber: 6
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(import_react9.Scripts, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 32,
+        lineNumber: 34,
         columnNumber: 6
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime9.jsxDEV)(import_react9.LiveReload, {}, void 0, !1, {
         fileName: "app/root.tsx",
-        lineNumber: 33,
+        lineNumber: 35,
         columnNumber: 6
       }, this)
     ] }, void 0, !0, {
@@ -1377,14 +1394,14 @@ function App() {
   }, this);
 }
 
-// app/routes/articles.$slug.tsx
-var articles_slug_exports = {};
-__export(articles_slug_exports, {
-  default: () => BlogPostPage,
+// app/routes/articles._index.tsx
+var articles_index_exports = {};
+__export(articles_index_exports, {
+  default: () => ArticlesPage,
   loader: () => loader
 });
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var import_react10 = require("@remix-run/react"), import_react11 = require("react");
+var import_react10 = require("@remix-run/react"), import_clsx3 = require("clsx"), import_remix_typedjson = require("remix-typedjson");
 
 // app/utils/mdx.server.ts
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
@@ -2242,37 +2259,9 @@ async function getPosts() {
   );
 }
 
-// app/routes/articles.$slug.tsx
-var import_client = __toESM(require_client2()), import_jsx_dev_runtime10 = require("react/jsx-dev-runtime");
-async function loader({ params }) {
-  if (!params.slug)
-    throw new Error("Slug not found");
-  let { code, frontmatter: frontmatter2 } = await getMdxContent(params.slug);
-  return { code, frontmatter: frontmatter2 };
-}
-function BlogPostPage() {
-  let { code } = (0, import_react10.useLoaderData)(), Component = (0, import_react11.useMemo)(() => (0, import_client.getMDXComponent)(code), [code]);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("article", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(Component, {}, void 0, !1, {
-    fileName: "app/routes/articles.$slug.tsx",
-    lineNumber: 23,
-    columnNumber: 4
-  }, this) }, void 0, !1, {
-    fileName: "app/routes/articles.$slug.tsx",
-    lineNumber: 22,
-    columnNumber: 3
-  }, this);
-}
-
-// app/routes/articles.tsx
-var articles_exports = {};
-__export(articles_exports, {
-  default: () => ArticlesPage,
-  loader: () => loader2
-});
-init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var import_react12 = require("@remix-run/react"), import_clsx2 = require("clsx"), import_remix_typedjson = require("remix-typedjson");
-var import_jsx_dev_runtime11 = require("react/jsx-dev-runtime");
-async function loader2({ request }) {
+// app/routes/articles._index.tsx
+var import_jsx_dev_runtime10 = require("react/jsx-dev-runtime");
+async function loader({ request }) {
   let page = Number(new URL(request.url).searchParams.get("page") ?? "1"), { posts, numPages } = await getPaginatedPosts(page, 5);
   return (0, import_remix_typedjson.typedjson)({
     posts,
@@ -2284,18 +2273,18 @@ async function loader2({ request }) {
   });
 }
 function ArticleCard({ post }) {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("div", { className: "flex flex-col gap-x-6 gap-y-4 py-8 md:rounded-md md:border md:border-slate-200 md:p-6 dark:md:border-pink-300/40 lg:px-8 lg:first:col-span-2", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("div", { children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(import_react12.Link, { to: `/articles/${post.frontmatter.slug}`, className: " lg:mt-4", children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("h2", { className: "font-heading text-2xl text-slate-700 dark:text-slate-200", children: post.frontmatter.title }, void 0, !1, {
-        fileName: "app/routes/articles.tsx",
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("div", { className: "flex flex-col gap-x-6 gap-y-4 py-4 md:rounded-md md:border md:border-slate-200 md:p-6 md:py-8 dark:md:border-pink-300/40 lg:px-8 lg:first:col-span-2", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("div", { children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(import_react10.Link, { to: `/articles/${post.frontmatter.slug}`, className: " lg:mt-4", children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("h2", { className: "font-heading text-2xl text-slate-700 dark:text-slate-200", children: post.frontmatter.title }, void 0, !1, {
+        fileName: "app/routes/articles._index.tsx",
         lineNumber: 26,
         columnNumber: 6
       }, this) }, void 0, !1, {
-        fileName: "app/routes/articles.tsx",
+        fileName: "app/routes/articles._index.tsx",
         lineNumber: 25,
         columnNumber: 5
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("p", { className: "text-sm text-slate-400 lg:mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(
+      /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("p", { className: "text-sm text-slate-400 lg:mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
         PostMeta,
         {
           date: post.frontmatter.date,
@@ -2304,22 +2293,22 @@ function ArticleCard({ post }) {
         void 0,
         !1,
         {
-          fileName: "app/routes/articles.tsx",
+          fileName: "app/routes/articles._index.tsx",
           lineNumber: 31,
           columnNumber: 6
         },
         this
       ) }, void 0, !1, {
-        fileName: "app/routes/articles.tsx",
+        fileName: "app/routes/articles._index.tsx",
         lineNumber: 30,
         columnNumber: 5
       }, this)
     ] }, void 0, !0, {
-      fileName: "app/routes/articles.tsx",
+      fileName: "app/routes/articles._index.tsx",
       lineNumber: 24,
       columnNumber: 4
     }, this),
-    post.frontmatter.thumbnail && /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(
+    post.frontmatter.thumbnail && /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
       "img",
       {
         src: post.frontmatter.thumbnail,
@@ -2328,21 +2317,21 @@ function ArticleCard({ post }) {
       void 0,
       !1,
       {
-        fileName: "app/routes/articles.tsx",
+        fileName: "app/routes/articles._index.tsx",
         lineNumber: 38,
         columnNumber: 5
       },
       this
     ),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("p", { className: "flex-1 text-slate-600 dark:text-slate-300 lg:mt-4", children: post.frontmatter.summary }, void 0, !1, {
-      fileName: "app/routes/articles.tsx",
+    /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("p", { className: "flex-1 text-slate-600 dark:text-slate-300 lg:mt-4", children: post.frontmatter.summary }, void 0, !1, {
+      fileName: "app/routes/articles._index.tsx",
       lineNumber: 43,
       columnNumber: 4
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("p", { className: "md:self-center lg:self-start", children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(
+    /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("p", { className: "md:self-center lg:self-start", children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
       OutlineLink,
       {
-        icon: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(
+        icon: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
           "svg",
           {
             xmlns: "http://www.w3.org/2000/svg",
@@ -2350,7 +2339,7 @@ function ArticleCard({ post }) {
             viewBox: "0 0 24 24",
             strokeWidth: "1.5",
             stroke: "currentColor",
-            children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(
+            children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
               "path",
               {
                 strokeLinecap: "round",
@@ -2360,7 +2349,7 @@ function ArticleCard({ post }) {
               void 0,
               !1,
               {
-                fileName: "app/routes/articles.tsx",
+                fileName: "app/routes/articles._index.tsx",
                 lineNumber: 56,
                 columnNumber: 8
               },
@@ -2370,7 +2359,7 @@ function ArticleCard({ post }) {
           void 0,
           !1,
           {
-            fileName: "app/routes/articles.tsx",
+            fileName: "app/routes/articles._index.tsx",
             lineNumber: 49,
             columnNumber: 7
           },
@@ -2383,53 +2372,53 @@ function ArticleCard({ post }) {
       void 0,
       !1,
       {
-        fileName: "app/routes/articles.tsx",
+        fileName: "app/routes/articles._index.tsx",
         lineNumber: 47,
         columnNumber: 5
       },
       this
     ) }, void 0, !1, {
-      fileName: "app/routes/articles.tsx",
+      fileName: "app/routes/articles._index.tsx",
       lineNumber: 46,
       columnNumber: 4
     }, this)
   ] }, void 0, !0, {
-    fileName: "app/routes/articles.tsx",
+    fileName: "app/routes/articles._index.tsx",
     lineNumber: 23,
     columnNumber: 3
   }, this);
 }
 function ArticlesPage() {
   let data = (0, import_remix_typedjson.useTypedLoaderData)();
-  return data.posts[0].frontmatter.date, /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("div", { className: "grid gap-4 px-4 md:px-6 lg:px-8", children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(Title, { children: "Articles" }, void 0, !1, {
-      fileName: "app/routes/articles.tsx",
+  return data.posts[0].frontmatter.date, /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("div", { className: "grid gap-4 px-4 md:px-6 lg:px-8", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(Title, { children: "Articles" }, void 0, !1, {
+      fileName: "app/routes/articles._index.tsx",
       lineNumber: 78,
       columnNumber: 4
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("div", { className: "grid md:gap-6 lg:grid-cols-2 lg:grid-rows-3", children: data.posts.map((post) => /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(ArticleCard, { post }, post.frontmatter.slug, !1, {
-      fileName: "app/routes/articles.tsx",
+    /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("div", { className: "grid md:gap-6 lg:grid-cols-2 lg:grid-rows-3", children: data.posts.map((post) => /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(ArticleCard, { post }, post.frontmatter.slug, !1, {
+      fileName: "app/routes/articles._index.tsx",
       lineNumber: 81,
       columnNumber: 6
     }, this)) }, void 0, !1, {
-      fileName: "app/routes/articles.tsx",
+      fileName: "app/routes/articles._index.tsx",
       lineNumber: 79,
       columnNumber: 4
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("div", { className: "flex justify-center gap-6", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("div", { className: "flex flex-1 justify-end", children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(
-        import_react12.Link,
+    /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("div", { className: "flex justify-center gap-6", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("div", { className: "flex flex-1 justify-end", children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
+        import_react10.Link,
         {
           "aria-disabled": !data.hasPreviousPage,
           to: data.hasPreviousPage ? `/articles?page=${data.previousPage}` : "",
-          className: (0, import_clsx2.clsx)(
+          className: (0, import_clsx3.clsx)(
             "flex items-center text-fuchsia-500 hover:underline dark:text-slate-300",
             {
               "cursor-not-allowed text-slate-500  hover:no-underline dark:text-slate-500": !data.hasPreviousPage
             }
           ),
           children: [
-            /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(
+            /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
               "svg",
               {
                 xmlns: "http://www.w3.org/2000/svg",
@@ -2438,7 +2427,7 @@ function ArticlesPage() {
                 strokeWidth: 1.5,
                 stroke: "currentColor",
                 className: "mr-3 h-auto w-6",
-                children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(
+                children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
                   "path",
                   {
                     strokeLinecap: "round",
@@ -2448,7 +2437,7 @@ function ArticlesPage() {
                   void 0,
                   !1,
                   {
-                    fileName: "app/routes/articles.tsx",
+                    fileName: "app/routes/articles._index.tsx",
                     lineNumber: 110,
                     columnNumber: 9
                   },
@@ -2458,7 +2447,7 @@ function ArticlesPage() {
               void 0,
               !1,
               {
-                fileName: "app/routes/articles.tsx",
+                fileName: "app/routes/articles._index.tsx",
                 lineNumber: 102,
                 columnNumber: 8
               },
@@ -2470,22 +2459,22 @@ function ArticlesPage() {
         void 0,
         !0,
         {
-          fileName: "app/routes/articles.tsx",
+          fileName: "app/routes/articles._index.tsx",
           lineNumber: 87,
           columnNumber: 7
         },
         this
       ) }, void 0, !1, {
-        fileName: "app/routes/articles.tsx",
+        fileName: "app/routes/articles._index.tsx",
         lineNumber: 86,
         columnNumber: 6
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("div", { className: "flex flex-1", children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(
-        import_react12.Link,
+      /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)("div", { className: "flex flex-1", children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
+        import_react10.Link,
         {
           "aria-disabled": !data.hasNextPage,
           to: data.hasNextPage ? `/articles?page=${data.nextPage}` : "",
-          className: (0, import_clsx2.clsx)(
+          className: (0, import_clsx3.clsx)(
             "flex items-center text-fuchsia-500 hover:underline dark:text-slate-300",
             {
               "cursor-not-allowed hover:no-underline dark:text-slate-500": !data.hasNextPage
@@ -2493,7 +2482,7 @@ function ArticlesPage() {
           ),
           children: [
             "Next",
-            /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(
+            /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
               "svg",
               {
                 xmlns: "http://www.w3.org/2000/svg",
@@ -2502,7 +2491,7 @@ function ArticlesPage() {
                 strokeWidth: "1.5",
                 stroke: "currentColor",
                 className: "ml-3 h-auto w-6",
-                children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(
+                children: /* @__PURE__ */ (0, import_jsx_dev_runtime10.jsxDEV)(
                   "path",
                   {
                     strokeLinecap: "round",
@@ -2512,7 +2501,7 @@ function ArticlesPage() {
                   void 0,
                   !1,
                   {
-                    fileName: "app/routes/articles.tsx",
+                    fileName: "app/routes/articles._index.tsx",
                     lineNumber: 142,
                     columnNumber: 9
                   },
@@ -2522,7 +2511,7 @@ function ArticlesPage() {
               void 0,
               !1,
               {
-                fileName: "app/routes/articles.tsx",
+                fileName: "app/routes/articles._index.tsx",
                 lineNumber: 134,
                 columnNumber: 8
               },
@@ -2533,24 +2522,63 @@ function ArticlesPage() {
         void 0,
         !0,
         {
-          fileName: "app/routes/articles.tsx",
+          fileName: "app/routes/articles._index.tsx",
           lineNumber: 122,
           columnNumber: 7
         },
         this
       ) }, void 0, !1, {
-        fileName: "app/routes/articles.tsx",
+        fileName: "app/routes/articles._index.tsx",
         lineNumber: 121,
         columnNumber: 6
       }, this)
     ] }, void 0, !0, {
-      fileName: "app/routes/articles.tsx",
+      fileName: "app/routes/articles._index.tsx",
       lineNumber: 84,
       columnNumber: 4
     }, this)
   ] }, void 0, !0, {
-    fileName: "app/routes/articles.tsx",
+    fileName: "app/routes/articles._index.tsx",
     lineNumber: 77,
+    columnNumber: 3
+  }, this);
+}
+
+// app/routes/articles.$slug.tsx
+var articles_slug_exports = {};
+__export(articles_slug_exports, {
+  default: () => BlogPostPage,
+  loader: () => loader2
+});
+init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+var import_react11 = require("@remix-run/react"), import_client = __toESM(require_client2()), import_react12 = require("react");
+var import_jsx_dev_runtime11 = require("react/jsx-dev-runtime");
+async function loader2({ params }) {
+  if (!params.slug)
+    throw new Error("Slug not found");
+  let { code, frontmatter: frontmatter2 } = await getMdxContent(params.slug);
+  return { code, frontmatter: frontmatter2 };
+}
+function BlogPostPage() {
+  let { code, frontmatter: frontmatter2 } = (0, import_react11.useLoaderData)(), Component = (0, import_react12.useMemo)(() => (0, import_client.getMDXComponent)(code), [code]);
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("article", { className: "grid gap-4 px-4 md:gap-y-6 md:px-6 lg:px-8", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(Title, { children: frontmatter2.title }, void 0, !1, {
+      fileName: "app/routes/articles.$slug.tsx",
+      lineNumber: 24,
+      columnNumber: 4
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("div", { className: "flex flex-col gap-y-2 dark:text-slate-200 md:gap-y-6", children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(Component, {}, void 0, !1, {
+      fileName: "app/routes/articles.$slug.tsx",
+      lineNumber: 26,
+      columnNumber: 5
+    }, this) }, void 0, !1, {
+      fileName: "app/routes/articles.$slug.tsx",
+      lineNumber: 25,
+      columnNumber: 4
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "app/routes/articles.$slug.tsx",
+    lineNumber: 23,
     columnNumber: 3
   }, this);
 }
@@ -3371,7 +3399,7 @@ function UsesPage() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var assets_manifest_default = { entry: { module: "/build/entry.client-SBXCQNVG.js", imports: ["/build/_shared/chunk-BA6NHEY4.js", "/build/_shared/chunk-H5ZE7JVG.js", "/build/_shared/chunk-ZPLGRDWL.js", "/build/_shared/chunk-SE6AVHRO.js", "/build/_shared/chunk-BYNVZQKR.js", "/build/_shared/chunk-K6PKGSTD.js", "/build/_shared/chunk-O4OKU2LD.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-RFUD47U2.js", imports: ["/build/_shared/chunk-3TYC72KC.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-CFJ7SOHS.js", imports: ["/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-3NMVZ2XW.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles": { id: "routes/articles", parentId: "root", path: "articles", index: void 0, caseSensitive: void 0, module: "/build/routes/articles-E4PGKCSL.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js", "/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles.$slug": { id: "routes/articles.$slug", parentId: "routes/articles", path: ":slug", index: void 0, caseSensitive: void 0, module: "/build/routes/articles.$slug-2USNXE4B.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/courses": { id: "routes/courses", parentId: "root", path: "courses", index: void 0, caseSensitive: void 0, module: "/build/routes/courses-NT5HTTGX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/speaking": { id: "routes/speaking", parentId: "root", path: "speaking", index: void 0, caseSensitive: void 0, module: "/build/routes/speaking-WBF2GHV6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/uses": { id: "routes/uses", parentId: "root", path: "uses", index: void 0, caseSensitive: void 0, module: "/build/routes/uses-BY2EPHR3.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "289ca511", hmr: { runtime: "/build/_shared/chunk-BYNVZQKR.js", timestamp: 1689393749731 }, url: "/build/manifest-289CA511.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-SBXCQNVG.js", imports: ["/build/_shared/chunk-BA6NHEY4.js", "/build/_shared/chunk-H5ZE7JVG.js", "/build/_shared/chunk-ZPLGRDWL.js", "/build/_shared/chunk-SE6AVHRO.js", "/build/_shared/chunk-BYNVZQKR.js", "/build/_shared/chunk-K6PKGSTD.js", "/build/_shared/chunk-O4OKU2LD.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-UXZUDGON.js", imports: ["/build/_shared/chunk-Q7YSUAR5.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-IIMI5667.js", imports: ["/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-TCDTEWRN.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles.$slug": { id: "routes/articles.$slug", parentId: "root", path: "articles/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/articles.$slug-EWQ6KTNQ.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles._index": { id: "routes/articles._index", parentId: "root", path: "articles", index: !0, caseSensitive: void 0, module: "/build/routes/articles._index-7NO25UON.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js", "/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/courses": { id: "routes/courses", parentId: "root", path: "courses", index: void 0, caseSensitive: void 0, module: "/build/routes/courses-4RT7UNYW.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/speaking": { id: "routes/speaking", parentId: "root", path: "speaking", index: void 0, caseSensitive: void 0, module: "/build/routes/speaking-WBF2GHV6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/uses": { id: "routes/uses", parentId: "root", path: "uses", index: void 0, caseSensitive: void 0, module: "/build/routes/uses-BY2EPHR3.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "e6c57ed9", hmr: { runtime: "/build/_shared/chunk-BYNVZQKR.js", timestamp: 1689426761880 }, url: "/build/manifest-E6C57ED9.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, dev = { port: 3001 }, routes = {
@@ -3383,21 +3411,21 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
     caseSensitive: void 0,
     module: root_exports
   },
+  "routes/articles._index": {
+    id: "routes/articles._index",
+    parentId: "root",
+    path: "articles",
+    index: !0,
+    caseSensitive: void 0,
+    module: articles_index_exports
+  },
   "routes/articles.$slug": {
     id: "routes/articles.$slug",
-    parentId: "routes/articles",
-    path: ":slug",
+    parentId: "root",
+    path: "articles/:slug",
     index: void 0,
     caseSensitive: void 0,
     module: articles_slug_exports
-  },
-  "routes/articles": {
-    id: "routes/articles",
-    parentId: "root",
-    path: "articles",
-    index: void 0,
-    caseSensitive: void 0,
-    module: articles_exports
   },
   "routes/speaking": {
     id: "routes/speaking",

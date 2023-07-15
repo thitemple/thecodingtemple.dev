@@ -20,7 +20,7 @@ export async function loader({ request }: LoaderArgs) {
 
 function ArticleCard({ post }: { post: Post }) {
 	return (
-		<div className="flex flex-col gap-x-6 gap-y-4 py-8 md:rounded-md md:border md:border-slate-200 md:p-6 dark:md:border-pink-300/40 lg:px-8 lg:first:col-span-2">
+		<div className="flex flex-col gap-x-6 gap-y-4 py-4 md:rounded-md md:border md:border-slate-200 md:p-6 md:py-8 dark:md:border-pink-300/40 lg:px-8 lg:first:col-span-2">
 			<div>
 				<Link to={`/articles/${post.frontmatter.slug}`} className=" lg:mt-4">
 					<h2 className="font-heading text-2xl text-slate-700 dark:text-slate-200">

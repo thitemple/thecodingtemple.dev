@@ -23,11 +23,13 @@ export default function App() {
 			</head>
 			<body className="h-full">
 				<div className="bg-slate-100 dark:bg-zinc-900">
-					<main className="mx-auto max-w-5xl bg-white py-6 dark:bg-violet-900">
+					<div className="mx-auto max-w-5xl bg-white py-6 dark:bg-violet-900">
 						<Nav />
-						<Outlet />
+						<main className="py-2 md:py-4">
+							<Outlet />
+						</main>
 						<Footer />
-					</main>
+					</div>
 					<ScrollRestoration />
 					<Scripts />
 					<LiveReload />

@@ -17,8 +17,8 @@ export function Nav() {
 							src={TempleDarkMode}
 							className="hidden w-10 dark:block lg:hidden"
 						/>
-						<img src={Logo} className="hidden w-40 lg:block dark:lg:hidden" />
-						<img src={LogoDarkMode} className="hidden w-40 dark:lg:block" />
+						<img src={Logo} className="hidden w-48 lg:block dark:lg:hidden" />
+						<img src={LogoDarkMode} className="hidden w-48 dark:lg:block" />
 					</Link>
 					<div className="hidden w-full justify-end lg:flex">
 						<nav className="flex items-center gap-4 rounded-xl border border-slate-300 bg-white px-4 py-2 text-slate-600 shadow-md ring-1 ring-slate-300 dark:border-slate-400 dark:bg-violet-700 dark:text-slate-200 dark:ring-slate-400">

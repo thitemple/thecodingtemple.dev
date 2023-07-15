@@ -10,7 +10,7 @@ export function DesktopNavLink({
 	children: ReactNode;
 }) {
 	return (
-		<div className="h-full">
+		<div className="flex h-full items-center">
 			<NavLink
 				to={to}
 				className={({ isActive }) => {

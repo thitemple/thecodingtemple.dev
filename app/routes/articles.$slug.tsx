@@ -1,8 +1,9 @@
 import { LoaderArgs } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { useMemo } from "react";
-import { getMdxContent } from "~/utils/mdx.server";
 import { getMDXComponent } from "mdx-bundler/client";
+import { useMemo } from "react";
+import { Title } from "~/components";
+import { getMdxContent } from "~/utils/mdx.server";
 
 export async function loader({ params }: LoaderArgs) {
 	if (!params.slug) {
@@ -14,13 +15,16 @@ export async function loader({ params }: LoaderArgs) {
 }
 
 export default function BlogPostPage() {
-	const { code } = useLoaderData<typeof loader>();
+	const { code, frontmatter } = useLoaderData<typeof loader>();
 
 	const Component = useMemo(() => getMDXComponent(code), [code]);
 
 	return (
-		<article>
-			<Component />
+		<article className="grid gap-4 px-4 md:gap-y-6 md:px-6 lg:px-8">
+			<Title>{frontmatter.title}</Title>
+			<div className="flex flex-col gap-y-2 dark:text-slate-200 md:gap-y-6">
+				<Component />
+			</div>
 		</article>
 	);
 }
