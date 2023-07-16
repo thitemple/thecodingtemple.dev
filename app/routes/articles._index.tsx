@@ -27,7 +27,7 @@ function ArticleCard({ post }: { post: Post }) {
 						{post.frontmatter.title}
 					</h2>
 				</Link>
-				<p className="text-sm text-slate-400 lg:mt-2">
+				<p className="text-sm text-slate-500 dark:text-slate-400 lg:mt-2">
 					<PostMeta
 						date={post.frontmatter.date}
 						readTime={post.frontmatter.readTime}
@@ -37,6 +37,7 @@ function ArticleCard({ post }: { post: Post }) {
 			{post.frontmatter.thumbnail && (
 				<img
 					src={post.frontmatter.thumbnail}
+					alt={`Thumbnail for ${post.frontmatter.title}`}
 					className="w-full object-cover opacity-75  lg:pr-4"
 				/>
 			)}
