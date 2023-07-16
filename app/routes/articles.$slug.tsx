@@ -2,6 +2,7 @@ import { LinksFunction, LoaderArgs } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { getMDXComponent } from "mdx-bundler/client";
 import { useMemo } from "react";
+import articleStyles from "~/assets/css/article.page.css";
 import { Title } from "~/components";
 import { getMdxContent } from "~/utils/mdx.server";
 
@@ -9,6 +10,10 @@ export const links: LinksFunction = () => [
 	{
 		rel: "stylesheet",
 		href: "https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css",
+	},
+	{
+		rel: "stylesheet",
+		href: articleStyles,
 	},
 ];
 
