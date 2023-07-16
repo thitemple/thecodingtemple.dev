@@ -27,9 +27,11 @@ export default function BlogPostPage() {
 	const Component = useMemo(() => getMDXComponent(code), [code]);
 
 	return (
-		<article className="grid gap-4 px-4 md:gap-y-6 md:px-6 lg:px-8">
-			<Title>{frontmatter.title}</Title>
-			<div className="flex flex-col gap-y-2 dark:text-slate-200 md:gap-y-6">
+		<article className="article grid gap-4 px-4 md:gap-y-6 md:px-6 lg:px-8">
+			<Title className="mb-4 leading-10 underline decoration-violet-300 decoration-double decoration-4 underline-offset-8 dark:decoration-pink-500">
+				{frontmatter.title}
+			</Title>
+			<div className="flex flex-col gap-y-2 overflow-hidden dark:text-slate-200 md:gap-y-6">
 				<Component />
 			</div>
 		</article>
