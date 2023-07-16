@@ -33,28 +33,6 @@ var init_define_process_env_REMIX_DEV_HTTP_ORIGIN = __esm({
   }
 });
 
-// node_modules/.pnpm/fault@2.0.1/node_modules/fault/index.js
-function create(Constructor) {
-  return FormattedError.displayName = Constructor.displayName || Constructor.name, FormattedError;
-  function FormattedError(format, ...values) {
-    let reason = format && (0, import_format.default)(format, ...values);
-    return new Constructor(reason);
-  }
-}
-var import_format, fault, init_fault = __esm({
-  "node_modules/.pnpm/fault@2.0.1/node_modules/fault/index.js"() {
-    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-    import_format = __toESM(require("format"), 1), fault = Object.assign(create(Error), {
-      eval: create(EvalError),
-      range: create(RangeError),
-      reference: create(ReferenceError),
-      syntax: create(SyntaxError),
-      type: create(TypeError),
-      uri: create(URIError)
-    });
-  }
-});
-
 // node_modules/.pnpm/@babel+runtime@7.22.5/node_modules/@babel/runtime/helpers/interopRequireDefault.js
 var require_interopRequireDefault = __commonJS({
   "node_modules/.pnpm/@babel+runtime@7.22.5/node_modules/@babel/runtime/helpers/interopRequireDefault.js"(exports, module2) {
@@ -162,6 +140,28 @@ var asciiAlpha, asciiAlphanumeric, asciiAtext, asciiDigit, asciiHexDigit, asciiP
   }
 });
 
+// node_modules/.pnpm/fault@2.0.1/node_modules/fault/index.js
+function create(Constructor) {
+  return FormattedError.displayName = Constructor.displayName || Constructor.name, FormattedError;
+  function FormattedError(format, ...values) {
+    let reason = format && (0, import_format.default)(format, ...values);
+    return new Constructor(reason);
+  }
+}
+var import_format, fault, init_fault = __esm({
+  "node_modules/.pnpm/fault@2.0.1/node_modules/fault/index.js"() {
+    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
+    import_format = __toESM(require("format"), 1), fault = Object.assign(create(Error), {
+      eval: create(EvalError),
+      range: create(RangeError),
+      reference: create(ReferenceError),
+      syntax: create(SyntaxError),
+      type: create(TypeError),
+      uri: create(URIError)
+    });
+  }
+});
+
 // node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/matters.js
 function matters(options) {
   let result = [], index = -1, presetsOrMatters = Array.isArray(options) ? options : options ? [options] : ["yaml"];
@@ -172,7 +172,7 @@ function matters(options) {
 function matter(option) {
   let result = option;
   if (typeof result == "string") {
-    if (!own3.call(markers, result))
+    if (!own.call(markers, result))
       throw fault("Missing matter definition for `%s`", result);
     result = {
       type: result,
@@ -180,17 +180,17 @@ function matter(option) {
     };
   } else if (typeof result != "object")
     throw fault("Expected matter to be an object, not `%j`", result);
-  if (!own3.call(result, "type"))
+  if (!own.call(result, "type"))
     throw fault("Missing `type` in matter `%j`", result);
-  if (!own3.call(result, "fence") && !own3.call(result, "marker"))
+  if (!own.call(result, "fence") && !own.call(result, "marker"))
     throw fault("Missing `marker` or `fence` in matter `%j`", result);
   return result;
 }
-var own3, markers, init_matters = __esm({
+var own, markers, init_matters = __esm({
   "node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/matters.js"() {
     init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     init_fault();
-    own3 = {}.hasOwnProperty, markers = {
+    own = {}.hasOwnProperty, markers = {
       yaml: "-",
       toml: "+"
     };
@@ -773,7 +773,7 @@ init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_react9 = require("@remix-run/react");
 
 // app/assets/css/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-GLYJUCAL.css";
+var tailwind_default = "/build/_assets/tailwind-RL5I7GAJ.css";
 
 // app/components/index.ts
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
@@ -1405,278 +1405,21 @@ var import_react10 = require("@remix-run/react"), import_clsx5 = require("clsx")
 
 // app/utils/mdx.server.ts
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var import_path = __toESM(require("path"));
+var import_rehype_prism = __toESM(require("@mapbox/rehype-prism")), import_fast_glob = __toESM(require("fast-glob")), import_path = __toESM(require("path"));
 
-// node_modules/.pnpm/rehype-highlight@6.0.0/node_modules/rehype-highlight/index.js
+// node_modules/.pnpm/remark-mdx-images@2.0.0/node_modules/remark-mdx-images/index.js
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
-// node_modules/.pnpm/rehype-highlight@6.0.0/node_modules/rehype-highlight/lib/index.js
+// node_modules/.pnpm/unist-util-visit@4.1.2/node_modules/unist-util-visit/index.js
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
-// node_modules/.pnpm/lowlight@2.9.0/node_modules/lowlight/index.js
+// node_modules/.pnpm/unist-util-visit@4.1.2/node_modules/unist-util-visit/lib/index.js
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
-// node_modules/.pnpm/lowlight@2.9.0/node_modules/lowlight/lib/common.js
-init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var import_arduino = __toESM(require("highlight.js/lib/languages/arduino"), 1), import_bash = __toESM(require("highlight.js/lib/languages/bash"), 1), import_c = __toESM(require("highlight.js/lib/languages/c"), 1), import_cpp = __toESM(require("highlight.js/lib/languages/cpp"), 1), import_csharp = __toESM(require("highlight.js/lib/languages/csharp"), 1), import_css = __toESM(require("highlight.js/lib/languages/css"), 1), import_diff = __toESM(require("highlight.js/lib/languages/diff"), 1), import_go = __toESM(require("highlight.js/lib/languages/go"), 1), import_graphql = __toESM(require("highlight.js/lib/languages/graphql"), 1), import_ini = __toESM(require("highlight.js/lib/languages/ini"), 1), import_java = __toESM(require("highlight.js/lib/languages/java"), 1), import_javascript = __toESM(require("highlight.js/lib/languages/javascript"), 1), import_json = __toESM(require("highlight.js/lib/languages/json"), 1), import_kotlin = __toESM(require("highlight.js/lib/languages/kotlin"), 1), import_less = __toESM(require("highlight.js/lib/languages/less"), 1), import_lua = __toESM(require("highlight.js/lib/languages/lua"), 1), import_makefile = __toESM(require("highlight.js/lib/languages/makefile"), 1), import_markdown = __toESM(require("highlight.js/lib/languages/markdown"), 1), import_objectivec = __toESM(require("highlight.js/lib/languages/objectivec"), 1), import_perl = __toESM(require("highlight.js/lib/languages/perl"), 1), import_php = __toESM(require("highlight.js/lib/languages/php"), 1), import_php_template = __toESM(require("highlight.js/lib/languages/php-template"), 1), import_plaintext = __toESM(require("highlight.js/lib/languages/plaintext"), 1), import_python = __toESM(require("highlight.js/lib/languages/python"), 1), import_python_repl = __toESM(require("highlight.js/lib/languages/python-repl"), 1), import_r = __toESM(require("highlight.js/lib/languages/r"), 1), import_ruby = __toESM(require("highlight.js/lib/languages/ruby"), 1), import_rust = __toESM(require("highlight.js/lib/languages/rust"), 1), import_scss = __toESM(require("highlight.js/lib/languages/scss"), 1), import_shell = __toESM(require("highlight.js/lib/languages/shell"), 1), import_sql = __toESM(require("highlight.js/lib/languages/sql"), 1), import_swift = __toESM(require("highlight.js/lib/languages/swift"), 1), import_typescript = __toESM(require("highlight.js/lib/languages/typescript"), 1), import_vbnet = __toESM(require("highlight.js/lib/languages/vbnet"), 1), import_wasm = __toESM(require("highlight.js/lib/languages/wasm"), 1), import_xml = __toESM(require("highlight.js/lib/languages/xml"), 1), import_yaml = __toESM(require("highlight.js/lib/languages/yaml"), 1);
-
-// node_modules/.pnpm/lowlight@2.9.0/node_modules/lowlight/lib/core.js
-init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var import_core = __toESM(require("highlight.js/lib/core"), 1);
-init_fault();
-var own = {}.hasOwnProperty, defaultPrefix = "hljs-";
-function highlight(language2, value2, options = {}) {
-  let prefix = options.prefix;
-  if (typeof language2 != "string")
-    throw fault("Expected `string` for name, got `%s`", language2);
-  if (!import_core.default.getLanguage(language2))
-    throw fault("Unknown language: `%s` is not registered", language2);
-  if (typeof value2 != "string")
-    throw fault("Expected `string` for value, got `%s`", value2);
-  prefix == null && (prefix = defaultPrefix), import_core.default.configure({ __emitter: HastEmitter, classPrefix: prefix });
-  let result = (
-    /** @type {HighlightResult & {_emitter: HastEmitter}} */
-    import_core.default.highlight(value2, { language: language2, ignoreIllegals: !0 })
-  );
-  if (import_core.default.configure({}), result.errorRaised)
-    throw result.errorRaised;
-  return result._emitter.root.data.language = result.language, result._emitter.root.data.relevance = result.relevance, result._emitter.root;
-}
-function highlightAuto(value2, options = {}) {
-  let subset = options.subset || import_core.default.listLanguages(), prefix = options.prefix, index = -1, result = {
-    type: "root",
-    data: { language: null, relevance: 0 },
-    children: []
-  };
-  if (prefix == null && (prefix = defaultPrefix), typeof value2 != "string")
-    throw fault("Expected `string` for value, got `%s`", value2);
-  for (; ++index < subset.length; ) {
-    let name = subset[index];
-    if (!import_core.default.getLanguage(name))
-      continue;
-    let current = highlight(name, value2, options);
-    current.data.relevance > result.data.relevance && (result = current);
-  }
-  return result;
-}
-function registerLanguage(language2, syntax) {
-  import_core.default.registerLanguage(language2, syntax);
-}
-var registerAlias = (
-  /**
-   * @type {(
-   *   ((language: string, alias: string|Array<string>) => void) &
-   *   ((aliases: Record<string, string|Array<string>>) => void)
-   * )}
-   */
-  /**
-   * @param {string|Record<string, string|Array<string>>} language
-   * @param {string|Array<string>} [alias]
-   * @returns {void}
-   */
-  function(language2, alias) {
-    if (typeof language2 == "string")
-      import_core.default.registerAliases(alias, { languageName: language2 });
-    else {
-      let key;
-      for (key in language2)
-        own.call(language2, key) && import_core.default.registerAliases(language2[key], { languageName: key });
-    }
-  }
-);
-function registered(aliasOrLanguage) {
-  return Boolean(import_core.default.getLanguage(aliasOrLanguage));
-}
-function listLanguages() {
-  return import_core.default.listLanguages();
-}
-var HastEmitter = class {
-  /**
-   * @param {HighlightOptions} options
-   */
-  constructor(options) {
-    this.options = options, this.root = {
-      type: "root",
-      data: { language: null, relevance: 0 },
-      children: []
-    }, this.stack = [this.root];
-  }
-  /**
-   * @param {string} value
-   */
-  addText(value2) {
-    if (value2 === "")
-      return;
-    let current = this.stack[this.stack.length - 1], tail = current.children[current.children.length - 1];
-    tail && tail.type === "text" ? tail.value += value2 : current.children.push({ type: "text", value: value2 });
-  }
-  /**
-   *
-   * @param {unknown} rawName
-   */
-  startScope(rawName) {
-    this.openNode(String(rawName));
-  }
-  /**
-   */
-  endScope() {
-    this.closeNode();
-  }
-  /**
-   * @param {HastEmitter} other
-   * @param {string} name
-   */
-  __addSublanguage(other, name) {
-    let current = this.stack[this.stack.length - 1], results = other.root.children;
-    name ? current.children.push({
-      type: "element",
-      tagName: "span",
-      properties: { className: [name] },
-      children: results
-    }) : current.children.push(...results);
-  }
-  /**
-   * @param {string} name
-   */
-  openNode(name) {
-    let className = name.split(".").map((d, i) => i ? d + "_".repeat(i) : this.options.classPrefix + d), current = this.stack[this.stack.length - 1], child = {
-      type: "element",
-      tagName: "span",
-      properties: { className },
-      children: []
-    };
-    current.children.push(child), this.stack.push(child);
-  }
-  /**
-   */
-  closeNode() {
-    this.stack.pop();
-  }
-  /**
-   */
-  finalize() {
-  }
-  /**
-   */
-  toHTML() {
-    return "";
-  }
-}, lowlight = {
-  highlight,
-  highlightAuto,
-  registerLanguage,
-  registered,
-  listLanguages,
-  registerAlias
-};
-
-// node_modules/.pnpm/lowlight@2.9.0/node_modules/lowlight/lib/common.js
-lowlight.registerLanguage("arduino", import_arduino.default);
-lowlight.registerLanguage("bash", import_bash.default);
-lowlight.registerLanguage("c", import_c.default);
-lowlight.registerLanguage("cpp", import_cpp.default);
-lowlight.registerLanguage("csharp", import_csharp.default);
-lowlight.registerLanguage("css", import_css.default);
-lowlight.registerLanguage("diff", import_diff.default);
-lowlight.registerLanguage("go", import_go.default);
-lowlight.registerLanguage("graphql", import_graphql.default);
-lowlight.registerLanguage("ini", import_ini.default);
-lowlight.registerLanguage("java", import_java.default);
-lowlight.registerLanguage("javascript", import_javascript.default);
-lowlight.registerLanguage("json", import_json.default);
-lowlight.registerLanguage("kotlin", import_kotlin.default);
-lowlight.registerLanguage("less", import_less.default);
-lowlight.registerLanguage("lua", import_lua.default);
-lowlight.registerLanguage("makefile", import_makefile.default);
-lowlight.registerLanguage("markdown", import_markdown.default);
-lowlight.registerLanguage("objectivec", import_objectivec.default);
-lowlight.registerLanguage("perl", import_perl.default);
-lowlight.registerLanguage("php", import_php.default);
-lowlight.registerLanguage("php-template", import_php_template.default);
-lowlight.registerLanguage("plaintext", import_plaintext.default);
-lowlight.registerLanguage("python", import_python.default);
-lowlight.registerLanguage("python-repl", import_python_repl.default);
-lowlight.registerLanguage("r", import_r.default);
-lowlight.registerLanguage("ruby", import_ruby.default);
-lowlight.registerLanguage("rust", import_rust.default);
-lowlight.registerLanguage("scss", import_scss.default);
-lowlight.registerLanguage("shell", import_shell.default);
-lowlight.registerLanguage("sql", import_sql.default);
-lowlight.registerLanguage("swift", import_swift.default);
-lowlight.registerLanguage("typescript", import_typescript.default);
-lowlight.registerLanguage("vbnet", import_vbnet.default);
-lowlight.registerLanguage("wasm", import_wasm.default);
-lowlight.registerLanguage("xml", import_xml.default);
-lowlight.registerLanguage("yaml", import_yaml.default);
-
-// node_modules/.pnpm/hast-util-to-text@3.1.2/node_modules/hast-util-to-text/index.js
+// node_modules/.pnpm/unist-util-visit-parents@5.1.3/node_modules/unist-util-visit-parents/index.js
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
-// node_modules/.pnpm/hast-util-to-text@3.1.2/node_modules/hast-util-to-text/lib/index.js
-init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-
-// node_modules/.pnpm/hast-util-is-element@2.1.3/node_modules/hast-util-is-element/index.js
-init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var convertElement = (
-  /**
-   * @type {(
-   *   (<T extends Element>(test: T['tagName'] | TestFunctionPredicate<T>) => AssertPredicate<T>) &
-   *   ((test?: Test) => AssertAnything)
-   * )}
-   */
-  /**
-   * @param {Test | null | undefined} [test]
-   * @returns {AssertAnything}
-   */
-  function(test) {
-    if (test == null)
-      return element;
-    if (typeof test == "string")
-      return tagNameFactory(test);
-    if (typeof test == "object")
-      return anyFactory(test);
-    if (typeof test == "function")
-      return castFactory(test);
-    throw new Error("Expected function, string, or array as test");
-  }
-);
-function anyFactory(tests) {
-  let checks = [], index = -1;
-  for (; ++index < tests.length; )
-    checks[index] = convertElement(tests[index]);
-  return castFactory(any);
-  function any(...parameters) {
-    let index2 = -1;
-    for (; ++index2 < checks.length; )
-      if (checks[index2].call(this, ...parameters))
-        return !0;
-    return !1;
-  }
-}
-function tagNameFactory(check) {
-  return tagName;
-  function tagName(node) {
-    return element(node) && node.tagName === check;
-  }
-}
-function castFactory(check) {
-  return assertion;
-  function assertion(node, ...parameters) {
-    return element(node) && Boolean(check.call(this, node, ...parameters));
-  }
-}
-function element(node) {
-  return Boolean(
-    node && typeof node == "object" && // @ts-expect-error Looks like a node.
-    node.type === "element" && // @ts-expect-error Looks like an element.
-    typeof node.tagName == "string"
-  );
-}
-
-// node_modules/.pnpm/unist-util-find-after@4.0.1/node_modules/unist-util-find-after/index.js
-init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-
-// node_modules/.pnpm/unist-util-find-after@4.0.1/node_modules/unist-util-find-after/lib/index.js
+// node_modules/.pnpm/unist-util-visit-parents@5.1.3/node_modules/unist-util-visit-parents/lib/index.js
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
 // node_modules/.pnpm/unist-util-is@5.2.1/node_modules/unist-util-is/index.js
@@ -1701,17 +1444,17 @@ var convert = (
     if (typeof test == "string")
       return typeFactory(test);
     if (typeof test == "object")
-      return Array.isArray(test) ? anyFactory2(test) : propsFactory(test);
+      return Array.isArray(test) ? anyFactory(test) : propsFactory(test);
     if (typeof test == "function")
-      return castFactory2(test);
+      return castFactory(test);
     throw new Error("Expected function, string, or object as test");
   }
 );
-function anyFactory2(tests) {
+function anyFactory(tests) {
   let checks = [], index = -1;
   for (; ++index < tests.length; )
     checks[index] = convert(tests[index]);
-  return castFactory2(any);
+  return castFactory(any);
   function any(...parameters) {
     let index2 = -1;
     for (; ++index2 < checks.length; )
@@ -1721,7 +1464,7 @@ function anyFactory2(tests) {
   }
 }
 function propsFactory(check) {
-  return castFactory2(all);
+  return castFactory(all);
   function all(node) {
     let key;
     for (key in check)
@@ -1731,12 +1474,12 @@ function propsFactory(check) {
   }
 }
 function typeFactory(check) {
-  return castFactory2(type);
+  return castFactory(type);
   function type(node) {
     return node && node.type === check;
   }
 }
-function castFactory2(check) {
+function castFactory(check) {
   return assertion;
   function assertion(node, ...parameters) {
     return Boolean(
@@ -1748,261 +1491,6 @@ function castFactory2(check) {
 function ok() {
   return !0;
 }
-
-// node_modules/.pnpm/unist-util-find-after@4.0.1/node_modules/unist-util-find-after/lib/index.js
-var findAfter = (
-  /**
-   * @type {(
-   *  (<T extends Node>(node: Parent, index: Node | number, test: import('unist-util-is').PredicateTest<T>) => T | null) &
-   *  ((node: Parent, index: Node | number, test?: Test) => Node | null)
-   * )}
-   */
-  /**
-   * @param {Parent} parent
-   * @param {Node | number} index
-   * @param {Test} [test]
-   * @returns {Node | null}
-   */
-  function(parent, index, test) {
-    let is2 = convert(test);
-    if (!parent || !parent.type || !parent.children)
-      throw new Error("Expected parent node");
-    if (typeof index == "number") {
-      if (index < 0 || index === Number.POSITIVE_INFINITY)
-        throw new Error("Expected positive finite number as index");
-    } else if (index = parent.children.indexOf(index), index < 0)
-      throw new Error("Expected child node or index");
-    for (; ++index < parent.children.length; )
-      if (is2(parent.children[index], index, parent))
-        return parent.children[index];
-    return null;
-  }
-);
-
-// node_modules/.pnpm/hast-util-to-text@3.1.2/node_modules/hast-util-to-text/lib/index.js
-var searchLineFeeds = /\n/g, searchTabOrSpaces = /[\t ]+/g, br = convertElement("br"), p = convertElement("p"), cell = convertElement(["th", "td"]), row = convertElement("tr"), notRendered = convertElement(
-  [
-    // List from: <https://html.spec.whatwg.org/#hidden-elements>
-    "datalist",
-    "head",
-    "noembed",
-    "noframes",
-    "noscript",
-    // Act as if we support scripting.
-    "rp",
-    "script",
-    "style",
-    "template",
-    "title",
-    // Hidden attribute.
-    hidden,
-    // From: <https://html.spec.whatwg.org/#flow-content-3>
-    closedDialog
-  ]
-), blockOrCaption = convertElement([
-  "address",
-  // Flow content
-  "article",
-  // Sections and headings
-  "aside",
-  // Sections and headings
-  "blockquote",
-  // Flow content
-  "body",
-  // Page
-  "caption",
-  // `table-caption`
-  "center",
-  // Flow content (legacy)
-  "dd",
-  // Lists
-  "dialog",
-  // Flow content
-  "dir",
-  // Lists (legacy)
-  "dl",
-  // Lists
-  "dt",
-  // Lists
-  "div",
-  // Flow content
-  "figure",
-  // Flow content
-  "figcaption",
-  // Flow content
-  "footer",
-  // Flow content
-  "form,",
-  // Flow content
-  "h1",
-  // Sections and headings
-  "h2",
-  // Sections and headings
-  "h3",
-  // Sections and headings
-  "h4",
-  // Sections and headings
-  "h5",
-  // Sections and headings
-  "h6",
-  // Sections and headings
-  "header",
-  // Flow content
-  "hgroup",
-  // Sections and headings
-  "hr",
-  // Flow content
-  "html",
-  // Page
-  "legend",
-  // Flow content
-  "listing",
-  // Flow content (legacy)
-  "main",
-  // Flow content
-  "menu",
-  // Lists
-  "nav",
-  // Sections and headings
-  "ol",
-  // Lists
-  "p",
-  // Flow content
-  "plaintext",
-  // Flow content (legacy)
-  "pre",
-  // Flow content
-  "section",
-  // Sections and headings
-  "ul",
-  // Lists
-  "xmp"
-  // Flow content (legacy)
-]);
-function toText(tree, options = {}) {
-  let children = "children" in tree ? tree.children : [], block = blockOrCaption(tree), whitespace = inferWhitespace(tree, {
-    whitespace: options.whitespace || "normal",
-    breakBefore: !1,
-    breakAfter: !1
-  }), results = [];
-  (tree.type === "text" || tree.type === "comment") && results.push(
-    ...collectText(tree, {
-      whitespace,
-      breakBefore: !0,
-      breakAfter: !0
-    })
-  );
-  let index = -1;
-  for (; ++index < children.length; )
-    results.push(
-      ...innerTextCollection(children[index], tree, {
-        whitespace,
-        breakBefore: index ? void 0 : block,
-        breakAfter: index < children.length - 1 ? br(children[index + 1]) : block
-      })
-    );
-  let result = [], count;
-  for (index = -1; ++index < results.length; ) {
-    let value2 = results[index];
-    typeof value2 == "number" ? count !== void 0 && value2 > count && (count = value2) : value2 && (count !== void 0 && count > -1 && result.push(`
-`.repeat(count) || " "), count = -1, result.push(value2));
-  }
-  return result.join("");
-}
-function innerTextCollection(node, parent, info) {
-  return node.type === "element" ? collectElement(node, parent, info) : node.type === "text" ? info.whitespace === "normal" ? collectText(node, info) : collectPreText(node) : [];
-}
-function collectElement(node, parent, info) {
-  let whitespace = inferWhitespace(node, info), children = node.children || [], index = -1, items = [];
-  if (notRendered(node))
-    return items;
-  let prefix, suffix;
-  for (br(node) || row(node) && findAfter(parent, node, row) ? suffix = `
-` : p(node) ? (prefix = 2, suffix = 2) : blockOrCaption(node) && (prefix = 1, suffix = 1); ++index < children.length; )
-    items = items.concat(
-      innerTextCollection(children[index], node, {
-        whitespace,
-        breakBefore: index ? void 0 : prefix,
-        breakAfter: index < children.length - 1 ? br(children[index + 1]) : suffix
-      })
-    );
-  return cell(node) && findAfter(parent, node, cell) && items.push("	"), prefix && items.unshift(prefix), suffix && items.push(suffix), items;
-}
-function collectText(node, info) {
-  let value2 = String(node.value), lines = [], result = [], start = 0;
-  for (; start <= value2.length; ) {
-    searchLineFeeds.lastIndex = start;
-    let match = searchLineFeeds.exec(value2), end = match && "index" in match ? match.index : value2.length;
-    lines.push(
-      // Any sequence of collapsible spaces and tabs immediately preceding or
-      // following a segment break is removed.
-      trimAndCollapseSpacesAndTabs(
-        // […] ignoring bidi formatting characters (characters with the
-        // Bidi_Control property [UAX9]: ALM, LTR, RTL, LRE-RLO, LRI-PDI) as if
-        // they were not there.
-        value2.slice(start, end).replace(/[\u061C\u200E\u200F\u202A-\u202E\u2066-\u2069]/g, ""),
-        start === 0 ? info.breakBefore : !0,
-        end === value2.length ? info.breakAfter : !0
-      )
-    ), start = end + 1;
-  }
-  let index = -1, join;
-  for (; ++index < lines.length; )
-    lines[index].charCodeAt(lines[index].length - 1) === 8203 || index < lines.length - 1 && lines[index + 1].charCodeAt(0) === 8203 ? (result.push(lines[index]), join = void 0) : lines[index] ? (typeof join == "number" && result.push(join), result.push(lines[index]), join = 0) : (index === 0 || index === lines.length - 1) && result.push(0);
-  return result;
-}
-function collectPreText(node) {
-  return [String(node.value)];
-}
-function trimAndCollapseSpacesAndTabs(value2, breakBefore, breakAfter) {
-  let result = [], start = 0, end;
-  for (; start < value2.length; ) {
-    searchTabOrSpaces.lastIndex = start;
-    let match = searchTabOrSpaces.exec(value2);
-    end = match ? match.index : value2.length, !start && !end && match && !breakBefore && result.push(""), start !== end && result.push(value2.slice(start, end)), start = match ? end + match[0].length : end;
-  }
-  return start !== end && !breakAfter && result.push(""), result.join(" ");
-}
-function inferWhitespace(node, info) {
-  if (node.type === "element") {
-    let props = node.properties || {};
-    switch (node.tagName) {
-      case "listing":
-      case "plaintext":
-      case "xmp":
-        return "pre";
-      case "nobr":
-        return "nowrap";
-      case "pre":
-        return props.wrap ? "pre-wrap" : "pre";
-      case "td":
-      case "th":
-        return props.noWrap ? "nowrap" : info.whitespace;
-      case "textarea":
-        return "pre-wrap";
-      default:
-    }
-  }
-  return info.whitespace;
-}
-function hidden(node) {
-  return Boolean((node.properties || {}).hidden);
-}
-function closedDialog(node) {
-  return node.tagName === "dialog" && !(node.properties || {}).open;
-}
-
-// node_modules/.pnpm/unist-util-visit@4.1.2/node_modules/unist-util-visit/index.js
-init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-
-// node_modules/.pnpm/unist-util-visit@4.1.2/node_modules/unist-util-visit/lib/index.js
-init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-
-// node_modules/.pnpm/unist-util-visit-parents@5.1.3/node_modules/unist-util-visit-parents/index.js
-init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-
-// node_modules/.pnpm/unist-util-visit-parents@5.1.3/node_modules/unist-util-visit-parents/lib/index.js
-init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
 // node_modules/.pnpm/unist-util-visit-parents@5.1.3/node_modules/unist-util-visit-parents/lib/color.js
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
@@ -2091,62 +1579,7 @@ var visit = (
   }
 );
 
-// node_modules/.pnpm/rehype-highlight@6.0.0/node_modules/rehype-highlight/lib/index.js
-var own2 = {}.hasOwnProperty;
-function rehypeHighlight(options = {}) {
-  let { aliases, languages, prefix, plainText, ignoreMissing, subset, detect } = options, name = "hljs";
-  if (aliases && lowlight.registerAlias(aliases), languages) {
-    let key;
-    for (key in languages)
-      own2.call(languages, key) && lowlight.registerLanguage(key, languages[key]);
-  }
-  if (prefix) {
-    let pos = prefix.indexOf("-");
-    name = pos > -1 ? prefix.slice(0, pos) : prefix;
-  }
-  return (tree, file) => {
-    visit(tree, "element", (node, _, givenParent) => {
-      let parent = (
-        /** @type {Node?} */
-        givenParent
-      );
-      if (!parent || !("tagName" in parent) || parent.tagName !== "pre" || node.tagName !== "code" || !node.properties)
-        return;
-      let lang = language(node);
-      if (lang === !1 || !lang && !detect || lang && plainText && plainText.includes(lang))
-        return;
-      Array.isArray(node.properties.className) || (node.properties.className = []), node.properties.className.includes(name) || node.properties.className.unshift(name);
-      let result;
-      try {
-        result = lang ? lowlight.highlight(lang, toText(parent), { prefix }) : lowlight.highlightAuto(toText(parent), { prefix, subset });
-      } catch (error) {
-        let exception = (
-          /** @type {Error} */
-          error
-        );
-        (!ignoreMissing || !/Unknown language/.test(exception.message)) && file.fail(exception, node, "rehype-highlight:missing-language");
-        return;
-      }
-      !lang && result.data.language && node.properties.className.push("language-" + result.data.language), Array.isArray(result.children) && result.children.length > 0 && (node.children = result.children);
-    });
-  };
-}
-function language(node) {
-  let className = node.properties && node.properties.className, index = -1;
-  if (Array.isArray(className))
-    for (; ++index < className.length; ) {
-      let value2 = String(className[index]);
-      if (value2 === "no-highlight" || value2 === "nohighlight")
-        return !1;
-      if (value2.slice(0, 5) === "lang-")
-        return value2.slice(5);
-      if (value2.slice(0, 9) === "language-")
-        return value2.slice(9);
-    }
-}
-
 // node_modules/.pnpm/remark-mdx-images@2.0.0/node_modules/remark-mdx-images/index.js
-init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var urlPattern = /^(https?:)?\//, relativePathPattern = /\.\.?\//, remarkMdxImages = ({ resolve = !0 } = {}) => (ast) => {
   let imports = [], imported = /* @__PURE__ */ new Map();
   visit(ast, "image", (node, index, parent) => {
@@ -2206,7 +1639,7 @@ var urlPattern = /^(https?:)?\//, relativePathPattern = /\.\.?\//, remarkMdxImag
 }, remark_mdx_images_default = remarkMdxImages;
 
 // app/utils/mdx.server.ts
-var import_fast_glob = __toESM(require("fast-glob")), import_mdx_bundler = __toESM(require_dist2());
+var import_mdx_bundler = __toESM(require_dist2());
 process.env.ESBUILD_BINARY_PATH = import_path.default.join(
   process.cwd(),
   "node_modules",
@@ -2221,7 +1654,7 @@ function getMdxContentForFile(pathToFile) {
     mdxOptions: (options) => (options.remarkPlugins = [
       ...options.remarkPlugins ?? [],
       remark_mdx_images_default
-    ], options.rehypePlugins = [rehypeHighlight], options),
+    ], options.rehypePlugins = [import_rehype_prism.default], options),
     esbuildOptions: (options) => (options.loader = {
       ...options.loader,
       ".png": "dataurl",
@@ -2236,7 +1669,9 @@ async function getMdxContent(slug) {
 }
 async function getPaginatedPosts(page, postsPerPage) {
   let posts = await getPosts();
-  posts.sort((a, b) => Number(new Date(b.frontmatter.date)) - Number(new Date(a.frontmatter.date)));
+  posts.sort(
+    (a, b) => Number(new Date(b.frontmatter.date)) - Number(new Date(a.frontmatter.date))
+  );
   let numPages = Math.ceil(posts.length / postsPerPage);
   return {
     posts: posts.slice(
@@ -2548,11 +1983,17 @@ function ArticlesPage() {
 var articles_slug_exports = {};
 __export(articles_slug_exports, {
   default: () => BlogPostPage,
+  links: () => links2,
   loader: () => loader2
 });
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_react11 = require("@remix-run/react"), import_client = __toESM(require_client2()), import_react12 = require("react");
-var import_jsx_dev_runtime11 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime11 = require("react/jsx-dev-runtime"), links2 = () => [
+  {
+    rel: "stylesheet",
+    href: "https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+  }
+];
 async function loader2({ params }) {
   if (!params.slug)
     throw new Error("Slug not found");
@@ -2564,22 +2005,22 @@ function BlogPostPage() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("article", { className: "grid gap-4 px-4 md:gap-y-6 md:px-6 lg:px-8", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(Title, { children: frontmatter2.title }, void 0, !1, {
       fileName: "app/routes/articles.$slug.tsx",
-      lineNumber: 24,
+      lineNumber: 31,
       columnNumber: 4
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)("div", { className: "flex flex-col gap-y-2 dark:text-slate-200 md:gap-y-6", children: /* @__PURE__ */ (0, import_jsx_dev_runtime11.jsxDEV)(Component, {}, void 0, !1, {
       fileName: "app/routes/articles.$slug.tsx",
-      lineNumber: 26,
+      lineNumber: 33,
       columnNumber: 5
     }, this) }, void 0, !1, {
       fileName: "app/routes/articles.$slug.tsx",
-      lineNumber: 25,
+      lineNumber: 32,
       columnNumber: 4
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/articles.$slug.tsx",
-    lineNumber: 23,
-    columnNumber: 3
+    lineNumber: 30,
+    columnNumber: 5
   }, this);
 }
 
@@ -3399,7 +2840,7 @@ function UsesPage() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var assets_manifest_default = { entry: { module: "/build/entry.client-SBXCQNVG.js", imports: ["/build/_shared/chunk-BA6NHEY4.js", "/build/_shared/chunk-H5ZE7JVG.js", "/build/_shared/chunk-ZPLGRDWL.js", "/build/_shared/chunk-SE6AVHRO.js", "/build/_shared/chunk-BYNVZQKR.js", "/build/_shared/chunk-K6PKGSTD.js", "/build/_shared/chunk-O4OKU2LD.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-R6V6R36E.js", imports: ["/build/_shared/chunk-PRO7SOU6.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-3T32RKPY.js", imports: ["/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-TGY3DGPF.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles.$slug": { id: "routes/articles.$slug", parentId: "root", path: "articles/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/articles.$slug-2GW5FIDE.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles._index": { id: "routes/articles._index", parentId: "root", path: "articles", index: !0, caseSensitive: void 0, module: "/build/routes/articles._index-JX6QURNC.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js", "/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/courses": { id: "routes/courses", parentId: "root", path: "courses", index: void 0, caseSensitive: void 0, module: "/build/routes/courses-3CDZB32A.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/speaking": { id: "routes/speaking", parentId: "root", path: "speaking", index: void 0, caseSensitive: void 0, module: "/build/routes/speaking-WBF2GHV6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/uses": { id: "routes/uses", parentId: "root", path: "uses", index: void 0, caseSensitive: void 0, module: "/build/routes/uses-BY2EPHR3.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "bb002aa8", hmr: { runtime: "/build/_shared/chunk-BYNVZQKR.js", timestamp: 1689432249559 }, url: "/build/manifest-BB002AA8.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-SBXCQNVG.js", imports: ["/build/_shared/chunk-BA6NHEY4.js", "/build/_shared/chunk-H5ZE7JVG.js", "/build/_shared/chunk-ZPLGRDWL.js", "/build/_shared/chunk-SE6AVHRO.js", "/build/_shared/chunk-BYNVZQKR.js", "/build/_shared/chunk-K6PKGSTD.js", "/build/_shared/chunk-O4OKU2LD.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-YC45BNQJ.js", imports: ["/build/_shared/chunk-PRO7SOU6.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-3T32RKPY.js", imports: ["/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-TGY3DGPF.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles.$slug": { id: "routes/articles.$slug", parentId: "root", path: "articles/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/articles.$slug-YS6RUUKM.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles._index": { id: "routes/articles._index", parentId: "root", path: "articles", index: !0, caseSensitive: void 0, module: "/build/routes/articles._index-JX6QURNC.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js", "/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/courses": { id: "routes/courses", parentId: "root", path: "courses", index: void 0, caseSensitive: void 0, module: "/build/routes/courses-3CDZB32A.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/speaking": { id: "routes/speaking", parentId: "root", path: "speaking", index: void 0, caseSensitive: void 0, module: "/build/routes/speaking-WBF2GHV6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/uses": { id: "routes/uses", parentId: "root", path: "uses", index: void 0, caseSensitive: void 0, module: "/build/routes/uses-BY2EPHR3.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "fec94a4f", hmr: { runtime: "/build/_shared/chunk-BYNVZQKR.js", timestamp: 1689470457742 }, url: "/build/manifest-FEC94A4F.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, dev = { port: 3001 }, routes = {

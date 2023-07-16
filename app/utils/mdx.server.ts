@@ -1,17 +1,17 @@
-import path from "path";
-import rehypeHighlight from "rehype-highlight";
-import remarkMdxImages from "remark-mdx-images";
+import rehypePrism from "@mapbox/rehype-prism";
 import fg from "fast-glob";
+import path from "path";
+import remarkMdxImages from "remark-mdx-images";
 
 import { bundleMDX } from "mdx-bundler";
 
 process.env.ESBUILD_BINARY_PATH = path.join(
 	process.cwd(),
-	'node_modules',
-	'esbuild',
-	'bin',
-	'esbuild',
-)
+	"node_modules",
+	"esbuild",
+	"bin",
+	"esbuild",
+);
 
 export interface PostFrontMatter {
 	title: string;
@@ -29,7 +29,7 @@ export interface PostFrontMatter {
 export interface Post {
 	code: string;
 	frontmatter: PostFrontMatter;
-};
+}
 
 export function getMdxContentForFile(pathToFile: string) {
 	return bundleMDX<PostFrontMatter>({
@@ -40,7 +40,7 @@ export function getMdxContentForFile(pathToFile: string) {
 				...(options.remarkPlugins ?? []),
 				remarkMdxImages,
 			];
-			options.rehypePlugins = [rehypeHighlight];
+			options.rehypePlugins = [rehypePrism];
 			return options;
 		},
 		esbuildOptions: options => {
@@ -61,20 +61,22 @@ export async function getMdxContent(slug: string) {
 	return getMdxContentForFile(pathToContent);
 }
 
-
-
 export async function getPaginatedPosts(
 	page: number,
-	postsPerPage: number
+	postsPerPage: number,
 ): Promise<{ posts: Post[]; numPages: number }> {
 	const posts = await getPosts();
-	posts.sort((a, b) => Number(new Date(b.frontmatter.date)) - Number(new Date(a.frontmatter.date)));
+	posts.sort(
+		(a, b) =>
+			Number(new Date(b.frontmatter.date)) -
+			Number(new Date(a.frontmatter.date)),
+	);
 
 	const numPages = Math.ceil(posts.length / postsPerPage);
 
 	const paginatedPosts = posts.slice(
 		(page - 1) * postsPerPage,
-		page * postsPerPage
+		page * postsPerPage,
 	);
 
 	return {
@@ -94,9 +96,8 @@ async function getPosts(): Promise<Post[]> {
 				code,
 				frontmatter,
 			};
-		})
+		}),
 	);
 
 	return postsWithFrontMatter;
 }
-

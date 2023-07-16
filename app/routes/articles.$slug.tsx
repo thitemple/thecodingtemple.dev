@@ -1,9 +1,16 @@
-import { LoaderArgs } from "@remix-run/node";
+import { LinksFunction, LoaderArgs } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { getMDXComponent } from "mdx-bundler/client";
 import { useMemo } from "react";
 import { Title } from "~/components";
 import { getMdxContent } from "~/utils/mdx.server";
+
+export const links: LinksFunction = () => [
+	{
+		rel: "stylesheet",
+		href: "https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css",
+	},
+];
 
 export async function loader({ params }: LoaderArgs) {
 	if (!params.slug) {
