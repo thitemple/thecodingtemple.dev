@@ -22,6 +22,7 @@ export function DesktopNavLink({
 						},
 					);
 				}}
+				end
 			>
 				{children}
 			</NavLink>

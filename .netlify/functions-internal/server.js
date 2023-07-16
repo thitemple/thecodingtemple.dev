@@ -773,7 +773,7 @@ init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_react9 = require("@remix-run/react");
 
 // app/assets/css/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-H26SAKK5.css";
+var tailwind_default = "/build/_assets/tailwind-VITO2ONQ.css";
 
 // app/components/index.ts
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
@@ -792,6 +792,7 @@ function FooterLink({ to, label }) {
           "cursor-default text-slate-400 hover:text-slate-400 hover:no-underline": isActive
         }
       ),
+      end: !0,
       children: label
     },
     void 0,
@@ -813,37 +814,37 @@ function Footer() {
     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("ul", { className: "flex flex-wrap justify-center gap-6 px-6 ", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(FooterLink, { to: "/", label: "Home" }, void 0, !1, {
         fileName: "app/components/Footer.tsx",
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(FooterLink, { to: "/articles", label: "Articles" }, void 0, !1, {
         fileName: "app/components/Footer.tsx",
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(FooterLink, { to: "/courses", label: "Courses" }, void 0, !1, {
         fileName: "app/components/Footer.tsx",
-        lineNumber: 30,
+        lineNumber: 31,
         columnNumber: 5
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)(FooterLink, { to: "/about", label: "About" }, void 0, !1, {
         fileName: "app/components/Footer.tsx",
-        lineNumber: 33,
+        lineNumber: 34,
         columnNumber: 5
       }, this)
     ] }, void 0, !0, {
       fileName: "app/components/Footer.tsx",
-      lineNumber: 27,
+      lineNumber: 28,
       columnNumber: 4
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime2.jsxDEV)("p", { className: "text-slate-500 dark:text-slate-400", children: "The Coding Temple \xA9 2023" }, void 0, !1, {
       fileName: "app/components/Footer.tsx",
-      lineNumber: 35,
+      lineNumber: 36,
       columnNumber: 4
     }, this)
   ] }, void 0, !0, {
     fileName: "app/components/Footer.tsx",
-    lineNumber: 26,
+    lineNumber: 27,
     columnNumber: 3
   }, this);
 }
@@ -887,6 +888,7 @@ function DesktopNavLink({
           "cursor-default text-slate-500 no-underline hover:text-slate-500 hover:no-underline dark:text-slate-400 dark:hover:text-slate-400": isActive
         }
       ),
+      end: !0,
       children
     },
     void 0,
@@ -2840,7 +2842,7 @@ function UsesPage() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var assets_manifest_default = { entry: { module: "/build/entry.client-SBXCQNVG.js", imports: ["/build/_shared/chunk-BA6NHEY4.js", "/build/_shared/chunk-H5ZE7JVG.js", "/build/_shared/chunk-ZPLGRDWL.js", "/build/_shared/chunk-SE6AVHRO.js", "/build/_shared/chunk-BYNVZQKR.js", "/build/_shared/chunk-K6PKGSTD.js", "/build/_shared/chunk-O4OKU2LD.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-4B5I5SKY.js", imports: ["/build/_shared/chunk-PRO7SOU6.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-3T32RKPY.js", imports: ["/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-TGY3DGPF.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles.$slug": { id: "routes/articles.$slug", parentId: "root", path: "articles/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/articles.$slug-AMKI4YRH.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles._index": { id: "routes/articles._index", parentId: "root", path: "articles", index: !0, caseSensitive: void 0, module: "/build/routes/articles._index-JX6QURNC.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js", "/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/courses": { id: "routes/courses", parentId: "root", path: "courses", index: void 0, caseSensitive: void 0, module: "/build/routes/courses-3CDZB32A.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/speaking": { id: "routes/speaking", parentId: "root", path: "speaking", index: void 0, caseSensitive: void 0, module: "/build/routes/speaking-WBF2GHV6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/uses": { id: "routes/uses", parentId: "root", path: "uses", index: void 0, caseSensitive: void 0, module: "/build/routes/uses-BY2EPHR3.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "10aaa02f", hmr: { runtime: "/build/_shared/chunk-BYNVZQKR.js", timestamp: 1689513724472 }, url: "/build/manifest-10AAA02F.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-SBXCQNVG.js", imports: ["/build/_shared/chunk-BA6NHEY4.js", "/build/_shared/chunk-H5ZE7JVG.js", "/build/_shared/chunk-ZPLGRDWL.js", "/build/_shared/chunk-SE6AVHRO.js", "/build/_shared/chunk-BYNVZQKR.js", "/build/_shared/chunk-K6PKGSTD.js", "/build/_shared/chunk-O4OKU2LD.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-4KY5MUNS.js", imports: ["/build/_shared/chunk-DBQRB4ST.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-WAXMFIWA.js", imports: ["/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-HJ2XO766.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles.$slug": { id: "routes/articles.$slug", parentId: "root", path: "articles/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/articles.$slug-IJJK64PD.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles._index": { id: "routes/articles._index", parentId: "root", path: "articles", index: !0, caseSensitive: void 0, module: "/build/routes/articles._index-5J27VEJV.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js", "/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/courses": { id: "routes/courses", parentId: "root", path: "courses", index: void 0, caseSensitive: void 0, module: "/build/routes/courses-PSGUTWER.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/speaking": { id: "routes/speaking", parentId: "root", path: "speaking", index: void 0, caseSensitive: void 0, module: "/build/routes/speaking-WBF2GHV6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/uses": { id: "routes/uses", parentId: "root", path: "uses", index: void 0, caseSensitive: void 0, module: "/build/routes/uses-BY2EPHR3.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "b772f370", hmr: { runtime: "/build/_shared/chunk-BYNVZQKR.js", timestamp: 1689514517334 }, url: "/build/manifest-B772F370.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, dev = { port: 3001 }, routes = {

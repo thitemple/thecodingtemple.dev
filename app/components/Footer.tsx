@@ -14,6 +14,7 @@ function FooterLink({ to, label }: { to: string; label: string }) {
 						},
 					);
 				}}
+				end
 			>
 				{label}
 			</NavLink>

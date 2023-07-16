@@ -7,3 +7,19 @@
 .article h2 {
   @apply text-2xl font-semibold;
 }
+
+.article ul {
+  @apply list-disc list-inside;
+}
+
+.article li {
+  @apply my-2;
+}
+
+.article a {
+  @apply text-fuchsia-500 hover:text-pink-300 hover:underline transition-all duration-200 ease-in-out dark:text-pink-300 hover:dark:text-pink-500;
+}
+
+.article img {
+  @apply mx-auto
+}
