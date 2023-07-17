@@ -4,6 +4,7 @@ import path from "path";
 import remarkMdxImages from "remark-mdx-images";
 
 import { bundleMDX } from "mdx-bundler";
+import { getMDXExport } from "mdx-bundler/client";
 
 process.env.ESBUILD_BINARY_PATH = path.join(
 	process.cwd(),
@@ -21,7 +22,6 @@ export interface PostFrontMatter {
 	tags?: string[];
 	category?: string;
 	banner?: string;
-	thumbnail?: string;
 }
 
 export interface Post {
@@ -29,16 +29,19 @@ export interface Post {
 	frontmatter: PostFrontMatter;
 	slug: string;
 	readTime: number;
+	banner?: string;
 }
 
-function addMetaData(
+export function addMetaData(
 	post: Pick<Post, "frontmatter" | "code">,
 	pathToFile: string,
 ): Post {
+	const { banner } = getMDXExport(post.code);
 	return {
 		...post,
 		slug: slugify(pathToFile),
 		readTime: readingTime(post.code),
+		banner,
 	};
 }
 

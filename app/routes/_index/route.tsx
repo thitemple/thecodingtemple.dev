@@ -1,12 +1,12 @@
 import type { V2_MetaFunction } from "@remix-run/node";
 import { getLatestArticle } from "~/utils/blog.server";
 
+import { typedjson, useTypedLoaderData } from "remix-typedjson";
 import { About } from "./components/About";
 import { Experience } from "./components/Experience";
 import { Hero } from "./components/Hero";
 import { LatestArticle } from "./components/LatestArticle";
 import { Passions } from "./components/Passions";
-import { typedjson, useTypedLoaderData } from "remix-typedjson";
 
 export const meta: V2_MetaFunction = () => {
 	return [
@@ -19,21 +19,28 @@ export const meta: V2_MetaFunction = () => {
 };
 
 export async function loader() {
-	const latestArticle = await getLatestArticle();
-	return typedjson({ latestArticle });
+	const post = await getLatestArticle();
+	return typedjson({ post });
 }
 
 export default function Index() {
-	const { latestArticle } = useTypedLoaderData<typeof loader>();
+	const { post } = useTypedLoaderData<typeof loader>();
 
 	return (
-			<div className="flex flex-col lg:gap-4">
-				<Hero />
-				{latestArticle && <LatestArticle latestArticle={latestArticle} />}
-				<Experience />
-				<About />
-				<Passions />
-				{/* <NewsletterSubscription /> */}
-			</div>
+		<div className="flex flex-col lg:gap-4">
+			<Hero />
+			{post && (
+				<LatestArticle
+					latestArticle={post.frontmatter}
+					readTime={post.readTime}
+					slug={post.slug}
+					banner={post.banner}
+				/>
+			)}
+			<Experience />
+			<About />
+			<Passions />
+			{/* <NewsletterSubscription /> */}
+		</div>
 	);
 }

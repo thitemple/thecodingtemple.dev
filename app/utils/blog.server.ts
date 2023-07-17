@@ -1,12 +1,17 @@
 import fs from "fs";
 import path from "path";
-import { PostFrontMatter, getMdxContentForFile } from "./mdx.server";
+import { Post, addMetaData, getMdxContentForFile } from "./mdx.server";
 
 const DIRECTORY_PATH = "./content/posts";
 
+interface PostReference {
+	post: Pick<Post, "frontmatter" | "code">;
+	file: string;
+}
+
 async function traverseDirectories(
 	directoryPath: string,
-): Promise<PostFrontMatter[]> {
+): Promise<PostReference[]> {
 	const files = fs.readdirSync(directoryPath);
 
 	const all = await Promise.all(
@@ -15,25 +20,25 @@ async function traverseDirectories(
 			const stat = fs.statSync(filePath);
 
 			if (fs.existsSync(filePath)) {
-				const { frontmatter } = await getMdxContentForFile(filePath);
-				return frontmatter;
+				const { frontmatter, code } = await getMdxContentForFile(filePath);
+				return { post: { frontmatter, code }, file: filePath };
 			}
 			return null;
 		}),
 	);
 
-	return all.filter((file): file is PostFrontMatter => Boolean(file));
+	return all.filter((file): file is PostReference => Boolean(file));
 }
 
 async function getAllArticles() {
 	return traverseDirectories(DIRECTORY_PATH);
 }
 
-export async function getLatestArticle() {
+export async function getLatestArticle(): Promise<Post> {
 	const allArticles = await getAllArticles();
 
 	allArticles.sort((a, b) => {
-		return a.date > b.date ? -1 : 1;
+		return a.post.frontmatter.date > b.post.frontmatter.date ? -1 : 1;
 	});
-	return allArticles[0];
+	return addMetaData(allArticles[0].post, allArticles[0].file);
 }

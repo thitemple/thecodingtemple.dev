@@ -22,12 +22,15 @@ export async function loader({ params }: LoaderArgs) {
 		throw new Error("Slug not found");
 	}
 
-	const { code, frontmatter, readTime } = await getMdxContent(params.slug);
-	return typedjson({ code, frontmatter, readTime });
+	const { code, frontmatter, readTime, banner } = await getMdxContent(
+		params.slug,
+	);
+	return typedjson({ code, frontmatter, readTime, banner });
 }
 
 export default function BlogPostPage() {
-	const { code, frontmatter, readTime } = useTypedLoaderData<typeof loader>();
+	const { code, frontmatter, readTime, banner } =
+		useTypedLoaderData<typeof loader>();
 
 	const Component = useMemo(() => getMDXComponent(code), [code]);
 
@@ -41,6 +44,15 @@ export default function BlogPostPage() {
 					<PostMeta date={frontmatter.date} readTime={readTime} />
 				</p>
 			</header>
+			{banner && (
+				<div>
+					<img
+						src={banner}
+						alt={`Banner for ${frontmatter.title}`}
+						className="w-full object-cover"
+					/>
+				</div>
+			)}
 			<div className="flex flex-col gap-y-2 overflow-hidden dark:text-slate-200 md:gap-y-6">
 				<Component />
 			</div>

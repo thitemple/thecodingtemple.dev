@@ -4,22 +4,28 @@ import { PostFrontMatter } from "~/utils/mdx.server";
 
 interface LatestArticleProps {
 	latestArticle: PostFrontMatter;
+	slug: string;
+	banner?: string;
+	readTime: number;
 }
 
-export function LatestArticle({ latestArticle }: LatestArticleProps) {
+export function LatestArticle({
+	latestArticle,
+	slug,
+	readTime,
+	banner,
+}: LatestArticleProps) {
 	return (
 		<section className="grid px-4 py-8 md:px-6 lg:grid-cols-2 lg:grid-rows-[auto_auto_1fr_auto_auto] lg:px-8">
-			<Link
-				to={`/article/${latestArticle.slug}`}
-				className="lg:col-start-2 lg:mt-4"
-			>
+			<Link to={`/article/${slug}`} className="lg:col-start-2 lg:mt-4">
 				<h2 className="font-heading text-2xl text-slate-700 dark:text-slate-200">
 					{latestArticle.title}
 				</h2>
 			</Link>
-			{latestArticle.thumbnail && (
+			{banner && (
 				<img
-					src={latestArticle.thumbnail}
+					src={banner}
+					alt={`Thumbnail for ${latestArticle.title}`}
 					className="mt-6 w-full object-cover opacity-75 lg:col-start-1 lg:row-span-5 lg:row-start-1 lg:pr-4"
 				/>
 			)}
@@ -27,7 +33,7 @@ export function LatestArticle({ latestArticle }: LatestArticleProps) {
 				{latestArticle.summary}
 			</p>
 			<p className="mt-6 text-slate-400 lg:col-start-2 lg:mt-2">
-				<PostMeta date={latestArticle.date} readTime={latestArticle.readTime} />
+				<PostMeta date={latestArticle.date} readTime={readTime} />
 			</p>
 			<p className="mt-6 lg:col-start-2">
 				<OutlineLink
@@ -46,7 +52,7 @@ export function LatestArticle({ latestArticle }: LatestArticleProps) {
 							/>
 						</svg>
 					}
-					to={`/articles/${latestArticle.slug}`}
+					to={`/articles/${slug}`}
 				>
 					Read more
 				</OutlineLink>

@@ -31,11 +31,11 @@ function ArticleCard({ post }: { post: Post }) {
 					<PostMeta date={post.frontmatter.date} readTime={post.readTime} />
 				</p>
 			</div>
-			{post.frontmatter.thumbnail && (
+			{post.banner && (
 				<img
-					src={post.frontmatter.thumbnail}
+					src={post.banner}
 					alt={`Thumbnail for ${post.frontmatter.title}`}
-					className="w-full object-cover opacity-75  lg:pr-4"
+					className="w-full object-cover opacity-75 lg:pr-4"
 				/>
 			)}
 			<p className="flex-1 text-slate-600 dark:text-slate-300 lg:mt-4">
