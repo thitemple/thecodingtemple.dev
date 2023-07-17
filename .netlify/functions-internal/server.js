@@ -33,22 +33,9 @@ var init_define_process_env_REMIX_DEV_HTTP_ORIGIN = __esm({
   }
 });
 
-// node_modules/@babel/runtime/helpers/interopRequireDefault.js
-var require_interopRequireDefault = __commonJS({
-  "node_modules/@babel/runtime/helpers/interopRequireDefault.js"(exports, module2) {
-    init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-    function _interopRequireDefault(obj) {
-      return obj && obj.__esModule ? obj : {
-        default: obj
-      };
-    }
-    module2.exports = _interopRequireDefault, module2.exports.__esModule = !0, module2.exports.default = module2.exports;
-  }
-});
-
-// node_modules/remark-mdx-frontmatter/dist/index.js
+// node_modules/.pnpm/remark-mdx-frontmatter@1.1.1/node_modules/remark-mdx-frontmatter/dist/index.js
 var require_dist = __commonJS({
-  "node_modules/remark-mdx-frontmatter/dist/index.js"(exports) {
+  "node_modules/.pnpm/remark-mdx-frontmatter@1.1.1/node_modules/remark-mdx-frontmatter/dist/index.js"(exports) {
     "use strict";
     init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     Object.defineProperty(exports, "__esModule", { value: !0 });
@@ -101,24 +88,24 @@ ${value2}`);
   }
 });
 
-// node_modules/mdx-bundler/dist/dirname-messed-up.cjs
+// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.13/node_modules/mdx-bundler/dist/dirname-messed-up.cjs
 var require_dirname_messed_up = __commonJS({
-  "node_modules/mdx-bundler/dist/dirname-messed-up.cjs"(exports, module2) {
+  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.13/node_modules/mdx-bundler/dist/dirname-messed-up.cjs"(exports, module2) {
     "use strict";
     init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     module2.exports = !__dirname.includes("mdx-bundler");
   }
 });
 
-// node_modules/micromark-util-character/lib/unicode-punctuation-regex.js
+// node_modules/.pnpm/micromark-util-character@1.2.0/node_modules/micromark-util-character/lib/unicode-punctuation-regex.js
 var unicodePunctuationRegex, init_unicode_punctuation_regex = __esm({
-  "node_modules/micromark-util-character/lib/unicode-punctuation-regex.js"() {
+  "node_modules/.pnpm/micromark-util-character@1.2.0/node_modules/micromark-util-character/lib/unicode-punctuation-regex.js"() {
     init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-    unicodePunctuationRegex = /[!-/:-@[-`{-~\u00A1\u00A7\u00AB\u00B6\u00B7\u00BB\u00BF\u037E\u0387\u055A-\u055F\u0589\u058A\u05BE\u05C0\u05C3\u05C6\u05F3\u05F4\u0609\u060A\u060C\u060D\u061B\u061E\u061F\u066A-\u066D\u06D4\u0700-\u070D\u07F7-\u07F9\u0830-\u083E\u085E\u0964\u0965\u0970\u09FD\u0A76\u0AF0\u0C77\u0C84\u0DF4\u0E4F\u0E5A\u0E5B\u0F04-\u0F12\u0F14\u0F3A-\u0F3D\u0F85\u0FD0-\u0FD4\u0FD9\u0FDA\u104A-\u104F\u10FB\u1360-\u1368\u1400\u166E\u169B\u169C\u16EB-\u16ED\u1735\u1736\u17D4-\u17D6\u17D8-\u17DA\u1800-\u180A\u1944\u1945\u1A1E\u1A1F\u1AA0-\u1AA6\u1AA8-\u1AAD\u1B5A-\u1B60\u1BFC-\u1BFF\u1C3B-\u1C3F\u1C7E\u1C7F\u1CC0-\u1CC7\u1CD3\u2010-\u2027\u2030-\u2043\u2045-\u2051\u2053-\u205E\u207D\u207E\u208D\u208E\u2308-\u230B\u2329\u232A\u2768-\u2775\u27C5\u27C6\u27E6-\u27EF\u2983-\u2998\u29D8-\u29DB\u29FC\u29FD\u2CF9-\u2CFC\u2CFE\u2CFF\u2D70\u2E00-\u2E2E\u2E30-\u2E4F\u2E52\u3001-\u3003\u3008-\u3011\u3014-\u301F\u3030\u303D\u30A0\u30FB\uA4FE\uA4FF\uA60D-\uA60F\uA673\uA67E\uA6F2-\uA6F7\uA874-\uA877\uA8CE\uA8CF\uA8F8-\uA8FA\uA8FC\uA92E\uA92F\uA95F\uA9C1-\uA9CD\uA9DE\uA9DF\uAA5C-\uAA5F\uAADE\uAADF\uAAF0\uAAF1\uABEB\uFD3E\uFD3F\uFE10-\uFE19\uFE30-\uFE52\uFE54-\uFE61\uFE63\uFE68\uFE6A\uFE6B\uFF01-\uFF03\uFF05-\uFF0A\uFF0C-\uFF0F\uFF1A\uFF1B\uFF1F\uFF20\uFF3B-\uFF3D\uFF3F\uFF5B\uFF5D\uFF5F-\uFF65]/;
+    unicodePunctuationRegex = /[!-\/:-@\[-`\{-~\xA1\xA7\xAB\xB6\xB7\xBB\xBF\u037E\u0387\u055A-\u055F\u0589\u058A\u05BE\u05C0\u05C3\u05C6\u05F3\u05F4\u0609\u060A\u060C\u060D\u061B\u061D-\u061F\u066A-\u066D\u06D4\u0700-\u070D\u07F7-\u07F9\u0830-\u083E\u085E\u0964\u0965\u0970\u09FD\u0A76\u0AF0\u0C77\u0C84\u0DF4\u0E4F\u0E5A\u0E5B\u0F04-\u0F12\u0F14\u0F3A-\u0F3D\u0F85\u0FD0-\u0FD4\u0FD9\u0FDA\u104A-\u104F\u10FB\u1360-\u1368\u1400\u166E\u169B\u169C\u16EB-\u16ED\u1735\u1736\u17D4-\u17D6\u17D8-\u17DA\u1800-\u180A\u1944\u1945\u1A1E\u1A1F\u1AA0-\u1AA6\u1AA8-\u1AAD\u1B5A-\u1B60\u1B7D\u1B7E\u1BFC-\u1BFF\u1C3B-\u1C3F\u1C7E\u1C7F\u1CC0-\u1CC7\u1CD3\u2010-\u2027\u2030-\u2043\u2045-\u2051\u2053-\u205E\u207D\u207E\u208D\u208E\u2308-\u230B\u2329\u232A\u2768-\u2775\u27C5\u27C6\u27E6-\u27EF\u2983-\u2998\u29D8-\u29DB\u29FC\u29FD\u2CF9-\u2CFC\u2CFE\u2CFF\u2D70\u2E00-\u2E2E\u2E30-\u2E4F\u2E52-\u2E5D\u3001-\u3003\u3008-\u3011\u3014-\u301F\u3030\u303D\u30A0\u30FB\uA4FE\uA4FF\uA60D-\uA60F\uA673\uA67E\uA6F2-\uA6F7\uA874-\uA877\uA8CE\uA8CF\uA8F8-\uA8FA\uA8FC\uA92E\uA92F\uA95F\uA9C1-\uA9CD\uA9DE\uA9DF\uAA5C-\uAA5F\uAADE\uAADF\uAAF0\uAAF1\uABEB\uFD3E\uFD3F\uFE10-\uFE19\uFE30-\uFE52\uFE54-\uFE61\uFE63\uFE68\uFE6A\uFE6B\uFF01-\uFF03\uFF05-\uFF0A\uFF0C-\uFF0F\uFF1A\uFF1B\uFF1F\uFF20\uFF3B-\uFF3D\uFF3F\uFF5B\uFF5D\uFF5F-\uFF65]/;
   }
 });
 
-// node_modules/micromark-util-character/index.js
+// node_modules/.pnpm/micromark-util-character@1.2.0/node_modules/micromark-util-character/index.js
 function markdownLineEnding(code) {
   return code !== null && code < -2;
 }
@@ -131,16 +118,16 @@ function regexCheck(regex) {
     return code !== null && regex.test(String.fromCharCode(code));
   }
 }
-var asciiAlpha, asciiDigit, asciiHexDigit, asciiAlphanumeric, asciiPunctuation, asciiAtext, unicodeWhitespace, unicodePunctuation, init_micromark_util_character = __esm({
-  "node_modules/micromark-util-character/index.js"() {
+var asciiAlpha, asciiAlphanumeric, asciiAtext, asciiDigit, asciiHexDigit, asciiPunctuation, unicodePunctuation, unicodeWhitespace, init_micromark_util_character = __esm({
+  "node_modules/.pnpm/micromark-util-character@1.2.0/node_modules/micromark-util-character/index.js"() {
     init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     init_unicode_punctuation_regex();
-    asciiAlpha = regexCheck(/[A-Za-z]/), asciiDigit = regexCheck(/\d/), asciiHexDigit = regexCheck(/[\dA-Fa-f]/), asciiAlphanumeric = regexCheck(/[\dA-Za-z]/), asciiPunctuation = regexCheck(/[!-/:-@[-`{-~]/), asciiAtext = regexCheck(/[#-'*+\--9=?A-Z^-~]/);
-    unicodeWhitespace = regexCheck(/\s/), unicodePunctuation = regexCheck(unicodePunctuationRegex);
+    asciiAlpha = regexCheck(/[A-Za-z]/), asciiAlphanumeric = regexCheck(/[\dA-Za-z]/), asciiAtext = regexCheck(/[#-'*+\--9=?A-Z^-~]/), asciiDigit = regexCheck(/\d/), asciiHexDigit = regexCheck(/[\dA-Fa-f]/), asciiPunctuation = regexCheck(/[!-/:-@[-`{-~]/);
+    unicodePunctuation = regexCheck(unicodePunctuationRegex), unicodeWhitespace = regexCheck(/\s/);
   }
 });
 
-// node_modules/fault/index.js
+// node_modules/.pnpm/fault@2.0.1/node_modules/fault/index.js
 function create(Constructor) {
   return FormattedError.displayName = Constructor.displayName || Constructor.name, FormattedError;
   function FormattedError(format, ...values) {
@@ -149,7 +136,7 @@ function create(Constructor) {
   }
 }
 var import_format, fault, init_fault = __esm({
-  "node_modules/fault/index.js"() {
+  "node_modules/.pnpm/fault@2.0.1/node_modules/fault/index.js"() {
     init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     import_format = __toESM(require("format"), 1), fault = Object.assign(create(Error), {
       eval: create(EvalError),
@@ -162,7 +149,7 @@ var import_format, fault, init_fault = __esm({
   }
 });
 
-// node_modules/micromark-extension-frontmatter/matters.js
+// node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/matters.js
 function matters(options) {
   let result = [], index = -1, presetsOrMatters = Array.isArray(options) ? options : options ? [options] : ["yaml"];
   for (; ++index < presetsOrMatters.length; )
@@ -187,7 +174,7 @@ function matter(option) {
   return result;
 }
 var own, markers, init_matters = __esm({
-  "node_modules/micromark-extension-frontmatter/matters.js"() {
+  "node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/matters.js"() {
     init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     init_fault();
     own = {}.hasOwnProperty, markers = {
@@ -197,7 +184,7 @@ var own, markers, init_matters = __esm({
   }
 });
 
-// node_modules/micromark-extension-frontmatter/lib/syntax.js
+// node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/lib/syntax.js
 function frontmatter(options) {
   let listOfMatters = matters(options), flow = {}, index = -1;
   for (; ++index < listOfMatters.length; ) {
@@ -209,7 +196,19 @@ function frontmatter(options) {
   };
 }
 function createConstruct(matter2) {
-  let anywhere = matter2.anywhere, frontmatterType = matter2.type, fenceType = frontmatterType + "Fence", sequenceType = fenceType + "Sequence", valueType = frontmatterType + "Value", closingFenceConstruct = {
+  let anywhere = matter2.anywhere, frontmatterType = (
+    /** @type {TokenType} */
+    matter2.type
+  ), fenceType = (
+    /** @type {TokenType} */
+    frontmatterType + "Fence"
+  ), sequenceType = (
+    /** @type {TokenType} */
+    fenceType + "Sequence"
+  ), valueType = (
+    /** @type {TokenType} */
+    frontmatterType + "Value"
+  ), closingFenceConstruct = {
     tokenize: tokenizeClosingFence,
     partial: !0
   }, buffer, bufferIndex = 0;
@@ -277,22 +276,22 @@ function pick(schema, prop) {
   return typeof schema == "string" ? schema : schema[prop];
 }
 var init_syntax = __esm({
-  "node_modules/micromark-extension-frontmatter/lib/syntax.js"() {
+  "node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/lib/syntax.js"() {
     init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     init_micromark_util_character();
     init_matters();
   }
 });
 
-// node_modules/micromark-extension-frontmatter/index.js
+// node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/index.js
 var init_micromark_extension_frontmatter = __esm({
-  "node_modules/micromark-extension-frontmatter/index.js"() {
+  "node_modules/.pnpm/micromark-extension-frontmatter@1.1.1/node_modules/micromark-extension-frontmatter/index.js"() {
     init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     init_syntax();
   }
 });
 
-// node_modules/mdast-util-frontmatter/lib/index.js
+// node_modules/.pnpm/mdast-util-frontmatter@1.0.1/node_modules/mdast-util-frontmatter/lib/index.js
 function frontmatterFromMarkdown(options) {
   let settings = matters(options), enter = {}, exit = {}, index = -1;
   for (; ++index < settings.length; ) {
@@ -344,21 +343,21 @@ function pick2(schema, prop) {
   return typeof schema == "string" ? schema : schema[prop];
 }
 var init_lib = __esm({
-  "node_modules/mdast-util-frontmatter/lib/index.js"() {
+  "node_modules/.pnpm/mdast-util-frontmatter@1.0.1/node_modules/mdast-util-frontmatter/lib/index.js"() {
     init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     init_matters();
   }
 });
 
-// node_modules/mdast-util-frontmatter/index.js
+// node_modules/.pnpm/mdast-util-frontmatter@1.0.1/node_modules/mdast-util-frontmatter/index.js
 var init_mdast_util_frontmatter = __esm({
-  "node_modules/mdast-util-frontmatter/index.js"() {
+  "node_modules/.pnpm/mdast-util-frontmatter@1.0.1/node_modules/mdast-util-frontmatter/index.js"() {
     init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     init_lib();
   }
 });
 
-// node_modules/remark-frontmatter/index.js
+// node_modules/.pnpm/remark-frontmatter@4.0.1/node_modules/remark-frontmatter/index.js
 var remark_frontmatter_exports = {};
 __export(remark_frontmatter_exports, {
   default: () => remarkFrontmatter
@@ -374,19 +373,19 @@ function remarkFrontmatter(options = "yaml") {
   }
 }
 var init_remark_frontmatter = __esm({
-  "node_modules/remark-frontmatter/index.js"() {
+  "node_modules/.pnpm/remark-frontmatter@4.0.1/node_modules/remark-frontmatter/index.js"() {
     init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     init_micromark_extension_frontmatter();
     init_mdast_util_frontmatter();
   }
 });
 
-// node_modules/mdx-bundler/dist/index.js
+// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.13/node_modules/mdx-bundler/dist/index.js
 var require_dist2 = __commonJS({
-  "node_modules/mdx-bundler/dist/index.js"(exports) {
+  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.13/node_modules/mdx-bundler/dist/index.js"(exports) {
     "use strict";
     init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-    var _interopRequireDefault = require_interopRequireDefault();
+    var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
     Object.defineProperty(exports, "__esModule", {
       value: !0
     });
@@ -575,9 +574,9 @@ var require_dist2 = __commonJS({
   }
 });
 
-// node_modules/mdx-bundler/dist/client.js
+// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.13/node_modules/mdx-bundler/dist/client.js
 var require_client = __commonJS({
-  "node_modules/mdx-bundler/dist/client.js"(exports) {
+  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.13/node_modules/mdx-bundler/dist/client.js"(exports) {
     "use strict";
     init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     Object.defineProperty(exports, "__esModule", {
@@ -625,9 +624,9 @@ var require_client = __commonJS({
   }
 });
 
-// node_modules/mdx-bundler/client/index.js
+// node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.13/node_modules/mdx-bundler/client/index.js
 var require_client2 = __commonJS({
-  "node_modules/mdx-bundler/client/index.js"(exports, module2) {
+  "node_modules/.pnpm/mdx-bundler@9.2.1_esbuild@0.18.13/node_modules/mdx-bundler/client/index.js"(exports, module2) {
     init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
     module2.exports = require_client();
   }
@@ -761,7 +760,7 @@ init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_react9 = require("@remix-run/react");
 
 // app/assets/css/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-YB3JNCNS.css";
+var tailwind_default = "/build/_assets/tailwind-OEST4P6N.css";
 
 // app/components/index.ts
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
@@ -1397,25 +1396,25 @@ var import_react10 = require("@remix-run/react"), import_clsx5 = require("clsx")
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var import_rehype_prism = __toESM(require("@mapbox/rehype-prism")), import_fast_glob = __toESM(require("fast-glob")), import_path = __toESM(require("path"));
 
-// node_modules/remark-mdx-images/index.js
+// node_modules/.pnpm/remark-mdx-images@2.0.0/node_modules/remark-mdx-images/index.js
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
-// node_modules/unist-util-visit/index.js
+// node_modules/.pnpm/unist-util-visit@4.1.2/node_modules/unist-util-visit/index.js
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
-// node_modules/unist-util-visit/lib/index.js
+// node_modules/.pnpm/unist-util-visit@4.1.2/node_modules/unist-util-visit/lib/index.js
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
-// node_modules/unist-util-visit-parents/index.js
+// node_modules/.pnpm/unist-util-visit-parents@5.1.3/node_modules/unist-util-visit-parents/index.js
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
-// node_modules/unist-util-visit-parents/lib/index.js
+// node_modules/.pnpm/unist-util-visit-parents@5.1.3/node_modules/unist-util-visit-parents/lib/index.js
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
-// node_modules/unist-util-is/index.js
+// node_modules/.pnpm/unist-util-is@5.2.1/node_modules/unist-util-is/index.js
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 
-// node_modules/unist-util-is/lib/index.js
+// node_modules/.pnpm/unist-util-is@5.2.1/node_modules/unist-util-is/lib/index.js
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 var convert = (
   /**
@@ -1482,13 +1481,13 @@ function ok() {
   return !0;
 }
 
-// node_modules/unist-util-visit-parents/lib/color.js
+// node_modules/.pnpm/unist-util-visit-parents@5.1.3/node_modules/unist-util-visit-parents/lib/color.js
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
 function color(d) {
   return "\x1B[33m" + d + "\x1B[39m";
 }
 
-// node_modules/unist-util-visit-parents/lib/index.js
+// node_modules/.pnpm/unist-util-visit-parents@5.1.3/node_modules/unist-util-visit-parents/lib/index.js
 var CONTINUE = !0, EXIT = !1, SKIP = "skip", visitParents = (
   /**
    * @type {(
@@ -1541,7 +1540,7 @@ function toResult(value2) {
   return Array.isArray(value2) ? value2 : typeof value2 == "number" ? [CONTINUE, value2] : [value2];
 }
 
-// node_modules/unist-util-visit/lib/index.js
+// node_modules/.pnpm/unist-util-visit@4.1.2/node_modules/unist-util-visit/lib/index.js
 var visit = (
   /**
    * @type {(
@@ -1569,7 +1568,7 @@ var visit = (
   }
 );
 
-// node_modules/remark-mdx-images/index.js
+// node_modules/.pnpm/remark-mdx-images@2.0.0/node_modules/remark-mdx-images/index.js
 var urlPattern = /^(https?:)?\//, relativePathPattern = /\.\.?\//, remarkMdxImages = ({ resolve = !0 } = {}) => (ast) => {
   let imports = [], imported = /* @__PURE__ */ new Map();
   visit(ast, "image", (node, index, parent) => {
@@ -1637,7 +1636,8 @@ process.env.ESBUILD_BINARY_PATH = import_path.default.join(
   "bin",
   "esbuild"
 );
-function getMdxContentForFile(pathToFile) {
+async function getMdxContentForFile(pathToFile) {
+  let postDir = import_path.default.dirname(pathToFile).split("/").pop() ?? "", imageDir = import_path.default.join(process.cwd(), "public", "images", postDir);
   return (0, import_mdx_bundler.bundleMDX)({
     file: import_path.default.join(process.cwd(), pathToFile),
     cwd: import_path.default.join(process.cwd(), import_path.default.dirname(pathToFile)),
@@ -1647,10 +1647,11 @@ function getMdxContentForFile(pathToFile) {
     ], options.rehypePlugins = [import_rehype_prism.default], options),
     esbuildOptions: (options) => (options.loader = {
       ...options.loader,
-      ".png": "dataurl",
-      ".jpg": "dataurl",
-      ".gif": "dataurl"
-    }, options)
+      ".png": "file",
+      ".jpg": "file",
+      ".jpeg": "file",
+      ".gif": "file"
+    }, options.outdir = imageDir, options.write = !0, options.publicPath = `/images/${postDir}/`, options)
   });
 }
 async function getMdxContent(slug) {
@@ -2855,7 +2856,7 @@ function UsesPage() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_define_process_env_REMIX_DEV_HTTP_ORIGIN();
-var assets_manifest_default = { entry: { module: "/build/entry.client-YWQFM4Q2.js", imports: ["/build/_shared/chunk-ZNEXGY76.js", "/build/_shared/chunk-CFC4DB3R.js", "/build/_shared/chunk-466HFHN3.js", "/build/_shared/chunk-NMZL6IDN.js", "/build/_shared/chunk-CB22OYAH.js", "/build/_shared/chunk-UWV35TSL.js", "/build/_shared/chunk-BOXFZXVX.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-WGOXUSNT.js", imports: ["/build/_shared/chunk-ZA337J23.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-Y643OMLC.js", imports: ["/build/_shared/chunk-7OYRDPSO.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-SE5J6TZW.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles.$slug": { id: "routes/articles.$slug", parentId: "root", path: "articles/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/articles.$slug-RHPE5VZ2.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js", "/build/_shared/chunk-7OYRDPSO.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles._index": { id: "routes/articles._index", parentId: "root", path: "articles", index: !0, caseSensitive: void 0, module: "/build/routes/articles._index-6XAVKLZC.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js", "/build/_shared/chunk-7OYRDPSO.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/courses": { id: "routes/courses", parentId: "root", path: "courses", index: void 0, caseSensitive: void 0, module: "/build/routes/courses-YXLFMP3N.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/speaking": { id: "routes/speaking", parentId: "root", path: "speaking", index: void 0, caseSensitive: void 0, module: "/build/routes/speaking-BGSACGFB.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/uses": { id: "routes/uses", parentId: "root", path: "uses", index: void 0, caseSensitive: void 0, module: "/build/routes/uses-TG2GHWSC.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "92450a33", hmr: { runtime: "/build/_shared/chunk-CB22OYAH.js", timestamp: 1689528169992 }, url: "/build/manifest-92450A33.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-SBXCQNVG.js", imports: ["/build/_shared/chunk-BA6NHEY4.js", "/build/_shared/chunk-H5ZE7JVG.js", "/build/_shared/chunk-ZPLGRDWL.js", "/build/_shared/chunk-SE6AVHRO.js", "/build/_shared/chunk-BYNVZQKR.js", "/build/_shared/chunk-K6PKGSTD.js", "/build/_shared/chunk-O4OKU2LD.js", "/build/_shared/chunk-PNG5AS42.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-GYFZKQLN.js", imports: ["/build/_shared/chunk-CJWQW5WW.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-3OHJQJK5.js", imports: ["/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/about": { id: "routes/about", parentId: "root", path: "about", index: void 0, caseSensitive: void 0, module: "/build/routes/about-G74CESRS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles.$slug": { id: "routes/articles.$slug", parentId: "root", path: "articles/:slug", index: void 0, caseSensitive: void 0, module: "/build/routes/articles.$slug-PA6NMCG6.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js", "/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/articles._index": { id: "routes/articles._index", parentId: "root", path: "articles", index: !0, caseSensitive: void 0, module: "/build/routes/articles._index-NAQWYXC3.js", imports: ["/build/_shared/chunk-ZO7RYJJ4.js", "/build/_shared/chunk-73GTTJKI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/courses": { id: "routes/courses", parentId: "root", path: "courses", index: void 0, caseSensitive: void 0, module: "/build/routes/courses-AS4OL7SE.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/speaking": { id: "routes/speaking", parentId: "root", path: "speaking", index: void 0, caseSensitive: void 0, module: "/build/routes/speaking-WBF2GHV6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/uses": { id: "routes/uses", parentId: "root", path: "uses", index: void 0, caseSensitive: void 0, module: "/build/routes/uses-BY2EPHR3.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "bc5a04e9", hmr: { runtime: "/build/_shared/chunk-BYNVZQKR.js", timestamp: 1689555154937 }, url: "/build/manifest-BC5A04E9.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, dev = { port: 3001 }, routes = {

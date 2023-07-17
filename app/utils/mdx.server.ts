@@ -31,7 +31,10 @@ export interface Post {
 	frontmatter: PostFrontMatter;
 }
 
-export function getMdxContentForFile(pathToFile: string) {
+export async function getMdxContentForFile(pathToFile: string) {
+	const postDir = path.dirname(pathToFile).split("/").pop() ?? "";
+	const imageDir = path.join(process.cwd(), "public", "images", postDir);
+
 	return bundleMDX<PostFrontMatter>({
 		file: path.join(process.cwd(), pathToFile),
 		cwd: path.join(process.cwd(), path.dirname(pathToFile)),
@@ -46,10 +49,14 @@ export function getMdxContentForFile(pathToFile: string) {
 		esbuildOptions: options => {
 			options.loader = {
 				...options.loader,
-				".png": "dataurl",
-				".jpg": "dataurl",
-				".gif": "dataurl",
+				".png": "file",
+				".jpg": "file",
+				".jpeg": "file",
+				".gif": "file",
 			};
+			options.outdir = imageDir;
+			options.write = true;
+			options.publicPath = `/images/${postDir}/`;
 
 			return options;
 		},
