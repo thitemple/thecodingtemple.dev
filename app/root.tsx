@@ -7,10 +7,15 @@ import {
 	Scripts,
 	ScrollRestoration,
 } from "@remix-run/react";
+// import { RemixDevTools } from "remix-development-tools";
+// import rdtStylesheet from "remix-development-tools/stylesheet.css";
 import styles from "~/assets/css/tailwind.css";
 import { Footer, Nav } from "./components";
 
-export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
+export const links: LinksFunction = () => [
+	// ...(rdtStylesheet ? [{ rel: "stylesheet", href: rdtStylesheet }] : []),
+	{ rel: "stylesheet", href: styles },
+];
 
 export default function App() {
 	return (
@@ -33,6 +38,7 @@ export default function App() {
 					<ScrollRestoration />
 					<Scripts />
 					<LiveReload />
+					{/* <RemixDevTools /> */}
 				</div>
 			</body>
 		</html>

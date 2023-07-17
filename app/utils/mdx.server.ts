@@ -16,26 +16,37 @@ process.env.ESBUILD_BINARY_PATH = path.join(
 export interface PostFrontMatter {
 	title: string;
 	summary: string;
-	slug: string;
 	path: string;
 	date: Date;
 	tags?: string[];
 	category?: string;
 	banner?: string;
 	thumbnail?: string;
-	readTime?: number;
 }
 
 export interface Post {
 	code: string;
 	frontmatter: PostFrontMatter;
+	slug: string;
+	readTime: number;
+}
+
+function addMetaData(
+	post: Pick<Post, "frontmatter" | "code">,
+	pathToFile: string,
+): Post {
+	return {
+		...post,
+		slug: slugify(pathToFile),
+		readTime: readingTime(post.code),
+	};
 }
 
 export async function getMdxContentForFile(pathToFile: string) {
 	const postDir = path.dirname(pathToFile).split("/").pop() ?? "";
 	const imageDir = path.join(process.cwd(), "public", "images", postDir);
 
-	return bundleMDX<PostFrontMatter>({
+	const markdown = await bundleMDX<PostFrontMatter>({
 		file: path.join(process.cwd(), pathToFile),
 		cwd: path.join(process.cwd(), path.dirname(pathToFile)),
 		mdxOptions: options => {
@@ -61,6 +72,8 @@ export async function getMdxContentForFile(pathToFile: string) {
 			return options;
 		},
 	});
+
+	return addMetaData(markdown, pathToFile);
 }
 
 export async function getMdxContent(slug: string) {
@@ -92,6 +105,17 @@ export async function getPaginatedPosts(
 	};
 }
 
+function readingTime(postContent: string) {
+	const text = postContent;
+	const wpm = 265;
+	const words = text.trim().split(/\s+/).length;
+	return Math.ceil(words / wpm);
+}
+
+function slugify(pathToFile: string) {
+	return path.dirname(pathToFile).split("/").pop() ?? "";
+}
+
 async function getPosts(): Promise<Post[]> {
 	const posts = await fg("content/posts/**/*.mdx");
 
@@ -99,10 +123,13 @@ async function getPosts(): Promise<Post[]> {
 		posts.map(async (post: string) => {
 			const { code, frontmatter } = await getMdxContentForFile(post);
 
-			return {
-				code,
-				frontmatter,
-			};
+			return addMetaData(
+				{
+					code,
+					frontmatter,
+				},
+				post,
+			);
 		}),
 	);
 

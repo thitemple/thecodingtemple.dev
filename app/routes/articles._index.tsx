@@ -22,16 +22,13 @@ function ArticleCard({ post }: { post: Post }) {
 	return (
 		<div className="flex flex-col gap-x-6 gap-y-4 py-4 md:rounded-md md:border md:border-slate-200 md:p-6 md:py-8 dark:md:border-pink-300/40 lg:px-8 lg:first:col-span-2">
 			<div>
-				<Link to={`/articles/${post.frontmatter.slug}`} className=" lg:mt-4">
+				<Link to={`/articles/${post.slug}`} className=" lg:mt-4">
 					<h2 className="font-heading text-2xl text-slate-700 dark:text-slate-200">
 						{post.frontmatter.title}
 					</h2>
 				</Link>
 				<p className="text-sm text-slate-500 dark:text-slate-400 lg:mt-2">
-					<PostMeta
-						date={post.frontmatter.date}
-						readTime={post.frontmatter.readTime}
-					/>
+					<PostMeta date={post.frontmatter.date} readTime={post.readTime} />
 				</p>
 			</div>
 			{post.frontmatter.thumbnail && (
@@ -61,7 +58,7 @@ function ArticleCard({ post }: { post: Post }) {
 							/>
 						</svg>
 					}
-					to={`/articles/${post.frontmatter.slug}`}
+					to={`/articles/${post.slug}`}
 					className="md:px-12 md:py-3"
 				>
 					Read more
@@ -79,7 +76,7 @@ export default function ArticlesPage() {
 			<Title>Articles</Title>
 			<div className="grid md:gap-6 lg:grid-cols-2 lg:grid-rows-3">
 				{data.posts.map(post => (
-					<ArticleCard key={post.frontmatter.slug} post={post} />
+					<ArticleCard key={post.slug} post={post} />
 				))}
 			</div>
 			<div className="flex justify-center gap-6">
