@@ -26,7 +26,7 @@ export function LatestArticle({
 				<img
 					src={banner}
 					alt={`Thumbnail for ${latestArticle.title}`}
-					className="mt-6 w-full object-cover opacity-75 lg:col-start-1 lg:row-span-5 lg:row-start-1 lg:pr-4"
+					className="mt-6 w-full object-cover opacity-90 lg:col-start-1 lg:row-span-5 lg:row-start-1 lg:pr-4"
 				/>
 			)}
 			<p className="mt-6 text-slate-600 dark:text-slate-300 lg:col-start-2 lg:row-span-2 lg:row-start-3 lg:mt-4">
