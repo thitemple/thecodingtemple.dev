@@ -2,6 +2,7 @@ import { LoaderArgs } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import { clsx } from "clsx";
 import { typedjson, useTypedLoaderData } from "remix-typedjson";
+import { Articles } from "~/assets/images";
 import { OutlineLink, PostMeta, Title } from "~/components";
 import { Post, getPaginatedPosts } from "~/utils/mdx.server";
 
@@ -87,10 +88,19 @@ function ArticleCard({ post, featured }: { post: Post; featured?: boolean }) {
 
 export default function ArticlesPage() {
 	const data = useTypedLoaderData<typeof loader>();
-	data.posts[0].frontmatter.date;
+
 	return (
-		<div className="grid gap-4 px-4 md:px-6 lg:px-8">
-			<Title>Articles</Title>
+		<section className="grid gap-4 px-4 md:px-6 lg:px-8">
+			<header className="hidden gap-x-4 lg:flex lg:py-4">
+				<Title className="flex flex-1 items-center">
+					My latest articles, what's on my mind lately
+				</Title>
+				<img
+					src={Articles}
+					alt="Articles"
+					className="hidden max-w-xs flex-1 self-end rounded-full lg:block"
+				/>
+			</header>
 			<div className="grid md:gap-6 lg:grid-cols-2 lg:grid-rows-3">
 				{data.posts.map((post, idx) => (
 					<ArticleCard
@@ -168,6 +178,6 @@ export default function ArticlesPage() {
 					</div>
 				}
 			</div>
-		</div>
+		</section>
 	);
 }

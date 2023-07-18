@@ -8,7 +8,7 @@ import { MobileNav } from "./MobileNav";
 export function Nav() {
 	const [mobileOpened, setMobileOpened] = useState(false);
 	return (
-		<header className="mx-auto max-w-7xl">
+		<header>
 			<div className="relative flex gap-4 px-4 pb-4 pt-2 md:px-6 lg:px-8">
 				<div className="flex flex-1">
 					<Link to="/">

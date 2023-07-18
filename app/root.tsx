@@ -27,10 +27,10 @@ export default function App() {
 				<Links />
 			</head>
 			<body className="h-full">
-				<div className="bg-slate-100 dark:bg-zinc-900">
-					<div className="mx-auto max-w-5xl bg-white py-6 dark:bg-violet-900">
+				<div className="min-h-full bg-slate-100 dark:bg-zinc-900">
+					<div className="mx-auto min-h-full max-w-5xl flex-col bg-white py-6 dark:bg-violet-900 lg:flex">
 						<Nav />
-						<main className="py-2 md:py-4">
+						<main className="flex-1 py-2 md:py-4">
 							<Outlet />
 						</main>
 						<Footer />
