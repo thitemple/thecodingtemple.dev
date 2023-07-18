@@ -80,7 +80,7 @@ export async function getMdxContentForFile(pathToFile: string) {
 }
 
 export async function getMdxContent(slug: string) {
-	const pathToContent = `/content/posts/${slug}/index.mdx`;
+	const pathToContent = `/app/content/posts/${slug}/index.mdx`;
 	return getMdxContentForFile(pathToContent);
 }
 
@@ -120,7 +120,7 @@ function slugify(pathToFile: string) {
 }
 
 async function getPosts(): Promise<Post[]> {
-	const posts = await fg("content/posts/**/*.mdx");
+	const posts = await fg("app/content/posts/**/*.mdx");
 
 	const postsWithFrontMatter = await Promise.all(
 		posts.map(async (post: string) => {

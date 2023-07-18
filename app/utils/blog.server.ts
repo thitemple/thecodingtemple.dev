@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { Post, addMetaData, getMdxContentForFile } from "./mdx.server";
 
-const DIRECTORY_PATH = "./content/posts";
+const DIRECTORY_PATH = "./app/content/posts";
 
 interface PostReference {
 	post: Pick<Post, "frontmatter" | "code">;
