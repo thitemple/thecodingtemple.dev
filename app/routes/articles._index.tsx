@@ -18,9 +18,19 @@ export async function loader({ request }: LoaderArgs) {
 	});
 }
 
-function ArticleCard({ post }: { post: Post }) {
+function ArticleCard({ post, featured }: { post: Post; featured?: boolean }) {
+	const shouldShowBanner = post.banner && !featured;
+	const hasFeaturedBanner = post.banner && featured;
+
 	return (
-		<div className="flex flex-col gap-x-6 gap-y-4 py-4 md:rounded-md md:border md:border-slate-200 md:p-6 md:py-8 dark:md:border-pink-300/40 lg:px-8 lg:first:col-span-2">
+		<div
+			className={clsx(
+				"flex flex-col gap-x-6 gap-y-4 py-4 md:rounded-md md:border md:border-slate-200 md:p-6 md:py-8 dark:md:border-pink-300/40 lg:px-8",
+				{
+					"lg:first:col-span-2": featured,
+				},
+			)}
+		>
 			<div>
 				<Link to={`/articles/${post.slug}`} className=" lg:mt-4">
 					<h2 className="font-heading text-2xl text-slate-700 dark:text-slate-200">
@@ -31,11 +41,18 @@ function ArticleCard({ post }: { post: Post }) {
 					<PostMeta date={post.frontmatter.date} readTime={post.readTime} />
 				</p>
 			</div>
-			{post.banner && (
+			{hasFeaturedBanner && (
+				<img
+					src={post.banner}
+					alt={`Banner for ${post.frontmatter.title}`}
+					className="max-h-60 w-full object-none object-center"
+				/>
+			)}
+			{shouldShowBanner && (
 				<img
 					src={post.banner}
 					alt={`Thumbnail for ${post.frontmatter.title}`}
-					className="w-full object-cover opacity-90 lg:pr-4"
+					className="aspect-auto object-cover opacity-90 lg:pr-4"
 				/>
 			)}
 			<p className="flex-1 text-slate-600 dark:text-slate-300 lg:mt-4">
@@ -75,8 +92,12 @@ export default function ArticlesPage() {
 		<div className="grid gap-4 px-4 md:px-6 lg:px-8">
 			<Title>Articles</Title>
 			<div className="grid md:gap-6 lg:grid-cols-2 lg:grid-rows-3">
-				{data.posts.map(post => (
-					<ArticleCard key={post.slug} post={post} />
+				{data.posts.map((post, idx) => (
+					<ArticleCard
+						key={post.slug}
+						post={post}
+						featured={data.currentPage === 1 && idx === 0}
+					/>
 				))}
 			</div>
 			<div className="flex justify-center gap-6">
