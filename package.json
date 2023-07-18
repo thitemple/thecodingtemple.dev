@@ -32,11 +32,13 @@
     ],
     "scripts": {
         "build": "remix build",
+        "deploy": "fly deploy --remote-only",
         "dev": "remix dev",
-        "start": "cross-env NODE_ENV=production netlify dev",
+        "start": "remix-serve build",
         "typecheck": "tsc"
     },
     "devDependencies": {
+        "@flydotio/dockerfile": "^0.3.3",
         "@remix-run/dev": "^1.18.1",
         "@remix-run/eslint-config": "^1.18.1",
         "@remix-run/serve": "^1.18.1",
@@ -53,6 +55,6 @@
         "typescript": "^5.1.6"
     },
     "engines": {
-        "node": "16"
+        "node": "18"
     }
 }
