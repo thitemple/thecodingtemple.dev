@@ -31,6 +31,8 @@ async function traverseDirectories(
 }
 
 async function getAllArticles() {
+	console.log("DAS", process.cwd())
+	console.log("DAS",DIRECTORY_PATH)
 	return traverseDirectories(DIRECTORY_PATH);
 }
 
