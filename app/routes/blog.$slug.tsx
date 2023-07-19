@@ -3,6 +3,7 @@ import { getMDXComponent } from "mdx-bundler/client";
 import { useMemo } from "react";
 import { typedjson, useTypedLoaderData } from "remix-typedjson";
 import postStyles from "~/assets/css/post.page.css";
+import prismLight from "~/assets/css/prism-light.css";
 import { PostMeta, Title } from "~/components";
 import { getMdxContent } from "~/utils/mdx.server";
 
@@ -10,6 +11,12 @@ export const links: LinksFunction = () => [
 	{
 		rel: "stylesheet",
 		href: "https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css",
+		media: "(prefers-color-scheme: dark)",
+	},
+	{
+		rel: "stylesheet",
+		href: prismLight,
+		media: "(prefers-color-scheme: light)",
 	},
 	{
 		rel: "stylesheet",
