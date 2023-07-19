@@ -10,6 +10,7 @@ module.exports = {
 		/^mdast.*/,
 		/^fault.*/,
 		/^estree.*/,
+		/^is-plain-obj.*/,
 	],
 	serverModuleFormat: "cjs",
 	future: {
