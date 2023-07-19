@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@mapbox/rehype-prism':
     specifier: ^0.8.0
@@ -95,8 +91,8 @@ devDependencies:
     specifier: ^0.4.1
     version: 0.4.1(prettier-plugin-organize-imports@3.2.3)(prettier@3.0.0)
   remix-development-tools:
-    specifier: ^1.0.6
-    version: 1.0.6(@types/react-dom@18.2.7)(@types/react@18.2.15)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.0.10
+    version: 1.0.10(@remix-run/react@1.18.1)(@types/react-dom@18.2.7)(@types/react@18.2.15)(react-dom@18.2.0)(react@18.2.0)
   rimraf:
     specifier: ^5.0.1
     version: 5.0.1
@@ -2495,7 +2491,6 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-router-dom: 6.14.1(react-dom@18.2.0)(react@18.2.0)
-    dev: false
 
   /@remix-run/router@1.7.1:
     resolution: {integrity: sha512-bgVQM4ZJ2u2CM8k1ey70o1ePFXsEzYVZoWghh6WjM8p59jQ7HxzbHW4SbnWFG7V9ig9chLawQxDTZ3xzOF8MkQ==}
@@ -8268,7 +8263,6 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-router: 6.14.1(react@18.2.0)
-    dev: false
 
   /react-router@6.14.1(react@18.2.0):
     resolution: {integrity: sha512-U4PfgvG55LdvbQjg5Y9QRWyVxIdO1LlpYT7x+tMAxd9/vmiPuJhIwdxZuIQLN/9e3O4KFDHYfR9gzGeYMasW8g==}
@@ -8278,7 +8272,6 @@ packages:
     dependencies:
       '@remix-run/router': 1.7.1
       react: 18.2.0
-    dev: false
 
   /react-use-websocket@4.3.1(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-zHPLWrgcqydJaak2O5V9hiz4q2dwkwqNQqpgFVmSuPxLZdsZlnDs8DVHy3WtHH+A6ms/8aHIyX7+7ulOcrnR0Q==}
@@ -8515,20 +8508,25 @@ packages:
       unified: 10.1.2
     dev: true
 
-  /remix-development-tools@1.0.6(@types/react-dom@18.2.7)(@types/react@18.2.15)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-NLGtJG8Y7sXh3VOUAYidXgGtmOw+CYxLcFX1qdTOa+x2PNaKNZWPqJVG1nkq3nhChXgtJQaDP09xLhLsw3cO8Q==}
+  /remix-development-tools@1.0.10(@remix-run/react@1.18.1)(@types/react-dom@18.2.7)(@types/react@18.2.15)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-n2xBerz99IwFdzBBoOE/6hwblYTZt30l3qIcFDr0a9JASatMKQRGYexbmkqdu76oA49ZHfriE0BBozTIZTb+BA==}
+    peerDependencies:
+      '@remix-run/react': ^1.15
+      react: '>=17'
+      react-dom: '>=17'
     dependencies:
       '@radix-ui/react-accordion': 1.1.2(@types/react-dom@18.2.7)(@types/react@18.2.15)(react-dom@18.2.0)(react@18.2.0)
+      '@remix-run/react': 1.18.1(react-dom@18.2.0)(react@18.2.0)
       clsx: 1.2.1
       lucide-react: 0.252.0(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
       react-json-view-lite: 0.9.7(react@18.2.0)
       react-use-websocket: 4.3.1(react-dom@18.2.0)(react@18.2.0)
       tailwind-merge: 1.14.0
     transitivePeerDependencies:
       - '@types/react'
       - '@types/react-dom'
-      - react
-      - react-dom
     dev: true
 
   /remix-typedjson@0.1.7(@remix-run/react@1.18.1)(@remix-run/server-runtime@1.18.1)(react@18.2.0):
@@ -10184,3 +10182,7 @@ packages:
 
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
