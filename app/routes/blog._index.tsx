@@ -115,11 +115,7 @@ export default function BlogPage() {
 					<div className="flex flex-1 justify-end">
 						<Link
 							aria-disabled={!data.hasPreviousPage}
-							to={
-								data.hasPreviousPage
-									? `/articles?page=${data.previousPage}`
-									: ""
-							}
+							to={data.hasPreviousPage ? `/blog?page=${data.previousPage}` : ""}
 							className={clsx(
 								"flex items-center text-fuchsia-500 hover:underline dark:text-slate-300",
 								{
@@ -150,7 +146,7 @@ export default function BlogPage() {
 					<div className="flex flex-1">
 						<Link
 							aria-disabled={!data.hasNextPage}
-							to={data.hasNextPage ? `/articles?page=${data.nextPage}` : ""}
+							to={data.hasNextPage ? `/blog?page=${data.nextPage}` : ""}
 							className={clsx(
 								"flex items-center text-fuchsia-500 hover:underline dark:text-slate-300",
 								{
