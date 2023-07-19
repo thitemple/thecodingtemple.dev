@@ -88,7 +88,6 @@ export async function getMdxContent(slug: string) {
 
 type PostLike = {
 	title: string;
-	summary: string;
 	slug: string;
 	date: Date;
 };

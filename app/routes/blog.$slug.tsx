@@ -1,4 +1,4 @@
-import { LinksFunction, LoaderArgs } from "@remix-run/node";
+import { LinksFunction, LoaderArgs, V2_MetaFunction } from "@remix-run/node";
 import { getMDXComponent } from "mdx-bundler/client";
 import { useMemo } from "react";
 import { typedjson, useTypedLoaderData } from "remix-typedjson";
@@ -16,6 +16,12 @@ export const links: LinksFunction = () => [
 		href: postStyles,
 	},
 ];
+
+export const meta: V2_MetaFunction<typeof loader> = metaParams => {
+	return [
+		{ title: `${metaParams.data.frontmatter.title} - The Coding Temple` },
+	];
+};
 
 export async function loader({ params }: LoaderArgs) {
 	if (!params.slug) {

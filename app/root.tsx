@@ -1,4 +1,4 @@
-import type { LinksFunction } from "@remix-run/node";
+import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import {
 	Links,
 	LiveReload,
@@ -16,6 +16,10 @@ export const links: LinksFunction = () => [
 	...(rdtStylesheet ? [{ rel: "stylesheet", href: rdtStylesheet }] : []),
 	{ rel: "stylesheet", href: styles },
 ];
+
+export const meta: V2_MetaFunction = () => {
+	return [{ title: "The Coding Temple" }];
+};
 
 export default function App() {
 	return (

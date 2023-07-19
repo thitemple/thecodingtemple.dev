@@ -10,16 +10,13 @@ async function buildPostsIndex() {
 	const posts = await Promise.all(
 		allPosts.map(async post => {
 			const {
-				readTime,
 				slug,
-				frontmatter: { title, date, summary },
+				frontmatter: { title, date },
 			} = await getMdxContentForFile(post);
 			return {
 				title,
 				date,
-				summary,
 				slug,
-				readTime,
 			};
 		}),
 	);
