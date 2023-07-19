@@ -80,8 +80,8 @@ export function MobileNav({
 			</header>
 			<ul className="mt-6 flex flex-col text-lg text-slate-600 dark:text-slate-200">
 				<MobileNavItem to="/">Home</MobileNavItem>
-				<MobileNavItem to="/articles" autoFocus>
-					Articles
+				<MobileNavItem to="/blog" autoFocus>
+					Blog
 				</MobileNavItem>
 				<MobileNavItem to="/courses">Courses</MobileNavItem>
 				{/* <MobileNavItem to="/speaking">Speaking</MobileNavItem>

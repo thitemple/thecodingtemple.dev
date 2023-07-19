@@ -52,7 +52,7 @@ export function LatestArticle({
 							/>
 						</svg>
 					}
-					to={`/articles/${slug}`}
+					to={`/blog/${slug}`}
 				>
 					Read more
 				</OutlineLink>

@@ -33,7 +33,7 @@ function ArticleCard({ post, featured }: { post: Post; featured?: boolean }) {
 			)}
 		>
 			<div>
-				<Link to={`/articles/${post.slug}`} className=" lg:mt-4">
+				<Link to={`/blog/${post.slug}`} className=" lg:mt-4">
 					<h2 className="font-heading text-2xl text-slate-700 dark:text-slate-200">
 						{post.frontmatter.title}
 					</h2>
@@ -76,7 +76,7 @@ function ArticleCard({ post, featured }: { post: Post; featured?: boolean }) {
 							/>
 						</svg>
 					}
-					to={`/articles/${post.slug}`}
+					to={`/blog/${post.slug}`}
 					className="md:px-12 md:py-3"
 				>
 					Read more
@@ -86,7 +86,7 @@ function ArticleCard({ post, featured }: { post: Post; featured?: boolean }) {
 	);
 }
 
-export default function ArticlesPage() {
+export default function BlogPage() {
 	const data = useTypedLoaderData<typeof loader>();
 
 	return (
@@ -97,7 +97,7 @@ export default function ArticlesPage() {
 				</Title>
 				<img
 					src={Articles}
-					alt="Articles"
+					alt="Blog articles cover"
 					className="hidden max-w-xs flex-1 self-end rounded-full lg:block"
 				/>
 			</header>

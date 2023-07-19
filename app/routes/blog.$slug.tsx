@@ -2,7 +2,7 @@ import { LinksFunction, LoaderArgs } from "@remix-run/node";
 import { getMDXComponent } from "mdx-bundler/client";
 import { useMemo } from "react";
 import { typedjson, useTypedLoaderData } from "remix-typedjson";
-import articleStyles from "~/assets/css/article.page.css";
+import postStyles from "~/assets/css/post.page.css";
 import { PostMeta, Title } from "~/components";
 import { getMdxContent } from "~/utils/mdx.server";
 
@@ -13,7 +13,7 @@ export const links: LinksFunction = () => [
 	},
 	{
 		rel: "stylesheet",
-		href: articleStyles,
+		href: postStyles,
 	},
 ];
 
