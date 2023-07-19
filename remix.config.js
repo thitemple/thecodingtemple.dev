@@ -2,19 +2,14 @@
 module.exports = {
 	ignoredRouteFiles: ["**/.*"],
 	tailwind: true,
-	server:
-		process.env.NETLIFY || process.env.NETLIFY_LOCAL
-			? "./server.ts"
-			: undefined,
-	serverBuildPath: ".netlify/functions-internal/server.js",
 	serverDependenciesToBundle: [
-    /^mdx-bundler.*/,
-    /^remark.*/,
-    /^unist.*/,
-    /^micromark.*/,
-    /^mdast.*/,
-    /^fault.*/,
-    /^estree.*/,
+		/^mdx-bundler.*/,
+		/^remark.*/,
+		/^unist.*/,
+		/^micromark.*/,
+		/^mdast.*/,
+		/^fault.*/,
+		/^estree.*/,
 	],
 	serverModuleFormat: "cjs",
 	future: {

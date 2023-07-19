@@ -1,10 +1,12 @@
 import rehypePrism from "@mapbox/rehype-prism";
 import fg from "fast-glob";
+import fs from "fs";
 import path from "path";
 import remarkMdxImages from "remark-mdx-images";
 
 import { bundleMDX } from "mdx-bundler";
 import { getMDXExport } from "mdx-bundler/client";
+import { readingTime } from "./readingTime";
 
 process.env.ESBUILD_BINARY_PATH = path.join(
 	process.cwd(),
@@ -80,14 +82,60 @@ export async function getMdxContentForFile(pathToFile: string) {
 }
 
 export async function getMdxContent(slug: string) {
-	const pathToContent = `/app/content/posts/${slug}/index.mdx`;
+	const pathToContent = `/content/posts/${slug}/index.mdx`;
 	return getMdxContentForFile(pathToContent);
+}
+
+type PostLike = {
+	title: string;
+	summary: string;
+	slug: string;
+	date: Date;
+};
+
+function processPostsIndex<T extends any>(
+	fn: (postsIndex: PostLike[]) => Promise<T>,
+) {
+	if (
+		fs.existsSync(
+			path.join(process.cwd(), "./public/build/posts-index.json"),
+		) === true
+	) {
+		const postsIndex = fs.readFileSync(
+			path.join(process.cwd(), "public/build/posts-index.json"),
+		);
+
+		const postsIndexJson = JSON.parse(postsIndex.toString()) as PostLike[];
+		if (postsIndexJson.length > 0) {
+			return fn(postsIndexJson);
+		}
+	}
+	return null;
 }
 
 export async function getPaginatedPosts(
 	page: number,
 	postsPerPage: number,
 ): Promise<{ posts: Post[]; numPages: number }> {
+	const postsIndex = await processPostsIndex(async postsIndexJson => {
+		const paginatedPosts = postsIndexJson.slice(
+			(page - 1) * postsPerPage,
+			page * postsPerPage,
+		);
+
+		return {
+			posts: await Promise.all(
+				paginatedPosts.map(async post => getMdxContent(post.slug)),
+			),
+			numPages: Math.ceil(postsIndexJson.length / postsPerPage),
+		};
+	});
+
+	if (postsIndex !== null) {
+		console.debug("📇 Using cached posts index");
+		return postsIndex;
+	}
+
 	const posts = await getPosts();
 	posts.sort(
 		(a, b) =>
@@ -102,17 +150,12 @@ export async function getPaginatedPosts(
 		page * postsPerPage,
 	);
 
+	console.debug("🚫 Not cached posts");
+
 	return {
 		posts: paginatedPosts,
 		numPages,
 	};
-}
-
-function readingTime(postContent: string) {
-	const text = postContent;
-	const wpm = 265;
-	const words = text.trim().split(/\s+/).length;
-	return Math.ceil(words / wpm);
 }
 
 function slugify(pathToFile: string) {
@@ -120,7 +163,7 @@ function slugify(pathToFile: string) {
 }
 
 async function getPosts(): Promise<Post[]> {
-	const posts = await fg("app/content/posts/**/*.mdx");
+	const posts = await fg("content/posts/**/*.mdx");
 
 	const postsWithFrontMatter = await Promise.all(
 		posts.map(async (post: string) => {

@@ -31,7 +31,11 @@
         "blog"
     ],
     "scripts": {
-        "build": "remix build",
+        "prebuild": "npm run clean && echo All clean 🧹",
+        "build": "run-s build:*",
+        "build:remix": "remix build",
+        "build:posts-index": "export NODE_ENV=production && tsx ./scripts/build-posts-index.ts",
+        "clean": "rimraf ./node_modules/.cache ./server/dist ./build ./public/build",
         "deploy": "fly deploy --remote-only",
         "dev": "remix dev",
         "start": "remix-serve build",
@@ -46,11 +50,14 @@
         "@types/react": "^18.2.15",
         "@types/react-dom": "^18.2.7",
         "eslint": "^8.45.0",
+        "npm-run-all": "^4.1.5",
         "prettier": "^3.0.0",
         "prettier-plugin-organize-imports": "^3.2.3",
         "prettier-plugin-tailwindcss": "^0.4.1",
         "remix-development-tools": "^1.0.6",
+        "rimraf": "^5.0.1",
         "tailwindcss": "^3.3.3",
+        "tsx": "^3.12.7",
         "typescript": "^5.1.6"
     },
     "engines": {

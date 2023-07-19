@@ -1,8 +1,13 @@
 import fs from "fs";
 import path from "path";
-import { Post, addMetaData, getMdxContentForFile } from "./mdx.server";
+import {
+	Post,
+	addMetaData,
+	getMdxContent,
+	getMdxContentForFile,
+} from "./mdx.server";
 
-const DIRECTORY_PATH = "./app/content/posts";
+const DIRECTORY_PATH = "./content/posts";
 
 interface PostReference {
 	post: Pick<Post, "frontmatter" | "code">;
@@ -31,16 +36,36 @@ async function traverseDirectories(
 }
 
 async function getAllArticles() {
-	console.log("DAS", process.cwd())
-	console.log("DAS",DIRECTORY_PATH)
 	return traverseDirectories(DIRECTORY_PATH);
 }
 
 export async function getLatestArticle(): Promise<Post> {
+	if (
+		fs.existsSync(
+			path.join(process.cwd(), "./public/build/posts-index.json"),
+		) === true
+	) {
+		const postsIndex = fs.readFileSync(
+			path.join(process.cwd(), "public/build/posts-index.json"),
+		);
+		const postsIndexJson = JSON.parse(postsIndex.toString());
+		if (postsIndexJson.length > 0) {
+			console.debug("DAS using posts-index.json");
+			return await getMdxContent(postsIndexJson[0].slug);
+		}
+	}
+
 	const allArticles = await getAllArticles();
 
 	allArticles.sort((a, b) => {
 		return a.post.frontmatter.date > b.post.frontmatter.date ? -1 : 1;
 	});
+
+	if (allArticles[0] === undefined) {
+		throw new Response("No articles found");
+	}
+
+	console.debug("DAS using traverseDirectories");
+
 	return addMetaData(allArticles[0].post, allArticles[0].file);
 }
