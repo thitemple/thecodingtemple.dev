@@ -5,7 +5,7 @@ import { typedjson, useTypedLoaderData } from "remix-typedjson";
 import postStyles from "~/assets/css/post.page.css";
 import prismLight from "~/assets/css/prism-light.css";
 import { PostMeta, Title } from "~/components";
-import { getMdxContent } from "~/utils/mdx.server";
+import { getPostForSlug } from "~/data/post.server";
 
 export const links: LinksFunction = () => [
 	{
@@ -35,7 +35,7 @@ export async function loader({ params }: LoaderArgs) {
 		throw new Error("Slug not found");
 	}
 
-	const { code, frontmatter, readTime, banner } = await getMdxContent(
+	const { code, frontmatter, readTime, banner } = await getPostForSlug(
 		params.slug,
 	);
 	return typedjson({ code, frontmatter, readTime, banner });

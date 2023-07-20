@@ -4,7 +4,7 @@ import { clsx } from "clsx";
 import { typedjson, useTypedLoaderData } from "remix-typedjson";
 import { Articles } from "~/assets/images";
 import { OutlineLink, PostMeta, Title } from "~/components";
-import { Post, getPaginatedPosts } from "~/utils/mdx.server";
+import { Post, getPaginatedPosts } from "~/data/post.server";
 
 export async function loader({ request }: LoaderArgs) {
 	const page = Number(new URL(request.url).searchParams.get("page") ?? "1");

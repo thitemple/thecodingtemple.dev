@@ -1,7 +1,7 @@
 import type { V2_MetaFunction } from "@remix-run/node";
-import { getLatestArticle } from "~/utils/blog.server";
 
 import { typedjson, useTypedLoaderData } from "remix-typedjson";
+import { getLatestArticle } from "~/data/post.server";
 import { About } from "./components/About";
 import { Experience } from "./components/Experience";
 import { Hero } from "./components/Hero";

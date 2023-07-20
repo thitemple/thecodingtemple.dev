@@ -15,6 +15,34 @@ import { Footer, Nav } from "./components";
 export const links: LinksFunction = () => [
 	...(rdtStylesheet ? [{ rel: "stylesheet", href: rdtStylesheet }] : []),
 	{ rel: "stylesheet", href: styles },
+	{
+		rel: "icon",
+		type: "image/png",
+		sizes: "32x32",
+		href: "/favicons/favicon-dark-32x32.png",
+		media: "(prefers-color-scheme: dark)",
+	},
+	{
+		rel: "icon",
+		type: "image/png",
+		sizes: "16x16",
+		href: "/favicons/favicon-light-16x16.png",
+		media: "(prefers-color-scheme: light)",
+	},
+	{
+		rel: "icon",
+		type: "image/png",
+		sizes: "16x16",
+		href: "/favicons/favicon-dark-16x16.png",
+		media: "(prefers-color-scheme: dark)",
+	},
+	// {
+	// 	rel: "icon",
+	// 	type: "image/png",
+	// 	sizes: "32x32",
+	// 	href: "/favicons/favicon-light-32x32.png",
+	// 	media: "(prefers-color-scheme: light)",
+	// },
 ];
 
 export const meta: V2_MetaFunction = () => {
