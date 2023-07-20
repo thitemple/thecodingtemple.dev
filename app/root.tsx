@@ -36,17 +36,20 @@ export const links: LinksFunction = () => [
 		href: "/favicons/favicon-dark-16x16.png",
 		media: "(prefers-color-scheme: dark)",
 	},
-	// {
-	// 	rel: "icon",
-	// 	type: "image/png",
-	// 	sizes: "32x32",
-	// 	href: "/favicons/favicon-light-32x32.png",
-	// 	media: "(prefers-color-scheme: light)",
-	// },
+	{
+		rel: "icon",
+		type: "image/png",
+		sizes: "32x32",
+		href: "/favicons/favicon-light-32x32.png",
+		media: "(prefers-color-scheme: light)",
+	},
 ];
 
 export const meta: V2_MetaFunction = () => {
-	return [{ title: "The Coding Temple" }];
+	return [
+		{viewport: 'width=device-width,initial-scale=1,viewport-fit=cover'},
+		{ title: "The Coding Temple" },
+	];
 };
 
 export default function App() {

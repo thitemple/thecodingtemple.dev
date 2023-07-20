@@ -28,7 +28,7 @@ async function buildPostsIndex() {
 	return posts;
 }
 
-new Promise((resolve, reject) => {
+new Promise(resolve => {
 	const postsIndex = buildPostsIndex();
 	resolve(postsIndex);
 })

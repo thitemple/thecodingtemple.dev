@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+    >
+      <url><loc>thecodingtemple.dev/blog</loc></url>
+<url><loc>thecodingtemple.dev/courses</loc></url>
+<url><loc>thecodingtemple.dev/about</loc></url>
+<url><loc>thecodingtemple.dev/blog/real-immutable-types-with-typescript</loc></url>
+<url><loc>thecodingtemple.dev/blog/typescript-and-the-power-of-the-unknown</loc></url>
+<url><loc>thecodingtemple.dev/blog/i-was-listening-to-a-podcast-2018-edition</loc></url>
+<url><loc>thecodingtemple.dev/blog/handling-nulls-in-csharp-the-right-way</loc></url>
+<url><loc>thecodingtemple.dev/blog/what-makes-a-good-team</loc></url>
+<url><loc>thecodingtemple.dev/blog/functional-javascript-what-is-a-functor</loc></url>
+<url><loc>thecodingtemple.dev/blog/unit-testing-with-typescript-and-mocha</loc></url>
+<url><loc>thecodingtemple.dev/blog/functional-javascript-composition</loc></url>
+<url><loc>thecodingtemple.dev/blog/functional-javascript-introduction-and-currying</loc></url>
+<url><loc>thecodingtemple.dev/blog/linting-typescript-with-webpack</loc></url>
+<url><loc>thecodingtemple.dev/blog/creating-typescript-typings-for-existing-react-components</loc></url>
+<url><loc>thecodingtemple.dev/blog/leveraging-the-power-of-generics-with-typescript</loc></url>
+<url><loc>thecodingtemple.dev/blog/how-to-stub-promises-using-sinonjs</loc></url>
+<url><loc>thecodingtemple.dev/blog/running-tests-in-parallel-with-nunit3</loc></url>
+<url><loc>thecodingtemple.dev/blog/how-i-try-to-keep-up-to-date-with-technologies</loc></url>
+<url><loc>thecodingtemple.dev/blog/async-await-with-es6-babel-and-typescript</loc></url>
+<url><loc>thecodingtemple.dev/blog/how-to-setup-testing-using-typescript-mocha-chai-sinon-karma-and-webpack</loc></url>
+<url><loc>thecodingtemple.dev/blog/a-tale-of-a-pragmatic-programmer</loc></url>
+<url><loc>thecodingtemple.dev/blog/visual-studio-shortcodes</loc></url>
+<url><loc>thecodingtemple.dev/blog/using-react-typescript-webpack-and-visual-studio</loc></url>
+<url><loc>thecodingtemple.dev/blog/your-name-your-legacy</loc></url>
+<url><loc>thecodingtemple.dev/blog/lessons-from-agile-tour-2015</loc></url>
+<url><loc>thecodingtemple.dev/blog/five-things-you-should-be-doing-on-code-reviews</loc></url>
+<url><loc>thecodingtemple.dev/blog/what-makes-a-senior-developer</loc></url>
+<url><loc>thecodingtemple.dev/blog/whats-on-my-playlist-podcasts-i-listen-to</loc></url>
+<url><loc>thecodingtemple.dev/blog/talking-about-es15-classes</loc></url>
+<url><loc>thecodingtemple.dev/blog/talking-about-es2015-strings</loc></url>
+<url><loc>thecodingtemple.dev/blog/talking-about-es2015-destructuring</loc></url>
+<url><loc>thecodingtemple.dev/blog/talking-about-es2015-the-let-and-const-keywords</loc></url>
+<url><loc>thecodingtemple.dev/blog/its-time-to-upgrade-your-javascript-skills</loc></url>
+<url><loc>thecodingtemple.dev/blog/back-in-the-web-game</loc></url>
+<url><loc>thecodingtemple.dev/blog/publishing-a-website-using-octopress-and-github-pages-from-a-new-computer</loc></url>
+<url><loc>thecodingtemple.dev/blog/installing-a-development-machine-with-two-commands</loc></url>
+<url><loc>thecodingtemple.dev/blog/its-just-a-mess-if-you-let-it-single-responsibility-with-javascript</loc></url>
+<url><loc>thecodingtemple.dev/blog/my-favorite-ted-talk</loc></url>
+<url><loc>thecodingtemple.dev/blog/four-good-books-to-change-the-way-you-see-write-javascript</loc></url>
+<url><loc>thecodingtemple.dev/blog/pragmatic-thinking-and-learning-review</loc></url>
+<url><loc>thecodingtemple.dev/blog/jquery-validation-globalization-with-asp-dot-net-mvc-3</loc></url>
+<url><loc>thecodingtemple.dev/blog/programming-by-coincidence</loc></url>
+    </urlset>
+  

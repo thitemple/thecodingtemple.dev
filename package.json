@@ -16,6 +16,7 @@
         "build": "run-s build:*",
         "build:remix": "remix build",
         "build:posts-index": "export NODE_ENV=production && tsx ./scripts/build-posts-index.ts",
+        "build:sitemap": "export NODE_ENV=production && tsx ./scripts/build-sitemap.ts",
         "clean": "rimraf ./node_modules/.cache ./server/dist ./build ./public/build",
         "deploy": "fly deploy --remote-only",
         "dev": "remix dev",
