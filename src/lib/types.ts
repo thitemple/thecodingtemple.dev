@@ -1,10 +1,11 @@
-export type categories = "svelteklit" | "svelte";
-
 export type Post = {
 	title: string;
 	slug: string;
 	description: string;
+	summary: string;
 	date: string;
-	categories: categories[];
+	categories: string[];
 	published: boolean;
+	cover?: string;
+	readTime: number;
 };

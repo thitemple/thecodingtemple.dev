@@ -2,11 +2,11 @@
 	import "open-props/style";
 	import "open-props/normalize";
 	import "open-props/buttons";
-	import "./app.css";
+	import "$lib/assets/app.css";
 
-	import Header from "./header.svelte";
-	import Footer from "./footer.svelte";
-	import PageTransition from "./transition.svelte";
+	import Header from "$lib/components/header.svelte";
+	import Footer from "$lib/components/footer.svelte";
+	import PageTransition from "$lib/components/transition.svelte";
 
 	export let data;
 </script>
@@ -28,10 +28,21 @@
 		display: grid;
 		grid-template-rows: auto 1fr auto;
 		margin-inline: auto;
-		padding-inline: var(--size-7);
+		background-color: var(--surface-1);
+		padding-inline: var(--size-3);
 	}
 
 	main {
-		padding-block: var(--size-9);
+		margin-block: var(--size-2);
+		overflow-x: hidden;
+	}
+
+	@media (min-width: 1024px) {
+		.layout {
+			padding-inline: var(--size-7);
+		}
+		main {
+			margin-block: var(--size-9);
+		}
 	}
 </style>

@@ -1,40 +1,57 @@
-@import "@fontsource/manrope";
-@import "@fontsource/jetbrains-mono";
+@import url(https://fonts.bunny.net/css?family=ibm-plex-sans:400|ibm-plex-sans-condensed:600,500);
 
 html {
+	/* pink */
+	--pink-1: #f5c6e3;
+	--pink-2: #f0a8d4;
+	--pink-3: #e97cbe;
+	--pink-4: #da449f;
+	--pink-5: #c42786;
+	--pink-6: #ae2377;
+	--pink-7: #7b1955;
+	--pink-8: #921d64;
+	--pink-9: #661446;
+
 	/* font */
-	--font-sans: "Manrope", sans-serif;
+	--font-sans: "IBM Plex Sans", sans-serif;
 	--font-mono: "JetBrains Mono", monospace;
+	--font-heading: "IBM Plex Sans Condensed", sans-serif;
 
 	/* dark */
 	--brand-dark: var(--pink-5);
 	--text-1-dark: var(--gray-3);
 	--text-2-dark: var(--gray-5);
+	--text-3-dark: var(--gray-6);
 	--surface-1-dark: var(--gray-12);
 	--surface-2-dark: var(--gray-11);
 	--surface-3-dark: var(--gray-10);
 	--surface-4-dark: var(--gray-9);
 	--background-dark: var(--gradient-8);
 	--border-dark: var(--gray-9);
+	--brand-gradient-dark: linear-gradient(to bottom, var(--gray-0), var(--pink-1));
 
 	/* light */
 	--brand-light: var(--purple-11);
 	--text-1-light: var(--gray-8);
 	--text-2-light: var(--gray-7);
+	--text-3-light: var(--gray-6);
 	--surface-1-light: var(--gray-0);
 	--surface-2-light: var(--gray-1);
 	--surface-3-light: var(--gray-2);
 	--surface-4-light: var(--gray-3);
 	--background-light: none;
 	--border-light: var(--gray-4);
+	--brand-gradient-light: linear-gradient(to bottom, var(--gray-0), var(--pink-1));
 }
 
 :root {
 	color-scheme: dark;
 
 	--brand: var(--brand-dark);
+	--brand-gradient: var(--brand-gradient-dark);
 	--text-1: var(--text-1-dark);
 	--text-2: var(--text-2-dark);
+	--text-3: var(--text-3-dark);
 	--surface-1: var(--surface-1-dark);
 	--surface-2: var(--surface-2-dark);
 	--surface-3: var(--surface-3-dark);
@@ -48,8 +65,10 @@ html {
 		color-scheme: light;
 
 		--brand: var(--brand-light);
+		--brand-gradient: var(--brand-gradient-light);
 		--text-1: var(--text-1-light);
 		--text-2: var(--text-2-light);
+		--text-3: var(--text-3-light);
 		--surface-1: var(--surface-1-light);
 		--surface-2: var(--surface-2-light);
 		--surface-3: var(--surface-3-light);
@@ -63,8 +82,10 @@ html {
 	color-scheme: dark;
 
 	--brand: var(--brand-dark);
+	--brand-gradient: var(--brand-gradient-dark);
 	--text-1: var(--text-1-dark);
 	--text-2: var(--text-2-dark);
+	--text-3: var(--text-3-dark);
 	--surface-1: var(--surface-1-dark);
 	--surface-2: var(--surface-2-dark);
 	--surface-3: var(--surface-3-dark);
@@ -77,8 +98,10 @@ html {
 	color-scheme: light;
 
 	--brand: var(--brand-light);
+	--brand-gradient: var(--brand-gradient-light);
 	--text-1: var(--text-1-light);
 	--text-2: var(--text-2-light);
+	--text-3: var(--text-3-light);
 	--surface-1: var(--surface-1-light);
 	--surface-2: var(--surface-2-light);
 	--surface-3: var(--surface-3-light);
@@ -99,8 +122,8 @@ html {
 	background-attachment: fixed;
 }
 
-img {
-	border-radius: var(--radius-3);
+body > div {
+	background: var(--surface-2);
 }
 
 ul,

@@ -5,12 +5,12 @@
             "---",
             "title: ",
             "description:",
-            "category: ",
+            "categories: ",
+            "    - ",
             "date: \"\"",
             "tags: ",
             "    - ",
-            "comments: true",
-            "path: \"\"",
+            "published: false",
             "---"
         ],
         "description": "Add frontmatter"

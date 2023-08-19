@@ -5,11 +5,6 @@ description:
 categories:
 	- code
 date: "2016-02-17"
-tags:
-  - typescript
-  - es6
-  - promises
-  - asynchronous
 published: true
 summary:
   Learn how to enhance your asynchronous programming skills using async/await in
@@ -23,16 +18,15 @@ Promises are an excellent way of making asynchronous calls, and they're most
 definitely an improvement over working with only callbacks. Take the following
 example, calling a URL that returns a movie:
 
-
 ```js
 fetch("http://www.omdbapi.com/?t=The Matrix")
-	.then(response => {
+	.then((response) => {
 		return response.json();
 	})
-	.then(movie => {
+	.then((movie) => {
 		console.log("The movie object:", movie.Title);
 	})
-	.catch(reason => {
+	.catch((reason) => {
 		console.log("The reason for the erro:", reason);
 	});
 ```
@@ -88,7 +82,7 @@ async function getMovieAsync() {
 	let movie = await response.json();
 	return movie;
 }
-getMovieAsync().then(movie => console.log(movie.Title));
+getMovieAsync().then((movie) => console.log(movie.Title));
 ```
 
 That's great and for sure it makes for a more readable code. We even have a
@@ -121,8 +115,8 @@ async function getMovieAsync() {
 	return movie;
 }
 getMovieAsync()
-	.then(movie => console.log(movie.Title))
-	.catch(reason => console.log(reason));
+	.then((movie) => console.log(movie.Title))
+	.catch((reason) => console.log(reason));
 ```
 
 ## Using it today with Babel and Webpack
@@ -173,22 +167,22 @@ you to check their [site and documentation](https://webpack.github.io/docs/).
 module.exports = {
 	entry: "./src/app.js",
 	output: {
-		filename: "dist/bundle.js",
+		filename: "dist/bundle.js"
 	},
 	plugins: [
 		new webpack.ProvidePlugin({
-			fetch: "imports?this=>global!exports?global.fetch!whatwg-fetch",
-		}),
+			fetch: "imports?this=>global!exports?global.fetch!whatwg-fetch"
+		})
 	],
 	module: {
 		loaders: [
 			{
 				test: /\.jsx?$/,
 				exclude: /node_modules/,
-				loader: "babel-loader",
-			},
-		],
-	},
+				loader: "babel-loader"
+			}
+		]
+	}
 };
 ```
 
@@ -264,25 +258,25 @@ Now, let's make some changes to the Webpack config file.
 module.exports = {
 	entry: "./src/app.ts",
 	output: {
-		filename: "dist/bundle.js",
+		filename: "dist/bundle.js"
 	},
 	resolve: {
-		extensions: [".ts", ".tsx", ".js", ".jsx", ""],
+		extensions: [".ts", ".tsx", ".js", ".jsx", ""]
 	},
 	plugins: [
 		new webpack.ProvidePlugin({
-			fetch: "imports?this=>global!exports?global.fetch!whatwg-fetch",
-		}),
+			fetch: "imports?this=>global!exports?global.fetch!whatwg-fetch"
+		})
 	],
 	module: {
 		loaders: [
 			{
 				test: /\.tsx?$/,
 				exclude: /node_modules/,
-				loader: "babel-loader!ts-loader",
-			},
-		],
-	},
+				loader: "babel-loader!ts-loader"
+			}
+		]
+	}
 };
 ```
 
@@ -303,9 +297,7 @@ interface Movie {
 
 async function load(): Promise<Movie> {
 	try {
-		let response: Response = await fetch(
-			"http://www.omdbapi.com/?t=The Matrix",
-		);
+		let response: Response = await fetch("http://www.omdbapi.com/?t=The Matrix");
 		let movie: Movie = await response.json();
 		return movie;
 	} catch (err) {
@@ -313,7 +305,7 @@ async function load(): Promise<Movie> {
 	}
 }
 
-load().then(movie => console.log(movie.Title));
+load().then((movie) => console.log(movie.Title));
 ```
 
 And that's it for today.
