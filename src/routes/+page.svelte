@@ -1,6 +1,5 @@
 <script lang="ts">
 	import * as config from "$lib/config";
-	import { formatDate } from "$lib/utils.js";
 	import Hero from "./hero.svelte";
 	import LatestPost from "./latest-post.svelte";
 	export let data;
@@ -11,4 +10,6 @@
 </svelte:head>
 
 <Hero />
-<LatestPost post={data.post} />
+{#if data.post}
+	<LatestPost post={data.post} />
+{/if}

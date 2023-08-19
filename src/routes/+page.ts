@@ -6,7 +6,7 @@ export async function load({ fetch }) {
 	const posts: Post[] = await response.json();
 
 	if (posts.length > 0) {
-		return { post: posts[0]! };
+		return { post: posts[0] };
 	}
 
 	return error(404, "No posts found");

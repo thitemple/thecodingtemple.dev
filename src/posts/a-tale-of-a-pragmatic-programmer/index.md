@@ -1,12 +1,10 @@
 ---
 title: A tale of a Pragmatic Programmer
-description:
-  Some of the lessons I've learned after reading The Pragmatic Programmers book.
+description: Some of the lessons I've learned after reading The Pragmatic Programmers book.
 categories:
   - books
 date: "2016-01-27"
-summary:
-  Dive into the timeless wisdom of "The Pragmatic Programmer" book and discover
+summary: Dive into the timeless wisdom of "The Pragmatic Programmer" book and discover
   valuable insights that every programmer should know. Explore topics such as
   software entropy, avoiding gradual pitfalls, the importance of refactoring,
   and taking pride in your work. Learn from the experiences shared in this
