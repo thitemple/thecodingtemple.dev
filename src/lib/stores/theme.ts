@@ -12,7 +12,8 @@ export const theme = writable<Theme>(defaultTheme);
 export function toggleTheme() {
 	theme.update((currentTheme) => {
 		const newTheme = currentTheme === "light" ? "dark" : "light";
-		document.documentElement.setAttribute("color-scheme", newTheme);
+		document.documentElement.classList.toggle("dark");
+		document.documentElement.classList.toggle("light");
 		localStorage.setItem("color-scheme", newTheme);
 		return newTheme;
 	});

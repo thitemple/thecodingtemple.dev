@@ -7,113 +7,47 @@
 	import { ChevronDown } from "lucide-svelte";
 </script>
 
-<nav>
+<nav class="relative flex items-center justify-between py-5 lg:py-8">
 	<a href="/">
-		<picture class="logo-dark">
+		<picture class="hidden dark:block">
 			<source srcset={logoDark} media="(min-width: 1024px)" />
 			<source srcset={symbolDark} />
-			<img src={symbolLight} alt="The Coding Temple logo" class="logo" />
+			<img src={symbolLight} alt="The Coding Temple logo" class="w-10 lg:w-48" />
 		</picture>
 
-		<picture class="logo-light">
+		<picture class="dark:hidden">
 			<source srcset={logoLight} media="(min-width: 1024px)" />
 			<source srcset={symbolLight} />
-			<img src={symbolLight} alt="The Coding Temple logo" class="logo" />
+			<img src={symbolLight} alt="The Coding Temple logo" class="w-10 lg:w-48" />
 		</picture>
 	</a>
 
-	<ul class="links">
-		<li>
-			<a href="/blog">Blog</a>
-		</li>
-		<li>
-			<a href="/about">Courses</a>
-		</li>
-		<li>
-			<a href="/about">About</a>
-		</li>
-		<li>
-			<a href="/rss.xml" target="_blank">RSS</a>
-		</li>
-	</ul>
-	<div class="toggle">
+	<div class="hidden lg:flex">
+		<ul
+			class="flex items-center gap-4 rounded-xl border border-slate-300 bg-white px-4 py-2 text-slate-600 shadow-md ring-1 ring-slate-300 dark:border-slate-400 dark:bg-violet-700 dark:text-slate-200 dark:ring-slate-400"
+		>
+			<li>
+				<a href="/blog">Blog</a>
+			</li>
+			<li>
+				<a href="/about">Courses</a>
+			</li>
+			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
+				<a href="/rss.xml" target="_blank">RSS</a>
+			</li>
+		</ul>
+	</div>
+	<div class="hidden lg:block">
 		<Toggle />
 	</div>
-	<button title="Toggle mobile menu">
+	<button
+		title="Toggle mobile menu"
+		class="group flex items-center rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-800 shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 backdrop-blur dark:bg-violet-700 dark:text-slate-200 dark:shadow-slate-700 dark:ring-slate-300 lg:hidden"
+	>
 		Menu
 		<ChevronDown />
 	</button>
 </nav>
-
-<style>
-	.logo-dark {
-		display: none;
-	}
-
-	:global(html[color-scheme="dark"]) .logo-dark {
-		display: block;
-	}
-
-	:global(html[color-scheme="dark"]) .logo-light {
-		display: none;
-	}
-
-	button {
-		border-radius: var(--radius-3);
-	}
-
-	nav {
-		display: flex;
-		position: relative;
-		padding: var(--size-4) 0;
-		justify-content: space-between;
-	}
-
-	.toggle {
-		display: none;
-	}
-
-	.logo {
-		height: var(--size-8);
-	}
-
-	.links {
-		margin-block: var(--size-7);
-		border: 1px solid var(--border);
-		border-radius: var(--radius-3);
-		padding: var(--size-2) var(--size-3);
-		display: none;
-	}
-
-	a {
-		color: inherit;
-		text-decoration: none;
-	}
-
-	a:hover {
-		text-decoration: underline;
-		color: var(--brand);
-	}
-
-	@media (min-width: 1024px) {
-		nav {
-			padding-block: var(--size-7);
-			justify-content: space-between;
-			align-items: center;
-		}
-
-		.links {
-			display: flex;
-			gap: var(--size-7);
-			margin-block: 0;
-		}
-
-		.toggle {
-			display: block;
-		}
-
-		button {
-			display: none;
-		}
-	}
-</style>

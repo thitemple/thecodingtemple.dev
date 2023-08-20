@@ -1,43 +1,15 @@
-<section class="hero">
-	<h1>Hi, I'm Thiago Temple. I love building products, writing code and learning through it.</h1>
-	<p>
+<section
+	class="dark:from-violet-600 -mx-8 bg-gradient-to-b from-white to-pink-100 px-7 py-12 dark:to-violet-900"
+>
+	<h1
+		class="max-w-2xl font-heading text-2xl font-semibold text-violet-700 dark:text-slate-100 lg:max-w-2xl lg:text-5xl lg:font-medium"
+	>
+		Hi, I'm Thiago Temple. I love building products, writing code and learning through it.
+	</h1>
+	<p class="mt-8 hidden max-w-2xl px-1 text-lg text-zinc-600 dark:text-slate-200 lg:block">
 		I'm a web-loving staff developer, driven by curiosity and a passion for learning. I'm eager to
 		share my knowledge and always up for new challenges. With a friendly and open-minded approach, I
 		embrace the ever-evolving world of web technologies, staying ahead of the game and inspiring
 		others along the way.
 	</p>
 </section>
-
-<style>
-	.hero {
-		background-image: var(--brand-gradient);
-		padding: var(--size-8) var(--size-6);
-		margin-inline: calc(var(--size-7) * -1);
-	}
-
-	h1 {
-		font-family: var(--font-heading);
-		color: var(--brand);
-		font-weight: var(--font-weight-5);
-		max-width: 42rem;
-		line-height: 1;
-		font-size: var(--font-size-4);
-		padding-inline: var(--size-1);
-	}
-
-	.hero p {
-		display: none;
-		margin-block-start: var(--size-7);
-		color: var(--text-2);
-	}
-
-	@media (min-width: 1024px) {
-		h1 {
-			font-size: var(--font-size-7);
-		}
-
-		.hero p {
-			display: block;
-		}
-	}
-</style>
