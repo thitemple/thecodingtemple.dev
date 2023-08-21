@@ -9,6 +9,7 @@
 	<title>{data.meta.title}</title>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
+	<link rel="stylesheet" href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css" />
 </svelte:head>
 
 <article class="mx-auto grid max-w-prose gap-4 md:gap-6">
