@@ -2,21 +2,12 @@ import type { Post } from "$lib/types";
 import { json } from "@sveltejs/kit";
 import type { PaginatedPosts } from "./types.js";
 import type { Paginated } from "../types.js";
-import { z } from "zod";
 
-const getPostsParams = z.object({
-	page: z.coerce
-		.number()
-		.optional()
-		.transform((value) => value ?? 1),
-	pageSize: z.coerce
-		.number()
-		.optional()
-		.transform((value) => value ?? 5)
-});
-
-export async function GET({ url }) {
-	const { page, pageSize } = getPostsParams.parse(url.searchParams);
+export async function GET({ url: { searchParams } }) {
+	const pageFromParams = searchParams.get("page") ?? "1";
+	const pageSizeFromParams = searchParams.get("pageSize") ?? "5";
+	const page = isNaN(parseInt(pageFromParams)) ? 1 : parseInt(pageFromParams);
+	const pageSize = isNaN(parseInt(pageSizeFromParams)) ? 5 : parseInt(pageSizeFromParams);
 
 	const posts = await getPosts();
 	const hasNextPage = posts.length > page * pageSize;
