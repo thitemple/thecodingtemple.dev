@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+
+		<link rel="alternate" href="/rss.xml" type="application/rss+xml" title="RSS" />
+		%sveltekit.head%
+		<script type="module">
+			const theme = localStorage.getItem("color-scheme");
+
+			theme
+				? document.documentElement.classList.add(theme)
+				: localStorage.setItem("color-scheme", "dark");
+		</script>
+	</head>
+	<body data-sveltekit-preload-data="hover" class="bg-slate-100 dark:bg-slate-900">
+		<div>%sveltekit.body%</div>
+	</body>
+</html>
