@@ -1,9 +1,18 @@
 <script lang="ts">
+	import { updated } from "$app/stores";
+	import { load, trackPageview } from "fathom-client";
+
 	import "$lib/assets/app.css";
 
 	import Header from "$lib/components/header.svelte";
 	import Footer from "$lib/components/footer.svelte";
 	import PageTransition from "$lib/components/transition.svelte";
+
+	// load("PBBTUKFS", { includedDomains: ["thecodingtemple.dev"] });
+
+	// $: if ($updated) {
+	// 	trackPageview();
+	// }
 
 	export let data;
 </script>

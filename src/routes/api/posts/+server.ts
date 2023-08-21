@@ -2,10 +2,22 @@ import type { Post } from "$lib/types";
 import { json } from "@sveltejs/kit";
 import type { PaginatedPosts } from "./types.js";
 import type { Paginated } from "../types.js";
+import { z } from "zod";
+
+const getPostsParams = z.object({
+	page: z.coerce
+		.number()
+		.optional()
+		.transform((value) => value ?? 1),
+	pageSize: z.coerce
+		.number()
+		.optional()
+		.transform((value) => value ?? 5)
+});
 
 export async function GET({ url }) {
-	const page = Number(url.searchParams.get("page") ?? "1");
-	const pageSize = Number(url.searchParams.get("pageSize") ?? "5");
+	const { page, pageSize } = getPostsParams.parse(url.searchParams);
+
 	const posts = await getPosts();
 	const hasNextPage = posts.length > page * pageSize;
 	const hasPreviousPage = page > 1;
@@ -16,16 +28,23 @@ export async function GET({ url }) {
 		nextPage: hasNextPage ? page + 1 : undefined,
 		previousPage: hasPreviousPage ? page - 1 : undefined
 	};
-	const response: PaginatedPosts = { data: posts, pageInfo };
+
+	const paginatedPosts = posts.slice((page - 1) * pageSize, page * pageSize);
+
+	const response: PaginatedPosts = {
+		data: paginatedPosts,
+		pageInfo
+	};
 
 	return json(response);
 }
 
 type File = {
-	metadata: Omit<Post, "slug" | "readTime">;
+	metadata: Omit<Post, "slug" | "readTime" | "cover">;
 	default: {
 		render: () => { html: string };
 	};
+	cover?: string;
 };
 
 async function getPosts() {
@@ -39,7 +58,7 @@ async function getPosts() {
 		if (isFile(file) && slug) {
 			const metadata = file.metadata as Omit<Post, "slug" | "readTime">;
 			const readTime = readingTime(file.default.render().html);
-			const post = { ...metadata, slug, readTime } satisfies Post;
+			const post = { ...metadata, slug, readTime, cover: file.cover } satisfies Post;
 			post.published && posts.push(post);
 		}
 	}

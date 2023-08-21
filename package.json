@@ -45,12 +45,15 @@
 		"@fontsource/jetbrains-mono": "^5.0.9",
 		"@fontsource/manrope": "^5.0.9",
 		"clsx": "^2.0.0",
+		"fathom-client": "^3.5.0",
 		"lucide-svelte": "^0.268.0",
+		"mdsvex-relative-images": "^1.0.3",
 		"open-props": "^1.5.13",
 		"rehype-slug": "^5.1.0",
 		"remark-toc": "^8.0.1",
 		"remark-unwrap-images": "^3.0.1",
 		"shiki": "^0.14.3",
-		"tailwind-merge": "^1.14.0"
+		"tailwind-merge": "^1.14.0",
+		"zod": "^3.22.2"
 	}
 }

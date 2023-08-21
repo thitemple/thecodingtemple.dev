@@ -17,7 +17,7 @@
 	</a>
 	{#if post.cover}
 		<img
-			src="https://thecodingtemple.dev/images/real-immutable-types-with-typescript/banner-VXXNI2NR.png"
+			src={post.cover}
 			alt={`Thumbnail for ${post.title}`}
 			class="aspect-video w-full opacity-90 lg:col-start-1 lg:row-span-5 lg:row-start-1 lg:pr-4"
 		/>

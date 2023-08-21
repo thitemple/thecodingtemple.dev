@@ -9,8 +9,11 @@ summary: Discover a simple, library-free method to create immutable objects in
   TypeScript. Learn about the Immutable<T> type, its advantages over the
   built-in Readonly type, and its limitations at runtime.
 published: true
-cover: ./banner.png
 ---
+
+<script context="module">
+	export {default as cover} from "./banner.png";
+</script>
 
 When writing TypeScript there's a pretty easy, simple solution to create
 immutable objects and it doesn't involve adding third-party libraries.
