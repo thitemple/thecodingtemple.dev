@@ -20,25 +20,15 @@ The life-long learner
 
 Watch it first, then we'll talk:
 
-<div style={{ maxWidth: 854 }}>
-	<div style={{ position: "relative", height: 0, paddingBottom: "56.25%" }}>
-		<iframe
-			src="https://embed.ted.com/talks/ben_dunlap_talks_about_a_passionate_life"
-			width="854"
-			height="480"
-			style={{
-				position: "absolute",
-				left: 0,
-				top: 0,
-				width: "100%",
-				height: "100%"
-			}}
-			frameBorder="0"
-			scrolling="no"
-			allowFullScreen
-		></iframe>
-	</div>
-</div>
+<iframe
+	src="https://embed.ted.com/talks/ben_dunlap_talks_about_a_passionate_life"
+	width="854"
+	height="480"
+	title="My favorite TED talk"
+	frameBorder="0"
+	scrolling="no"
+	allowFullScreen
+></iframe>
 
 Several lessons can be drawn from this video. I could focus on how one became a
 Holocaust survivor, or on the way a person decided to deal with someone who was

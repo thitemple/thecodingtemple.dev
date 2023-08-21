@@ -18,8 +18,8 @@ especially with the always moving forward nature of open source software.
 So here's how I managed to setup a testing project using Typescript, Mocha,
 Chai, Sinon, Karma and Webpack.
 
-> TL/DR:
-> [The code is available on GitHub.](https://github.com/thitemple/TypescriptMochaWebpackDemo)
+**TL/DR:**
+[The code is available on GitHub.](https://github.com/thitemple/TypescriptMochaWebpackDemo)
 
 ## The NPM packages
 
@@ -32,7 +32,7 @@ npm install typescript webpack ts-loader chai karma karma-chai karma-mocha karma
 ## The Webpack config file: webpack.config.js
 
 It is a pretty straight forward Webpack config file, where I set up an entry
-point to the src\app.ts file and, an output to a bundle.js file. Also, I changed
+point to the `src\app.ts` file and, an output to a bundle.js file. Also, I changed
 the supported extensions, and I configured the ts-loader to compile the
 Typescript files.
 
@@ -153,9 +153,9 @@ infrastructure before testing.
 In any case, here are a few examples I wrote.
 [You can find this complete project on GitHub](https://github.com/vintem/TypescriptMochaWebpackDemo).
 
-MoviesViewModel.ts
+#### MoviesViewModel.ts:
 
-```js
+```ts MoviesViewModel.ts
 import { Movie, movieDataService } from "./MovieDataService";
 
 export default class MoviesViewModel {
@@ -177,9 +177,9 @@ export default class MoviesViewModel {
 }
 ```
 
-MovieDataService.spec.ts
+#### MovieDataService.spec.ts:
 
-```js
+```ts MovieDataService.spec.ts
 import MoviesViewModel from "../src/MoviesViewModel";
 import { movieDataService, Movie } from "../src/MovieDataService";
 import { expect } from "chai";
@@ -188,9 +188,7 @@ describe("MoviesViewModel", () => {
 	let viewModel: MoviesViewModel;
 	let movieDataServiceStub: Sinon.SinonSpy;
 	beforeEach(() => {
-		sinon
-			.stub(movieDataService, "loadMovies")
-			.returns([new Movie("The Matrix", 1998, 5)]);
+		sinon.stub(movieDataService, "loadMovies").returns([new Movie("The Matrix", 1998, 5)]);
 		movieDataServiceStub = sinon.spy(movieDataService, "save");
 		viewModel = new MoviesViewModel();
 	});

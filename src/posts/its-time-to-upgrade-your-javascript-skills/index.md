@@ -83,7 +83,7 @@ npm install --save-dev gulp gulp-babel
 Now it's time to configure Gulp. I'm going to do that in a gulpfile.js file
 (which is what Gulp expect us to have by default).
 
-```javascript
+```js
 var gulp = require("gulp");
 var babel = require("gulp-babel");
 
@@ -98,7 +98,7 @@ _dist_ directory. Pretty simple, hum?
 
 Let's say that inside the src\app.js we have the following code:
 
-```javascript
+```js
 class Person {
 	constructor(name) {
 		this.name = name;

@@ -30,6 +30,7 @@ Then why write about it?
 	frameBorder="0"
 	class="giphy-embed"
 	allowFullScreen
+  title="Why?"
 ></iframe>
 
 Well, they say that if you can't explain something using simple terms you don't
