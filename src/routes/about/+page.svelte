@@ -63,7 +63,7 @@
 			</p>
 			<p>
 				However, one thing I cherish the most is spending quality time with my family. I am married
-				and a proud father of a two kids, as well as the owner of two very active greyhounds.
+				and a proud father of two kids, as well as the owner of two cuddly greyhounds.
 			</p>
 		</div>
 	</div>
