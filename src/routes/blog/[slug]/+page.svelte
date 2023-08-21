@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Title from "$lib/components/title.svelte";
 	import { formatDate } from "$lib/utils.js";
 
 	export let data;
@@ -10,15 +11,20 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<article>
+<article class="mx-auto grid max-w-prose gap-4 md:gap-6">
 	<hgroup>
-		<h1>{data.meta.title}</h1>
-		<p>Published at {formatDate(data.meta.date)}</p>
+		<Title
+			classes="mb-4 leading-10 underline decoration-violet-500 decoration-double decoration-4 underline-offset-8 dark:decoration-pink-500"
+			>{data.meta.title}</Title
+		>
+		<p class="text-sm text-slate-700 dark:text-slate-300 lg:mt-2">
+			Published at {formatDate(data.meta.date)}
+		</p>
 	</hgroup>
 
-	<div class="tags">
+	<div class="hidden gap-4">
 		{#each data.meta.categories as category}
-			<span class="surface-3">&num;{category}</span>
+			<span class="rounded-3xl bg-zinc-200 px-3 py-2">&num;{category}</span>
 		{/each}
 	</div>
 
@@ -26,30 +32,3 @@
 		<svelte:component this={data.content} />
 	</div>
 </article>
-
-<style>
-	article {
-		max-inline-size: var(--size-content-3);
-		margin-inline: auto;
-	}
-
-	h1 {
-		text-transform: capitalize;
-	}
-
-	h1 + p {
-		margin-top: var(--size-2);
-		color: var(--text-2);
-	}
-
-	.tags {
-		display: flex;
-		gap: var(--size-3);
-		margin-top: var(--size-7);
-	}
-
-	.tags > * {
-		padding: var(--size-2) var(--size-3);
-		border-radius: var(--radius-round);
-	}
-</style>

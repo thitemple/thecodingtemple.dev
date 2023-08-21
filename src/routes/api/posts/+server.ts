@@ -5,13 +5,14 @@ import type { Paginated } from "../types.js";
 
 export async function GET({ url }) {
 	const page = Number(url.searchParams.get("page") ?? "1");
+	const pageSize = Number(url.searchParams.get("pageSize") ?? "5");
 	const posts = await getPosts();
-	const hasNextPage = posts.length > page * 5;
+	const hasNextPage = posts.length > page * pageSize;
 	const hasPreviousPage = page > 1;
 	const pageInfo: Paginated<unknown>["pageInfo"] = {
 		currentPage: page,
 		total: posts.length,
-		totalPages: Math.ceil(posts.length / 5),
+		totalPages: Math.ceil(posts.length / pageSize),
 		nextPage: hasNextPage ? page + 1 : undefined,
 		previousPage: hasPreviousPage ? page - 1 : undefined
 	};
