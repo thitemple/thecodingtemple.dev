@@ -5,6 +5,9 @@
 	import logoDark from "$lib/assets/img/logo-dark-mode.svg";
 	import logoLight from "$lib/assets/img/logo-transparent.svg";
 	import { ChevronDown } from "lucide-svelte";
+	import MobileMenu from "./mobile-menu";
+
+	let dialogOpened = false;
 </script>
 
 <nav class="relative flex items-center justify-between py-5 lg:py-8">
@@ -46,8 +49,10 @@
 	<button
 		title="Toggle mobile menu"
 		class="group flex items-center rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-800 shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 backdrop-blur dark:bg-violet-700 dark:text-slate-200 dark:shadow-slate-700 dark:ring-slate-300 lg:hidden"
+		on:click={() => (dialogOpened = true)}
 	>
 		Menu
 		<ChevronDown />
 	</button>
+	<MobileMenu bind:open={dialogOpened} />
 </nav>
