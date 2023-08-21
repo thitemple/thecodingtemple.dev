@@ -30,7 +30,7 @@
 				<a href="/blog">Blog</a>
 			</li>
 			<li>
-				<a href="/about">Courses</a>
+				<a href="/courses">Courses</a>
 			</li>
 			<li>
 				<a href="/about">About</a>

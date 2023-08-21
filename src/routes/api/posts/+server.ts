@@ -1,9 +1,23 @@
 import type { Post } from "$lib/types";
 import { json } from "@sveltejs/kit";
+import type { PaginatedPosts } from "./types.js";
+import type { Paginated } from "../types.js";
 
-export async function GET() {
+export async function GET({ url }) {
+	const page = Number(url.searchParams.get("page") ?? "1");
 	const posts = await getPosts();
-	return json(posts);
+	const hasNextPage = posts.length > page * 5;
+	const hasPreviousPage = page > 1;
+	const pageInfo: Paginated<unknown>["pageInfo"] = {
+		currentPage: page,
+		total: posts.length,
+		totalPages: Math.ceil(posts.length / 5),
+		nextPage: hasNextPage ? page + 1 : undefined,
+		previousPage: hasPreviousPage ? page - 1 : undefined
+	};
+	const response: PaginatedPosts = { data: posts, pageInfo };
+
+	return json(response);
 }
 
 type File = {

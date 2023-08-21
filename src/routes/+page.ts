@@ -1,12 +1,12 @@
-import type { Post } from "$lib/types";
 import { error } from "@sveltejs/kit";
+import type { PaginatedPosts } from "./api/posts/types.js";
 
 export async function load({ fetch }) {
 	const response = await fetch("api/posts");
-	const posts: Post[] = await response.json();
+	const posts = (await response.json()) as PaginatedPosts;
 
-	if (posts.length > 0) {
-		return { post: posts[0] };
+	if (posts.data.length > 0) {
+		return { post: posts.data[0] };
 	}
 
 	return error(404, "No posts found");
