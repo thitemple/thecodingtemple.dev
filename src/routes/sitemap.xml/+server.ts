@@ -1,4 +1,4 @@
-import type { PaginatedPosts } from "../api/posts/types";
+import { getPosts } from "$lib/posts";
 
 export const prerender = true;
 
@@ -9,13 +9,12 @@ const navbar = [
 	{ to: "/about", text: "About" }
 ];
 
-export async function GET({ fetch }) {
-	const response = await fetch("api/posts?pageSize=999");
-	const posts: PaginatedPosts = await response.json();
+export async function GET() {
+	const posts = await getPosts();
 
 	const allPaths = [
 		...navbar,
-		...posts.data.map((post) => ({ to: `/blog/${post.slug}`, text: post.title }))
+		...posts.map((post) => ({ to: `/blog/${post.slug}`, text: post.title }))
 	];
 
 	return new Response(

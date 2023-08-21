@@ -1,12 +1,10 @@
 export const prerender = true;
 
 import * as config from "$lib/config";
-import type { PaginatedPosts } from "../api/posts/types.js";
+import { getPosts } from "$lib/posts.js";
 
-export async function GET({ fetch }) {
-	const response = await fetch("api/posts?pageSize=999");
-	const posts: PaginatedPosts = await response.json();
-
+export async function GET() {
+	const posts = await getPosts();
 	const headers = { "Content-Type": "application/xml" };
 
 	const xml = `
@@ -16,7 +14,7 @@ export async function GET({ fetch }) {
 				<description>${config.description}</description>
 				<link>${config.url}</link>
 				<atom:link href="${config.url}/rss.xml" rel="self" type="application/rss+xml"/>
-				${posts.data
+				${posts
 					.map(
 						(post) => `
 						<item>
