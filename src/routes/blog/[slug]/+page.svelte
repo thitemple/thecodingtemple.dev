@@ -28,7 +28,7 @@
 		{/each}
 	</div>
 
-	<div class="prose">
+	<div class="prose prose-slate overflow-hidden dark:prose-invert">
 		<svelte:component this={data.content} />
 	</div>
 </article>
