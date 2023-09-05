@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as config from "$lib/config";
+	import me from "$lib/assets/img/me.jpg";
 	import Experience from "./experience.svelte";
 	import Hero from "./hero.svelte";
 	import LatestPost from "./latest-post.svelte";
@@ -8,6 +9,12 @@
 
 <svelte:head>
 	<title>{config.title}</title>
+	<meta property="og:title" content={config.title}>
+	<meta property="og:url" content={config.url}>
+	<meta property="twitter:image" content={me}>
+	<meta property="og:image" content={me}>
+	<meta name="description" content={config.description} />
+	<meta property="twitter:description" content={config.description}>
 </svelte:head>
 
 <div class="grid gap-8">

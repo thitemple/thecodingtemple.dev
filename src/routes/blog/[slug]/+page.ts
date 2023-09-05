@@ -1,5 +1,6 @@
 import type { Post } from "$lib/types";
 import { error } from "@sveltejs/kit";
+import * as config from "$lib/config";
 
 export async function load({ params }) {
 	try {
@@ -9,11 +10,17 @@ export async function load({ params }) {
 			throw error(404, `Could not find post: ${params.slug}`);
 		}
 
+		const url = `${config.url}/blog/${params.slug}`;
+
 		return {
 			content: post.default,
-			meta: post.metadata,
+			meta: { ...post.metadata, url },
 			cover: post.cover
-		} as { content: ConstructorOfATypedSvelteComponent; meta: Post; cover?: string };
+		} as {
+			content: ConstructorOfATypedSvelteComponent;
+			meta: Post & { url: string };
+			cover?: string;
+		};
 	} catch (e) {
 		console.error("Error getting the post", e);
 		throw error(404, `Could not find post ${params.slug}`);

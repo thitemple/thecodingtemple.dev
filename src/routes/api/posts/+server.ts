@@ -18,9 +18,6 @@ const paramsSchema = z.object({
 export async function GET({ url: { searchParams } }) {
 	const { page, pageSize } = paramsSchema.parse(Object.fromEntries(searchParams));
 
-	console.debug("page", page);
-	console.debug("pageSize", pageSize);
-
 	const posts = await getPosts();
 	const hasNextPage = posts.length > page * pageSize;
 	const hasPreviousPage = page > 1;

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { url } from "$lib/config";
 	import Title from "$lib/components/title.svelte";
 	import { formatDate } from "$lib/utils.js";
 
@@ -9,6 +10,13 @@
 	<title>{data.meta.title}</title>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
+	<meta property="og:url" content={`${url}/blog/${data.meta.slug}`}>
+	{#if data.cover}
+		<meta property="twitter:image" content={data.cover}>
+		<meta property="og:image" content={data.cover}>
+	{/if}
+	<meta property="twitter:description" content={data.meta.summary}>
+	<meta property="description" content={data.meta.summary}>
 	<link rel="stylesheet" href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css" />
 </svelte:head>
 
