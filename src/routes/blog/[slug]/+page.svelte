@@ -10,7 +10,7 @@
 	<title>{data.meta.title}</title>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
-	<meta property="og:url" content={`${url}/blog/${data.meta.slug}`}>
+	<meta property="og:url" content={data.meta.url}>
 	{#if data.cover}
 		<meta property="twitter:image" content={data.cover}>
 		<meta property="og:image" content={data.cover}>
