@@ -50,10 +50,10 @@
 		"lucide-svelte": "^0.268.0",
 		"mdsvex-relative-images": "^1.0.3",
 		"open-props": "^1.5.15",
-		"rehype-slug": "^5.1.0",
+		"rehype-slug": "^6.0.0",
 		"remark-toc": "^8.0.1",
 		"remark-unwrap-images": "^3.0.1",
-		"shiki": "^0.14.3",
+		"shiki": "^0.14.4",
 		"tailwind-merge": "^1.14.0",
 		"zod": "^3.22.2"
 	}
