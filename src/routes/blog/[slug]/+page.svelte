@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { url } from "$lib/config";
+	import * as config from "$lib/config";
 	import Title from "$lib/components/title.svelte";
 	import { formatDate } from "$lib/utils.js";
 
@@ -11,12 +11,15 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
 	<meta property="og:url" content={data.meta.url}>
+	<meta property="description" content={data.meta.summary}>
 	{#if data.cover}
 		<meta property="twitter:image" content={data.cover}>
 		<meta property="og:image" content={data.cover}>
 	{/if}
+	<meta property="twitter:title" content={data.meta.title}>
+	<meta property="twitter:creator" content={config.twitterHandle}>
 	<meta property="twitter:description" content={data.meta.summary}>
-	<meta property="description" content={data.meta.summary}>
+	<meta property="twitter:card" content="summary">
 	<link rel="stylesheet" href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css" />
 </svelte:head>
 

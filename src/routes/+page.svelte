@@ -9,12 +9,15 @@
 
 <svelte:head>
 	<title>{config.title}</title>
+	<meta name="description" content={config.description} />
 	<meta property="og:title" content={config.title}>
 	<meta property="og:url" content={config.url}>
-	<meta property="twitter:image" content={me}>
 	<meta property="og:image" content={me}>
-	<meta name="description" content={config.description} />
+	<meta name="og:description" content={config.ogDescription} />
+	<meta property="twitter:title" content={config.title}>
+	<meta property="twitter:image" content={me}>
 	<meta property="twitter:description" content={config.description}>
+	<meta property="twitter:card" content="summary">
 </svelte:head>
 
 <div class="grid gap-8">
