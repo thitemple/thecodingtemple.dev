@@ -8,13 +8,14 @@
 
 <svelte:head>
 	<title>{data.meta.title}</title>
+	<meta property="description" content={data.meta.summary}>
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
 	<meta property="og:url" content={data.meta.url}>
-	<meta property="description" content={data.meta.summary}>
+	<meta property="og:description" content={data.meta.summary}>
 	{#if data.cover}
-		<meta property="twitter:image" content={data.cover}>
-		<meta property="og:image" content={data.cover}>
+	<meta property="og:image" content={`${config.url}${data.cover}`}>
+		<meta property="twitter:image" content={`${config.url}${data.cover}`}>
 		<meta property="twitter:card" content="summary_large_image">
 	{:else}
 		<meta property="twitter:card" content="summary">
