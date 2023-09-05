@@ -15,11 +15,13 @@
 	{#if data.cover}
 		<meta property="twitter:image" content={data.cover}>
 		<meta property="og:image" content={data.cover}>
+		<meta property="twitter:card" content="summary_large_image">
+	{:else}
+		<meta property="twitter:card" content="summary">
 	{/if}
 	<meta property="twitter:title" content={data.meta.title}>
 	<meta property="twitter:creator" content={config.twitterHandle}>
 	<meta property="twitter:description" content={data.meta.summary}>
-	<meta property="twitter:card" content="summary">
 	<link rel="stylesheet" href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css" />
 </svelte:head>
 
