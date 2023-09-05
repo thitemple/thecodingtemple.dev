@@ -6,7 +6,7 @@ categories:
   - code
   - typescript
 summary: Discover a simple, library-free method to create immutable objects in
-  TypeScript. Learn about the Immutable&lt;T&gt; type, its advantages over the
+  TypeScript. Learn about the `Immutable<T>` type, its advantages over the
   built-in Readonly type, and its limitations at runtime.
 published: true
 ---
