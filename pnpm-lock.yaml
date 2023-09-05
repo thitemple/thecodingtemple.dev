@@ -1,16 +1,6 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
-  '@fontsource/jetbrains-mono':
-    specifier: ^5.0.11
-    version: 5.0.11
-  '@fontsource/manrope':
-    specifier: ^5.0.11
-    version: 5.0.11
   '@vercel/analytics':
     specifier: ^1.0.2
     version: 1.0.2
@@ -21,14 +11,11 @@ dependencies:
     specifier: ^3.5.0
     version: 3.5.0
   lucide-svelte:
-    specifier: ^0.268.0
-    version: 0.268.0(svelte@4.2.0)
+    specifier: 0.275.0-beta.0
+    version: 0.275.0-beta.0(svelte@4.2.0)
   mdsvex-relative-images:
     specifier: ^1.0.3
     version: 1.0.3
-  open-props:
-    specifier: ^1.5.15
-    version: 1.5.15
   rehype-slug:
     specifier: ^6.0.0
     version: 6.0.0
@@ -375,14 +362,6 @@ packages:
     resolution: {integrity: sha512-ZSjtmelB7IJfWD2Fvb7+Z+ChTIKWq6kjda95fLcQKNS5aheVHn4IkfgRQE3sIIzTcSLwLcLZUD9UBt+V7+h+Pw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
-
-  /@fontsource/jetbrains-mono@5.0.11:
-    resolution: {integrity: sha512-twcYcNd6QLirmUNX5NGeJjuXbIbcq5bd5R0UJHM7OXvX1p+mDohuUBZTh83j3NW2TCuWurlltb+Eku2sYOsP1w==}
-    dev: false
-
-  /@fontsource/manrope@5.0.11:
-    resolution: {integrity: sha512-NoNPyVn41A77eUSEPhN1gl1hRLhOV4AmNiJ+6aqF1N7DA5vLR+0jWfu8I5CgaAAxL/5jiWHW6er6IgZaThAKlw==}
-    dev: false
 
   /@humanwhocodes/config-array@0.11.11:
     resolution: {integrity: sha512-N2brEuAadi0CcdeMXUkhbZB84eskAc8MEX1By6qEchoVywSgXPIjou4rYsl0V3Hj0ZnuGycGCjdNgockbzeWNA==}
@@ -1871,8 +1850,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /lucide-svelte@0.268.0(svelte@4.2.0):
-    resolution: {integrity: sha512-w2pqfViiU9PgHkyOoYEr3FBG4tk+fupm2tR7/p6ugfNQZg1ABdXP2okkasEfQ8TF41KkR6uFqQUp8ciCdpGwVw==}
+  /lucide-svelte@0.275.0-beta.0(svelte@4.2.0):
+    resolution: {integrity: sha512-WnlhoUcbDFXAaWYOW08DQf3Uo14+/j8lNKam3SRWl3l0yvM66OsUkhm7/j7CGx0NUZE/FTAK1XdI8T+X+qAokQ==}
     peerDependencies:
       svelte: '>=3 <5'
     dependencies:
@@ -2117,10 +2096,6 @@ packages:
     dependencies:
       wrappy: 1.0.2
     dev: true
-
-  /open-props@1.5.15:
-    resolution: {integrity: sha512-LwkMUm7xr7C2qt7RE1rEyAt8OTHDE2QSvWM3g2B6OCHkj+wsWhwi5unuiobM/bOWX253WjS1GmMuY36E2v0amQ==}
-    dev: false
 
   /optionator@0.9.3:
     resolution: {integrity: sha512-JjCoypp+jKn1ttEFExxhetCKeJt9zhAgAve5FXHixTvFDW/5aEktX9bufBKLRRMdU7bNtpLfcGu94B3cdEJgjg==}
@@ -3341,3 +3316,7 @@ packages:
   /zod@3.22.2:
     resolution: {integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==}
     dev: false
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
