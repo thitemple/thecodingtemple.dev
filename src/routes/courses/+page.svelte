@@ -1,7 +1,22 @@
 <script lang="ts">
+	import * as config from "$lib/config";
+	import me from "$lib/assets/img/me.jpg";
 	import Title from "$lib/components/title.svelte";
 	import CourseCard from "./course-card.svelte";
 </script>
+
+<svelte:head>
+	<title>{config.title}</title>
+	<meta name="description" content={config.description} />
+	<meta property="og:title" content={config.title} />
+	<meta property="og:url" content={config.url} />
+	<meta property="og:image" content={`${config.url}${me}`} />
+	<meta name="og:description" content={config.ogDescription} />
+	<meta property="twitter:title" content={config.title} />
+	<meta property="twitter:image" content={`${config.url}${me}`} />
+	<meta property="twitter:description" content={config.description} />
+	<meta property="twitter:card" content="summary" />
+</svelte:head>
 
 <article class="grid gap-4">
 	<Title>Courses</Title>
