@@ -7,6 +7,10 @@ declare global {
 		// interface PageData {}
 		// interface Platform {}
 	}
+
+	interface Document {
+		startViewTransition?: (cb: () => Promise<unknown> | void) => void;
+	}
 }
 
 export {};
