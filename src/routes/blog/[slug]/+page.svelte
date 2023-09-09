@@ -29,7 +29,7 @@
 <article class="mx-auto grid max-w-prose gap-4 md:gap-6">
 	<hgroup>
 		<Title
-			classes="[view-transition-name:title] mb-4 leading-10 lg:leading-loose underline decoration-violet-500 decoration-double decoration-4 underline-offset-8 dark:decoration-pink-500"
+			classes="[view-transition-name:var(--post-title)] mb-4 leading-10 lg:leading-loose underline decoration-violet-500 decoration-double decoration-4 underline-offset-8 dark:decoration-pink-500"
 			>{data.meta.title}</Title
 		>
 		<p class="text-sm text-slate-700 dark:text-slate-300 lg:mt-2">
@@ -41,8 +41,9 @@
 		<div>
 			<img
 				src={data.cover}
+				style:--post-cover={`cover-${data.meta.slug}`}
 				alt={`Cover for ${data.meta.title}`}
-				class="w-full object-cover [view-transition-name:img-cover]"
+				class={`w-full object-cover [view-transition-name:var(--post-cover)] `}
 			/>
 		</div>
 	{/if}

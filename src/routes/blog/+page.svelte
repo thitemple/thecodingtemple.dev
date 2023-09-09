@@ -5,13 +5,8 @@
 	import articles from "$lib/assets/img/articles.png";
 	import ArticleCard from "./article-card.svelte";
 	import { cn } from "$lib/utils";
-	import { beforeNavigate, onNavigate } from "$app/navigation";
 
 	export let data;
-
-	beforeNavigate((navigation) => {
-		console.log("DAS beforeNavigate page");
-	});
 </script>
 
 <svelte:head>

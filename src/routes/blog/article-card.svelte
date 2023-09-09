@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { beforeNavigate } from "$app/navigation";
-	import { navigating } from "$app/stores";
 	import OutlineLink from "$lib/components/outline-link.svelte";
 	import PostMeta from "$lib/components/post-meta.svelte";
 	import type { Post } from "$lib/types";
@@ -13,11 +11,6 @@
 	const shouldShowBanner = post.cover && !featured;
 	const hasFeaturedBanner = post.cover && featured;
 	const postUrl = `/blog/${post.slug}`;
-	let transitionDestination = $navigating?.from?.url.pathname === postUrl;
-
-	beforeNavigate((navigation) => {
-		transitionDestination = navigation.to?.url.pathname === postUrl;
-	});
 </script>
 
 <div
@@ -31,9 +24,8 @@
 	<div>
 		<a href={postUrl} class=" lg:mt-4">
 			<h2
-				class={cn("font-heading text-2xl text-slate-700 dark:text-slate-200", {
-					"[view-transition-name:title]": transitionDestination
-				})}
+				style:--post-title={`title-${post.slug}`}
+				class="font-heading text-2xl text-slate-700 [view-transition-name:var(--post-title)] dark:text-slate-200"
 			>
 				{post.title}
 			</h2>
@@ -46,18 +38,16 @@
 		<img
 			src={post.cover}
 			alt={`Banner for ${post.title}`}
-			class={cn("max-h-60 w-full object-none object-center", {
-				"[view-transition-name:img-cover]": transitionDestination
-			})}
+			style:--post-cover={`cover-${post.slug}`}
+			class={`max-h-60 w-full object-none object-center [view-transition-name:var(--post-cover)]`}
 		/>
 	{/if}
 	{#if shouldShowBanner}
 		<img
 			src={post.cover}
 			alt={`Thumbnail for ${post.title}`}
-			class={cn("aspect-auto object-cover opacity-90 lg:pr-4", {
-				"[view-transition-name:img-cover]": transitionDestination
-			})}
+			style:--post-cover={`cover-${post.slug}`}
+			class={`aspect-auto object-cover opacity-90 [view-transition-name:var(--post-cover)] lg:pr-4`}
 		/>
 	{/if}
 	<p class="flex-1 text-slate-600 dark:text-slate-300 lg:mt-4">
