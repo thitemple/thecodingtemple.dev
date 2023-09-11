@@ -1,6 +1,6 @@
 <script lang="ts">
 	import "$lib/assets/app.css";
-	import {description, author} from "$lib/config"
+	import { author } from "$lib/config";
 
 	import Header from "$lib/components/header.svelte";
 	import Footer from "$lib/components/footer.svelte";

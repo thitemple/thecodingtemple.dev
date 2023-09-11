@@ -4,8 +4,9 @@
 	import symbolLight from "$lib/assets/img/symbol-transparent.svg";
 	import logoDark from "$lib/assets/img/logo-dark-mode.svg";
 	import logoLight from "$lib/assets/img/logo-transparent.svg";
-	import { ChevronDown } from "lucide-svelte";
+	import { Menu } from "lucide-svelte";
 	import MobileMenu from "./mobile-menu";
+	import NavItem from "./nav-item.svelte";
 
 	let dialogOpened = false;
 </script>
@@ -29,18 +30,9 @@
 		<ul
 			class="flex items-center gap-4 rounded-xl border border-slate-300 bg-white px-4 py-2 text-slate-600 shadow-md ring-1 ring-slate-300 dark:border-slate-400 dark:bg-violet-700 dark:text-slate-200 dark:ring-slate-400"
 		>
-			<li>
-				<a href="/blog">Blog</a>
-			</li>
-			<li>
-				<a href="/courses">Courses</a>
-			</li>
-			<li>
-				<a href="/about">About</a>
-			</li>
-			<li>
-				<a href="/rss.xml" target="_blank">RSS</a>
-			</li>
+			<NavItem href="/blog">Blog</NavItem>
+			<NavItem href="/courses">Courses</NavItem>
+			<NavItem href="/about">About</NavItem>
 		</ul>
 	</div>
 	<div class="hidden lg:block">
@@ -48,11 +40,10 @@
 	</div>
 	<button
 		title="Toggle mobile menu"
-		class="group flex items-center rounded-full bg-white px-4 py-2 text-sm font-medium text-slate-800 shadow-md shadow-slate-800/5 ring-1 ring-slate-900/5 backdrop-blur dark:bg-violet-700 dark:text-slate-200 dark:shadow-slate-700 dark:ring-slate-300 lg:hidden"
+		class="bg-transparent text-slate-800 dark:text-slate-200 lg:hidden"
 		on:click={() => (dialogOpened = true)}
 	>
-		Menu
-		<ChevronDown />
+		<Menu size={32} />
 	</button>
 	<MobileMenu bind:open={dialogOpened} />
 </nav>
