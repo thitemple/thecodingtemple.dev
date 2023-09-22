@@ -19,7 +19,7 @@
 	</a>
 	<div
 		class={cn("h-[2px] w-full bg-transparent transition-colors duration-300 ", {
-			"bg-violet-700 dark:bg-pink-100": activeUrl,
+			"bg-violet-700 [view-transition-name:nav-item] dark:bg-pink-100": activeUrl,
 			"group-hover:bg-violet-300 group-hover:dark:bg-pink-400": !activeUrl
 		})}
 	></div>

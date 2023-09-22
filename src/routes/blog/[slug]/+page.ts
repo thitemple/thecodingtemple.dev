@@ -14,11 +14,11 @@ export async function load({ params }) {
 
 		return {
 			content: post.default,
-			meta: { ...post.metadata, url },
+			meta: { ...post.metadata, url, slug: params.slug },
 			cover: post.cover
 		} as {
 			content: ConstructorOfATypedSvelteComponent;
-			meta: Post & { url: string };
+			meta: Post & { url: string; slug: string };
 			cover?: string;
 		};
 	} catch (e) {

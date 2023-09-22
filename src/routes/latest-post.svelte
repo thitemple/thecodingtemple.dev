@@ -13,7 +13,9 @@
 	class="grid gap-6 overflow-hidden lg:grid-cols-2 lg:grid-rows-[auto_auto_1fr_auto_auto] lg:gap-0"
 >
 	<a href={postLink} class="lg:col-start-2">
-		<h2 class="font-heading text-2xl text-slate-700 dark:text-slate-200">{post.title}</h2>
+		<h2 class="font-heading text-2xl text-slate-700 dark:text-slate-200">
+			{post.title}
+		</h2>
 	</a>
 	{#if post.cover}
 		<img

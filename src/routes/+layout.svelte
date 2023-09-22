@@ -4,9 +4,18 @@
 
 	import Header from "$lib/components/header.svelte";
 	import Footer from "$lib/components/footer.svelte";
-	import PageTransition from "$lib/components/transition.svelte";
+	import { onNavigate } from "$app/navigation";
 
-	export let data;
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) return;
+
+		return new Promise((resolve) => {
+			document.startViewTransition?.(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
 
 <svelte:head>
@@ -18,9 +27,7 @@
 >
 	<Header />
 	<main class="my-2 lg:my-16">
-		<PageTransition url={data.url}>
-			<slot />
-		</PageTransition>
+		<slot />
 	</main>
 	<Footer />
 </div>
